@@ -1,4 +1,0 @@
-{
-  "buildCommand": "cd regency-site && pnpm install && pnpm run build",
-  "framework": "nextjs"
-}
