@@ -275,3 +275,4 @@ import { faqContent } from '@/data/seoContent';
 
 **Ready for immediate integration into your Next.js website!** 🎉
 
+

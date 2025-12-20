@@ -138,3 +138,4 @@ See `components/CommunityAccordion.example.tsx` for a complete working example u
 - Can be easily customized or extended
 - Includes all specific details requested (sq ft, amenities, etc.)
 
+

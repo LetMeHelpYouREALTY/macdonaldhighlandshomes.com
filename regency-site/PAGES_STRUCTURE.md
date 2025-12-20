@@ -93,3 +93,4 @@ All page content is available in:
 6. Implement FAQ accordion
 7. Create The Highlander Magazine section
 
+

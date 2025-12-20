@@ -66,3 +66,4 @@ bash setup-deployment.sh
 ❌ Need to set up your own GitHub repository
 ❌ Need to connect repository to Vercel
 
+

@@ -23,3 +23,4 @@ echo "  4. Click Deploy"
 echo ""
 echo "After setup, every git push will automatically trigger Vercel deployment!"
 
+

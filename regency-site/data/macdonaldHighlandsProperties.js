@@ -375,3 +375,4 @@ export const priceRanges = [
   "$5M+"
 ];
 
+

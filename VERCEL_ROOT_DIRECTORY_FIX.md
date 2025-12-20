@@ -40,3 +40,4 @@ Create a separate GitHub repository for `regency-site`:
 
 This is the cleanest solution - just set the root directory in Vercel settings.
 
+
