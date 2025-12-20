@@ -85,7 +85,6 @@ export default function HomePage() {
             className="object-cover opacity-40"
             priority
             sizes="100vw"
-            unoptimized={false}
           />
         </div>
         <div className="relative z-10 container-luxury text-center text-white py-24">
