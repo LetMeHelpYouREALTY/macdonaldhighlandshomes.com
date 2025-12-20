@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd regency-site && npm run build",
-  "devCommand": "cd regency-site && npm run dev",
-  "installCommand": "cd regency-site && npm install",
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
   "framework": "nextjs",
   "rootDirectory": "regency-site"
 }
