@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Output build to root level for Vercel deployment
+  distDir: process.env.VERCEL ? '../.next' : '.next',
+  
   // Next.js 15 optimizations
   reactStrictMode: true,
   
