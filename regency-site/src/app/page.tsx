@@ -251,12 +251,11 @@ export default function HomePage() {
               DragonRidge Championship Golf Course
             </h3>
             <div className="my-6">
-              <Image
+              <img
                 src="/photos/community/golf-lifestyle-full.jpg"
                 alt="DragonRidge Country Club championship golf course"
-                width={1000}
-                height={600}
-                className="rounded-lg shadow-lg"
+                className="w-full rounded-lg shadow-lg"
+                style={{ maxWidth: '1000px', height: 'auto' }}
               />
             </div>
             <p className="text-lg text-neutral-700 mb-6">

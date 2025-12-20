@@ -13,7 +13,6 @@ export default function ImageDiagnosticPage() {
   ];
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     // #region agent log
     fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'image-diagnostic/page.tsx:10',message:'ImageDiagnosticPage mounted',data:{testImages:testImages},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'F'})}).catch(()=>{});
     // #endregion
@@ -45,7 +44,8 @@ export default function ImageDiagnosticPage() {
       };
       img.src = src;
     });
-  }, [testImages]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="p-8 max-w-4xl mx-auto">
