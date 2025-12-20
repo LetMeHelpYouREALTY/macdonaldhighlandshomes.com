@@ -1,5 +1,5 @@
 {
   "framework": "nextjs",
-  "installCommand": "pnpm install && cd regency-site && pnpm install",
-  "buildCommand": "cd regency-site && pnpm build"
+  "installCommand": "cd regency-site && npm install",
+  "buildCommand": "cd regency-site && npm run build"
 }

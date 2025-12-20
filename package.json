@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "MacDonald Highlands luxury real estate website by Dr. Jan Duffy",
   "scripts": {
-    "dev": "cd regency-site && pnpm dev",
-    "build": "cd regency-site && pnpm install && pnpm build",
-    "start": "cd regency-site && pnpm start",
-    "lint": "cd regency-site && pnpm lint"
+    "dev": "cd regency-site && npm run dev",
+    "build": "cd regency-site && npm install && npm run build",
+    "start": "cd regency-site && npm start",
+    "lint": "cd regency-site && npm run lint"
   },
   "repository": {
     "type": "git",
