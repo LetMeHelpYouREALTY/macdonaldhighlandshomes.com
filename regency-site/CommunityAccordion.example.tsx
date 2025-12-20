@@ -26,7 +26,7 @@ export default function CommunityAccordion() {
       </h2>
       
       <div className="space-y-4">
-        {flatAccordionSections.map((section) => (
+        {flatAccordionSections.map((section: any) => (
           <div
             key={section.id}
             className="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
@@ -79,7 +79,7 @@ export function NestedCommunityAccordion() {
       </h2>
       
       <div className="space-y-4">
-        {accordionSections.map((section) => (
+        {accordionSections.map((section: any) => (
           <div key={section.id} className="border border-gray-200 rounded-lg overflow-hidden">
             <button
               onClick={() => toggleSection(section.id)}
@@ -97,7 +97,7 @@ export function NestedCommunityAccordion() {
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
                 {section.isParent && section.children ? (
                   <div className="space-y-3 mt-4">
-                    {section.children.map((child) => (
+                    {section.children.map((child: any) => (
                       <div key={child.id} className="ml-4 border-l-2 border-indigo-200 pl-4">
                         <h4 className="font-semibold text-indigo-800 mb-2">
                           {child.title}
