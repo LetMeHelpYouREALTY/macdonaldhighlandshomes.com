@@ -4,110 +4,187 @@ import {
   faTwitter,
   faFacebookF,
   faLinkedinIn,
-  faPinterestP,
   faInstagram,
-  faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { siteConfig } from "@/config/siteConfig";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-indigo-950 text-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-primary-900 text-white py-16 px-4">
+      <div className="container-luxury">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info Section */}
           <div>
-            <h3 className="font-bold text-2xl mb-6">Company Name</h3>
-            <p className="text-indigo-200 mb-4">
-              Providing innovative solutions for your business needs since 2010.
+            <h3 className="font-serif font-bold text-2xl mb-6">{siteConfig.name}</h3>
+            <p className="text-primary-200 mb-4 leading-relaxed">
+              {siteConfig.description}
             </p>
             <div className="flex space-x-4">
-              {[faTwitter, faFacebookF, faLinkedinIn, faInstagram].map((icon, index) => (
+              {siteConfig.social.facebook && (
                 <Link
-                  key={index}
-                  href="#"
-                  className="text-indigo-200 hover:text-white transition duration-300"
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                  aria-label="Facebook"
                 >
-                  <FontAwesomeIcon icon={icon} className="h-5 w-5" />
+                  <FontAwesomeIcon icon={faFacebookF} className="h-5 w-5" />
                 </Link>
-              ))}
+              )}
+              {siteConfig.social.twitter && (
+                <Link
+                  href={siteConfig.social.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                  aria-label="Twitter"
+                >
+                  <FontAwesomeIcon icon={faTwitter} className="h-5 w-5" />
+                </Link>
+              )}
+              {siteConfig.social.instagram && (
+                <Link
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                  aria-label="Instagram"
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="h-5 w-5" />
+                </Link>
+              )}
+              {siteConfig.social.linkedin && (
+                <Link
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} className="h-5 w-5" />
+                </Link>
+              )}
             </div>
           </div>
 
           {/* Quick Links Section */}
           <div>
-            <h3 className="font-bold text-xl mb-6">Quick Links</h3>
+            <h3 className="font-serif font-bold text-xl mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["About Us", "Services", "Projects", "Blog", "Contact"].map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    className="text-indigo-200 hover:text-white transition duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/Property"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  Properties
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/About"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  About Community
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/Services"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  Amenities
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/Contact_us"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Services Section */}
+          {/* Community Section */}
           <div>
-            <h3 className="font-bold text-xl mb-6">Our Services</h3>
+            <h3 className="font-serif font-bold text-xl mb-6">Community</h3>
             <ul className="space-y-3">
-              {["Web Development", "Mobile Apps", "Cloud Solutions", "IT Consulting", "Data Analytics"].map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href="#"
-                    className="text-indigo-200 hover:text-white transition duration-300"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/Property/Property_type/Vu"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  Vu Neighborhood
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/Property/Property_type/SkyVu"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  SkyVu Neighborhood
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/Property/Property_type/Vue Pointe"
+                  className="text-primary-200 hover:text-white transition duration-300"
+                >
+                  Vue Pointe
+                </Link>
+              </li>
+              <li>
+                <span className="text-primary-200">
+                  DragonRidge Golf Course
+                </span>
+              </li>
             </ul>
           </div>
 
           {/* Contact Section */}
           <div>
-            <h3 className="font-bold text-xl mb-6">Contact Us</h3>
+            <h3 className="font-serif font-bold text-xl mb-6">Contact Us</h3>
             <ul className="space-y-4">
-              <li className="flex items-center">
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3 text-indigo-300" />
-                <span className="text-indigo-200">123 Business Ave, Suite 100, City, State 12345</span>
+              <li className="flex items-start">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3 text-primary-300 mt-1 flex-shrink-0" />
+                <span className="text-primary-200">{siteConfig.contact.address}</span>
               </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon={faPhone} className="h-5 w-5 mr-3 text-indigo-300" />
+                <FontAwesomeIcon icon={faPhone} className="h-5 w-5 mr-3 text-primary-300 flex-shrink-0" />
                 <Link
-                  href="tel:+11234567890"
-                  className="text-indigo-200 hover:text-white transition duration-300"
+                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, '')}`}
+                  className="text-primary-200 hover:text-white transition duration-300"
                 >
-                  +1 (123) 456-7890
+                  {siteConfig.contact.phone}
                 </Link>
               </li>
               <li className="flex items-center">
-                <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 mr-3 text-indigo-300" />
+                <FontAwesomeIcon icon={faEnvelope} className="h-5 w-5 mr-3 text-primary-300 flex-shrink-0" />
                 <Link
-                  href="mailto:info@company.com"
-                  className="text-indigo-200 hover:text-white transition duration-300"
+                  href={`mailto:${siteConfig.contact.email}`}
+                  className="text-primary-200 hover:text-white transition duration-300"
                 >
-                  info@company.com
+                  {siteConfig.contact.email}
                 </Link>
+              </li>
+              <li className="text-primary-200 text-sm mt-4">
+                <p>Hours: {siteConfig.contact.hours}</p>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-indigo-800 mt-12 pt-8 text-center text-indigo-300">
+        <div className="border-t border-primary-800 mt-12 pt-8 text-center text-primary-300">
           <p>
-            © {new Date().getFullYear()} Company Name. All Rights Reserved.
+            © {currentYear} {siteConfig.name}. All Rights Reserved.
           </p>
-          <p className="mt-2">
-            Designed and Developed by{" "}
-            <a href="#" className="text-white hover:text-indigo-200 transition duration-300">
-              Your Company
-            </a>
+          <p className="mt-2 text-sm">
+            {siteConfig.location} • Guard-Gated Luxury Community
           </p>
         </div>
       </div>
