@@ -21,10 +21,12 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { href: "/Property", label: "Properties" },
-    { href: "/About", label: "Community" },
-    { href: "/Services", label: "Amenities" },
-    { href: "/Contact_us", label: "Contact" },
+    { href: "/services", label: "Services" },
+    { href: "/listings", label: "Listings" },
+    { href: "/macdonald-highlands-community", label: "Community" },
+    { href: "/about-dr-jan-duffy", label: "About" },
+    { href: "/testimonials", label: "Testimonials" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -67,10 +69,10 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/Contact_us"
+                href="/contact"
                 className="btn-primary mt-2 lg:mt-0 lg:ml-4"
               >
-                Schedule Tour
+                Get Started
               </Link>
             </div>
           </div>
