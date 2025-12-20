@@ -160,6 +160,7 @@ export default function CommunityPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={true}
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -169,6 +170,7 @@ export default function CommunityPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={true}
                 />
               </div>
             </div>

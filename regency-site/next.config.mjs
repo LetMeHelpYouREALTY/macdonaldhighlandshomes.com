@@ -15,7 +15,7 @@ const nextConfig = {
       },
     ],
     // Allow unoptimized images if optimization fails
-    unoptimized: false,
+    unoptimized: true,
     // Disable strict mode for image domains (allows local images)
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
