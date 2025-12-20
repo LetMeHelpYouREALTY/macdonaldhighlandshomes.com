@@ -34,14 +34,10 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
               <div className="md:col-span-1">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-neutral-100">
-                  <Image
+                  <img
                     src="/photos/agent/dr-jan-duffy-headshot.jpg"
                     alt={`${siteConfig.agent.name}, ${siteConfig.agent.title}`}
-                    width={400}
-                    height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    priority
-                    unoptimized={true}
                   />
                 </div>
               </div>

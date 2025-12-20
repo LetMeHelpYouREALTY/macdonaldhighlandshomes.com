@@ -79,12 +79,11 @@ export default function CommunityPage() {
             </div>
 
             <div className="my-12">
-              <Image
+              <img
                 src="/photos/community/clubhouse.jpg"
                 alt="DragonRidge Country Club clubhouse"
-                width={1200}
-                height={600}
-                className="rounded-lg shadow-xl"
+                className="w-full rounded-lg shadow-xl"
+                style={{ maxWidth: '1200px', height: 'auto' }}
               />
             </div>
 
@@ -146,23 +145,17 @@ export default function CommunityPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Views & Location</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <Image
+                <img
                   src="/photos/community/view-lifestyle-2.jpg"
                   alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized={true}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <Image
+                <img
                   src="/photos/community/views-lifestyle-3.jpg"
                   alt="Mountain and desert views from MacDonald Highlands"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized={true}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
