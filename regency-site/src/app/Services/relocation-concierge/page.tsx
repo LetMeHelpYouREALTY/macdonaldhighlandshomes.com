@@ -129,6 +129,61 @@ export default function RelocationPage() {
               <li>Contingency planning for delays</li>
               <li>Post-move follow-up and support</li>
             </ul>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Comprehensive Relocation Services: Every Detail Covered</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Relocating to MacDonald Highlands involves more than just finding a home—it requires comprehensive support to ensure a smooth transition. Our relocation concierge services address every aspect of your move, from initial research through post-move settlement, ensuring nothing falls through the cracks.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Pre-Move Planning & Research</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Before you even visit MacDonald Highlands, we provide comprehensive research and planning support. This includes detailed community information, neighborhood comparisons, school district research, and lifestyle assessments. We help you understand what to expect, answer questions about the community, and provide insights that help you make informed decisions about your relocation. This pre-move planning ensures you arrive with realistic expectations and a clear understanding of MacDonald Highlands living.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Property Search & Selection Support</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Finding the right MacDonald Highlands property requires understanding your lifestyle preferences, budget, and long-term goals. We provide personalized property search support, identifying homes that match your criteria and arranging private tours. For out-of-state buyers, we create comprehensive virtual tour experiences that allow you to evaluate properties remotely. This search support ensures you find a home that truly fits your needs, not just what&apos;s available.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Community Integration & Orientation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Becoming part of the MacDonald Highlands community involves understanding HOA protocols, gate access procedures, community amenities, and local services. We provide comprehensive orientation that helps you feel at home from day one. This includes introductions to community resources, explanations of HOA rules and benefits, and guidance on accessing community amenities. This orientation support ensures a smooth transition into MacDonald Highlands living.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Service Provider Network & Referrals</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Settling into a new community requires connecting with trusted service providers. Our network includes interior designers, landscape architects, pool maintenance companies, home security providers, and other professionals who understand luxury homes and MacDonald Highlands standards. These referrals ensure you work with professionals who deliver quality results and understand the unique needs of luxury property owners.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Post-Move Support & Follow-Up</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our relationship doesn&apos;t end when you move in. We provide post-move support including follow-up visits, additional service referrals, and ongoing market insights. If questions arise or you need additional assistance, we&apos;re here to help. This ongoing support ensures your transition to MacDonald Highlands is successful long-term, not just during the initial move.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why Relocation Concierge Services Matter</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Moving to a new luxury community involves numerous details that can be overwhelming, especially when relocating from another state or country. Professional relocation concierge services ensure every aspect of your move is handled professionally, reducing stress and ensuring a smooth transition.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Time Savings & Efficiency</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Relocating involves countless tasks, from property research to utility setup to service provider connections. Our concierge services handle these details efficiently, saving you time and ensuring nothing is overlooked. This efficiency is particularly valuable for busy executives and professionals who need to focus on work while managing a relocation.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Local Expertise & Insider Knowledge</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Understanding a new community requires local knowledge that only comes from experience. Our deep knowledge of MacDonald Highlands, Henderson, and the Las Vegas area ensures you receive accurate information and valuable insights. This local expertise helps you make informed decisions and avoid common relocation pitfalls.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Reduced Stress & Peace of Mind</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Relocating is inherently stressful, but professional concierge services significantly reduce that stress by handling details and providing support throughout the process. Knowing that experienced professionals are managing your relocation provides peace of mind and allows you to focus on other priorities. This stress reduction is invaluable during what can be a challenging transition period.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Cost Efficiency Through Negotiated Rates</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our relationships with service providers often result in negotiated rates and preferred pricing for relocation clients. These cost savings can offset concierge service fees while ensuring you work with quality professionals. The value of these relationships extends beyond cost savings to include quality assurance and reliable service delivery.
+            </p>
           </div>
         </div>
       </section>

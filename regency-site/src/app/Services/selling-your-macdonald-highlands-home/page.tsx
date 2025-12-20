@@ -89,7 +89,67 @@ export default function SellingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">1031 Exchange Coordination</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              If you&apos;re selling to reinvest in another property, we coordinate with qualified intermediaries and tax advisors to ensure your 1031 exchange meets all IRS requirements and timelines, maximizing your tax advantages.
+              If you&apos;re selling to reinvest in another property, we coordinate with qualified intermediaries and tax advisors to ensure your 1031 exchange meets all IRS requirements and timelines, maximizing your tax advantages. This coordination includes identifying replacement properties, managing identification deadlines, and ensuring all exchange requirements are met to defer capital gains taxes.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">The Selling Process: From Listing to Closing</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Selling a luxury home in MacDonald Highlands involves a sophisticated process designed to maximize value while minimizing disruption. Understanding this process helps sellers know what to expect and ensures smooth transactions from initial consultation through closing.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Initial Consultation & Market Analysis</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Every selling relationship begins with a comprehensive consultation to understand your goals, timeline, and property characteristics. We conduct a thorough market analysis using comparable sales data, current market conditions, and property-specific factors. This analysis forms the foundation for pricing strategy, marketing approach, and timeline planning. The consultation is completely confidential and comes with no obligation.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Property Preparation & Staging Strategy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Luxury properties require professional preparation to maximize market appeal. We coordinate with premier staging professionals who understand how to showcase your home&apos;s architectural features, maximize natural light, and create aspirational lifestyle presentations. Staging recommendations are tailored to your property&apos;s unique characteristics and target buyer profile, ensuring maximum impact.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Professional Photography & Marketing Materials</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Your MacDonald Highlands home deserves photography that captures its true essence. We coordinate with specialized luxury real estate photographers who excel at architectural photography, twilight photography, and drone aerials. These professional images are used in marketing materials distributed to our global luxury buyer network, ensuring your property receives maximum exposure to qualified buyers.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Marketing Launch & Buyer Outreach</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Marketing launch strategies are tailored to your property and goals. For off-market listings, marketing is distributed exclusively to our curated network. For public listings, we coordinate MLS entry, digital marketing campaigns, and luxury real estate portal placements. Our global network ensures your property reaches luxury buyers from around the world, significantly expanding the buyer pool beyond local markets.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Showing Coordination & Buyer Qualification</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Private showings are coordinated with careful attention to your schedule and privacy. We pre-qualify all buyers before scheduling showings, ensuring that only serious, financially capable buyers view your property. This qualification process saves time, maintains security, and ensures that showings result in meaningful buyer interest rather than casual lookers.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Offer Evaluation & Negotiation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              When offers are received, we provide comprehensive evaluation and negotiation support. This includes analyzing offer terms, comparing multiple offers, and negotiating to maximize value while meeting your objectives. Our negotiation expertise for high-net-worth transactions ensures deals are structured to protect your interests while facilitating successful closings.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Transaction Management & Closing Coordination</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              As we move toward closing, our transaction management ensures all details are handled professionally. We coordinate inspections, appraisals, title work, and lender requirements, working closely with all parties to keep the transaction on track. Our goal is a smooth closing that meets your timeline expectations while ensuring all legal and financial requirements are met.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Maximizing Value: Strategies for Luxury Home Sales</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Selling a luxury home requires strategies that go beyond standard real estate marketing. Understanding these value-maximization strategies helps sellers achieve optimal outcomes in the MacDonald Highlands market.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Strategic Pricing for Maximum Return</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Pricing luxury properties requires sophisticated analysis that accounts for view premiums, lot positioning, architectural features, and current market conditions. Our pricing strategies balance maximizing value with ensuring competitive positioning that attracts qualified buyers. Strategic pricing considers not just comparable sales, but buyer psychology, market timing, and competitive positioning.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Timing Your Sale for Optimal Market Conditions</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Market timing significantly impacts sale outcomes. We provide insights on optimal listing timing based on seasonal trends, inventory levels, buyer demand patterns, and economic factors. Understanding when to list helps maximize exposure to qualified buyers while potentially achieving premium pricing. Strategic timing can be the difference between a quick sale at optimal price and extended time on market.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Premium Feature Highlighting</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Luxury properties have unique features that command premium prices, but these features must be effectively highlighted in marketing. We ensure that view quality, architectural distinction, custom finishes, and specialty amenities are prominently featured in marketing materials and property presentations. This premium feature highlighting helps buyers understand the value proposition and justifies pricing strategies.
             </p>
           </div>
         </div>

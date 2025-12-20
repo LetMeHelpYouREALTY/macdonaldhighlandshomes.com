@@ -100,6 +100,97 @@ export default function OffMarketPage() {
                 In MacDonald Highlands, approximately 20-30% of luxury transactions occur off-market. These private sales often result in better terms for both buyers and sellers, making our exclusive network a valuable advantage for serious luxury real estate participants.
               </p>
             </div>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">The Off-Market Advantage: Why Private Sales Benefit Everyone</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Off-market transactions in luxury real estate offer advantages that public listings cannot match. Understanding these benefits helps both buyers and sellers appreciate the value of private market participation in MacDonald Highlands real estate.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Benefits for Sellers: Privacy, Control, and Efficiency</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              High-profile sellers often prefer off-market transactions to maintain privacy and avoid public exposure. Off-market selling provides complete discretion, allowing properties to be marketed only to pre-qualified buyers without public MLS listings or open houses. This privacy is particularly valuable for celebrities, executives, public figures, or anyone who values discretion in their real estate transactions.
+            </p>
+            <p className="text-lg text-neutral-700 mb-6">
+              Off-market sales also provide sellers with greater control over the marketing process. Sellers can control who sees their property, when showings occur, and how information is shared. This control ensures that only serious, qualified buyers view the property, reducing time spent on unqualified inquiries and maintaining the property&apos;s privacy throughout the process.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Benefits for Buyers: Exclusive Access and Better Terms</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Buyers in our exclusive network gain access to properties that may never be publicly listed, providing opportunities that aren&apos;t available through traditional channels. This exclusive access can be the difference between finding your dream MacDonald Highlands property and settling for what&apos;s publicly available. Off-market properties often have less competition, allowing buyers to negotiate more favorable terms.
+            </p>
+            <p className="text-lg text-neutral-700 mb-6">
+              Private transactions also allow for more flexible negotiation structures. Without the pressure of public listings and multiple competing offers, buyers and sellers can work together to structure deals that meet both parties&apos; objectives. This flexibility often results in smoother transactions and better outcomes for everyone involved.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">How Our Off-Market Network Works</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our exclusive off-market network connects qualified buyers with exclusive properties through a carefully managed process designed to maintain privacy while maximizing marketing effectiveness. Understanding how this network operates helps both buyers and sellers appreciate the value of participating in the private market.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Seller Enrollment & Property Evaluation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Sellers interested in off-market marketing begin with a comprehensive property evaluation and market analysis. We assess the property&apos;s characteristics, determine appropriate pricing strategies, and develop marketing plans tailored to off-market distribution. This evaluation ensures properties are positioned effectively within our exclusive network, reaching qualified buyers while maintaining privacy.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Buyer Qualification & Network Access</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Buyers seeking off-market access must demonstrate financial qualification and serious intent. Our network includes pre-qualified buyers who have been vetted for financial capability and purchase readiness. This qualification process ensures that sellers receive inquiries only from buyers who can actually complete transactions, maintaining efficiency and protecting seller privacy.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Discreet Marketing & Distribution</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Off-market properties are marketed through private channels that maintain complete discretion. Marketing materials are distributed only to our exclusive network, with no public listings or exposure. This discreet approach ensures privacy while still reaching qualified buyers who are actively seeking MacDonald Highlands properties. The controlled distribution maintains property privacy while maximizing marketing effectiveness.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Confidential Showing Coordination</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Private showings are coordinated with strict confidentiality protocols. Buyers sign confidentiality agreements, and showings are scheduled to respect seller privacy and security. This controlled access ensures that properties are shown only to serious buyers while maintaining the discretion that off-market sellers value. The coordination process balances buyer access with seller privacy requirements.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Types of Off-Market Opportunities in MacDonald Highlands</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Off-market opportunities in MacDonald Highlands take various forms, each offering unique advantages for buyers and sellers. Understanding these different types helps you identify opportunities that match your goals and timeline.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Pocket Listings: Pre-MLS Exclusive Properties</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Pocket listings are properties that are marketed privately before being listed on MLS. These properties are often tested in the private market first, allowing sellers to gauge interest and potentially sell without public exposure. For buyers, pocket listings provide first access to properties that may never reach public listings, offering opportunities to purchase before competitive bidding begins.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Coming Soon Properties: Early Notification Advantage</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Properties that will be listed in the next 30-90 days are often shared with our exclusive network before public listing. This coming soon access allows buyers to evaluate properties and potentially make offers before they hit MLS. For sellers, sharing coming soon information with qualified buyers can result in pre-listing sales, avoiding the time and expense of public marketing.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Whisper Listings: Completely Private Sales</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Some properties are marketed exclusively through whisper listings—completely private sales that never appear on public databases. These ultra-discreet transactions are ideal for high-profile sellers who require absolute privacy. Buyers in our network receive access to these exclusive opportunities that aren&apos;t available through any other channel.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">New Construction Pre-Sales & Lot Releases</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Developers and builders often offer pre-sales and lot releases to our exclusive network before public availability. This early access allows buyers to secure prime lots, select preferred floor plans, and potentially negotiate better terms. For investors, pre-construction opportunities can provide attractive pricing and customization options not available in resale properties.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Maintaining Privacy & Discretion in Off-Market Transactions</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Privacy and discretion are paramount in off-market transactions, requiring strict protocols and careful management. Our commitment to maintaining confidentiality ensures that both buyers and sellers can participate in private market transactions with confidence.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Confidentiality Agreements & Protocols</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              All participants in our off-market network agree to strict confidentiality protocols. Buyers sign confidentiality agreements before viewing properties, and all information is shared only on a need-to-know basis. These protocols ensure that property details, seller information, and transaction terms remain private throughout the process.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Controlled Information Distribution</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Information about off-market properties is distributed only to qualified buyers who match the property&apos;s profile. This controlled distribution ensures that property information doesn&apos;t leak into public channels while still reaching appropriate buyers. The selective distribution maintains privacy while maximizing marketing effectiveness.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Secure Transaction Management</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Off-market transactions require secure management of all documentation and communications. We maintain strict protocols for handling sensitive information, ensuring that transaction details remain confidential throughout the process. This secure management protects both buyer and seller privacy while facilitating successful transactions.
+            </p>
           </div>
         </div>
       </section>

@@ -115,6 +115,71 @@ export default function BuyingPage() {
               <li>High-end HVAC and mechanical systems</li>
               <li>Elevators, wine cellars, and specialty features</li>
             </ul>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">The Buying Process: Your Path to MacDonald Highlands Homeownership</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Buying a luxury home in MacDonald Highlands involves a comprehensive process designed to ensure you find the perfect property while making informed investment decisions. Understanding this process helps buyers know what to expect and ensures smooth transactions from initial search through closing.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Initial Consultation & Needs Assessment</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              We begin every buyer relationship with a comprehensive consultation to understand your goals, budget, timeline, and specific requirements. This includes discussing lifestyle preferences, must-have features, investment objectives, and long-term plans. Understanding your needs ensures we identify properties that truly match your criteria, saving time and ensuring you find the right MacDonald Highlands home.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Property Search & Evaluation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our property search goes beyond MLS listings to include off-market opportunities, coming soon properties, and exclusive pocket listings. We evaluate each property against your criteria, analyzing view quality, lot positioning, architectural features, and investment potential. This comprehensive search ensures you see all available options, not just what&apos;s publicly listed.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Private Community Tours & Property Viewings</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Guard-gated communities require proper authorization for property viewings. We handle all gate access coordination, ensuring smooth entry for your private tours while respecting the community&apos;s security protocols. Our tours are scheduled to respect your time and the seller&apos;s privacy, ensuring efficient property evaluation while maintaining community standards.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Market Analysis & Property Valuation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Before making offers, we provide comprehensive market analysis to ensure you understand property values, comparable sales, and market positioning. This analysis helps you make informed decisions about pricing and negotiation strategies. Understanding true market values ensures you don&apos;t overpay while also recognizing when properties represent good value opportunities.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Offer Strategy & Negotiation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Developing effective offer strategies requires understanding seller motivation, market conditions, and competitive factors. We help structure offers that maximize your chances of acceptance while protecting your interests. Our negotiation expertise ensures deals are structured favorably while maintaining positive relationships with sellers and their agents.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Due Diligence & Inspection Management</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Once under contract, we coordinate comprehensive due diligence including property inspections, title review, and HOA document analysis. For luxury properties, this includes specialized inspections for custom features, pools, smart home systems, and specialty amenities. Our coordination ensures all aspects of the property are properly evaluated before closing.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Closing Coordination & Settlement</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              As we approach closing, we coordinate all aspects of the transaction including lender requirements, title work, and final walkthroughs. Our goal is a smooth closing that meets your timeline expectations while ensuring all legal and financial requirements are met. We&apos;re with you every step of the way, ensuring nothing falls through the cracks.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Making Informed Decisions: Key Considerations for MacDonald Highlands Buyers</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Buying a luxury home in MacDonald Highlands involves numerous considerations beyond just property features. Understanding these key factors helps buyers make informed decisions that align with their lifestyle, investment goals, and long-term plans.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">View Quality & Premium Analysis</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              View quality significantly impacts property values in MacDonald Highlands. Properties with panoramic Strip views command substantial premiums, while mountain views and golf course frontage also add value. Understanding view premiums helps buyers evaluate whether properties are priced appropriately and make informed decisions about value. Our view premium analysis accounts for view angles, clarity, and future development impacts.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">HOA Fees & Community Costs</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Understanding HOA fee structures and what they cover is essential for budgeting and evaluating property value. We provide comprehensive information on HOA fees, what amenities and services they include, and how fees compare across different MacDonald Highlands neighborhoods. This information helps buyers understand total ownership costs and evaluate properties on a true cost basis.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Membership Considerations</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Many MacDonald Highlands properties include or are eligible for DragonRidge Country Club membership. Understanding membership transfer processes, fees, and benefits helps buyers evaluate the value of golf course properties and membership-eligible homes. We guide buyers through membership considerations, helping them understand the lifestyle and value implications of country club access.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Resale Value & Investment Potential</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Even if you&apos;re buying a primary residence, understanding resale value and investment potential is important. We provide insights on historical appreciation trends, factors that impact property values, and long-term investment potential. This analysis helps buyers make decisions that support both lifestyle goals and financial objectives.
+            </p>
           </div>
         </div>
       </section>

@@ -119,9 +119,59 @@ export default function CommunityPage() {
               <li>Outdoor recreation in nearby Red Rock Canyon and Lake Mead</li>
             </ul>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Why Choose MacDonald Highlands?</h3>
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why Choose MacDonald Highlands for Your Luxury Lifestyle?</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands represents the convergence of luxury, privacy, and location. It&apos;s where successful professionals, executives, and families choose to call home—a community that offers both the exclusivity of a guard-gated enclave and the convenience of Las Vegas area living.
+              MacDonald Highlands represents the convergence of luxury, privacy, and location. It&apos;s where successful professionals, executives, and families choose to call home—a community that offers both the exclusivity of a guard-gated enclave and the convenience of Las Vegas area living. This unique combination of attributes creates a lifestyle that few communities can match, making MacDonald Highlands one of the most desirable luxury real estate destinations in Southern Nevada.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Unmatched Security & Privacy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The guard-gated security system provides residents with peace of mind that extends beyond property protection. This controlled access creates a private sanctuary where high-profile individuals, executives, and families can enjoy their homes without concerns about unwanted visitors or security issues. The 24-hour guard presence ensures that security is never compromised, while the beautifully landscaped entry gates create an impressive first impression that reflects the community&apos;s luxury standards.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Championship Golf Lifestyle</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              DragonRidge Country Club isn&apos;t just a golf course—it&apos;s a lifestyle centerpiece that defines MacDonald Highlands living. The Jay Morrish-designed course offers challenging play for golf enthusiasts while providing stunning views for all residents. Golf course frontage properties command premium prices not just for the views, but for the lifestyle access they provide. Membership opportunities connect residents with a community of like-minded individuals who appreciate luxury living and recreational excellence.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Investment Value & Appreciation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Properties in MacDonald Highlands have demonstrated strong appreciation over time, driven by the community&apos;s unique combination of location, amenities, and exclusivity. The limited inventory of guard-gated luxury communities in Henderson, combined with increasing demand from high-net-worth buyers, creates a favorable investment environment. View properties, golf course frontage, and custom estate homes have historically maintained and increased their value, making MacDonald Highlands not just a lifestyle choice but a sound real estate investment.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Proximity to Las Vegas Strip Entertainment</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The 15-20 minute drive to the Las Vegas Strip means residents can enjoy world-class dining, entertainment, and nightlife without sacrificing the tranquility of guard-gated community living. This proximity is particularly valuable for executives, entertainers, and business professionals who need easy access to Strip venues while maintaining a private residential base. The convenience factor adds significant lifestyle value that enhances the community&apos;s appeal.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Henderson School District Excellence</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Families choosing MacDonald Highlands benefit from access to Henderson&apos;s highly-rated school district, which consistently ranks among the best in Nevada. This educational advantage is a key consideration for families with children, ensuring that luxury living doesn&apos;t require compromising on educational quality. The combination of excellent schools and luxury community living creates an ideal environment for raising families.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">MacDonald Highlands Real Estate Market Overview</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Understanding the MacDonald Highlands real estate market requires insight into pricing trends, inventory levels, and buyer demand patterns. As Henderson&apos;s premier guard-gated luxury community, the market here operates differently than standard residential areas, with unique factors influencing property values and transaction dynamics.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Price Range & Property Types</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands properties range from $1M starter luxury homes to $15M+ custom estate properties. This wide price range accommodates various buyer profiles, from first-time luxury buyers to ultra-high-net-worth individuals seeking the ultimate in estate living. Understanding where your property fits within this range is crucial for effective marketing and pricing strategies.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">View Premiums & Lot Positioning</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Properties with panoramic Strip views command significant premiums over similar homes without views. Understanding these view premiums requires analysis of view angles, clarity, and future development impacts. Lot positioning also matters—homes on elevated lots with unobstructed views are valued higher than properties with limited or blocked views. This market knowledge is essential for both buyers and sellers.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Market Trends & Inventory Levels</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The MacDonald Highlands market experiences different dynamics than standard residential areas. Inventory levels are typically lower due to the community&apos;s exclusivity, and properties may stay on the market longer as buyers are more selective. However, well-positioned properties with premium features often sell quickly to qualified buyers. Understanding these market trends helps set realistic expectations and pricing strategies.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Buyer Profile & Demand Patterns</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands attracts a specific buyer profile: high-net-worth individuals, executives, professionals, and families seeking luxury living with privacy and security. Understanding this buyer profile helps sellers position their properties effectively and helps buyers understand the community&apos;s lifestyle and value proposition. Demand patterns reflect seasonal variations and broader economic factors that influence luxury real estate markets.
             </p>
           </div>
         </div>

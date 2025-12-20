@@ -103,6 +103,81 @@ export default function InvestmentPage() {
               <li><strong>Timeline Management:</strong> 45-day identification period and 180-day closing requirements.</li>
               <li><strong>Replacement Property Analysis:</strong> Identify suitable exchange properties that meet IRS requirements.</li>
             </ul>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Investment Analysis & Due Diligence Process</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Evaluating MacDonald Highlands properties as investments requires comprehensive analysis that goes beyond surface-level metrics. Our investment advisory process provides the data and insights needed to make informed investment decisions, whether you&apos;re building a luxury real estate portfolio or considering a single investment property.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Financial Performance Projections</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              We provide detailed financial projections including cash flow analysis, return on investment calculations, and long-term appreciation scenarios. These projections account for rental income potential, operating expenses, financing costs, and tax implications. Understanding the financial performance potential helps investors evaluate whether a property aligns with their investment objectives and risk tolerance.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Market Risk Assessment</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              All real estate investments carry risks, and understanding these risks is essential for informed decision-making. We assess market risks including economic factors, interest rate impacts, supply and demand dynamics, and potential market corrections. This risk assessment helps investors understand potential downside scenarios and make decisions that align with their risk tolerance and investment strategy.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Property-Specific Due Diligence</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Investment properties require thorough due diligence beyond standard home inspections. We coordinate specialized inspections for rental properties, evaluate HOA restrictions on rentals, assess property condition and maintenance requirements, and analyze potential capital improvement needs. This comprehensive due diligence ensures investors understand all aspects of property ownership before committing to a purchase.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Portfolio Integration Strategy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              For investors building or managing real estate portfolios, we provide guidance on how MacDonald Highlands properties fit into broader investment strategies. This includes analyzing portfolio diversification benefits, geographic allocation strategies, and asset allocation recommendations. Understanding how a property fits into your overall portfolio helps ensure investment decisions support long-term wealth-building objectives.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Investment Strategies for MacDonald Highlands Properties</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Different investment strategies suit different investor profiles and objectives. Understanding the various approaches to investing in MacDonald Highlands real estate helps you choose a strategy that aligns with your goals, timeline, and risk tolerance.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Buy-and-Hold Appreciation Strategy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands has demonstrated strong long-term appreciation, making buy-and-hold strategies attractive for investors seeking capital appreciation. This strategy involves purchasing properties with the expectation that values will increase over time, potentially generating significant returns when properties are sold years later. The limited inventory of guard-gated luxury communities in Henderson supports this appreciation potential.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Rental Income Generation Strategy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Properties in MacDonald Highlands can generate attractive rental income through luxury short-term rentals, executive long-term leases, or seasonal rentals. This strategy focuses on cash flow generation while potentially benefiting from property appreciation. Understanding rental market dynamics, occupancy expectations, and operating expenses is crucial for evaluating rental income potential.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">1031 Exchange Strategy</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Investors looking to defer capital gains taxes can use 1031 exchanges to transition into MacDonald Highlands properties. This strategy allows investors to sell existing investment properties and reinvest proceeds into MacDonald Highlands real estate while deferring capital gains taxes. The exchange process requires careful coordination and timeline management to meet IRS requirements.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Value-Add Investment Opportunities</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Some MacDonald Highlands properties present value-add opportunities where strategic improvements can significantly increase property values. This might include updating finishes, adding outdoor living spaces, or enhancing views through landscaping. Identifying these opportunities requires understanding renovation costs, market preferences, and value impact of improvements.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why MacDonald Highlands is an Attractive Investment Market</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands offers unique investment characteristics that make it attractive to luxury real estate investors. Understanding these market fundamentals helps investors evaluate the investment potential of properties in this exclusive community.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Limited Supply & Exclusivity</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The limited inventory of guard-gated luxury communities in Henderson creates supply constraints that support property values. MacDonald Highlands&apos; exclusivity, combined with limited new construction opportunities, means inventory remains relatively constrained. This supply limitation helps maintain property values and supports appreciation potential over time.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Strong Demand from Multiple Buyer Segments</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Demand for MacDonald Highlands properties comes from multiple segments: primary home buyers seeking luxury living, second-home buyers from high-tax states, corporate relocations, and international investors. This diverse demand base helps insulate the market from downturns in any single segment, providing stability and supporting long-term value appreciation.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Las Vegas Market Fundamentals</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The broader Las Vegas market benefits from strong economic fundamentals including tourism growth, corporate relocations, and population growth. These market fundamentals support luxury real estate values throughout the region, including MacDonald Highlands. Understanding these broader market trends helps investors evaluate long-term investment potential.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Tax Advantages & Investment Benefits</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Nevada&apos;s tax-friendly environment, combined with real estate investment benefits like depreciation deductions and 1031 exchange opportunities, creates attractive investment conditions. These tax advantages can significantly enhance investment returns, making MacDonald Highlands properties particularly attractive to high-net-worth investors seeking tax-efficient investment strategies.
+            </p>
           </div>
         </div>
       </section>

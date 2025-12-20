@@ -98,9 +98,94 @@ export default function ValuationPage() {
               <li>Optimal listing timing for maximum exposure</li>
             </ul>
 
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">The Valuation Process: How We Determine True Market Value</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our comprehensive valuation process goes far beyond automated estimates, combining data analysis, market intelligence, and local expertise to provide accurate assessments of your MacDonald Highlands property&apos;s true market value. This multi-step approach ensures you receive insights based on real market conditions, not algorithmic assumptions.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Step 1: Property Analysis & Feature Documentation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              We begin with a thorough analysis of your property&apos;s physical characteristics, including square footage, lot size, architectural style, age, condition, and unique features. This documentation includes custom finishes, premium upgrades, outdoor living spaces, specialty rooms, and any distinctive elements that impact value. We also evaluate the property&apos;s condition, noting any needed repairs or updates that could affect marketability and pricing.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Step 2: Comparable Sales Research & Analysis</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our research identifies recent sales of comparable properties within MacDonald Highlands and similar Henderson luxury communities. We analyze sales from the past 6-12 months, focusing on properties with similar characteristics. This analysis includes not just public MLS sales, but also off-market transactions and pocket listings that may not appear in standard databases. Understanding both public and private market activity provides a more complete picture of true market values.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Step 3: Premium Factor Evaluation</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Luxury properties require sophisticated premium analysis. We evaluate view quality, lot positioning, architectural features, and custom amenities that add value beyond base square footage. This includes analyzing view angles and clarity, lot topography and privacy, golf course proximity, architectural distinction, and premium finishes. Each premium factor is quantified based on recent market data, ensuring adjustments reflect actual buyer behavior, not theoretical values.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Step 4: Market Condition Assessment</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Current market conditions significantly impact property values. We assess inventory levels, buyer demand patterns, days on market trends, and sale-to-list price ratios to understand whether the market favors buyers or sellers. This market intelligence helps determine optimal pricing strategies and timing recommendations. Understanding market cycles ensures valuations reflect current conditions, not historical data that may no longer be relevant.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Step 5: Competitive Positioning Analysis</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              We evaluate how your property compares to currently available listings, identifying competitive advantages and potential challenges. This analysis helps position your property effectively in the market, whether you&apos;re selling or simply understanding your property&apos;s market position. Understanding competitive positioning ensures pricing strategies maximize value while remaining realistic about market conditions.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">When You Need a Professional Valuation</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              Professional home valuations serve multiple purposes beyond just selling. Understanding when and why to get a valuation helps you make informed decisions about your MacDonald Highlands property.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Considering Selling Your Property</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Before listing your MacDonald Highlands home, an accurate valuation is essential for setting the right asking price. Pricing too high can result in extended time on market and eventual price reductions, while pricing too low leaves money on the table. Our comprehensive valuation provides the data you need to price strategically, maximizing value while ensuring competitive positioning in the market.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Refinancing or Home Equity Assessment</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              If you&apos;re considering refinancing or accessing home equity, understanding your property&apos;s current market value is crucial. Lenders will conduct their own appraisals, but having a professional valuation beforehand helps you understand what to expect and ensures you&apos;re making informed financial decisions. Our valuations provide insights that complement lender appraisals, giving you a complete picture of your property&apos;s value.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Estate Planning & Tax Purposes</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Estate planning often requires accurate property valuations for tax purposes, inheritance planning, and asset allocation. Our detailed valuation reports provide documentation that can support estate planning decisions and tax filings. Understanding your property&apos;s market value ensures estate plans reflect current market conditions and help minimize tax implications.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Investment Analysis & Portfolio Management</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              For real estate investors, regular valuations help track portfolio performance, assess investment returns, and make decisions about holding or selling properties. Our valuations provide the data needed to evaluate investment performance, compare properties, and make strategic decisions about your real estate portfolio. Understanding current values ensures investment strategies reflect actual market conditions.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Divorce or Legal Proceedings</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Property valuations are often required for divorce proceedings, legal settlements, or partnership dissolutions. Our professional valuations provide objective, data-driven assessments that can support legal proceedings. The comprehensive documentation and market analysis provide credible evidence of property values that can withstand legal scrutiny.
+            </p>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">What Makes Our Valuations Different</h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              While many real estate professionals offer basic comparative market analyses, our luxury home valuations go deeper, providing insights and analysis specifically tailored to MacDonald Highlands properties and the unique characteristics of luxury real estate.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">MacDonald Highlands-Specific Expertise</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our deep knowledge of MacDonald Highlands means we understand the nuances that impact property values in this specific community. We know which neighborhoods command premiums, how view angles affect values, and which features matter most to luxury buyers. This local expertise ensures valuations reflect actual market conditions in MacDonald Highlands, not generic luxury market assumptions.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Access to Off-Market Sales Data</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Many luxury transactions occur off-market, and these sales don&apos;t appear in public databases. Our network and relationships provide access to off-market sales data that enhances valuation accuracy. Understanding both public and private market activity ensures valuations reflect the complete picture of market values, not just publicly available information.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Sophisticated Premium Analysis</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Luxury properties require sophisticated analysis of premium factors that automated systems cannot evaluate. Our premium analysis quantifies the value impact of views, lot positioning, architectural features, and custom amenities based on actual market data. This analysis ensures adjustments reflect real buyer behavior and market preferences, not theoretical values.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Market Timing Intelligence</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Understanding market cycles and timing factors helps determine not just current value, but optimal listing timing and pricing strategies. Our market intelligence includes analysis of seasonal trends, inventory levels, buyer demand patterns, and economic factors that influence luxury real estate markets. This timing intelligence helps maximize value whether you&apos;re selling now or planning for the future.
+            </p>
+
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Confidential—No Obligation, No Pressure</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our valuation service is completely confidential and comes with zero obligation. Whether you&apos;re considering selling, refinancing, or simply want to understand your property&apos;s current market position, we provide honest, data-driven insights without any sales pressure.
+              Our valuation service is completely confidential and comes with zero obligation. Whether you&apos;re considering selling, refinancing, or simply want to understand your property&apos;s current market position, we provide honest, data-driven insights without any sales pressure. This commitment to transparency and client service ensures you receive valuable information regardless of your immediate plans.
             </p>
           </div>
         </div>

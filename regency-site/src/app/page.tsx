@@ -115,13 +115,16 @@ export default function HomePage() {
         <div className="container-luxury">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Why Choose Dr. Jan Duffy
+              Why Choose Dr. Jan Duffy for Your MacDonald Highlands Real Estate Needs
             </h2>
-            <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
               {siteConfig.agent.experience} • {siteConfig.agent.credentials} • {siteConfig.agent.brokerage}
             </p>
+            <p className="text-lg text-neutral-700 max-w-4xl mx-auto">
+              When it comes to buying or selling luxury real estate in MacDonald Highlands, experience and expertise matter. Dr. Jan Duffy brings unparalleled knowledge of Henderson&apos;s premier guard-gated community, combined with a proven track record of success in the ultra-luxury market. Our deep understanding of the neighborhood, from DragonRidge Country Club properties to custom estate lots, ensures you receive guidance that goes far beyond generic real estate advice.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
               <div className="text-5xl mb-4">500+</div>
               <h3 className="text-xl font-semibold mb-2">Families Served</h3>
@@ -142,6 +145,40 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold mb-2">Berkshire Hathaway</h3>
               <p className="text-neutral-600">Backed by industry-leading brokerage</p>
             </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold mb-6 text-center">
+              What Sets Us Apart in MacDonald Highlands Real Estate
+            </h2>
+            
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Deep Community Knowledge & Local Expertise
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our intimate understanding of MacDonald Highlands extends beyond property listings. We know the nuances of each neighborhood within the community, from the premium golf course frontage properties to the custom estate lots with panoramic Strip views. This local expertise allows us to provide insights that generic real estate agents simply cannot match—whether it&apos;s understanding view premiums, lot positioning advantages, or the subtle differences between various MacDonald Highlands subdivisions.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Luxury Market Specialization & High-Net-Worth Experience
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The luxury real estate market operates differently than standard residential sales. Properties ranging from $1M to $15M+ require specialized marketing strategies, sophisticated buyer networks, and an understanding of high-net-worth client expectations. We excel in this arena, having successfully navigated complex transactions involving architectural photography, private showings, off-market listings, and international buyer coordination. Our experience with luxury transactions ensures your MacDonald Highlands property receives the professional attention it deserves.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Comprehensive Service Portfolio
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              From initial consultation through closing and beyond, we provide comprehensive support tailored to luxury market standards. Our services include pre-listing strategy development, professional staging consultation, architectural and twilight photography, private showing coordination, global luxury buyer network access, relocation concierge services, investment advisory, and off-market opportunity access. Whatever your MacDonald Highlands real estate needs, we have the expertise and resources to deliver exceptional results.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Proven Results & Client Satisfaction
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Our success metrics speak for themselves: 500+ families served, $127M+ in sales volume, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
+            </p>
           </div>
         </div>
       </section>
@@ -178,24 +215,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Listings Section */}
+      {/* MacDonald Highlands Community Section */}
       <section className="section-padding bg-white">
+        <div className="container-luxury">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-center">
+              Discover MacDonald Highlands: Henderson&apos;s Premier Guard-Gated Community
+            </h2>
+            <p className="text-xl text-neutral-600 text-center mb-12 max-w-3xl mx-auto">
+              Experience the pinnacle of luxury living in Southern Nevada&apos;s most exclusive master-planned community
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Guard-Gated Security & Privacy
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands offers two beautifully landscaped, 24-hour guard-gated entries that provide security and privacy unmatched in the Henderson area. This controlled access ensures that only authorized visitors enter the community, creating a sense of safety and exclusivity that high-net-worth buyers value. The guard-gate system also means property viewings are coordinated and controlled, maintaining your privacy during the selling process.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              DragonRidge Championship Golf Course
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              The Jay Morrish-designed DragonRidge Championship Course is a centerpiece of MacDonald Highlands living. This world-class golf course winds through the community, offering stunning views and challenging play for golf enthusiasts. Golf course frontage properties command premium prices, and membership access adds significant value to homes. Whether you&apos;re an avid golfer or simply appreciate the manicured views, the golf course is a defining feature of the community that impacts property values and lifestyle quality.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Panoramic Strip & Mountain Views
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Properties with panoramic Las Vegas Strip views and mountain vistas represent the pinnacle of MacDonald Highlands real estate. These view premiums can add hundreds of thousands of dollars to property values, and they&apos;re a key factor in our valuation and marketing strategies. Understanding view angles, future development impacts, and historical appreciation patterns helps us position view properties effectively in the market. Many MacDonald Highlands homes offer breathtaking sunset views over the Strip, creating a daily spectacle that never gets old.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Generous Lot Sizes & Estate-Style Living
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              With lot sizes ranging from one-third acre to over one acre, MacDonald Highlands offers true estate-style living. These generous lots allow for custom pools, outdoor entertainment areas, and extensive landscaping that create a resort-like atmosphere. For buyers, lot size is a crucial consideration that impacts both lifestyle and property value. The ability to create your own private oasis while maintaining proximity to Las Vegas amenities is a unique advantage of MacDonald Highlands living.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
+              Proximity to Las Vegas Strip & World-Class Amenities
+            </h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Located just 15-20 minutes from the Las Vegas Strip, MacDonald Highlands offers the perfect balance of privacy and accessibility. This proximity means you can enjoy world-class dining, entertainment, and amenities while maintaining the tranquility of guard-gated community living. For many buyers, this location advantage is a key selling point—you get the best of both worlds: exclusive community living with easy access to everything Las Vegas has to offer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Listings Section */}
+      <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
               MacDonald Highlands Properties
             </h2>
-            <p className="text-xl text-neutral-600">
+            <p className="text-xl text-neutral-600 mb-8">
               Explore luxury homes currently available in the community
             </p>
+            <p className="text-lg text-neutral-700 max-w-3xl mx-auto mb-8">
+              Our comprehensive listings include estate homes, golf course properties, and custom-built residences throughout MacDonald Highlands. Whether you&apos;re seeking a move-in ready luxury home or a lot for custom construction, we can help you find the perfect property that matches your lifestyle and investment goals.
+            </p>
           </div>
-          <div className="bg-neutral-50 rounded-lg p-8">
+          <div className="bg-white rounded-lg p-8 shadow-lg">
             <p className="text-center text-neutral-600 mb-4">
               View all available properties on our{" "}
               <Link href="/listings" className="text-primary-600 font-semibold hover:underline">
                 listings page
               </Link>
             </p>
+            <div className="text-center mt-6">
+              <Link 
+                href="/listings" 
+                className="btn-primary text-lg px-8 py-4 inline-block"
+              >
+                Browse All Listings
+              </Link>
+            </div>
           </div>
         </div>
       </section>
