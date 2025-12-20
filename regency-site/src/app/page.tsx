@@ -72,7 +72,7 @@ const testimonials = [
 export default function HomePage() {
   // #region agent log
   if (typeof window !== 'undefined') {
-    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:73',message:'HomePage render start',data:{imageSrc:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:73',message:'HomePage render start',data:{imageSrc:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'F'})}).catch(()=>{});
   }
   // #endregion
   return (
