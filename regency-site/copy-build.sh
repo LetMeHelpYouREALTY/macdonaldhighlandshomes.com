@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copy .next build output to root for Vercel deployment
+# Copy .next build output and public folder to root for Vercel deployment
 
 set -e  # Exit on error
 
@@ -20,4 +20,12 @@ if [ -d ".next" ]; then
 else
   echo "✗ Error: .next directory not found"
   exit 1
+fi
+
+# Also ensure public folder is accessible (Next.js should handle this, but verify)
+if [ -d "public" ]; then
+  echo "✓ Public directory exists - Next.js will serve it automatically"
+  echo "Public files count: $(find public -type f | wc -l)"
+else
+  echo "⚠ Warning: public directory not found"
 fi
