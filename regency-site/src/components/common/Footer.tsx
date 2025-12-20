@@ -2,21 +2,22 @@
 
 import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { siteConfig } from "@/config/siteConfig";
 
 const services = [
-  { name: "Sell Your Home", href: "/Services" },
-  { name: "Buy in MacDonald Highlands", href: "/Property" },
-  { name: "Home Valuation", href: "/Contact_us" },
-  { name: "Relocation Services", href: "/Contact_us" },
-  { name: "Investment Advisory", href: "/Contact_us" },
-  { name: "Off-Market Listings", href: "/Property" },
+  { name: "Selling Your Home", href: "/services/selling-your-macdonald-highlands-home" },
+  { name: "Buying in MacDonald Highlands", href: "/services/buying-in-macdonald-highlands" },
+  { name: "Luxury Home Valuation", href: "/services/luxury-home-valuation" },
+  { name: "Relocation Concierge", href: "/services/relocation-concierge" },
+  { name: "Investment Advisory", href: "/services/investment-advisory" },
+  { name: "Off-Market Opportunities", href: "/services/off-market-opportunities" },
 ];
 
 const community = [
-  { name: "About MacDonald Highlands", href: "/About" },
-  { name: "DragonRidge Country Club", href: "/Services" },
-  { name: "Current Listings", href: "/Property" },
-  { name: "Community Map", href: "/About" },
+  { name: "About MacDonald Highlands", href: "/macdonald-highlands-community" },
+  { name: "About Dr. Jan Duffy", href: "/about-dr-jan-duffy" },
+  { name: "Current Listings", href: "/listings" },
+  { name: "Testimonials", href: "/testimonials" },
 ];
 
 export default function Footer() {
@@ -32,17 +33,18 @@ export default function Footer() {
             <div className="lg:col-span-1">
               <Link href="/" className="inline-block">
                 <span className="font-serif text-2xl text-white font-bold">
-                  MacDonald Highlands
+                  Dr. Jan Duffy
                 </span>
               </Link>
+              <p className="mt-2 text-neutral-300 text-sm">
+                REALTOR®
+              </p>
               <p className="mt-4 text-neutral-300 text-sm leading-relaxed">
-                Your exclusive access to Henderson&apos;s most prestigious guard-gated golf community. 
-                Expert representation for luxury buyers and sellers.
+                MacDonald Highlands Real Estate Expert. {siteConfig.agent.experience} with {siteConfig.agent.brokerage}.
               </p>
               <div className="mt-6">
                 <p className="text-xs text-neutral-400">
-                  Berkshire Hathaway HomeServices<br />
-                  Nevada Properties
+                  {siteConfig.agent.brokerage}
                 </p>
               </div>
             </div>
@@ -128,11 +130,8 @@ export default function Footer() {
                 Equal Housing Opportunity.
               </p>
               <div className="flex gap-6 text-xs text-neutral-300">
-                <Link href="/Contact_us" className="hover:text-gold-500 transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/Contact_us" className="hover:text-gold-500 transition-colors">
-                  Terms of Service
+                <Link href="/contact" className="hover:text-gold-500 transition-colors">
+                  Contact
                 </Link>
               </div>
             </div>

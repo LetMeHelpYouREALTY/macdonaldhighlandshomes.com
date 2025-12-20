@@ -21,13 +21,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: {
     default: siteConfig.seo.title,
-    template: `%s | ${siteConfig.name}`,
+    template: `%s | ${siteConfig.agent.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.seo.keywords,
-  authors: [{ name: siteConfig.name }],
-  creator: siteConfig.name,
-  publisher: siteConfig.name,
+  authors: [{ name: siteConfig.agent.name }],
+  creator: siteConfig.agent.name,
+  publisher: siteConfig.agent.brokerage,
   metadataBase: new URL("https://macdonaldhighlandshomes.com"),
   openGraph: {
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://macdonaldhighlandshomes.com",
     title: siteConfig.seo.title,
     description: siteConfig.description,
-    siteName: siteConfig.name,
+    siteName: siteConfig.agent.name,
   },
   twitter: {
     card: "summary_large_image",
