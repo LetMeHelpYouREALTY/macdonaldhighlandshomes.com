@@ -1,6 +1,6 @@
 "use client"; 
 
-import { useRouter } from 'next/navigation'; 
+import { useRouter, useParams } from 'next/navigation'; 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Navbar from "@/components/common/Navbar";
@@ -36,9 +36,10 @@ const properties: Property[] = [
     { id: 16, name: "Corporate Tower", location: "Los Angeles, CA", price: "$10,000,000", image: "/Image/hero_bg_3.jpg", bedrooms: 10, bathrooms: 7, squareFeet: 10000 },
 ];
 
-const PropertyDetails = ({ params }: { params: { id: string } }) => {
+const PropertyDetails = () => {
   const router = useRouter();
-  const id = parseInt(params.id);
+  const params = useParams();
+  const id = parseInt(params.id as string);
   const [property, setProperty] = useState<Property | undefined>(undefined);
 
   useEffect(() => {
