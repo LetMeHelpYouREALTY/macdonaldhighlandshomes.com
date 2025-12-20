@@ -21,8 +21,11 @@
       "@/*": ["./src/*"],
       "@/config/*": ["./config/*"],
       "@/data/*": ["./data/*"]
-    }
+    },
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
+    "types": []
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "../node_modules", "../**"]
 }
