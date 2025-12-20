@@ -41,7 +41,7 @@ export default function OffMarketPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2 className="text-3xl font-serif font-bold mb-6">Access to Pocket Listings Before MLS</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              Many of the best MacDonald Highlands properties never make it to the public MLS. Through our extensive network of luxury real estate professionals, high-net-worth buyers, and community connections, we have access to exclusive "pocket listings" that are marketed privately before public listing.
+              Many of the best MacDonald Highlands properties never make it to the public MLS. Through our extensive network of luxury real estate professionals, high-net-worth buyers, and community connections, we have access to exclusive &quot;pocket listings&quot; that are marketed privately before public listing.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
               These off-market opportunities offer several advantages:
@@ -49,7 +49,7 @@ export default function OffMarketPage() {
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li><strong>Less Competition:</strong> Properties are shown only to pre-qualified, serious buyers</li>
               <li><strong>Better Negotiation:</strong> Sellers are often more flexible in private transactions</li>
-              <li><strong>First Access:</strong> See properties before they're publicly available</li>
+              <li><strong>First Access:</strong> See properties before they&apos;re publicly available</li>
               <li><strong>Privacy:</strong> Discreet transactions for high-profile buyers and sellers</li>
             </ul>
 

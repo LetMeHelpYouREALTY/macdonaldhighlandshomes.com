@@ -31,7 +31,7 @@ export default function BuyingPage() {
             Buying in MacDonald Highlands: Your Insider Advantage
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Navigate Henderson's premier guard-gated community with expert guidance from a neighborhood specialist
+            Navigate Henderson&apos;s premier guard-gated community with expert guidance from a neighborhood specialist
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function BuyingPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2 className="text-3xl font-serif font-bold mb-6">Private Community Access & Tour Scheduling</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              As a guard-gated community, MacDonald Highlands requires proper authorization for property viewings. We handle all gate access coordination, ensuring smooth entry for your private tours while respecting the community's security protocols.
+              As a guard-gated community, MacDonald Highlands requires proper authorization for property viewings. We handle all gate access coordination, ensuring smooth entry for your private tours while respecting the community&apos;s security protocols.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club Membership Guidance</h3>
@@ -69,7 +69,7 @@ export default function BuyingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Lot Selection for Custom Builds</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              If you're building your dream home, lot selection is critical. We provide insights on:
+              If you&apos;re building your dream home, lot selection is critical. We provide insights on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Strip view angles and premium positioning</li>
@@ -80,7 +80,7 @@ export default function BuyingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Builder Reputation Insights</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              With decades of experience in the Henderson luxury market, we have deep knowledge of local builders' track records, quality standards, and customer service reputations. We'll help you choose a builder who aligns with your vision and timeline.
+              With decades of experience in the Henderson luxury market, we have deep knowledge of local builders&apos; track records, quality standards, and customer service reputations. We&apos;ll help you choose a builder who aligns with your vision and timeline.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">HOA & Gate Community Orientation</h3>

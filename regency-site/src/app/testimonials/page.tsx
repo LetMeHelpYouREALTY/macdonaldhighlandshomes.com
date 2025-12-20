@@ -89,7 +89,7 @@ export default function TestimonialsPage() {
                   ))}
                 </div>
                 <p className="text-neutral-700 mb-6 italic leading-relaxed">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
                 <div className="border-t border-neutral-200 pt-4">
                   <p className="font-semibold text-neutral-900">{testimonial.name}</p>

@@ -30,7 +30,7 @@ export default function RelocationPage() {
             Relocating to MacDonald Highlands: White-Glove Service
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Seamless executive relocation support for your move to Henderson's premier luxury community
+            Seamless executive relocation support for your move to Henderson&apos;s premier luxury community
           </p>
         </div>
       </section>
@@ -46,7 +46,7 @@ export default function RelocationPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Virtual Tour Packages for Out-of-State Buyers</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Can't visit in person? We create comprehensive virtual tour experiences including:
+              Can&apos;t visit in person? We create comprehensive virtual tour experiences including:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Live video walkthroughs via Zoom or FaceTime</li>
@@ -97,7 +97,7 @@ export default function RelocationPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Temporary Housing Coordination</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              While your new home is being prepared or you're waiting for closing, we coordinate temporary housing options including:
+              While your new home is being prepared or you&apos;re waiting for closing, we coordinate temporary housing options including:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Luxury short-term rentals in MacDonald Highlands or nearby communities</li>

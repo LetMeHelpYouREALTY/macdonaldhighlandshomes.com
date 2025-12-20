@@ -5,7 +5,7 @@ import RealScoutWidget from "@/components/listings/RealScoutWidget";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
-  description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson's premier guard-gated community. RealScout property search with filters for price, bedrooms, and more.",
+  description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson&apos;s premier guard-gated community. RealScout property search with filters for price, bedrooms, and more.",
   keywords: "MacDonald Highlands homes for sale, Henderson luxury listings, guard-gated community properties, DragonRidge homes",
 };
 
@@ -21,7 +21,7 @@ export default function ListingsPage() {
             MacDonald Highlands Properties
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Explore luxury homes currently available in Henderson's premier guard-gated community
+            Explore luxury homes currently available in Henderson&apos;s premier guard-gated community
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function ListingsPage() {
               Looking for Something Specific?
             </h3>
             <p className="text-neutral-700 mb-4">
-              Not seeing what you're looking for? We have access to off-market properties and coming soon listings that aren't publicly available.
+              Not seeing what you&apos;re looking for? We have access to off-market properties and coming soon listings that aren&apos;t publicly available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
-  description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
+  description: "Complete guide to MacDonald Highlands, Henderson&apos;s premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
   keywords: "MacDonald Highlands community, DragonRidge Country Club, Henderson guard-gated community, luxury golf community, Vu SkyVu Vue Pointe",
 };
 
@@ -22,7 +22,7 @@ export default function CommunityPage() {
             MacDonald Highlands Community
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Henderson's Premier Guard-Gated Luxury Golf Community
+            Henderson&apos;s Premier Guard-Gated Luxury Golf Community
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Guard-Gated Security & Privacy</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Two beautifully landscaped, 24-hour guard-gated entries provide residents with peace of mind and exclusivity. The community's security protocols ensure that only authorized visitors and residents access the neighborhood, creating a private sanctuary for high-net-worth families, executives, and celebrities.
+              Two beautifully landscaped, 24-hour guard-gated entries provide residents with peace of mind and exclusivity. The community&apos;s security protocols ensure that only authorized visitors and residents access the neighborhood, creating a private sanctuary for high-net-worth families, executives, and celebrities.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club</h3>
@@ -95,7 +95,7 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Views & Location</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              The community's elevated position offers residents breathtaking views of:
+              The community&apos;s elevated position offers residents breathtaking views of:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li><strong>Las Vegas Strip:</strong> Panoramic views of the world-famous skyline, especially stunning at night</li>
@@ -113,7 +113,7 @@ export default function CommunityPage() {
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Exclusive guard-gated security and privacy</li>
               <li>Championship golf at DragonRidge Country Club</li>
-              <li>Proximity to Henderson's top schools, shopping, and dining</li>
+              <li>Proximity to Henderson&apos;s top schools, shopping, and dining</li>
               <li>Easy access to McCarran International Airport</li>
               <li>Las Vegas Strip entertainment just minutes away</li>
               <li>Outdoor recreation in nearby Red Rock Canyon and Lake Mead</li>
@@ -121,7 +121,7 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Why Choose MacDonald Highlands?</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands represents the convergence of luxury, privacy, and location. It's where successful professionals, executives, and families choose to call home—a community that offers both the exclusivity of a guard-gated enclave and the convenience of Las Vegas area living.
+              MacDonald Highlands represents the convergence of luxury, privacy, and location. It&apos;s where successful professionals, executives, and families choose to call home—a community that offers both the exclusivity of a guard-gated enclave and the convenience of Las Vegas area living.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function CommunityPage() {
               Explore MacDonald Highlands Real Estate
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              Ready to find your dream home in MacDonald Highlands? Let's schedule a private community tour.
+              Ready to find your dream home in MacDonald Highlands? Let&apos;s schedule a private community tour.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/services/buying-in-macdonald-highlands" className="btn-primary text-lg px-8 py-4">

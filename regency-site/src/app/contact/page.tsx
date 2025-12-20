@@ -21,7 +21,7 @@ export default function ContactPage() {
             Contact Dr. Jan Duffy
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Let's discuss your MacDonald Highlands real estate goals
+            Let&apos;s discuss your MacDonald Highlands real estate goals
           </p>
         </div>
       </section>

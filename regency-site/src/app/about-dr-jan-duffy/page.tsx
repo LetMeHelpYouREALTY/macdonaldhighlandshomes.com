@@ -64,12 +64,12 @@ export default function AboutPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-serif font-bold mb-6">A Trusted Expert in MacDonald Highlands</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                With over {siteConfig.agent.experience.split("+")[0]} families served and more than $127 million in sales volume, Dr. Jan Duffy has established herself as Henderson's premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with advanced academic credentials and the backing of Berkshire Hathaway HomeServices Nevada Properties, provides clients with unmatched expertise in the ultra-luxury market.
+                With over {siteConfig.agent.experience.split("+")[0]} families served and more than $127 million in sales volume, Dr. Jan Duffy has established herself as Henderson&apos;s premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with advanced academic credentials and the backing of Berkshire Hathaway HomeServices Nevada Properties, provides clients with unmatched expertise in the ultra-luxury market.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Why MacDonald Highlands?</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                MacDonald Highlands represents the pinnacle of luxury living in Henderson—a guard-gated community where estate homes command $1M to $15M+ and offer unparalleled Strip views, DragonRidge Country Club access, and privacy. Dr. Jan's specialization in this exclusive community means clients benefit from:
+                MacDonald Highlands represents the pinnacle of luxury living in Henderson—a guard-gated community where estate homes command $1M to $15M+ and offer unparalleled Strip views, DragonRidge Country Club access, and privacy. Dr. Jan&apos;s specialization in this exclusive community means clients benefit from:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
                 <li>Intimate knowledge of every neighborhood (Vu, SkyVu, Vue Pointe)</li>
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Advanced Credentials & Education</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                Dr. Jan Duffy's {siteConfig.agent.credentials} reflects a commitment to excellence and analytical rigor that translates directly to her real estate practice. This advanced education, combined with continuous professional development in luxury real estate, ensures clients receive sophisticated market analysis and strategic guidance.
+                Dr. Jan Duffy&apos;s {siteConfig.agent.credentials} reflects a commitment to excellence and analytical rigor that translates directly to her real estate practice. This advanced education, combined with continuous professional development in luxury real estate, ensures clients receive sophisticated market analysis and strategic guidance.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Berkshire Hathaway HomeServices Backing</h3>
@@ -107,7 +107,7 @@ export default function AboutPage() {
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Client Commitment</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                Every client relationship is built on trust, transparency, and results. Whether you're buying your first MacDonald Highlands home, selling a multi-million dollar estate, or exploring investment opportunities, Dr. Jan provides personalized service tailored to your unique needs and timeline.
+                Every client relationship is built on trust, transparency, and results. Whether you&apos;re buying your first MacDonald Highlands home, selling a multi-million dollar estate, or exploring investment opportunities, Dr. Jan provides personalized service tailored to your unique needs and timeline.
               </p>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
                 Work With Dr. Jan Duffy
               </h2>
               <p className="text-center text-neutral-600 mb-8">
-                Ready to buy, sell, or invest in MacDonald Highlands? Let's discuss your real estate goals.
+                Ready to buy, sell, or invest in MacDonald Highlands? Let&apos;s discuss your real estate goals.
               </p>
               <ContactForm
                 formTitle="Get in Touch"

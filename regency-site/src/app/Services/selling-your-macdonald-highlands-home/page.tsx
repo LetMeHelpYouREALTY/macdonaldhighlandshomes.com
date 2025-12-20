@@ -47,7 +47,7 @@ export default function SellingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Professional Staging Consultation</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              First impressions are everything in luxury real estate. We work with premier staging professionals who understand how to showcase your home's architectural features, maximize natural light, and create an aspirational lifestyle presentation that resonates with high-net-worth buyers.
+              First impressions are everything in luxury real estate. We work with premier staging professionals who understand how to showcase your home&apos;s architectural features, maximize natural light, and create an aspirational lifestyle presentation that resonates with high-net-worth buyers.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Architectural & Twilight Photography + Drone Aerials</h3>
@@ -56,7 +56,7 @@ export default function SellingPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Architectural photography highlighting custom finishes and design</li>
-              <li>Twilight photography showcasing your home's dramatic evening presence</li>
+              <li>Twilight photography showcasing your home&apos;s dramatic evening presence</li>
               <li>Drone aerials capturing panoramic Strip views and lot positioning</li>
               <li>Professional video tours for virtual buyer engagement</li>
             </ul>
@@ -79,17 +79,17 @@ export default function SellingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Global Luxury Buyer Network Access</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Through Berkshire Hathaway HomeServices' international network and our own connections, we connect your property with luxury buyers from around the world—executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking a second home in Henderson.
+              Through Berkshire Hathaway HomeServices&apos; international network and our own connections, we connect your property with luxury buyers from around the world—executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking a second home in Henderson.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Negotiation Expertise for High-Net-Worth Transactions</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Luxury real estate negotiations require finesse, market intelligence, and an understanding of complex transaction structures. We've successfully negotiated multi-million dollar deals, handling everything from inspection contingencies to custom closing terms.
+              Luxury real estate negotiations require finesse, market intelligence, and an understanding of complex transaction structures. We&apos;ve successfully negotiated multi-million dollar deals, handling everything from inspection contingencies to custom closing terms.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">1031 Exchange Coordination</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              If you're selling to reinvest in another property, we coordinate with qualified intermediaries and tax advisors to ensure your 1031 exchange meets all IRS requirements and timelines, maximizing your tax advantages.
+              If you&apos;re selling to reinvest in another property, we coordinate with qualified intermediaries and tax advisors to ensure your 1031 exchange meets all IRS requirements and timelines, maximizing your tax advantages.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function SellingPage() {
               </p>
               <ContactForm
                 formTitle="Get Your Home Valuation"
-                formDescription="Tell us about your property and we'll provide a comprehensive market analysis."
+                formDescription="Tell us about your property and we&apos;ll provide a comprehensive market analysis."
                 ctaText="Request Valuation"
                 source="selling-service"
               />

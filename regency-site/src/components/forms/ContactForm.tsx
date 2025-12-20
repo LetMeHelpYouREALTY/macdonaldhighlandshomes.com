@@ -12,7 +12,7 @@ type ContactFormProps = {
 
 export default function ContactForm({
   formTitle = "Get in Touch",
-  formDescription = "Fill out the form below and we'll get back to you within 24 hours.",
+  formDescription = "Fill out the form below and we&apos;ll get back to you within 24 hours.",
   ctaText = "Send Message",
   source = "contact-form"
 }: ContactFormProps) {
@@ -173,7 +173,7 @@ export default function ContactForm({
       {submitStatus === "success" && (
         <div className="p-4 bg-green-50 border border-green-200 rounded-md">
           <p className="text-green-800">
-            Thank you! We've received your message and will contact you within 24 hours.
+            Thank you! We&apos;ve received your message and will contact you within 24 hours.
           </p>
         </div>
       )}

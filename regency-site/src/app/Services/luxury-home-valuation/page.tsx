@@ -41,7 +41,7 @@ export default function ValuationPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2 className="text-3xl font-serif font-bold mb-6">Why Zillow & Redfin Fail for Luxury Properties</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              Automated valuation models (AVMs) like Zillow's Zestimate and Redfin Estimate rely on public data and statistical algorithms that simply cannot account for the unique characteristics of luxury real estate. They miss critical factors that significantly impact MacDonald Highlands property values:
+              Automated valuation models (AVMs) like Zillow&apos;s Zestimate and Redfin Estimate rely on public data and statistical algorithms that simply cannot account for the unique characteristics of luxury real estate. They miss critical factors that significantly impact MacDonald Highlands property values:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Custom architectural features and premium finishes</li>
@@ -91,7 +91,7 @@ export default function ValuationPage() {
               Understanding market cycles is crucial for maximizing value. We provide insights on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
-              <li>Current market conditions (buyer's vs. seller's market)</li>
+              <li>Current market conditions (buyer&apos;s vs. seller&apos;s market)</li>
               <li>Seasonal trends in luxury real estate</li>
               <li>Inventory levels and competition</li>
               <li>Interest rate impact on luxury buyers</li>
@@ -100,7 +100,7 @@ export default function ValuationPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Confidential—No Obligation, No Pressure</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our valuation service is completely confidential and comes with zero obligation. Whether you're considering selling, refinancing, or simply want to understand your property's current market position, we provide honest, data-driven insights without any sales pressure.
+              Our valuation service is completely confidential and comes with zero obligation. Whether you&apos;re considering selling, refinancing, or simply want to understand your property&apos;s current market position, we provide honest, data-driven insights without any sales pressure.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function ValuationPage() {
               </p>
               <ContactForm
                 formTitle="Request Your Home Valuation"
-                formDescription="Tell us about your property and we'll provide a detailed market analysis."
+                formDescription="Tell us about your property and we&apos;ll provide a detailed market analysis."
                 ctaText="Get Valuation"
                 source="valuation-service"
               />

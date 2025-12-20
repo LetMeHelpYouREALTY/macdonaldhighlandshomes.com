@@ -243,7 +243,7 @@ export default function HomePage() {
               Ready to Buy or Sell in MacDonald Highlands?
             </h2>
             <p className="text-xl text-primary-100 mb-12">
-              Get expert guidance from Henderson's premier luxury real estate specialist
+              Get expert guidance from Henderson&apos;s premier luxury real estate specialist
             </p>
             <div className="bg-white rounded-lg p-8 md:p-12 text-neutral-900">
               <ContactForm

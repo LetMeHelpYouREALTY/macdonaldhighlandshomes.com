@@ -59,7 +59,7 @@ export default function InvestmentPage() {
               <li>Increasing demand from out-of-state buyers</li>
               <li>Las Vegas Strip proximity and view premiums</li>
               <li>DragonRidge Country Club exclusivity</li>
-              <li>Henderson's reputation as a premier luxury market</li>
+              <li>Henderson&apos;s reputation as a premier luxury market</li>
             </ul>
             <p className="text-lg text-neutral-700 mb-6">
               We provide historical appreciation data and future projections based on market trends, development plans, and economic indicators.
@@ -120,7 +120,7 @@ export default function InvestmentPage() {
               </p>
               <ContactForm
                 formTitle="Investment Consultation"
-                formDescription="Tell us about your investment goals and we'll provide detailed analysis."
+                formDescription="Tell us about your investment goals and we&apos;ll provide detailed analysis."
                 ctaText="Request Analysis"
                 source="investment-service"
               />

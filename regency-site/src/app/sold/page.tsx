@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
-  description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
+  description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson&apos;s premier guard-gated community.",
   keywords: "MacDonald Highlands sold properties, Henderson luxury home sales, recent real estate sales",
 };
 
@@ -59,7 +59,7 @@ export default function SoldPage() {
             Recent Sales in MacDonald Highlands
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Examples of luxury properties successfully sold in Henderson's premier guard-gated community
+            Examples of luxury properties successfully sold in Henderson&apos;s premier guard-gated community
           </p>
         </div>
       </section>
