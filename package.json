@@ -8,9 +8,6 @@
     "start": "cd regency-site && npm start",
     "lint": "cd regency-site && npm run lint"
   },
-  "dependencies": {
-    "next": "^15.1.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrJanDuffy/macdonaldhighlandshomes.com.git"
