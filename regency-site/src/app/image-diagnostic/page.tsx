@@ -13,6 +13,7 @@ export default function ImageDiagnosticPage() {
   ];
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     // #region agent log
     fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'image-diagnostic/page.tsx:10',message:'ImageDiagnosticPage mounted',data:{testImages:testImages},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'F'})}).catch(()=>{});
     // #endregion
@@ -44,7 +45,7 @@ export default function ImageDiagnosticPage() {
       };
       img.src = src;
     });
-  }, []);
+  }, [testImages]);
 
   return (
     <div className="p-8 max-w-4xl mx-auto">
@@ -93,9 +94,9 @@ export default function ImageDiagnosticPage() {
       <div className="mt-8 p-4 bg-blue-50 rounded-lg">
         <h2 className="font-semibold mb-2">Instructions:</h2>
         <ol className="list-decimal list-inside space-y-1 text-sm">
-          <li>Check if any images show "✓ Loaded" (green)</li>
-          <li>Check if any show "✗ Error" (red)</li>
-          <li>Click "Open direct URL" links to test direct file access</li>
+          <li>Check if any images show &quot;✓ Loaded&quot; (green)</li>
+          <li>Check if any show &quot;✗ Error&quot; (red)</li>
+          <li>Click &quot;Open direct URL&quot; links to test direct file access</li>
           <li>Open browser DevTools (F12) → Console tab for errors</li>
           <li>Check Network tab to see HTTP status codes for image requests</li>
         </ol>

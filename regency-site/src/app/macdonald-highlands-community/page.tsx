@@ -36,27 +36,11 @@ export default function CommunityPage() {
             </p>
 
             <div className="my-12">
-              <Image
+              <img
                 src="/photos/community/view-lifestyle-00024-full.jpg"
                 alt="MacDonald Highlands luxury homes with panoramic Strip and mountain views"
-                width={1200}
-                height={600}
-                className="rounded-lg shadow-xl"
-                unoptimized={true}
-                onLoad={() => {
-                  // #region agent log
-                  if (typeof window !== 'undefined') {
-                    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'community/page.tsx:45',message:'Community image onLoad',data:{src:'/photos/community/view-lifestyle-00024-full.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-                  }
-                  // #endregion
-                }}
-                onError={(e) => {
-                  // #region agent log
-                  if (typeof window !== 'undefined') {
-                    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'community/page.tsx:52',message:'Community image onError',data:{src:'/photos/community/view-lifestyle-00024-full.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
-                  }
-                  // #endregion
-                }}
+                className="w-full rounded-lg shadow-xl"
+                style={{ maxWidth: '1200px', height: 'auto' }}
               />
             </div>
 
