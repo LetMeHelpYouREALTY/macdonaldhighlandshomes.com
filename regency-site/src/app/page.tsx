@@ -219,7 +219,7 @@ export default function HomePage() {
                     <span key={i} className="text-gold-DEFAULT text-xl">★</span>
                   ))}
                 </div>
-                <p className="text-neutral-200 mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-neutral-200 mb-6 italic">&quot;{testimonial.content}&quot;</p>
                 <div>
                   <p className="font-semibold text-white">{testimonial.name}</p>
                   <p className="text-neutral-400 text-sm">{testimonial.role}</p>
