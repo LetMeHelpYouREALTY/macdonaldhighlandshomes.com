@@ -92,7 +92,6 @@ export default function HomePage() {
             priority
             sizes="100vw"
             unoptimized={true}
-            style={{ position: 'absolute', inset: 0 }}
             onLoad={() => {
               // #region agent log
               fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:88',message:'Image onLoad fired',data:{src:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
