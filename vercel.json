@@ -1,5 +1,5 @@
 {
   "framework": "nextjs",
   "installCommand": "npm install --production=false && cd regency-site && npm install",
-  "buildCommand": "cd regency-site && npm run build"
+  "buildCommand": "cd regency-site && npm run build && chmod +x copy-build.sh && ./copy-build.sh"
 }
