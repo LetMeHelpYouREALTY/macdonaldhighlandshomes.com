@@ -71,6 +71,11 @@ const testimonials = [
 ];
 
 export default function HomePage() {
+  // #region agent log
+  if (typeof window !== 'undefined') {
+    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:73',message:'HomePage render start',data:{imageSrc:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+  }
+  // #endregion
   return (
     <>
       <RealEstateAgentSchema />
@@ -85,6 +90,17 @@ export default function HomePage() {
             className="object-cover opacity-40"
             priority
             sizes="100vw"
+            unoptimized={true}
+            onLoad={() => {
+              // #region agent log
+              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:88',message:'Image onLoad fired',data:{src:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+              // #endregion
+            }}
+            onError={(e) => {
+              // #region agent log
+              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:95',message:'Image onError fired',data:{src:'/photos/community/hero-view-lifestyle.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+              // #endregion
+            }}
           />
         </div>
         <div className="relative z-10 container-luxury text-center text-white py-24">
@@ -260,6 +276,7 @@ export default function HomePage() {
                 width={1000}
                 height={600}
                 className="rounded-lg shadow-lg"
+                unoptimized={true}
               />
             </div>
             <p className="text-lg text-neutral-700 mb-6">

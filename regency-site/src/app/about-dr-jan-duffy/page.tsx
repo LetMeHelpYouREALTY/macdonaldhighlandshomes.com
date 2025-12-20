@@ -41,7 +41,7 @@ export default function AboutPage() {
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
                     priority
-                    unoptimized={false}
+                    unoptimized={true}
                   />
                 </div>
               </div>

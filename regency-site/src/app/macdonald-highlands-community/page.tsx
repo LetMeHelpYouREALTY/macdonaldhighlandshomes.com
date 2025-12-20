@@ -43,6 +43,21 @@ export default function CommunityPage() {
                 width={1200}
                 height={600}
                 className="rounded-lg shadow-xl"
+                unoptimized={true}
+                onLoad={() => {
+                  // #region agent log
+                  if (typeof window !== 'undefined') {
+                    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'community/page.tsx:45',message:'Community image onLoad',data:{src:'/photos/community/view-lifestyle-00024-full.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+                  }
+                  // #endregion
+                }}
+                onError={(e) => {
+                  // #region agent log
+                  if (typeof window !== 'undefined') {
+                    fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'community/page.tsx:52',message:'Community image onError',data:{src:'/photos/community/view-lifestyle-00024-full.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+                  }
+                  // #endregion
+                }}
               />
             </div>
 
@@ -54,6 +69,7 @@ export default function CommunityPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={true}
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -63,6 +79,7 @@ export default function CommunityPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized={true}
                 />
               </div>
             </div>
@@ -90,6 +107,7 @@ export default function CommunityPage() {
                 width={1000}
                 height={600}
                 className="rounded-lg shadow-lg"
+                unoptimized={true}
               />
             </div>
             <p className="text-lg text-neutral-700 mb-6">

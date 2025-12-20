@@ -37,6 +37,17 @@ export default function Header() {
                 className="object-cover"
                 priority={index === 0}
                 sizes="100vw"
+                unoptimized={true}
+                onLoad={() => {
+                  // #region agent log
+                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:40',message:'Header image onLoad',data:{src:src,index:index},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+                  // #endregion
+                }}
+                onError={(e) => {
+                  // #region agent log
+                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:47',message:'Header image onError',data:{src:src,index:index,error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+                  // #endregion
+                }}
               />
             </div>
           ))}

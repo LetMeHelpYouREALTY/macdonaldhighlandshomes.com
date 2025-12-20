@@ -25,6 +25,7 @@ export default function ServicesPage() {
             className="object-cover opacity-30"
             priority
             sizes="100vw"
+            unoptimized={true}
           />
         </div>
         <div className="relative z-10 container-luxury">
