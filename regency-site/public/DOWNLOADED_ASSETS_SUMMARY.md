@@ -1,7 +1,7 @@
 # Downloaded Assets from macdonaldhighlands.com
 
 ## Summary
-- **Total Images Downloaded**: 54 files
+- **Total Images Downloaded**: 62 files
 - **Video Information**: 1 Vimeo video identified (ID: 405897635)
 - **Date**: December 20, 2025
 
