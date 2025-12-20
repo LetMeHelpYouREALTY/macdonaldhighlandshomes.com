@@ -1,32 +1,21 @@
 {
-  "name": "nextra-docs-template",
-  "version": "0.0.1",
-  "description": "Nextra docs template",
+  "name": "macdonald-highlands-homes",
+  "version": "1.0.0",
+  "description": "MacDonald Highlands luxury real estate website by Dr. Jan Duffy",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "cd regency-site && pnpm dev",
+    "build": "cd regency-site && pnpm install && pnpm build",
+    "start": "cd regency-site && pnpm start",
+    "lint": "cd regency-site && pnpm lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/DrJanDuffy/macdonaldhighlandshomes.com.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Dr. Jan Duffy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/DrJanDuffy/macdonaldhighlandshomes.com/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
-  "dependencies": {
-    "next": "^14.0.0",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "zustand": "^4.4.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
-  }
+  "homepage": "https://macdonaldhighlandshomes.com"
 }
