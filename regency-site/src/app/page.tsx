@@ -79,7 +79,7 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/Image/hero_bg_1.jpg"
+            src="/photos/community/hero-view-lifestyle.jpg"
             alt="MacDonald Highlands luxury homes with Strip views"
             fill
             className="object-cover opacity-40"
@@ -236,6 +236,15 @@ export default function HomePage() {
             <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
               DragonRidge Championship Golf Course
             </h3>
+            <div className="my-6">
+              <Image
+                src="/photos/community/golf-lifestyle-full.jpg"
+                alt="DragonRidge Country Club championship golf course"
+                width={1000}
+                height={600}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               The Jay Morrish-designed DragonRidge Championship Course is a centerpiece of MacDonald Highlands living. This world-class golf course winds through the community, offering stunning views and challenging play for golf enthusiasts. Golf course frontage properties command premium prices, and membership access adds significant value to homes. Whether you&apos;re an avid golfer or simply appreciate the manicured views, the golf course is a defining feature of the community that impacts property values and lifestyle quality.
             </p>
@@ -243,6 +252,15 @@ export default function HomePage() {
             <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
               Panoramic Strip & Mountain Views
             </h3>
+            <div className="my-6">
+              <Image
+                src="/photos/community/view-lifestyle-2.jpg"
+                alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
+                width={1000}
+                height={600}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Properties with panoramic Las Vegas Strip views and mountain vistas represent the pinnacle of MacDonald Highlands real estate. These view premiums can add hundreds of thousands of dollars to property values, and they&apos;re a key factor in our valuation and marketing strategies. Understanding view angles, future development impacts, and historical appreciation patterns helps us position view properties effectively in the market. Many MacDonald Highlands homes offer breathtaking sunset views over the Strip, creating a daily spectacle that never gets old.
             </p>

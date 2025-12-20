@@ -16,8 +16,17 @@ export default function ServicesPage() {
       <RealEstateAgentSchema />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/community/clubhouse-full.jpg"
+            alt="MacDonald Highlands luxury community"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             Comprehensive Luxury Real Estate Services in MacDonald Highlands
           </h1>

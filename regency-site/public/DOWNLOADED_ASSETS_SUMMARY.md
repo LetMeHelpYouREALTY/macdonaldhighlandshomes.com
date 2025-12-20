@@ -1,7 +1,7 @@
 # Downloaded Assets from macdonaldhighlands.com
 
 ## Summary
-- **Total Images Downloaded**: 62 files
+- **Total Images Downloaded**: 54 files
 - **Video Information**: 1 Vimeo video identified (ID: 405897635)
 - **Date**: December 20, 2025
 
@@ -46,6 +46,16 @@ Located in: `photos/community/`
 - dragonridge-ad.jpg
 - foothills-village.jpg
 - maps/community-site-map.jpg
+
+**Resized Images (1024px versions):**
+- golf-lifestyle-00010-1024.jpg
+- view-lifestyle-00023-1024.jpg
+- guard-gate-0001-1024.jpg
+- pool-0007-1024.jpg
+- view-lifestyle-00024-1024.jpg
+- clubhouse-0003-1024.jpg
+- clubhouse-0005-1024.jpg
+- view-lifestyle-00021-1024.jpg
 
 ### Agent Photos (3 images)
 Located in: `photos/agent/`

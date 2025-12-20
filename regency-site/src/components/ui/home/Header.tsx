@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function Header() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-   "/Image/hero_bg_1.jpg",
-   "/Image/hero_bg_2.jpg",
-   "/Image/hero_bg_3.jpg",
+   "/photos/community/hero-view-lifestyle.jpg",
+   "/photos/community/view-lifestyle-00024-full.jpg",
+   "/photos/community/golf-lifestyle-full.jpg",
   ];
 
   useEffect(() => {
@@ -32,10 +32,10 @@ export default function Header() {
             >
               <Image
                 src={src}
-                alt={`Image ${index + 1}`}
-                className="w-full h-full object-cover"
-                width={500}
-                height={500}
+                alt={`MacDonald Highlands luxury community view ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
               />
             </div>
           ))}

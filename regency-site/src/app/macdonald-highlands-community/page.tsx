@@ -38,8 +38,37 @@ export default function CommunityPage() {
 
             <div className="my-12">
               <Image
-                src="/Image/hero_bg_2.jpg"
-                alt="MacDonald Highlands luxury homes with mountain views"
+                src="/photos/community/view-lifestyle-00024-full.jpg"
+                alt="MacDonald Highlands luxury homes with panoramic Strip and mountain views"
+                width={1200}
+                height={600}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/photos/community/guard-gate.jpg"
+                  alt="MacDonald Highlands guard-gated entrance"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/photos/community/golf-lifestyle.jpg"
+                  alt="DragonRidge Country Club golf course"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="my-12">
+              <Image
+                src="/photos/community/clubhouse.jpg"
+                alt="DragonRidge Country Club clubhouse"
                 width={1200}
                 height={600}
                 className="rounded-lg shadow-xl"
@@ -52,6 +81,15 @@ export default function CommunityPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club</h3>
+            <div className="my-6">
+              <Image
+                src="/photos/community/golf-lifestyle-full.jpg"
+                alt="DragonRidge Country Club championship golf course"
+                width={1000}
+                height={600}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               At the heart of MacDonald Highlands lies DragonRidge Country Club, a championship golf course designed by renowned architect Jay Morrish. This private club offers:
             </p>
@@ -94,6 +132,24 @@ export default function CommunityPage() {
             </ul>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Views & Location</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/photos/community/view-lifestyle-2.jpg"
+                  alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/photos/community/views-lifestyle-3.jpg"
+                  alt="Mountain and desert views from MacDonald Highlands"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               The community&apos;s elevated position offers residents breathtaking views of:
             </p>

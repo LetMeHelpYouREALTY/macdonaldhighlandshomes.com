@@ -35,7 +35,7 @@ export default function AboutPage() {
               <div className="md:col-span-1">
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-neutral-100">
                   <Image
-                    src="/Image/person1.jpeg"
+                    src="/photos/agent/dr-jan-duffy-headshot.jpg"
                     alt={`${siteConfig.agent.name}, ${siteConfig.agent.title}`}
                     width={400}
                     height={400}
