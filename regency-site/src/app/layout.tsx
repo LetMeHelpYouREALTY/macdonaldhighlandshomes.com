@@ -1,15 +1,68 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import { siteConfig } from "../../config/siteConfig";
+import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// Luxury typography: Inter for body, Playfair Display for headings
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: siteConfig.seo.title,
+  title: {
+    default: siteConfig.seo.title,
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
   keywords: siteConfig.seo.keywords,
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  metadataBase: new URL("https://macdonaldhighlandshomes.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://macdonaldhighlandshomes.com",
+    title: siteConfig.seo.title,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.seo.title,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#1e293b" },
+  ],
 };
 
 export default function RootLayout({
@@ -18,9 +71,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-   
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <body className={`${inter.className} antialiased`}>
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
