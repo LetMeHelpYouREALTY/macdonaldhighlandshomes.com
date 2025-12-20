@@ -53,6 +53,7 @@ export default function CommunityPage() {
                   alt="MacDonald Highlands guard-gated entrance"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -61,6 +62,7 @@ export default function CommunityPage() {
                   alt="DragonRidge Country Club golf course"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -139,6 +141,7 @@ export default function CommunityPage() {
                   alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -147,6 +150,7 @@ export default function CommunityPage() {
                   alt="Mountain and desert views from MacDonald Highlands"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>

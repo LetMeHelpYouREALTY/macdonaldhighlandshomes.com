@@ -14,6 +14,11 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    // Allow unoptimized images if optimization fails
+    unoptimized: false,
+    // Disable strict mode for image domains (allows local images)
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // Performance optimizations

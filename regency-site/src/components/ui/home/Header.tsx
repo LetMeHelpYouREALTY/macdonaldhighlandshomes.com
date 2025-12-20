@@ -27,7 +27,7 @@ export default function Header() {
           {images.map((src, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-700  ${index === currentImage ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 transition-opacity duration-700 ${index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
             >
               <Image
@@ -36,6 +36,8 @@ export default function Header() {
                 fill
                 className="object-cover"
                 priority={index === 0}
+                sizes="100vw"
+                unoptimized={false}
               />
             </div>
           ))}
