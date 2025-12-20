@@ -35,10 +35,11 @@ export default function AboutPage() {
               <div className="md:col-span-1">
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/Image/person1.jpeg"
+                    src="/photos/agent/dr-jan-duffy-headshot.jpg"
                     alt={`${siteConfig.agent.name}, ${siteConfig.agent.title}`}
                     fill
                     className="object-cover"
+                    priority
                   />
                 </div>
               </div>
