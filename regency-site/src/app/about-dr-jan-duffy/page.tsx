@@ -33,12 +33,13 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
               <div className="md:col-span-1">
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-xl">
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-neutral-100">
                   <Image
-                    src="/photos/agent/dr-jan-duffy-headshot.jpg"
+                    src="/Image/person1.jpeg"
                     alt={`${siteConfig.agent.name}, ${siteConfig.agent.title}`}
-                    fill
-                    className="object-cover"
+                    width={400}
+                    height={400}
+                    className="object-cover w-full h-full rounded-lg"
                     priority
                   />
                 </div>
