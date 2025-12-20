@@ -1,8 +1,0 @@
-{
-  "buildCommand": "cd regency-site && npm run build",
-  "outputDirectory": "regency-site/.next",
-  "installCommand": "cd regency-site && npm install",
-  "framework": "nextjs"
-}
-
-
