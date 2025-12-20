@@ -1,8 +1,8 @@
 import nextra from 'nextra'
 
 const withNextra = nextra({
-  theme: 'nextra-theme-docs',
-  // Optional: Add any Nextra 4 specific options here
+  // Nextra 4.6+ no longer uses 'theme' key
+  // Theme is configured in app/layout.tsx instead
 })
 
 export default withNextra()
