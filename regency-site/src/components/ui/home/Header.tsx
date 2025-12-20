@@ -30,22 +30,19 @@ export default function Header() {
               className={`absolute inset-0 transition-opacity duration-700 ${index === currentImage ? "opacity-100" : "opacity-0"
                 }`}
             >
-              <Image
+              <img
                 src={src}
                 alt={`MacDonald Highlands luxury community view ${index + 1}`}
-                fill
-                className="object-cover"
-                priority={index === 0}
-                sizes="100vw"
-                unoptimized={true}
+                className="w-full h-full object-cover"
+                style={{ position: 'absolute', inset: 0 }}
                 onLoad={() => {
                   // #region agent log
-                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:40',message:'Header image onLoad',data:{src:src,index:index},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:40',message:'Header regular img onLoad',data:{src:src,index:index},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'D'})}).catch(()=>{});
                   // #endregion
                 }}
                 onError={(e) => {
                   // #region agent log
-                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:47',message:'Header image onError',data:{src:src,index:index,error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+                  fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'Header.tsx:47',message:'Header regular img onError',data:{src:src,index:index,error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'E'})}).catch(()=>{});
                   // #endregion
                 }}
               />

@@ -63,23 +63,17 @@ export default function CommunityPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <Image
+                <img
                   src="/photos/community/guard-gate.jpg"
                   alt="MacDonald Highlands guard-gated entrance"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized={true}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <Image
+                <img
                   src="/photos/community/golf-lifestyle.jpg"
                   alt="DragonRidge Country Club golf course"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  unoptimized={true}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -101,13 +95,11 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club</h3>
             <div className="my-6">
-              <Image
+              <img
                 src="/photos/community/golf-lifestyle-full.jpg"
                 alt="DragonRidge Country Club championship golf course"
-                width={1000}
-                height={600}
-                className="rounded-lg shadow-lg"
-                unoptimized={true}
+                className="w-full rounded-lg shadow-lg"
+                style={{ maxWidth: '1000px', height: 'auto' }}
               />
             </div>
             <p className="text-lg text-neutral-700 mb-6">

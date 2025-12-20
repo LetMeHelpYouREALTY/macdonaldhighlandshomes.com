@@ -18,14 +18,11 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
         <div className="absolute inset-0 z-0">
-          <Image
+          <img
             src="/photos/community/clubhouse-full.jpg"
             alt="MacDonald Highlands luxury community"
-            fill
-            className="object-cover opacity-30"
-            priority
-            sizes="100vw"
-            unoptimized={true}
+            className="w-full h-full object-cover opacity-30"
+            style={{ position: 'absolute', inset: 0 }}
           />
         </div>
         <div className="relative z-10 container-luxury">

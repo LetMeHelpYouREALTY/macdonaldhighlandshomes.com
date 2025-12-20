@@ -83,23 +83,20 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
         <div className="absolute inset-0 z-0">
-          {/* Test: Try both Image and fallback img */}
-          <Image
+          {/* Fallback to regular img tag if Next.js Image fails */}
+          <img
             src="/photos/community/hero-view-lifestyle.jpg"
             alt="MacDonald Highlands luxury homes with Strip views"
-            fill
-            className="object-cover opacity-40"
-            priority
-            sizes="100vw"
-            unoptimized={true}
+            className="w-full h-full object-cover opacity-40"
+            style={{ position: 'absolute', inset: 0 }}
             onLoad={() => {
               // #region agent log
-              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:88',message:'Image onLoad fired',data:{src:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:88',message:'Regular img onLoad fired',data:{src:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'D'})}).catch(()=>{});
               // #endregion
             }}
             onError={(e) => {
               // #region agent log
-              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:95',message:'Image onError fired',data:{src:'/photos/community/hero-view-lifestyle.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+              fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'page.tsx:95',message:'Regular img onError fired',data:{src:'/photos/community/hero-view-lifestyle.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'E'})}).catch(()=>{});
               // #endregion
             }}
           />
@@ -271,13 +268,11 @@ export default function HomePage() {
               Panoramic Strip & Mountain Views
             </h3>
             <div className="my-6">
-              <Image
+              <img
                 src="/photos/community/view-lifestyle-2.jpg"
                 alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
-                width={1000}
-                height={600}
-                className="rounded-lg shadow-lg"
-                unoptimized={true}
+                className="w-full rounded-lg shadow-lg"
+                style={{ maxWidth: '1000px', height: 'auto' }}
               />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
