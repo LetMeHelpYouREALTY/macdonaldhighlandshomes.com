@@ -57,6 +57,8 @@ export default function ServicesPage() {
             alt="MacDonald Highlands luxury community clubhouse"
             className="w-full h-full object-cover opacity-30"
             style={{ position: 'absolute', inset: 0 }}
+            loading="eager"
+            decoding="async"
           />
         </div>
         <div className="relative z-10 container-luxury">
