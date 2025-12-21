@@ -41,12 +41,12 @@ export default function ServicesPage() {
             
             <h2 className="text-3xl font-serif font-bold mb-6">Why Choose Dr. Jan Duffy for Your MacDonald Highlands Real Estate Needs</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              With over 500 families served and $127M+ in sales, Dr. Jan Duffy brings unparalleled expertise to MacDonald Highlands real estate transactions. As a neighborhood specialist with deep knowledge of Henderson&apos;s ultra-luxury guard-gated golf community, we provide comprehensive services tailored to the unique needs of luxury home buyers and sellers. Whether you&apos;re selling a $15M estate with panoramic Strip views, buying your first MacDonald Highlands property, or exploring investment opportunities, our team delivers results through meticulous attention to detail, market intelligence, and white-glove service.
+              With over 500 families served and $127M+ in sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> brings unparalleled expertise to MacDonald Highlands real estate transactions. As a neighborhood specialist with deep knowledge of Henderson&apos;s ultra-luxury guard-gated golf community, we provide comprehensive services tailored to the unique needs of luxury home buyers and sellers. Whether you&apos;re selling a $15M estate with panoramic Strip views, buying your first <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands property</Link>, or exploring investment opportunities, our team delivers results through meticulous attention to detail, market intelligence, and white-glove service.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Deep Community Knowledge</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our expertise extends beyond general real estate knowledge—we specialize exclusively in MacDonald Highlands. This deep community knowledge means we understand view premiums, lot positioning factors, DragonRidge Country Club membership nuances, and neighborhood-specific market dynamics that impact property values. This specialized knowledge is invaluable whether you&apos;re buying or selling, ensuring you make informed decisions based on actual community expertise rather than generic real estate advice.
+              Our expertise extends beyond general real estate knowledge—we specialize exclusively in <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands</Link>. This deep community knowledge means we understand view premiums, lot positioning factors, DragonRidge Country Club membership nuances, and neighborhood-specific market dynamics that impact property values. This specialized knowledge is invaluable whether you&apos;re buying or selling, ensuring you make informed decisions based on actual community expertise rather than generic real estate advice.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Proven Track Record</h3>
@@ -285,6 +285,11 @@ export default function ServicesPage() {
               >
                 Call {siteConfig.contact.phoneFormatted}
               </a>
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-neutral-600 mb-4">
+                Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community details</Link>.
+              </p>
             </div>
           </div>
         </div>

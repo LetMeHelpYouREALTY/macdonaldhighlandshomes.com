@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ContactForm from "@/components/forms/ContactForm";
@@ -34,7 +35,7 @@ export default function ContactPage() {
               Let&apos;s Discuss Your MacDonald Highlands Real Estate Goals
             </h2>
             <p className="text-lg text-neutral-700 mb-8 text-center">
-              Whether you&apos;re buying, selling, or exploring investment opportunities in MacDonald Highlands, we&apos;re here to provide expert guidance tailored to your unique needs. With deep community knowledge, proven results, and a commitment to excellence, we deliver outcomes that exceed expectations. Contact us today to begin your MacDonald Highlands real estate journey.
+              Whether you&apos;re buying, selling, or exploring investment opportunities in MacDonald Highlands, we&apos;re here to provide expert guidance tailored to your unique needs. With deep community knowledge, proven results, and a commitment to excellence, we deliver outcomes that exceed expectations. Contact us today to begin your MacDonald Highlands real estate journey. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link>, explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">services</Link>, or discover the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
             </p>
             <p className="text-lg text-neutral-700 mb-12">
               Our consultation process begins with understanding your goals, timeline, and specific requirements. Whether you&apos;re selling a $15M estate, buying your first luxury home, or exploring investment opportunities, we provide personalized service that addresses your unique situation. Every client relationship is built on trust, transparency, and results—values that have earned us the trust of 500+ families throughout MacDonald Highlands.

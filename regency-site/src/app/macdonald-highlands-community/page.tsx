@@ -40,7 +40,7 @@ export default function CommunityPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2 className="text-3xl font-serif font-bold mb-6">Welcome to MacDonald Highlands</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              Nestled in the foothills of Henderson, Nevada, MacDonald Highlands is a 1,320-acre master-planned luxury community that represents the pinnacle of guard-gated living. Just 15-20 minutes from the Las Vegas Strip, this exclusive enclave offers estate homes from $1M to $15M+ with panoramic Strip views, championship golf, and unparalleled privacy.
+              Nestled in the foothills of Henderson, Nevada, MacDonald Highlands is a 1,320-acre master-planned luxury community that represents the pinnacle of guard-gated living. Just 15-20 minutes from the Las Vegas Strip, this exclusive enclave offers estate homes from $1M to $15M+ with panoramic Strip views, championship golf, and unparalleled privacy. Explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">available properties</Link> or learn about <Link href="/services" className="text-primary-600 hover:underline font-semibold">our real estate services</Link> for this exclusive community.
             </p>
 
             <div className="my-12">
@@ -409,7 +409,7 @@ export default function CommunityPage() {
               Explore MacDonald Highlands Real Estate
             </h2>
             <p className="text-xl text-neutral-600 mb-8">
-              Ready to find your dream home in MacDonald Highlands? Let&apos;s schedule a private community tour.
+              Ready to find your dream home in MacDonald Highlands? Let&apos;s schedule a private community tour. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">real estate services</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/services/buying-in-macdonald-highlands" className="btn-primary text-lg px-8 py-4">

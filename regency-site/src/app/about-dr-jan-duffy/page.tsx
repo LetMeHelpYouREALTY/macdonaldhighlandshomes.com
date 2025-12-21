@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ContactForm from "@/components/forms/ContactForm";
@@ -140,7 +141,7 @@ export default function AboutPage() {
 
               <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Comprehensive Service Specialties</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                Dr. Jan&apos;s expertise extends across the full spectrum of luxury real estate services, each tailored to the unique needs of MacDonald Highlands buyers and sellers. These specialties reflect deep market knowledge and a commitment to providing comprehensive support throughout every transaction.
+                Dr. Jan&apos;s expertise extends across the full spectrum of <Link href="/services" className="text-primary-600 hover:underline font-semibold">luxury real estate services</Link>, each tailored to the unique needs of MacDonald Highlands buyers and sellers. These specialties reflect deep market knowledge and a commitment to providing comprehensive support throughout every transaction.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Home Sales & Acquisitions</h3>
@@ -150,7 +151,7 @@ export default function AboutPage() {
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">MacDonald Highlands Community Expertise</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                Deep knowledge of MacDonald Highlands means understanding not just properties, but the community itself. This includes HOA structures, gate protocols, DragonRidge Country Club membership processes, view premiums, lot positioning advantages, and neighborhood characteristics. This community expertise ensures clients make informed decisions based on comprehensive local knowledge.
+                Deep knowledge of <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands</Link> means understanding not just properties, but the community itself. This includes HOA structures, gate protocols, DragonRidge Country Club membership processes, view premiums, lot positioning advantages, and neighborhood characteristics. This community expertise ensures clients make informed decisions based on comprehensive local knowledge.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club Properties</h3>
@@ -206,7 +207,7 @@ export default function AboutPage() {
                 Work With Dr. Jan Duffy
               </h2>
               <p className="text-center text-neutral-600 mb-8">
-                Ready to buy, sell, or invest in MacDonald Highlands? Let&apos;s discuss your real estate goals.
+                Ready to buy, sell, or invest in MacDonald Highlands? Let&apos;s discuss your real estate goals. Explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link> or <Link href="/testimonials" className="text-primary-600 hover:underline font-semibold">read client testimonials</Link>.
               </p>
               <ContactForm
                 formTitle="Get in Touch"

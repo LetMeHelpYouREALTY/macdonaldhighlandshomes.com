@@ -261,7 +261,7 @@ export default function HomePage() {
               Discover MacDonald Highlands: Henderson&apos;s Premier Guard-Gated Community
             </h2>
             <p className="text-xl text-neutral-600 text-center mb-12 max-w-3xl mx-auto">
-              Experience the pinnacle of luxury living in Southern Nevada&apos;s most exclusive master-planned community
+              Experience the pinnacle of luxury living in Southern Nevada&apos;s most exclusive master-planned community. <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">Explore the complete community guide</Link> to learn about amenities, neighborhoods, and lifestyle.
             </p>
             
             {/* Community Image Gallery */}
@@ -385,7 +385,7 @@ export default function HomePage() {
               Explore luxury homes currently available in the community
             </p>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto mb-8">
-              Our comprehensive listings include estate homes, golf course properties, and custom-built residences throughout MacDonald Highlands. Whether you&apos;re seeking a move-in ready luxury home or a lot for custom construction, we can help you find the perfect property that matches your lifestyle and investment goals.
+              Our comprehensive listings include estate homes, golf course properties, and custom-built residences throughout MacDonald Highlands. Whether you&apos;re seeking a move-in ready luxury home or a lot for custom construction, we can help you find the perfect property that matches your lifestyle and investment goals. <Link href="/listings" className="text-primary-600 hover:underline font-semibold">View all listings</Link> or <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">learn more about the community</Link>.
             </p>
           </div>
         </div>
