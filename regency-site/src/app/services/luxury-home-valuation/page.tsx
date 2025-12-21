@@ -13,25 +13,33 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MacDonald Highlands Home Valuation: Beyond the Algorithm | Dr. Jan Duffy",
-    description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
+    description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates. Confidential and no obligation.",
     url: 'https://macdonaldhighlandshomes.com/services/luxury-home-valuation',
     siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands home valuation',
+        alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
+        type: 'image/jpeg',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "MacDonald Highlands Home Valuation: Beyond the Algorithm | Dr. Jan Duffy",
-    description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales.",
-    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+    description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

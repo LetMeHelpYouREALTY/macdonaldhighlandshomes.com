@@ -39,11 +39,28 @@ export const metadata: Metadata = {
     title: siteConfig.seo.title,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: "https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.seo.title,
     description: siteConfig.description,
+    images: [
+      {
+        url: "https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   robots: {
     index: true,

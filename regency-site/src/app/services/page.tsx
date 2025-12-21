@@ -17,22 +17,30 @@ export const metadata: Metadata = {
     description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
     url: 'https://macdonaldhighlandshomes.com/services',
     siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands luxury community services',
+        alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
+        type: 'image/jpeg',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
-    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson.",
-    images: ['https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg'],
+    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
