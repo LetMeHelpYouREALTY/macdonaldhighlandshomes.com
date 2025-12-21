@@ -111,6 +111,35 @@ export default function SoldPage() {
             <p className="text-lg text-neutral-700 mb-8 text-center">
               Understanding recent sales data helps both buyers and sellers make informed decisions. These examples showcase the diversity of properties in MacDonald Highlands—from golf course frontage homes to panoramic view estates. Each sale represents a successful transaction that maximized value while meeting all parties&apos; objectives. Learn more about our <Link href="/services" className="text-primary-600 hover:underline font-semibold">selling services</Link> or explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">currently available properties</Link>.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="MacDonald Highlands estate homes with panoramic Strip views"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/golf-lifestyle-full.jpg"
+                  alt="Golf course frontage properties in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/clubhouse-full.jpg"
+                  alt="DragonRidge Country Club luxury amenities"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -92,6 +92,26 @@ export default function OffMarketPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Privacy-Focused Selling for High-Profile Clients</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/guard-gate-full.jpg"
+                  alt="MacDonald Highlands guard-gated privacy for high-profile sellers"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="Exclusive off-market properties in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               For sellers who value discretion—celebrities, executives, public figures, or simply those who prefer privacy—we offer completely confidential off-market selling services:
             </p>
@@ -239,11 +259,45 @@ export default function OffMarketPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* RealScout Office Listings Section */}
       <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
+                Current MacDonald Highlands Listings
+              </h2>
+              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
+              </p>
+            </div>
+            
+            <RealScoutWidgetWrapper />
+            
+            <div className="mt-8 text-center">
+              <p className="text-neutral-600 mb-4">
+                Looking for off-market opportunities?{" "}
+                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
+                  Join our private buyer list
+                </Link>
+                .
+              </p>
+              <Link 
+                href="/listings" 
+                className="btn-primary text-lg px-8 py-4 inline-block"
+              >
+                View All Listings
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-white">
+        <div className="container-luxury">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
+            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
                 Join the Private Buyer List
               </h2>

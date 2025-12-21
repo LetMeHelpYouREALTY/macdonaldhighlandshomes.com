@@ -80,6 +80,35 @@ export default function BuyingPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club Membership Guidance</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle-00012.jpg"
+                  alt="DragonRidge Country Club championship golf course"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle-00013.jpg"
+                  alt="DragonRidge golf course with Strip views"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle-00014.jpg"
+                  alt="MacDonald Highlands golf lifestyle"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Many MacDonald Highlands properties include or are eligible for DragonRidge Country Club membership. We guide you through:
             </p>

@@ -105,6 +105,26 @@ export default function ValuationPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Premium Adjustments: Views, Lot Size, Custom Finishes</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="Panoramic Las Vegas Strip views add significant value to MacDonald Highlands properties"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/golf-lifestyle-00010-full.jpg"
+                  alt="Golf course frontage properties command premium prices in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Luxury properties require sophisticated adjustment analysis. We evaluate premium factors including:
             </p>

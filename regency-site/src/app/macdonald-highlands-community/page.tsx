@@ -159,6 +159,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-0008.jpg"
                   alt="DragonRidge golf course views"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -166,6 +168,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-0009.jpg"
                   alt="DragonRidge golf course lifestyle"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -173,6 +177,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-00011.jpg"
                   alt="DragonRidge championship golf"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -180,6 +186,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-00012.jpg"
                   alt="DragonRidge golf course scenery"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -187,6 +195,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-00013.jpg"
                   alt="DragonRidge golf lifestyle"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -194,6 +204,8 @@ export default function CommunityPage() {
                   src="/photos/community/golf-lifestyle-00014.jpg"
                   alt="DragonRidge Country Club views"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -239,6 +251,26 @@ export default function CommunityPage() {
             </div>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Lot Sizes & Home Types</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/pool-full.jpg"
+                  alt="Custom pools and outdoor living spaces in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-2.jpg"
+                  alt="Estate homes with generous lot sizes in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Properties in MacDonald Highlands feature generous lot sizes ranging from 1/3 to 1+ acres, providing space for:
             </p>

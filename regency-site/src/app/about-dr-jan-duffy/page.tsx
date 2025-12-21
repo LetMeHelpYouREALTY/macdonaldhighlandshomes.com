@@ -109,6 +109,26 @@ export default function AboutPage() {
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Intimate Neighborhood Knowledge</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                  <img
+                    src="/photos/community/view-lifestyle-00023-1024.jpg"
+                    alt="MacDonald Highlands luxury homes with panoramic views"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                  <img
+                    src="/photos/community/view-lifestyle-00021-1024.jpg"
+                    alt="MacDonald Highlands estate homes with Strip views"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
               <p className="text-lg text-neutral-700 mb-6">
                 Dr. Jan understands the nuances of every neighborhood within MacDonald Highlands, from Vu to SkyVu to Vue Pointe. This knowledge includes understanding view premiums, lot positioning advantages, architectural styles, and the subtle differences that impact property values. When you work with Dr. Jan, you&apos;re not just getting a real estate agent—you&apos;re getting a neighborhood specialist who knows MacDonald Highlands inside and out.
               </p>
@@ -129,6 +149,35 @@ export default function AboutPage() {
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Transaction Expertise</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+                <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                  <img
+                    src="/photos/community/clubhouse-0003-1024.jpg"
+                    alt="DragonRidge Country Club amenities"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                  <img
+                    src="/photos/community/clubhouse-0005-1024.jpg"
+                    alt="MacDonald Highlands luxury community features"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                  <img
+                    src="/photos/community/pool-0007-1024.jpg"
+                    alt="Resort-style pool in MacDonald Highlands"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
               <p className="text-lg text-neutral-700 mb-6">
                 Luxury real estate transactions involve complexities that standard residential sales don&apos;t. From architectural photography and staging to private showings and international buyer coordination, Dr. Jan has the expertise to navigate these nuances. Her negotiation skills for high-net-worth transactions ensure deals are structured to maximize value while meeting all parties&apos; objectives.
               </p>

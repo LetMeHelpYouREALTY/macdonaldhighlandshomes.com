@@ -80,6 +80,26 @@ export default function RelocationPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Virtual Tour Packages for Out-of-State Buyers</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="MacDonald Highlands luxury community perfect for relocating executives"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/clubhouse-full.jpg"
+                  alt="DragonRidge Country Club amenities for relocating families"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Can&apos;t visit in person? We create comprehensive virtual tour experiences including:
             </p>

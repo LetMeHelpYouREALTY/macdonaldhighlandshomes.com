@@ -89,6 +89,26 @@ export default function InvestmentPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Appreciation Trends in Guard-Gated Henderson</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="MacDonald Highlands properties with Strip views show strong appreciation"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/golf-lifestyle-full.jpg"
+                  alt="Golf course frontage properties in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               MacDonald Highlands has demonstrated strong appreciation over the past decade, driven by:
             </p>

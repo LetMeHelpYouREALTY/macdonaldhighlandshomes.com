@@ -121,9 +121,47 @@ export default function TestimonialsPage() {
             <p className="text-lg text-neutral-700 mb-8 text-center">
               With over {siteConfig.agent.experience.split("+")[0]} families served and $127M+ in sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> has built a reputation for excellence in MacDonald Highlands real estate. Our clients consistently praise our expertise, professionalism, and results-driven approach. Read what they have to say about their experiences buying, selling, and investing in Henderson&apos;s premier guard-gated community. Explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link> or learn about the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
             </p>
-            <p className="text-lg text-neutral-700 mb-12">
+            <p className="text-lg text-neutral-700 mb-8">
               These testimonials represent real experiences from clients who have trusted Dr. Jan for their MacDonald Highlands real estate needs. From first-time luxury buyers to experienced investors, from local sellers to international relocations, our clients consistently highlight our deep community knowledge, attention to detail, and commitment to achieving exceptional results.
             </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/clubhouse-2.jpg"
+                  alt="DragonRidge Country Club in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle-00012-alt.jpg"
+                  alt="MacDonald Highlands luxury lifestyle"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/guard-gate-0001-1024.jpg"
+                  alt="MacDonald Highlands guard-gated community"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/pool-full.jpg"
+                  alt="Resort-style amenities in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -71,9 +71,47 @@ export default function ContactPage() {
             <p className="text-lg text-neutral-700 mb-8 text-center">
               Whether you&apos;re buying, selling, or exploring investment opportunities in MacDonald Highlands, we&apos;re here to provide expert guidance tailored to your unique needs. With deep community knowledge, proven results, and a commitment to excellence, we deliver outcomes that exceed expectations. Contact us today to begin your MacDonald Highlands real estate journey. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link>, explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">services</Link>, or discover the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
             </p>
-            <p className="text-lg text-neutral-700 mb-12">
+            <p className="text-lg text-neutral-700 mb-8">
               Our consultation process begins with understanding your goals, timeline, and specific requirements. Whether you&apos;re selling a $15M estate, buying your first luxury home, or exploring investment opportunities, we provide personalized service that addresses your unique situation. Every client relationship is built on trust, transparency, and results—values that have earned us the trust of 500+ families throughout MacDonald Highlands.
             </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="MacDonald Highlands luxury real estate"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/clubhouse-full.jpg"
+                  alt="DragonRidge Country Club amenities"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle-full.jpg"
+                  alt="MacDonald Highlands golf lifestyle"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/pool-full.jpg"
+                  alt="Resort-style living in MacDonald Highlands"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
