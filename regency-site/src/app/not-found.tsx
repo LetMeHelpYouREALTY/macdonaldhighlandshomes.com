@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '404 - Page Not Found | Dr. Jan Duffy Real Estate',
+  title: '404 - Page Not Found | MacDonald Highlands Homes and Real Estate',
   description: 'The page you\'re looking for doesn\'t exist or has been moved. Return to the homepage to explore MacDonald Highlands luxury real estate.',
   robots: {
     index: false,

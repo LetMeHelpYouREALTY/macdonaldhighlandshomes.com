@@ -4,7 +4,7 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Client Testimonials | Dr. Jan Duffy Real Estate",
+  title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
   description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
   keywords: "Dr. Jan Duffy reviews, MacDonald Highlands real estate testimonials, Henderson REALTOR reviews",
 };

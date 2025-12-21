@@ -36,6 +36,7 @@ export const siteConfig = {
     phone: "702-744-8474",
     phoneFormatted: "(702) 744-8474",
     email: "DrDuffy@MacDonaldHighlandsHomes.com",
+    emailSells: "DrDuffySells@MacDonaldHighlandsHomes.com",
     address: {
       street: "MacDonald Highlands",
       city: "Henderson",
