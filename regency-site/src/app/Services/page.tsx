@@ -46,12 +46,7 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Deep Community Knowledge</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our intimate understanding of MacDonald Highlands extends beyond property listings. We know the nuances of each neighborhood within the community, from DragonRidge Country Club properties to custom estate lots. This local expertise allows us to provide insights that generic real estate agents simply cannot match—whether it&apos;s understanding view premiums, lot positioning advantages, or the subtle differences between various MacDonald Highlands subdivisions.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Market Specialization</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              The luxury real estate market operates differently than standard residential sales. Properties ranging from $1M to $15M+ require specialized marketing strategies, sophisticated buyer networks, and an understanding of high-net-worth client expectations. We excel in this arena, having successfully navigated complex transactions involving architectural photography, private showings, off-market listings, and international buyer coordination.
+              Our expertise extends beyond general real estate knowledge—we specialize exclusively in MacDonald Highlands. This deep community knowledge means we understand view premiums, lot positioning factors, DragonRidge Country Club membership nuances, and neighborhood-specific market dynamics that impact property values. This specialized knowledge is invaluable whether you&apos;re buying or selling, ensuring you make informed decisions based on actual community expertise rather than generic real estate advice.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Proven Track Record</h3>
@@ -140,10 +135,10 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Relocation Concierge Services</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Relocating to MacDonald Highlands involves more than just finding a home—it requires comprehensive support to ensure a smooth transition. Our relocation concierge services assist with everything from initial community research and school district information to utility setup, contractor referrals, and local service provider connections. We understand that moving to a new luxury community can be overwhelming, and our goal is to make your transition seamless.
+              Corporate relocations and executive moves require white-glove service that goes beyond property search. Our relocation concierge services handle every detail of your move to MacDonald Highlands, from initial virtual tours to area orientation, school recommendations, temporary housing coordination, and timeline management. We understand that relocating to a new city while managing a career requires seamless support.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
-              For corporate relocations, we coordinate with HR departments and relocation companies to meet specific requirements and timelines. Our network of trusted local professionals—from interior designers to landscape architects—ensures you have access to the best resources for making your MacDonald Highlands home truly yours. We also provide orientation on community amenities, HOA protocols, and gate access procedures to help you feel at home from day one.
+              Our relocation services are designed to minimize stress and maximize efficiency. We coordinate with employers, handle logistics, provide comprehensive area orientation, and ensure your transition to MacDonald Highlands living is smooth and successful. Whether you&apos;re relocating from across the country or internationally, we provide the support you need to make Henderson your new home.
             </p>
             <Link 
               href="/services/relocation-concierge"
@@ -154,10 +149,10 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Investment Advisory Services</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands presents unique investment opportunities for savvy real estate investors. Our investment advisory services help you evaluate properties from a financial perspective, analyzing rental potential, appreciation trends, and long-term value. We provide insights on market cycles, timing considerations, and investment strategies tailored to luxury real estate in Henderson.
+              MacDonald Highlands properties represent significant investment opportunities, but understanding rental income potential, appreciation trends, and tax advantages requires specialized knowledge. Our investment advisory services provide comprehensive analysis of investment potential, including rental income projections, market appreciation trends, tax advantages, and 1031 exchange coordination for investors looking to optimize their real estate portfolios.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
-              Whether you&apos;re considering a second home that can generate rental income, exploring 1031 exchange opportunities, or building a luxury real estate portfolio, we offer data-driven analysis to support your investment decisions. Our understanding of MacDonald Highlands market dynamics, combined with broader Las Vegas area trends, helps you identify properties with strong investment potential.
+              We work with investors to identify properties that align with their investment goals, whether that&apos;s cash flow, appreciation, tax benefits, or portfolio diversification. Our market analysis includes rental market data, occupancy trends, and investment property performance metrics specific to MacDonald Highlands and the Henderson luxury market.
             </p>
             <Link 
               href="/services/investment-advisory"
@@ -166,12 +161,12 @@ export default function ServicesPage() {
               Learn more about investment services →
             </Link>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Off-Market & Pocket Listings</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Off-Market Opportunities</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              For both buyers and sellers, off-market opportunities offer unique advantages. Sellers benefit from discreet marketing that maintains privacy while reaching qualified buyers through our exclusive network. Buyers gain access to properties that may never hit the public market, often with less competition and more flexible terms.
+              Access to off-market and pocket listings gives buyers exclusive opportunities before properties hit the MLS. Our off-market opportunity services connect qualified buyers with sellers who prefer privacy-focused marketing approaches. This exclusive access means you can view and purchase properties that never appear in public listings, giving you a competitive advantage in the MacDonald Highlands market.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
-              Our off-market and pocket listing services connect high-net-worth buyers with exclusive properties that match their specific criteria. We maintain relationships with other luxury real estate professionals, allowing us to present off-market opportunities that aren&apos;t available through traditional channels. This exclusive access can be the difference between finding your dream MacDonald Highlands property and settling for what&apos;s publicly available.
+              For sellers, off-market marketing provides discretion and privacy while still reaching qualified buyers through our curated network. This approach is ideal for high-profile individuals, executives, and families who value privacy during the selling process. We maintain a waiting list of qualified buyers interested in off-market opportunities, ensuring your property reaches the right audience.
             </p>
             <Link 
               href="/services/off-market-opportunities"
@@ -180,163 +175,113 @@ export default function ServicesPage() {
               Learn more about off-market opportunities →
             </Link>
 
-            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">The MacDonald Highlands Advantage: Why This Community Stands Apart</h2>
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Service Comparison Guide</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands isn&apos;t just another luxury community—it&apos;s Henderson&apos;s premier guard-gated golf community, offering an unparalleled lifestyle for discerning homeowners. Understanding what makes this community special helps you appreciate the value proposition of properties here, whether you&apos;re buying or selling.
+              Understanding which services align with your goals helps you make informed decisions about your MacDonald Highlands real estate journey. This comparison guide highlights key differences and helps you identify the services that best match your needs.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Guard-Gated Security & Privacy</h3>
+            <div className="my-8 space-y-6">
+              {[
+                {
+                  title: "Selling Your Home",
+                  description: "Complete selling services from pre-listing strategy through closing",
+                  href: "/services/selling-your-macdonald-highlands-home",
+                  features: ["Pre-listing strategy", "Professional staging", "Architectural photography", "Global buyer network"],
+                },
+                {
+                  title: "Buying in MacDonald Highlands",
+                  description: "Comprehensive buying support with community expertise",
+                  href: "/services/buying-in-macdonald-highlands",
+                  features: ["Private tours", "Guard-gate coordination", "DragonRidge guidance", "View premium analysis"],
+                },
+                {
+                  title: "Luxury Home Valuation",
+                  description: "Accurate market analysis for informed decision-making",
+                  href: "/services/luxury-home-valuation",
+                  features: ["Market analysis", "View premium calculations", "Comparable sales", "Investment insights"],
+                },
+                {
+                  title: "Relocation Concierge",
+                  description: "White-glove relocation support for seamless moves",
+                  href: "/services/relocation-concierge",
+                  features: ["Virtual tours", "Area orientation", "School recommendations", "Timeline management"],
+                },
+                {
+                  title: "Investment Advisory",
+                  description: "Investment analysis and portfolio optimization",
+                  href: "/services/investment-advisory",
+                  features: ["Rental income analysis", "Appreciation trends", "Tax advantages", "1031 coordination"],
+                },
+                {
+                  title: "Off-Market Opportunities",
+                  description: "Exclusive access to private listings",
+                  href: "/services/off-market-opportunities",
+                  features: ["Pocket listings", "Privacy-focused marketing", "Buyer waiting list", "Exclusive access"],
+                },
+              ].map((service) => (
+                <div key={service.href} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200">
+                  <h4 className="text-xl font-serif font-bold mb-2">{service.title}</h4>
+                  <p className="text-neutral-700 mb-4">{service.description}</p>
+                  <ul className="list-disc pl-6 space-y-1 text-neutral-600 mb-4">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                  <Link
+                    href={service.href}
+                    className="text-primary-600 hover:text-primary-700 font-semibold"
+                  >
+                    Learn more →
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why MacDonald Highlands Real Estate Requires Specialized Services</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              Two beautifully landscaped, 24-hour guard-gated entries provide security and privacy that few communities can match. This controlled access ensures that only authorized visitors enter the community, creating a sense of safety and exclusivity that high-net-worth buyers value. The guard-gate system also means your property viewings are coordinated and controlled, maintaining your privacy during the selling process.
+              MacDonald Highlands isn&apos;t a standard residential market—it&apos;s a luxury guard-gated community with unique characteristics that require specialized expertise. Understanding these unique factors helps explain why our comprehensive service approach is essential for successful transactions in this exclusive community.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Championship Golf Course</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Guard-Gated Access Complexity</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              The Jay Morrish-designed DragonRidge Championship Course is a centerpiece of MacDonald Highlands living. Golf course frontage properties command premium prices, and membership access adds significant value to homes. Whether you&apos;re an avid golfer or simply appreciate the manicured views, the golf course is a defining feature of the community that impacts property values and lifestyle quality.
+              The guard-gated security system means property viewings require pre-authorization and coordination that standard real estate doesn&apos;t involve. We handle all guard-gate logistics, ensuring smooth access for qualified buyers while maintaining security protocols. This coordination is essential for successful transactions and requires relationships with security personnel and understanding of access procedures.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Panoramic Strip & Mountain Views</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">View Premium Calculations</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Properties with panoramic Las Vegas Strip views and mountain vistas represent the pinnacle of MacDonald Highlands real estate. These view premiums can add hundreds of thousands of dollars to property values, and they&apos;re a key factor in our valuation and marketing strategies. Understanding view angles, future development impacts, and historical appreciation patterns helps us position view properties effectively in the market.
+              Properties with panoramic Strip views command significant premiums, but calculating these premiums requires understanding view angles, clarity, future development impacts, and market trends. Our view premium analysis helps buyers and sellers understand how views impact property values, ensuring accurate pricing and informed decision-making.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Generous Lot Sizes & Estate-Style Living</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club Membership</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              With lot sizes ranging from one-third acre to over one acre, MacDonald Highlands offers true estate-style living. These generous lots allow for custom pools, outdoor entertainment areas, and extensive landscaping that create a resort-like atmosphere. For buyers, lot size is a crucial consideration that impacts both lifestyle and property value.
+              Golf course frontage properties and membership access add significant value, but understanding transfer processes, fees, and membership benefits requires specialized knowledge. We provide comprehensive guidance on DragonRidge membership, helping buyers understand the value proposition and sellers effectively market membership access as a property feature.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Proximity to Las Vegas Strip</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Market Dynamics</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Located just 15-20 minutes from the Las Vegas Strip, MacDonald Highlands offers the perfect balance of privacy and accessibility. This proximity means you can enjoy world-class dining, entertainment, and amenities while maintaining the tranquility of guard-gated community living. For many buyers, this location advantage is a key selling point.
+              The luxury real estate market operates differently than standard residential markets. Inventory levels, buyer profiles, negotiation dynamics, and transaction timelines all differ significantly. Our specialized services are designed specifically for luxury market dynamics, ensuring you receive guidance tailored to high-net-worth real estate transactions.
             </p>
-
-            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Our Service Process: How We Deliver Exceptional Results</h2>
-            <p className="text-lg text-neutral-700 mb-6">
-              Every MacDonald Highlands real estate transaction follows a structured process designed to maximize results while minimizing stress. Our systematic approach ensures nothing falls through the cracks, from initial consultation through closing and beyond.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Initial Consultation & Needs Assessment</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              We begin every client relationship with a comprehensive consultation to understand your goals, timeline, budget, and specific requirements. For sellers, this includes property evaluation, market positioning strategy, and timeline planning. For buyers, we discuss lifestyle preferences, must-have features, and investment objectives. This initial assessment forms the foundation for a customized service plan.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Strategic Planning & Market Analysis</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              Based on your goals, we develop a strategic plan backed by comprehensive market analysis. This includes comparable sales research, current market trends, pricing recommendations, and timeline projections. Our data-driven approach ensures you make informed decisions based on real market intelligence, not guesswork.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Execution & Coordination</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              Once the strategy is in place, we execute with precision and attention to detail. This phase involves property preparation, professional photography, marketing launch, buyer qualification, showing coordination, and negotiation management. Throughout this process, we maintain constant communication, keeping you informed of progress and market feedback.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Transaction Management & Closing</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              As we move toward closing, our transaction management ensures all details are handled professionally. We coordinate inspections, appraisals, title work, and lender requirements, working closely with all parties to keep the transaction on track. Our goal is a smooth closing that meets your timeline expectations.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Post-Closing Support</h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              Our relationship doesn&apos;t end at closing. We provide post-closing support including contractor referrals, service provider connections, and community orientation. For sellers, we assist with move-out coordination and final property transfer. For buyers, we help you settle into your new MacDonald Highlands home with confidence.
-            </p>
-
-            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Ready to Experience Exceptional Real Estate Service?</h2>
-            <p className="text-lg text-neutral-700 mb-6">
-              Whether you&apos;re buying, selling, or exploring investment opportunities in MacDonald Highlands, we&apos;re here to provide the expert guidance and white-glove service your luxury real estate transaction deserves. With deep community knowledge, proven results, and a commitment to excellence, we deliver outcomes that exceed expectations.
-            </p>
-            <p className="text-lg text-neutral-700 mb-8">
-              Contact us today to discuss your MacDonald Highlands real estate goals. We offer confidential consultations with no obligation, providing honest market insights and strategic recommendations tailored to your unique situation. Let&apos;s explore how our comprehensive services can help you achieve your real estate objectives in Henderson&apos;s premier guard-gated community.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Grid */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-center">
-            Explore Our Specialized Services
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Selling Your MacDonald Highlands Home",
-                description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network access for selling your estate home.",
-                href: "/services/selling-your-macdonald-highlands-home",
-                icon: "🏠"
-              },
-              {
-                title: "Buying in MacDonald Highlands",
-                description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for your dream home.",
-                href: "/services/buying-in-macdonald-highlands",
-                icon: "🔑"
-              },
-              {
-                title: "Luxury Home Valuation",
-                description: "Comprehensive market analysis using comparable sales, view premiums, and current trends for accurate property valuation.",
-                href: "/services/luxury-home-valuation",
-                icon: "📊"
-              },
-              {
-                title: "Relocation Concierge",
-                description: "Complete relocation support including community research, utility setup, contractor referrals, and local service connections.",
-                href: "/services/relocation-concierge",
-                icon: "🚚"
-              },
-              {
-                title: "Investment Advisory",
-                description: "Data-driven analysis of rental potential, appreciation trends, and investment strategies for luxury real estate.",
-                href: "/services/investment-advisory",
-                icon: "💼"
-              },
-              {
-                title: "Off-Market Opportunities",
-                description: "Exclusive access to pocket listings and off-market properties not available through traditional channels.",
-                href: "/services/off-market-opportunities",
-                icon: "🔒"
-              }
-            ].map((service, index) => (
-              <Link
-                key={index}
-                href={service.href}
-                className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-serif font-bold mb-4 text-neutral-900">
-                  {service.title}
-                </h3>
-                <p className="text-neutral-600 mb-4">
-                  {service.description}
-                </p>
-                <span className="text-primary-600 font-semibold hover:underline">
-                  Learn more →
-                </span>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-neutral-900 text-white">
+      <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Let&apos;s Discuss Your MacDonald Highlands Real Estate Goals
+              Ready to Begin Your MacDonald Highlands Real Estate Journey?
             </h2>
-            <p className="text-xl text-neutral-200 mb-8">
-              Schedule a confidential consultation to explore how our comprehensive services can help you achieve your objectives in Henderson&apos;s premier guard-gated community.
+            <p className="text-xl text-neutral-600 mb-8">
+              Whether you&apos;re buying, selling, or exploring investment opportunities, we&apos;re here to provide expert guidance tailored to your unique needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 px-8 rounded-lg transition-colors"
-              >
-                Contact Us Today
+              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
+                Schedule Consultation
               </Link>
-              <a
+              <a 
                 href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="border-2 border-white text-white hover:bg-white hover:text-neutral-900 font-bold py-4 px-8 rounded-lg transition-colors"
+                className="btn-secondary text-lg px-8 py-4"
               >
                 Call {siteConfig.contact.phoneFormatted}
               </a>
