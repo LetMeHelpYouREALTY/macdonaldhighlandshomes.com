@@ -25,6 +25,39 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
 
+  // Headers for caching static assets
+  async headers() {
+    return [
+      {
+        source: '/photos/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/Image/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
+
   // Experimental features for Next.js 15
   experimental: {
     optimizePackageImports: ['@fortawesome/react-fontawesome', 'framer-motion'],

@@ -77,6 +77,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        {/* Preconnect to RealScout for faster widget loading (320ms LCP savings) */}
+        <link rel="preconnect" href="https://em.realscout.com" />
+        <link rel="dns-prefetch" href="https://em.realscout.com" />
+        {/* Preconnect to CloudFront CDN for RealScout assets */}
+        <link rel="preconnect" href="https://d1buiexcd5gara.cloudfront.net" />
+        <link rel="dns-prefetch" href="https://d1buiexcd5gara.cloudfront.net" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         {/* LocalBusiness Schema for Google Business Profile */}
         <LocalBusinessSchema />
