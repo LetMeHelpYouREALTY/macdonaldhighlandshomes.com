@@ -18,8 +18,8 @@ export default function CommunityPage() {
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
         <div className="absolute inset-0 z-0">
           <img
-            src="/photos/community/hero-view-lifestyle.jpg"
-            alt="MacDonald Highlands luxury community"
+            src="/photos/community/view-lifestyle-00024-full.jpg"
+            alt="MacDonald Highlands luxury community with panoramic Las Vegas Strip and mountain views"
             className="w-full h-full object-cover opacity-30"
             style={{ position: 'absolute', inset: 0 }}
           />

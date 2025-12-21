@@ -78,8 +78,8 @@ export default function HomePage() {
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900">
         <div className="absolute inset-0 z-0">
           <img
-            src="/photos/community/hero-view-lifestyle.jpg"
-            alt="MacDonald Highlands luxury homes with Strip views"
+            src="/photos/community/view-lifestyle-00024-full.jpg"
+            alt="MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views"
             className="w-full h-full object-cover opacity-40"
             style={{ position: 'absolute', inset: 0 }}
           />
