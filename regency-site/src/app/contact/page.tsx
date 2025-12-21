@@ -90,11 +90,14 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Service Area</h3>
+                    <h3 className="text-xl font-semibold mb-3">Office Location</h3>
                     <p className="text-lg text-neutral-700">
-                      {siteConfig.contact.address.full}
+                      {siteConfig.contact.office.full}
                     </p>
                     <p className="text-neutral-600 mt-2">
+                      Service Area: {siteConfig.contact.address.full}
+                    </p>
+                    <p className="text-neutral-600 mt-1">
                       Specializing in MacDonald Highlands and surrounding Henderson luxury communities
                     </p>
                   </div>
