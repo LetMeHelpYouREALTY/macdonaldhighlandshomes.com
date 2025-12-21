@@ -55,6 +55,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 export const viewport: Viewport = {
@@ -74,18 +77,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <head>
-        {/* Google Search Console Verification */}
-        {process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && (
-          <meta
-            name="google-site-verification"
-            content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
-          />
-        )}
+      <body className={`${inter.className} antialiased`}>
         {/* LocalBusiness Schema for Google Business Profile */}
         <LocalBusinessSchema />
-      </head>
-      <body className={`${inter.className} antialiased`}>
         <GoogleAnalytics />
         <Navbar />
         <main className="min-h-screen">{children}</main>
