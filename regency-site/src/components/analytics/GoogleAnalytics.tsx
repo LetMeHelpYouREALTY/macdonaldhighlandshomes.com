@@ -8,7 +8,7 @@ interface GoogleAnalyticsProps {
 }
 
 export default function GoogleAnalytics({ 
-  gaId = process.env.NEXT_PUBLIC_GA_ID,
+  gaId = process.env.NEXT_PUBLIC_GA_ID || "G-75NKGG3V44",
   gtmId = process.env.NEXT_PUBLIC_GTM_ID 
 }: GoogleAnalyticsProps) {
   if (!gaId && !gtmId) {
