@@ -92,7 +92,7 @@ Verify these match across all platforms:
 **Current NAP:**
 - **Name**: Dr. Jan Duffy, REALTOR®
 - **Address**: MacDonald Highlands, Henderson, NV 89012
-- **Phone**: (702) 222-1964
+- **Phone**: (702) 744-8474
 - **Email**: jan@drjanduffy.com
 
 ## 🎯 Local SEO Best Practices Implemented

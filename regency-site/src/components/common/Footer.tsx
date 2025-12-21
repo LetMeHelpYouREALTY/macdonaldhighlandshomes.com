@@ -97,7 +97,7 @@ export default function Footer() {
                   className="flex items-center gap-3 text-neutral-100 hover:text-gold-500 transition-colors"
                 >
                   <FaPhone className="h-4 w-4 text-gold-500" />
-                  <span className="font-semibold">702-222-1964</span>
+                  <span className="font-semibold">{siteConfig.contact.phoneFormatted}</span>
                 </a>
                 
                 <a
@@ -142,7 +142,7 @@ export default function Footer() {
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-gold-500 p-4 z-50 shadow-lg">
         <a
-          href="tel:702-222-1964"
+          href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
           className="flex items-center justify-center gap-3 text-neutral-900 font-semibold"
         >
           <FaPhone className="h-5 w-5" />
