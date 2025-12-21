@@ -13,25 +13,33 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "MacDonald Highlands Investment Properties | Dr. Jan Duffy",
-    description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination.",
+    description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination for luxury property investors.",
     url: 'https://macdonaldhighlandshomes.com/services/investment-advisory',
     siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands investment properties',
+        alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
+        type: 'image/jpeg',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "MacDonald Highlands Investment Properties | Dr. Jan Duffy",
-    description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages.",
-    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+    description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination.",
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

@@ -15,22 +15,30 @@ export const metadata: Metadata = {
     description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
     url: 'https://macdonaldhighlandshomes.com/testimonials',
     siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands client testimonials',
+        alt: 'Client testimonials for Dr. Jan Duffy, MacDonald Highlands luxury real estate expert in Henderson, Nevada',
+        type: 'image/jpeg',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
-    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate.",
-    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        alt: 'Client testimonials for Dr. Jan Duffy, MacDonald Highlands luxury real estate expert in Henderson, Nevada',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

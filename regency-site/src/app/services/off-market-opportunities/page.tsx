@@ -16,22 +16,30 @@ export const metadata: Metadata = {
     description: "Access to pocket listings and off-market properties in MacDonald Highlands before they hit MLS. Privacy-focused selling and buyer waiting list registration.",
     url: 'https://macdonaldhighlandshomes.com/services/off-market-opportunities',
     siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands off-market opportunities',
+        alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
+        type: 'image/jpeg',
       },
     ],
-    locale: 'en_US',
-    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Off-Market & Coming Soon: MacDonald Highlands Exclusives | Dr. Jan Duffy",
-    description: "Access to pocket listings and off-market properties in MacDonald Highlands before they hit MLS.",
-    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+    description: "Access to pocket listings and off-market properties in MacDonald Highlands before they hit MLS. Privacy-focused selling and buyer waiting list registration.",
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
