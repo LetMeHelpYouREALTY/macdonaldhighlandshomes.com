@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ContactForm from "@/components/forms/ContactForm";
+import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
@@ -252,6 +253,40 @@ export default function ContactPage() {
             <p className="text-lg text-neutral-700 mb-6">
               From initial consultation through closing and beyond, we provide comprehensive support tailored to luxury market standards. Our services include pre-listing strategy development, professional staging consultation, architectural photography, private showing coordination, global luxury buyer network access, relocation concierge services, investment advisory, and off-market opportunity access. Whatever your MacDonald Highlands real estate needs, we have the expertise and resources to deliver exceptional results.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* RealScout Office Listings Section */}
+      <section className="section-padding bg-neutral-50">
+        <div className="container-luxury">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
+                Current MacDonald Highlands Listings
+              </h2>
+              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
+              </p>
+            </div>
+            
+            <RealScoutWidgetWrapper />
+            
+            <div className="mt-8 text-center">
+              <p className="text-neutral-600 mb-4">
+                Looking for off-market opportunities?{" "}
+                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
+                  Join our private buyer list
+                </Link>
+                .
+              </p>
+              <Link 
+                href="/listings" 
+                className="btn-primary text-lg px-8 py-4 inline-block"
+              >
+                View All Listings
+              </Link>
+            </div>
           </div>
         </div>
       </section>

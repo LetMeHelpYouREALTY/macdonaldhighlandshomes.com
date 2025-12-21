@@ -3,6 +3,8 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
+import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Off-Market & Coming Soon: MacDonald Highlands Exclusives | Dr. Jan Duffy",
