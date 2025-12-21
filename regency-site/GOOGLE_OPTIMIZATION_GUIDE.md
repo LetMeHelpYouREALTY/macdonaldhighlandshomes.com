@@ -93,7 +93,8 @@ Verify these match across all platforms:
 - **Name**: Dr. Jan Duffy, REALTOR®
 - **Address**: MacDonald Highlands, Henderson, NV 89012
 - **Phone**: (702) 744-8474
-- **Email**: jan@drjanduffy.com
+- **Email**: DrDuffy@MacDonaldHighlandsHomes.com
+- **Email (Selling)**: DrDuffySells@MacDonaldHighlandsHomes.com
 
 ## 🎯 Local SEO Best Practices Implemented
 

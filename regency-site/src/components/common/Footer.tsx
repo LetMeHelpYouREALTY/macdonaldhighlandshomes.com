@@ -101,11 +101,11 @@ export default function Footer() {
                 </a>
                 
                 <a
-                  href="mailto:jan@drjanduffy.com"
+                  href={`mailto:${siteConfig.contact.email}`}
                   className="flex items-center gap-3 text-neutral-300 hover:text-gold-500 transition-colors text-sm"
                 >
                   <FaEnvelope className="h-4 w-4 text-gold-500" />
-                  <span>jan@drjanduffy.com</span>
+                  <span>{siteConfig.contact.email}</span>
                 </a>
                 
                 <div className="flex items-start gap-3 text-neutral-300 text-sm">

@@ -6,7 +6,7 @@ export default function LocalBusinessSchema() {
     "@type": "RealEstateAgent",
     "@id": "https://macdonaldhighlandshomes.com/#organization",
     "name": siteConfig.agent.name,
-    "alternateName": "Dr. Jan Duffy Real Estate",
+    "alternateName": "MacDonald Highlands Homes and Real Estate",
     "url": "https://macdonaldhighlandshomes.com",
     "logo": "https://macdonaldhighlandshomes.com/Image/person1.jpeg",
     "image": "https://macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg",

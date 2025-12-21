@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://macdonaldhighlandshomes.com",
     title: siteConfig.seo.title,
     description: siteConfig.description,
-    siteName: siteConfig.agent.name,
+    siteName: siteConfig.name,
   },
   twitter: {
     card: "summary_large_image",

@@ -1,6 +1,6 @@
 // Site-wide configuration for Dr. Jan Duffy - MacDonald Highlands Luxury Real Estate
 export const siteConfig = {
-  name: "Dr. Jan Duffy, REALTOR®",
+  name: "MacDonald Highlands Homes and Real Estate",
   tagline: "MacDonald Highlands Real Estate Expert",
   description: "Premier luxury real estate services in MacDonald Highlands, Henderson's ultra-luxury guard-gated golf community. Expert guidance for buying, selling, and investing in $1M-$15M+ estate homes with panoramic Strip views.",
   location: "Henderson, NV 89012",
@@ -8,7 +8,7 @@ export const siteConfig = {
     name: "Dr. Jan Duffy",
     title: "REALTOR®",
     phone: "702-744-8474",
-    email: "jan@drjanduffy.com",
+    email: "DrDuffy@MacDonaldHighlandsHomes.com",
     license: "S.0197614.LLC",
     brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
     credentials: "Ph.D.",
@@ -35,7 +35,7 @@ export const siteConfig = {
   contact: {
     phone: "702-744-8474",
     phoneFormatted: "(702) 744-8474",
-    email: "jan@drjanduffy.com",
+    email: "DrDuffy@MacDonaldHighlandsHomes.com",
     address: {
       street: "MacDonald Highlands",
       city: "Henderson",

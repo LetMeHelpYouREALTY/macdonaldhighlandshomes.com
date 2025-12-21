@@ -15,7 +15,7 @@ export const metadata = {
     title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
     description: siteConfig.seo.description,
     url: 'https://macdonaldhighlandshomes.com',
-    siteName: siteConfig.agent.name,
+    siteName: siteConfig.name,
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
