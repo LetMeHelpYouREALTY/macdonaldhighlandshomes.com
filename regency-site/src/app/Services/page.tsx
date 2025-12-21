@@ -3,24 +3,58 @@ import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import ServiceSchema from "@/components/schema/ServiceSchema";
 
 export const metadata: Metadata = {
   title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
   description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities in $1M-$15M+ estate homes.",
   keywords: "MacDonald Highlands real estate services, luxury home services Henderson, real estate agent MacDonald Highlands, home selling services, home buying services, luxury home valuation",
+  alternates: {
+    canonical: 'https://macdonaldhighlandshomes.com/services',
+  },
+  openGraph: {
+    title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
+    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
+    url: 'https://macdonaldhighlandshomes.com/services',
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MacDonald Highlands luxury community services',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
+    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson.",
+    images: ['https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg'],
+  },
 };
+
+const serviceName = "MacDonald Highlands Luxury Real Estate Services";
+const serviceDescription = "Comprehensive luxury real estate services in MacDonald Highlands including buying, selling, home valuation, relocation concierge, investment advisory, and off-market opportunities for $1M-$15M+ estate homes.";
 
 export default function ServicesPage() {
   return (
     <>
       <RealEstateAgentSchema />
+      <ServiceSchema 
+        serviceName={serviceName}
+        serviceDescription={serviceDescription}
+        serviceUrl="https://macdonaldhighlandshomes.com/services"
+      />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
         <div className="absolute inset-0 z-0">
           <img
             src="/photos/community/clubhouse-full.jpg"
-            alt="MacDonald Highlands luxury community"
+            alt="MacDonald Highlands luxury community clubhouse"
             className="w-full h-full object-cover opacity-30"
             style={{ position: 'absolute', inset: 0 }}
           />
@@ -55,6 +89,11 @@ export default function ServicesPage() {
               Our success metrics speak for themselves: 500+ families served, $127M+ in sales volume, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
             </p>
 
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Comprehensive Service Portfolio</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              From initial consultation through closing and beyond, we provide comprehensive support tailored to luxury market standards. Our services include pre-listing strategy development, professional staging consultation, architectural photography, private showing coordination, global luxury buyer network access, relocation concierge services, investment advisory, and off-market opportunity access. Whatever your MacDonald Highlands real estate needs, we have the expertise and resources to deliver exceptional results.
+            </p>
+
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Our Comprehensive Service Portfolio</h2>
             <p className="text-lg text-neutral-700 mb-6">
               MacDonald Highlands real estate transactions require a full spectrum of specialized services. From initial consultation through closing and beyond, we provide comprehensive support tailored to luxury market standards. Our service portfolio addresses every aspect of buying, selling, and investing in Henderson&apos;s premier guard-gated community.
@@ -65,14 +104,14 @@ export default function ServicesPage() {
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/view-lifestyle-00024-full.jpg"
-                  alt="Luxury estate home with panoramic views"
+                  alt="Luxury estate home with panoramic Las Vegas Strip views"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/clubhouse-full.jpg"
-                  alt="MacDonald Highlands luxury community"
+                  alt="DragonRidge Country Club clubhouse in MacDonald Highlands"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -95,14 +134,14 @@ export default function ServicesPage() {
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/golf-lifestyle-full.jpg"
-                  alt="DragonRidge Country Club golf course"
+                  alt="DragonRidge Country Club championship golf course"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/guard-gate-full.jpg"
-                  alt="MacDonald Highlands guard-gated entrance"
+                  alt="MacDonald Highlands 24-hour guard-gated entrance"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -261,6 +300,16 @@ export default function ServicesPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Market Dynamics</h3>
             <p className="text-lg text-neutral-700 mb-6">
               The luxury real estate market operates differently than standard residential markets. Inventory levels, buyer profiles, negotiation dynamics, and transaction timelines all differ significantly. Our specialized services are designed specifically for luxury market dynamics, ensuring you receive guidance tailored to high-net-worth real estate transactions.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Estate-Style Living Considerations</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              MacDonald Highlands properties feature generous lot sizes ranging from one-third acre to over one acre, allowing for custom pools, outdoor entertainment areas, and extensive landscaping. Understanding how lot size, positioning, and custom features impact property values requires specialized knowledge that goes beyond standard real estate valuation methods.
+            </p>
+
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">International Buyer Coordination</h3>
+            <p className="text-lg text-neutral-700 mb-6">
+              Many MacDonald Highlands buyers come from international markets, requiring coordination across time zones, currency considerations, and international transaction protocols. Our experience with international buyers ensures smooth transactions regardless of where your buyer is located, from Asia to Europe to the Middle East.
             </p>
           </div>
         </div>
