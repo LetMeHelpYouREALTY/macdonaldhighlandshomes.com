@@ -265,7 +265,7 @@ const PropertyTypePage: React.FC = () => {
     <Navbar/>
     <div className="container mx-auto py-40 px-4 sm:px-6 lg:px-40">
       <Link
-        href="/Property/Property_type/"
+        href="/Property"
         className="mt-4 text-xl font-bold border rounded-md py-2 px-4 text-white bg-indigo-700 hover:bg-indigo-800"
       >
         back
