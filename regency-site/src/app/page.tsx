@@ -1,22 +1,8 @@
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ContactForm from "@/components/forms/ContactForm";
-
-// Lazy load RealScout widget to improve initial page load (below the fold)
-const RealScoutWidget = dynamic(
-  () => import("@/components/listings/RealScoutWidget"),
-  {
-    ssr: false, // RealScout widget is client-side only
-    loading: () => (
-      <div className="bg-neutral-50 rounded-lg p-8 animate-pulse">
-        <div className="h-8 bg-neutral-200 rounded w-1/3 mb-4"></div>
-        <div className="h-64 bg-neutral-200 rounded"></div>
-      </div>
-    ),
-  }
-);
+import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 
 export const metadata = {
   title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
@@ -404,7 +390,7 @@ export default function HomePage() {
               </p>
             </div>
             
-            <RealScoutWidget />
+            <RealScoutWidgetWrapper />
             
             <div className="mt-8 text-center">
               <p className="text-neutral-600 mb-4">
