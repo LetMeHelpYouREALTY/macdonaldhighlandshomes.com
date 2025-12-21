@@ -5,8 +5,33 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
-  description: "Complete guide to MacDonald Highlands, Henderson&apos;s premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
+  description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
   keywords: "MacDonald Highlands community, DragonRidge Country Club, Henderson guard-gated community, luxury golf community, Vu SkyVu Vue Pointe",
+  alternates: {
+    canonical: 'https://macdonaldhighlandshomes.com/macdonald-highlands-community',
+  },
+  openGraph: {
+    title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
+    description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
+    url: 'https://macdonaldhighlandshomes.com/macdonald-highlands-community',
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MacDonald Highlands luxury community',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
+    description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community.",
+    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+  },
 };
 
 export default function CommunityPage() {

@@ -8,6 +8,31 @@ export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
   description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
   keywords: "contact Dr. Jan Duffy, MacDonald Highlands REALTOR contact, Henderson real estate agent",
+  alternates: {
+    canonical: 'https://macdonaldhighlandshomes.com/contact',
+  },
+  openGraph: {
+    title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
+    description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
+    url: 'https://macdonaldhighlandshomes.com/contact',
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Dr. Jan Duffy for MacDonald Highlands real estate',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
+    description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services.`,
+    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+  },
 };
 
 export default function ContactPage() {
