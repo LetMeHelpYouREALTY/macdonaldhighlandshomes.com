@@ -79,6 +79,19 @@ All pages have been enhanced with December 2025 Open Graph best practices for op
 10. ✅ **Valuation** (`/services/luxury-home-valuation`)
     - Enhanced valuation service metadata
 
+11. ✅ **Relocation Concierge** (`/services/relocation-concierge`)
+    - Enhanced relocation service metadata
+
+12. ✅ **Investment Advisory** (`/services/investment-advisory`)
+    - Enhanced investment service metadata
+
+13. ✅ **Off-Market Opportunities** (`/services/off-market-opportunities`)
+    - Enhanced off-market service metadata
+
+### Additional Pages
+14. ✅ **Testimonials** (`/testimonials`)
+    - Enhanced testimonials page metadata
+
 ## Best Practices Implemented (December 2025)
 
 ### Image Requirements
