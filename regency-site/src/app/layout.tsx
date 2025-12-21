@@ -6,7 +6,6 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
-import PreconnectResources from "@/components/performance/PreconnectResources";
 
 // Luxury typography: Inter for body, Playfair Display for headings
 const inter = Inter({ 
@@ -59,6 +58,15 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
+  other: {
+    // Preconnect to RealScout for faster widget loading (320ms LCP savings)
+    'link': [
+      { rel: 'preconnect', href: 'https://em.realscout.com', crossOrigin: 'anonymous' },
+      { rel: 'dns-prefetch', href: 'https://em.realscout.com' },
+      { rel: 'preconnect', href: 'https://d1buiexcd5gara.cloudfront.net', crossOrigin: 'anonymous' },
+      { rel: 'dns-prefetch', href: 'https://d1buiexcd5gara.cloudfront.net' },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
@@ -79,8 +87,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className={`${inter.className} antialiased`}>
-        {/* Preconnect resources for faster loading (320ms LCP savings) */}
-        <PreconnectResources />
         {/* LocalBusiness Schema for Google Business Profile */}
         <LocalBusinessSchema />
         <GoogleAnalytics />
