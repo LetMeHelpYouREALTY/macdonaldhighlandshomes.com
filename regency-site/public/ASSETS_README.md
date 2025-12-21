@@ -128,3 +128,4 @@ import Image from 'next/image';
 - Large image files should be optimized before committing
 - Consider using Git LFS for very large assets (>10MB)
 - Placeholder files (`.gitkeep`) are included to ensure directories are tracked
+

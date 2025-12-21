@@ -105,3 +105,4 @@ Consider sourcing images from:
 - MacDonald Highlands HOA (with permission) for community photos
 - Stock photos (Unsplash, Pexels) for generic real estate imagery
 - Custom photography for property listings
+

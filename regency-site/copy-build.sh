@@ -29,3 +29,4 @@ if [ -d "public" ]; then
 else
   echo "⚠ Warning: public directory not found"
 fi
+

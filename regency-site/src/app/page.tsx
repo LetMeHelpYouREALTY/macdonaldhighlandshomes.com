@@ -239,10 +239,50 @@ export default function HomePage() {
             <p className="text-xl text-neutral-600 text-center mb-12 max-w-3xl mx-auto">
               Experience the pinnacle of luxury living in Southern Nevada&apos;s most exclusive master-planned community
             </p>
+            
+            {/* Community Image Gallery */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/hero-view-lifestyle.jpg"
+                  alt="MacDonald Highlands luxury lifestyle"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/golf-lifestyle.jpg"
+                  alt="DragonRidge Country Club"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/clubhouse.jpg"
+                  alt="DragonRidge clubhouse"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src="/photos/community/pool.jpg"
+                  alt="Resort-style pool"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
 
             <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
               Guard-Gated Security & Privacy
             </h3>
+            <div className="my-6">
+              <img
+                src="/photos/community/guard-gate-full.jpg"
+                alt="MacDonald Highlands 24-hour guard-gated entrance"
+                className="w-full rounded-lg shadow-lg"
+                style={{ maxWidth: '1000px', height: 'auto' }}
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               MacDonald Highlands offers two beautifully landscaped, 24-hour guard-gated entries that provide security and privacy unmatched in the Henderson area. This controlled access ensures that only authorized visitors enter the community, creating a sense of safety and exclusivity that high-net-worth buyers value. The guard-gate system also means property viewings are coordinated and controlled, maintaining your privacy during the selling process.
             </p>
@@ -280,6 +320,22 @@ export default function HomePage() {
             <h3 className="text-2xl font-serif font-bold mt-8 mb-4">
               Generous Lot Sizes & Estate-Style Living
             </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/pool-full.jpg"
+                  alt="Resort-style pool in MacDonald Highlands estate"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/clubhouse-full.jpg"
+                  alt="DragonRidge Country Club clubhouse"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               With lot sizes ranging from one-third acre to over one acre, MacDonald Highlands offers true estate-style living. These generous lots allow for custom pools, outdoor entertainment areas, and extensive landscaping that create a resort-like atmosphere. For buyers, lot size is a crucial consideration that impacts both lifestyle and property value. The ability to create your own private oasis while maintaining proximity to Las Vegas amenities is a unique advantage of MacDonald Highlands living.
             </p>

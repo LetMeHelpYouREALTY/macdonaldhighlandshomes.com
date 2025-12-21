@@ -104,3 +104,4 @@ export default function ImageDiagnosticPage() {
     </div>
   );
 }
+

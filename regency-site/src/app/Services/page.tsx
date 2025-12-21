@@ -65,6 +65,22 @@ export default function ServicesPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Selling Your MacDonald Highlands Luxury Home</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  alt="Luxury estate home with panoramic views"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/clubhouse-full.jpg"
+                  alt="MacDonald Highlands luxury community"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Selling a luxury home in MacDonald Highlands demands a sophisticated approach that goes far beyond traditional real estate marketing. Our selling services include pre-listing strategy development, professional staging consultation, architectural and twilight photography with drone aerials, private showing coordination, and access to global luxury buyer networks. We also offer discreet off-market marketing options for high-profile sellers who value privacy, ensuring your property reaches qualified buyers without public MLS exposure.
             </p>
@@ -79,6 +95,22 @@ export default function ServicesPage() {
             </Link>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Buying in MacDonald Highlands</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/golf-lifestyle-full.jpg"
+                  alt="DragonRidge Country Club golf course"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="/photos/community/guard-gate-full.jpg"
+                  alt="MacDonald Highlands guard-gated entrance"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Navigating MacDonald Highlands as a buyer requires insider knowledge of the community&apos;s unique characteristics. We provide private community access and tour scheduling, handling all guard-gate authorization to ensure smooth property viewings. Our DragonRidge Country Club membership guidance helps you understand transfer processes, fees, and the value of golf course frontage properties.
             </p>

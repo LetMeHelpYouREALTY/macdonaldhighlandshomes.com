@@ -4,3 +4,4 @@
   "buildCommand": "cd regency-site && npm run build && bash copy-build.sh",
   "outputDirectory": ".next"
 }
+

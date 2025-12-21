@@ -28,3 +28,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : route.startsWith('/services') ? 0.9 : 0.8,
   }));
 }
+

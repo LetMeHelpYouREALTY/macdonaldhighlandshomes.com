@@ -29,3 +29,4 @@ if (fs.existsSync(photosDir)) {
     console.log('Hero image size:', stats.size, 'bytes');
   }
 }
+
