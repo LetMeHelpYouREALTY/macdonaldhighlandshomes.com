@@ -57,6 +57,8 @@ export default function ServicesPage() {
             alt="MacDonald Highlands luxury community clubhouse"
             className="w-full h-full object-cover opacity-30"
             style={{ position: 'absolute', inset: 0 }}
+            loading="eager"
+            decoding="async"
           />
         </div>
         <div className="relative z-10 container-luxury">
@@ -106,6 +108,8 @@ export default function ServicesPage() {
                   src="/photos/community/view-lifestyle-00024-full.jpg"
                   alt="Luxury estate home with panoramic Las Vegas Strip views"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
@@ -113,6 +117,8 @@ export default function ServicesPage() {
                   src="/photos/community/clubhouse-full.jpg"
                   alt="DragonRidge Country Club clubhouse in MacDonald Highlands"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
