@@ -4,6 +4,8 @@ import "./globals.css";
 import { siteConfig } from "../../config/siteConfig";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 
 // Luxury typography: Inter for body, Playfair Display for headings
 const inter = Inter({ 
@@ -72,7 +74,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        {/* Google Search Console Verification */}
+        {process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && (
+          <meta
+            name="google-site-verification"
+            content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
+          />
+        )}
+        {/* LocalBusiness Schema for Google Business Profile */}
+        <LocalBusinessSchema />
+      </head>
       <body className={`${inter.className} antialiased`}>
+        <GoogleAnalytics />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

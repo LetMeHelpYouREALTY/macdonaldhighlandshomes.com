@@ -5,7 +5,7 @@ export default function RealEstateAgentSchema() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": siteConfig.agent.name,
-    "image": "https://macdonaldhighlandshomes.com/Image/person1.jpeg",
+    "image": "https://macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg",
     "telephone": `+1-${siteConfig.contact.phone.replace(/-/g, '-')}`,
     "email": siteConfig.contact.email,
     "url": "https://macdonaldhighlandshomes.com",

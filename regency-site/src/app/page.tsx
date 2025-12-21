@@ -8,6 +8,31 @@ export const metadata = {
   title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords,
+  alternates: {
+    canonical: 'https://macdonaldhighlandshomes.com',
+  },
+  openGraph: {
+    title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
+    description: siteConfig.seo.description,
+    url: 'https://macdonaldhighlandshomes.com',
+    siteName: siteConfig.agent.name,
+    images: [
+      {
+        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MacDonald Highlands luxury homes with panoramic views',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
+    description: siteConfig.seo.description,
+    images: ['https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg'],
+  },
 };
 
 const services = [
