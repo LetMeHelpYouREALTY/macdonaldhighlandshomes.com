@@ -3,7 +3,9 @@
 import React from 'react';
 
 type RealScoutListingsAttributes = {
-  'agent-encoded-id': string;
+  'agent-encoded-id'?: string;
+  'office-encoded-id'?: string;
+  'office-address'?: string;
   'sort-order'?: string;
   'listing-status'?: string;
   'property-types'?: string;

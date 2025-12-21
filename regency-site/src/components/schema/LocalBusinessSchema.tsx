@@ -15,10 +15,10 @@ export default function LocalBusinessSchema() {
     "email": siteConfig.contact.email,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": siteConfig.contact.address.street,
-      "addressLocality": siteConfig.contact.address.city,
-      "addressRegion": siteConfig.contact.address.state,
-      "postalCode": siteConfig.contact.address.zip,
+      "streetAddress": siteConfig.contact.office.street,
+      "addressLocality": siteConfig.contact.office.city,
+      "addressRegion": siteConfig.contact.office.state,
+      "postalCode": siteConfig.contact.office.zip,
       "addressCountry": "US"
     },
     "geo": {

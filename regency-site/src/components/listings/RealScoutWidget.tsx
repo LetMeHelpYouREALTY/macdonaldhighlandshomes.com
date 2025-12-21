@@ -30,6 +30,7 @@ export default function RealScoutWidget() {
       `}</style>
       <realscout-office-listings
         agent-encoded-id={siteConfig.realscout.agentId}
+        office-address={`${siteConfig.contact.office.street}, ${siteConfig.contact.office.city}, ${siteConfig.contact.office.state} ${siteConfig.contact.office.zip}`}
         sort-order="PRICE_HIGH"
         listing-status="For Sale"
         property-types=",SFR"

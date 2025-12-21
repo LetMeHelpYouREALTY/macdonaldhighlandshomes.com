@@ -11,10 +11,10 @@ export default function RealEstateAgentSchema() {
     "url": "https://macdonaldhighlandshomes.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": siteConfig.contact.address.city,
-      "addressRegion": siteConfig.contact.address.state,
-      "postalCode": siteConfig.contact.address.zip,
-      "streetAddress": siteConfig.contact.address.street
+      "addressLocality": siteConfig.contact.office.city,
+      "addressRegion": siteConfig.contact.office.state,
+      "postalCode": siteConfig.contact.office.zip,
+      "streetAddress": siteConfig.contact.office.street
     },
     "areaServed": {
       "@type": "Place",
