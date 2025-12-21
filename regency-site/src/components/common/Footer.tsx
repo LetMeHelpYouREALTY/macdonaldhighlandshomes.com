@@ -93,7 +93,7 @@ export default function Footer() {
                 </div>
                 
                 <a
-                  href="tel:702-222-1964"
+                  href="tel:702-744-8474"
                   className="flex items-center gap-3 text-neutral-100 hover:text-gold-500 transition-colors"
                 >
                   <FaPhone className="h-4 w-4 text-gold-500" />
@@ -146,7 +146,7 @@ export default function Footer() {
           className="flex items-center justify-center gap-3 text-neutral-900 font-semibold"
         >
           <FaPhone className="h-5 w-5" />
-          <span>Call Dr. Jan: 702-222-1964</span>
+          <span>Call Dr. Jan: 702-744-8474</span>
         </a>
       </div>
     </>

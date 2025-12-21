@@ -70,7 +70,7 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 2. Verify NAP (Name, Address, Phone) matches exactly:
    - **Name**: Dr. Jan Duffy, REALTOR®
    - **Address**: MacDonald Highlands, Henderson, NV 89012
-   - **Phone**: (702) 222-1964
+   - **Phone**: (702) 744-8474
 3. Add website URL: `https://macdonaldhighlandshomes.com`
 4. Verify schema markup matches GBP details
 
@@ -156,3 +156,4 @@ NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
 - [ ] Verify Google Business Profile links to website
 - [ ] Test all pages load correctly
 - [ ] Monitor Search Console for indexing issues
+

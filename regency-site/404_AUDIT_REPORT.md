@@ -37,3 +37,4 @@
 2. **Check all internal links** - Ensure they use correct case
 3. **Add redirects** - Redirect `/Services` → `/services` if needed
 4. **Verify dynamic routes** - Ensure Property routes work correctly
+

@@ -80,3 +80,4 @@ All 34 other referenced images exist and are accessible:
    - Replace `hero_bg_4.jpg` with `hero_bg_3.jpg` or remove the reference
 
 3. **Long-term**: Consider organizing all images into a consistent structure and removing unused legacy images.
+

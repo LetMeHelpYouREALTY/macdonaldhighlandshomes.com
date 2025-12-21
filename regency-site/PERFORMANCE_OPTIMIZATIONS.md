@@ -83,3 +83,4 @@ After deployment, monitor:
 2. **Lighthouse scores** in PageSpeed Insights
 3. **Real User Monitoring** in Google Analytics
 4. **Vercel Analytics** for performance metrics
+

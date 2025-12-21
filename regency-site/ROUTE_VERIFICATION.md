@@ -58,3 +58,4 @@ The middleware now handles:
 2. Consider adding a catch-all route handler for unknown paths
 3. Monitor 404 logs to identify specific failing URLs
 4. Ensure all internal links use correct lowercase paths
+

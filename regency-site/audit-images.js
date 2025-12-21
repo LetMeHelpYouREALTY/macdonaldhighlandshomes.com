@@ -91,3 +91,4 @@ const checkDir = (dir, label) => {
 checkDir('photos/agent', 'Agent Photos');
 checkDir('photos/community', 'Community Photos');
 checkDir('Image', 'Legacy Image Folder');
+

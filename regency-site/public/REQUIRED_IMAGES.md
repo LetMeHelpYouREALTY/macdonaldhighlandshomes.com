@@ -106,3 +106,4 @@ Consider sourcing images from:
 - Stock photos (Unsplash, Pexels) for generic real estate imagery
 - Custom photography for property listings
 
+

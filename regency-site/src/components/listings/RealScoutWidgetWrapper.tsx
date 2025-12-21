@@ -20,3 +20,4 @@ const RealScoutWidget = dynamic(
 export default function RealScoutWidgetWrapper() {
   return <RealScoutWidget />;
 }
+

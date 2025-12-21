@@ -7,7 +7,7 @@ export const siteConfig = {
   agent: {
     name: "Dr. Jan Duffy",
     title: "REALTOR®",
-    phone: "702-222-1964",
+    phone: "702-744-8474",
     email: "jan@drjanduffy.com",
     license: "S.0197614.LLC",
     brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
@@ -33,8 +33,8 @@ export const siteConfig = {
     entries: "Two beautifully landscaped, 24-hour guard-gated entries"
   },
   contact: {
-    phone: "702-222-1964",
-    phoneFormatted: "(702) 222-1964",
+    phone: "702-744-8474",
+    phoneFormatted: "(702) 744-8474",
     email: "jan@drjanduffy.com",
     address: {
       street: "MacDonald Highlands",
