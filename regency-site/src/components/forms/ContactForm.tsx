@@ -48,7 +48,8 @@ export default function ContactForm({
         body: JSON.stringify({
           ...formData,
           source,
-          timestamp: new Date().toISOString(),
+          formName: formTitle,
+          sourceUrl: typeof window !== "undefined" ? window.location.href : "",
         }),
       });
 
@@ -181,7 +182,7 @@ export default function ContactForm({
       {submitStatus === "error" && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-md">
           <p className="text-red-800">
-            There was an error submitting your form. Please call us directly at{" "}
+            Sorry, something went wrong sending your message. Please call or text Dr. Jan Duffy at{" "}
             <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} className="underline font-semibold">
               {siteConfig.contact.phoneFormatted}
             </a>
