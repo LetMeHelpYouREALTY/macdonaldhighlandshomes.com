@@ -24,6 +24,7 @@ export default function Navbar() {
     { href: "/services", label: "Services" },
     { href: "/listings", label: "Listings" },
     { href: "/macdonald-highlands-community", label: "Community" },
+    { href: "/amenities", label: "Amenities" },
     { href: "/about-dr-jan-duffy", label: "About" },
     { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },

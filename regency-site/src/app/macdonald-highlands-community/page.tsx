@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import Link from "next/link";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
@@ -500,6 +501,11 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+
+      <AmenityMapSection
+        title="Life Near MacDonald Highlands"
+        description="Map dining, golf, parks, healthcare, and shopping around Henderson's premier guard-gated community."
+      />
 
       {/* CTA Section */}
       <section className="section-padding bg-white">
