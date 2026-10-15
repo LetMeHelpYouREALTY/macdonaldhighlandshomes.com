@@ -9,7 +9,7 @@
     "lint": "cd regency-site && npm run lint"
   },
   "dependencies": {
-    "next": "^15.1.0"
+    "next": "^15.5.28"
   },
   "repository": {
     "type": "git",
