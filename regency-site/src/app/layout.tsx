@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "../../config/siteConfig";
 import Navbar from "@/components/common/Navbar";
@@ -103,6 +104,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Navbar />
         <main className="min-h-screen">{children}</main>
+        <Script src="/ads-conversions.js" strategy="afterInteractive" />
         <Footer />
       </body>
     </html>
