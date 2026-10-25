@@ -97,7 +97,7 @@ export default function AboutPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-serif font-bold mb-6">A Trusted Expert in MacDonald Highlands Real Estate</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                With over {siteConfig.agent.experience.split("+")[0]} families served and more than $127 million in sales volume, Dr. Jan Duffy has established herself as Henderson&apos;s premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with advanced academic credentials and the backing of Berkshire Hathaway HomeServices Nevada Properties, provides clients with unmatched expertise in the ultra-luxury market. This proven track record demonstrates not just success, but a commitment to excellence that has earned the trust of MacDonald Highlands homeowners, luxury property investors, and high-net-worth buyers and sellers throughout the Henderson area.
+                With over {siteConfig.agent.experience.split("+")[0]} families served and $127M+ in Dr. Duffy Group career sales, Dr. Jan Duffy has established herself as Henderson&apos;s premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with advanced academic credentials and the backing of Berkshire Hathaway HomeServices Nevada Properties, provides clients with unmatched expertise in the ultra-luxury market. This proven track record demonstrates not just success, but a commitment to excellence that has earned the trust of MacDonald Highlands homeowners, luxury property investors, and high-net-worth buyers and sellers throughout the Henderson area.
               </p>
               <p className="text-lg text-neutral-700 mb-6">
                 What sets Dr. Jan apart in the MacDonald Highlands real estate market is her combination of local expertise, luxury market specialization, and personalized service. She doesn&apos;t just list properties—she strategically positions them in the market, connects them with qualified buyers through her global network, and negotiates deals that maximize value. This comprehensive approach has resulted in successful transactions ranging from $1M starter luxury homes to $15M+ estate properties, each handled with the same meticulous attention to detail and white-glove service.
@@ -269,7 +269,7 @@ export default function AboutPage() {
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Results-Driven Approach</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                While personalized service is important, results matter most. Dr. Jan&apos;s track record of success—500+ families served, $127M+ in sales—demonstrates a commitment to achieving outcomes that exceed expectations. Every strategy, every marketing decision, every negotiation is focused on delivering the best possible results for clients.
+                While personalized service is important, results matter most. Dr. Jan&apos;s track record of success—500+ team sales, $127M+ in Dr. Duffy Group career sales—demonstrates a commitment to achieving outcomes that exceed expectations. Every strategy, every marketing decision, every negotiation is focused on delivering the best possible results for clients.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Long-Term Client Relationships</h3>

@@ -86,7 +86,7 @@ export default function ServicesPage() {
             
             <h2 className="text-3xl font-serif font-bold mb-6">Why Choose Dr. Jan Duffy for Your MacDonald Highlands Real Estate Needs</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              With over 500 families served and $127M+ in sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> brings unparalleled expertise to MacDonald Highlands real estate transactions. As a neighborhood specialist with deep knowledge of Henderson&apos;s ultra-luxury guard-gated golf community, we provide comprehensive services tailored to the unique needs of luxury home buyers and sellers. Whether you&apos;re selling a $15M estate with panoramic Strip views, buying your first <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands property</Link>, or exploring investment opportunities, our team delivers results through meticulous attention to detail, market intelligence, and white-glove service.
+              With 500+ team sales and $127M+ in Dr. Duffy Group career sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> brings unparalleled expertise to MacDonald Highlands real estate transactions. As a neighborhood specialist with deep knowledge of Henderson&apos;s ultra-luxury guard-gated golf community, we provide comprehensive services tailored to the unique needs of luxury home buyers and sellers. Whether you&apos;re selling a $15M estate with panoramic Strip views, buying your first <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands property</Link>, or exploring investment opportunities, our team delivers results through meticulous attention to detail, market intelligence, and white-glove service.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Deep Community Knowledge</h3>
@@ -96,7 +96,7 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Proven Track Record</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our success metrics speak for themselves: 500+ families served, $127M+ in sales volume, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
+              Our success metrics speak for themselves: 500+ team sales, $127M+ in Dr. Duffy Group career sales, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Comprehensive Service Portfolio</h3>

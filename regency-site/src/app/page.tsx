@@ -214,7 +214,7 @@ export default function HomePage() {
               Proven Results & Client Satisfaction
             </h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our success metrics speak for themselves: 500+ families served, $127M+ in sales volume, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
+              Our success metrics speak for themselves: 500+ team sales, $127M+ in Dr. Duffy Group career sales, and a reputation built on integrity, results, and exceptional service. We don&apos;t just list properties—we strategically position them in the market, connect them with qualified buyers, and negotiate deals that maximize value for our clients. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
             </p>
           </div>
         </div>

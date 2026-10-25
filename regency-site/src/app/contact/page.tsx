@@ -72,7 +72,7 @@ export default function ContactPage() {
               Whether you&apos;re buying, selling, or exploring investment opportunities in MacDonald Highlands, we&apos;re here to provide expert guidance tailored to your unique needs. With deep community knowledge, proven results, and a commitment to excellence, we deliver outcomes that exceed expectations. Contact us today to begin your MacDonald Highlands real estate journey. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link>, explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">services</Link>, or discover the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
             </p>
             <p className="text-lg text-neutral-700 mb-8">
-              Our consultation process begins with understanding your goals, timeline, and specific requirements. Whether you&apos;re selling a $15M estate, buying your first luxury home, or exploring investment opportunities, we provide personalized service that addresses your unique situation. Every client relationship is built on trust, transparency, and results—values that have earned us the trust of 500+ families throughout MacDonald Highlands.
+              Our consultation process begins with understanding your goals, timeline, and specific requirements. Whether you&apos;re selling a $15M estate, buying your first luxury home, or exploring investment opportunities, we provide personalized service that addresses your unique situation. Every client relationship is built on trust, transparency, and results—values that have earned us the trust of 500+ team sales throughout MacDonald Highlands.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
@@ -261,7 +261,7 @@ export default function ContactPage() {
               Why Choose Dr. Jan Duffy for Your MacDonald Highlands Real Estate Needs
             </h2>
             <p className="text-lg text-neutral-700 mb-8 text-center">
-              With 500+ families served and $127M+ in sales, we bring proven expertise to every MacDonald Highlands real estate transaction. Our combination of local knowledge, luxury market specialization, and personalized service delivers results that exceed expectations.
+              With 500+ team sales and $127M+ in Dr. Duffy Group career sales, we bring proven expertise to every MacDonald Highlands real estate transaction. Our combination of local knowledge, luxury market specialization, and personalized service delivers results that exceed expectations.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
@@ -282,7 +282,7 @@ export default function ContactPage() {
               Proven Track Record & Client Satisfaction
             </h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Our success metrics—500+ families served, $127M+ in sales volume—demonstrate a commitment to achieving exceptional results. We don&apos;t just list properties or show homes; we strategically position properties in the market, connect them with qualified buyers, and negotiate deals that maximize value. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
+              Our success metrics—500+ team sales, $127M+ in Dr. Duffy Group career sales—demonstrate a commitment to achieving exceptional results. We don&apos;t just list properties or show homes; we strategically position properties in the market, connect them with qualified buyers, and negotiate deals that maximize value. This proven track record gives you confidence that your MacDonald Highlands real estate transaction is in expert hands.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
