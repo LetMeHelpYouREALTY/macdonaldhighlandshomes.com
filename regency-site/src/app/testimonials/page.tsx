@@ -6,14 +6,14 @@ import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper
 
 export const metadata: Metadata = {
   title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
-  description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
+  description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ team sales for luxury home buying and selling.",
   keywords: "Dr. Jan Duffy reviews, MacDonald Highlands real estate testimonials, Henderson REALTOR reviews",
   alternates: {
     canonical: 'https://macdonaldhighlandshomes.com/testimonials',
   },
   openGraph: {
     title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
-    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
+    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ team sales for luxury home buying and selling.",
     url: 'https://macdonaldhighlandshomes.com/testimonials',
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
-    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
+    description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ team sales for luxury home buying and selling.",
     images: [
       {
         url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
@@ -119,7 +119,7 @@ export default function TestimonialsPage() {
               Trusted by MacDonald Highlands Homeowners
             </h2>
             <p className="text-lg text-neutral-700 mb-8 text-center">
-              With over {siteConfig.agent.experience.split("+")[0]} families served and $127M+ in sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> has built a reputation for excellence in MacDonald Highlands real estate. Our clients consistently praise our expertise, professionalism, and results-driven approach. Read what they have to say about their experiences buying, selling, and investing in Henderson&apos;s premier guard-gated community. Explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link> or learn about the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
+              With over {siteConfig.agent.experience.split("+")[0]} families served and $127M+ in Dr. Duffy Group career sales, <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy</Link> has built a reputation for excellence in MacDonald Highlands real estate. Our clients consistently praise our expertise, professionalism, and results-driven approach. Read what they have to say about their experiences buying, selling, and investing in Henderson&apos;s premier guard-gated community. Explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link> or learn about the <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community</Link>.
             </p>
             <p className="text-lg text-neutral-700 mb-8">
               These testimonials represent real experiences from clients who have trusted Dr. Jan for their MacDonald Highlands real estate needs. From first-time luxury buyers to experienced investors, from local sellers to international relocations, our clients consistently highlight our deep community knowledge, attention to detail, and commitment to achieving exceptional results.
