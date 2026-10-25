@@ -102,7 +102,7 @@ const PropertyDetails = () => {
         <li>Highly-rated school district</li>
         <li>Nearby parks and recreational facilities</li>
         <li>Vibrant local arts and culture scene</li>
-        <li>Safe and family-friendly community</li>
+        <li>Master-planned community with parks</li>
       </ul>
     </div>
     <div className="bg-white p-6 rounded-lg shadow-lg">
