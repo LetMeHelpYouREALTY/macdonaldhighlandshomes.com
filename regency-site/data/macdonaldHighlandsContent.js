@@ -31,7 +31,7 @@ export const communityOverview = {
       "15-20 minutes to Las Vegas Strip",
       "20 minutes to McCarran International Airport",
       "Proximity to premium shopping and dining",
-      "Access to top-rated schools",
+      "CCSD schools, zoned by address",
       "Close to Lake Mead and outdoor recreation"
     ]
   },

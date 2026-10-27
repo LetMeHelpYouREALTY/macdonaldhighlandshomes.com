@@ -317,7 +317,7 @@ export default function CommunityPage() {
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Exclusive guard-gated security and privacy</li>
               <li>Championship golf at DragonRidge Country Club</li>
-              <li>Proximity to Henderson&apos;s top schools, shopping, and dining</li>
+              <li>Near Foothill and Coronado high schools, shopping, and dining</li>
               <li>Easy access to McCarran International Airport</li>
               <li>Las Vegas Strip entertainment just minutes away</li>
               <li>Outdoor recreation in nearby Red Rock Canyon and Lake Mead</li>
@@ -436,7 +436,7 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Henderson School District Excellence</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Families choosing MacDonald Highlands benefit from access to Henderson&apos;s highly-rated school district, which consistently ranks among the best in Nevada. This educational advantage is a key consideration for families with children, ensuring that luxury living doesn&apos;t require compromising on educational quality. The combination of excellent schools and luxury community living creates an ideal environment for raising families.
+              MacDonald Highlands is served by the Clark County School District. Most homes are zoned for Foothill High School, with some addresses zoned for Coronado High School. Confirm zoning for any address with the CCSD Zoning Search.
             </p>
 
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">MacDonald Highlands Real Estate Market Overview</h2>
