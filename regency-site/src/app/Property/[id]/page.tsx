@@ -99,7 +99,7 @@ const PropertyDetails = () => {
       <ul className="list-disc list-inside text-gray-700 space-y-2">
         <li>Walking distance to top-rated restaurants</li>
         <li>Proximity to public transportation</li>
-        <li>Highly-rated school district</li>
+        <li>Clark County School District, zoned by address</li>
         <li>Nearby parks and recreational facilities</li>
         <li>Vibrant local arts and culture scene</li>
         <li>Master-planned community with parks</li>
