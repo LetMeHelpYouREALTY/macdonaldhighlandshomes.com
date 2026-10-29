@@ -223,7 +223,7 @@ export default function InvestmentPage() {
 
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why MacDonald Highlands is an Attractive Investment Market</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands offers unique investment characteristics that make it attractive to luxury real estate investors. Understanding these market fundamentals helps investors evaluate the investment potential of properties in this exclusive community. These characteristics support both income generation and long-term appreciation potential.
+              MacDonald Highlands offers unique investment characteristics that make it attractive to luxury real estate investors. Understanding these market fundamentals helps investors evaluate the investment potential of properties in this luxury community. These characteristics support both income generation and long-term appreciation potential.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Limited Supply & Exclusivity</h3>

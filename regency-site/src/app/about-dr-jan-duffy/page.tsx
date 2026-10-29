@@ -105,7 +105,7 @@ export default function AboutPage() {
 
               <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why MacDonald Highlands Specialization Matters</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                MacDonald Highlands represents the pinnacle of luxury living in Henderson—a guard-gated community where estate homes command $1M to $15M+ and offer unparalleled Strip views, DragonRidge Country Club access, and privacy. Dr. Jan&apos;s specialization in this exclusive community means clients benefit from insider knowledge that generic real estate agents simply cannot provide. This deep community expertise translates directly to better outcomes, whether you&apos;re buying, selling, or investing.
+                MacDonald Highlands represents the pinnacle of luxury living in Henderson—a guard-gated community where estate homes command $1M to $15M+ and offer unparalleled Strip views, DragonRidge Country Club access, and privacy. Dr. Jan&apos;s specialization in this community means clients benefit from insider knowledge that generic real estate agents simply cannot provide. This deep community expertise translates directly to better outcomes, whether you&apos;re buying, selling, or investing.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Intimate Neighborhood Knowledge</h3>

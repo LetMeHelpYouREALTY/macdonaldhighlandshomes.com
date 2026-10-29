@@ -17,7 +17,7 @@ export const macdonaldHighlandsProperties = [
     status: "For Sale",
     
     // Detailed description
-    description: "Experience the pinnacle of luxury living in this stunning contemporary estate positioned in SkyVu, one of MacDonald Highlands' most exclusive neighborhoods. This architectural masterpiece offers breathtaking panoramic views of the Las Vegas Strip, surrounding mountains, and the DragonRidge golf course from nearly every room.",
+    description: "Experience the pinnacle of luxury living in this stunning contemporary estate positioned in SkyVu, one of MacDonald Highlands' most guard-gated neighborhoods. This architectural masterpiece offers breathtaking panoramic views of the Las Vegas Strip, surrounding mountains, and the DragonRidge golf course from nearly every room.",
     
     highlights: [
       "Panoramic Strip and mountain views from multiple levels",

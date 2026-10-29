@@ -74,7 +74,7 @@ export default function CommunityPage() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <h2 className="text-3xl font-serif font-bold mb-6">Welcome to MacDonald Highlands</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              Nestled in the foothills of Henderson, Nevada, MacDonald Highlands is a 1,320-acre master-planned luxury community that represents the pinnacle of guard-gated living. Just 15-20 minutes from the Las Vegas Strip, this exclusive enclave offers estate homes from $1M to $15M+ with panoramic Strip views, championship golf, and unparalleled privacy. Explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">available properties</Link> or learn about <Link href="/services" className="text-primary-600 hover:underline font-semibold">our real estate services</Link> for this exclusive community.
+              Nestled in the foothills of Henderson, Nevada, MacDonald Highlands is a 1,320-acre master-planned luxury community that represents the pinnacle of guard-gated living. Just 15-20 minutes from the Las Vegas Strip, this guard-gated enclave offers estate homes from $1M to $15M+ with panoramic Strip views, championship golf, and unparalleled privacy. Explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">available properties</Link> or learn about <Link href="/services" className="text-primary-600 hover:underline font-semibold">our real estate services</Link> for this guard-gated community.
             </p>
 
             <div className="my-12">
@@ -317,7 +317,7 @@ export default function CommunityPage() {
             <ul className="list-disc pl-6 space-y-2 text-neutral-700 mb-6">
               <li>Exclusive guard-gated security and privacy</li>
               <li>Championship golf at DragonRidge Country Club</li>
-              <li>Proximity to Henderson&apos;s top schools, shopping, and dining</li>
+              <li>Proximity to Henderson&apos;s nearby public schools, shopping, and dining</li>
               <li>Easy access to McCarran International Airport</li>
               <li>Las Vegas Strip entertainment just minutes away</li>
               <li>Outdoor recreation in nearby Red Rock Canyon and Lake Mead</li>
@@ -436,7 +436,7 @@ export default function CommunityPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Henderson School District Excellence</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Families choosing MacDonald Highlands benefit from access to Henderson&apos;s highly-rated school district, which consistently ranks among the best in Nevada. This educational advantage is a key consideration for families with children, ensuring that luxury living doesn&apos;t require compromising on educational quality. The combination of excellent schools and luxury community living creates an ideal environment for raising families.
+              MacDonald Highlands is served by Clark County School District schools in Henderson, plus nearby private schools; check CCSD and state data for current ratings. Luxury living doesn&apos;t require compromising on educational quality.
             </p>
 
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">MacDonald Highlands Real Estate Market Overview</h2>
