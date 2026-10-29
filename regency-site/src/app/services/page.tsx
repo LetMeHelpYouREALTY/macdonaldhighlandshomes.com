@@ -289,7 +289,7 @@ export default function ServicesPage() {
 
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Why MacDonald Highlands Real Estate Requires Specialized Services</h2>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands isn&apos;t a standard residential market—it&apos;s a luxury guard-gated community with unique characteristics that require specialized expertise. Understanding these unique factors helps explain why our comprehensive service approach is essential for successful transactions in this exclusive community.
+              MacDonald Highlands isn&apos;t a standard residential market—it&apos;s a luxury guard-gated community with unique characteristics that require specialized expertise. Understanding these unique factors helps explain why our comprehensive service approach is essential for successful transactions in this luxury community.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Guard-Gated Access Complexity</h3>

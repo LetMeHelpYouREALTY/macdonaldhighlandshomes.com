@@ -111,9 +111,9 @@ export default function Footer() {
                 <div className="flex items-start gap-3 text-neutral-300 text-sm">
                   <FaMapMarkerAlt className="h-4 w-4 text-gold-500 mt-0.5 flex-shrink-0" />
                   <span>
-                    Berkshire Hathaway HomeServices<br />
-                    Nevada Properties<br />
-                    Henderson, NV
+                    Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy<br />
+                    {siteConfig.contact.office.street}<br />
+                    {siteConfig.contact.office.city}, {siteConfig.contact.office.state} {siteConfig.contact.office.zip}
                   </span>
                 </div>
               </div>
