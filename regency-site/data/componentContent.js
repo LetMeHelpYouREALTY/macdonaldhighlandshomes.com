@@ -13,7 +13,7 @@ export const heroSection = {
 
 export const featuresSection = {
   title: "Why MacDonald Highlands",
-  subtitle: "Experience the pinnacle of luxury living in Henderson's most exclusive community",
+  subtitle: "Experience the pinnacle of luxury living in a luxury community in Henderson",
   features: [
     {
       icon: "shield",

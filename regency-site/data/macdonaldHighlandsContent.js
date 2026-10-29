@@ -31,7 +31,7 @@ export const communityOverview = {
       "15-20 minutes to Las Vegas Strip",
       "20 minutes to McCarran International Airport",
       "Proximity to premium shopping and dining",
-      "Access to top-rated schools",
+      "Access to public schools",
       "Close to Lake Mead and outdoor recreation"
     ]
   },
@@ -211,7 +211,7 @@ export const aboutContent = {
       "Low-density development preserving privacy",
       "Proximity to Las Vegas amenities",
       "Mountain setting with desert beauty",
-      "Established, mature community"
+      "Established, older community"
     ]
   },
 

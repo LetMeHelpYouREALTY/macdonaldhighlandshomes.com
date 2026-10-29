@@ -367,7 +367,7 @@ export default function HomePage() {
               Proximity to Las Vegas Strip & World-Class Amenities
             </h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Located just 15-20 minutes from the Las Vegas Strip, MacDonald Highlands offers the perfect balance of privacy and accessibility. This proximity means you can enjoy world-class dining, entertainment, and amenities while maintaining the tranquility of guard-gated community living. For many buyers, this location advantage is a key selling point—you get the best of both worlds: exclusive community living with easy access to everything Las Vegas has to offer.
+              Located just 15-20 minutes from the Las Vegas Strip, MacDonald Highlands offers the perfect balance of privacy and accessibility. This proximity means you can enjoy world-class dining, entertainment, and amenities while maintaining the tranquility of guard-gated community living. For many buyers, this location advantage is a key selling point—you get the best of both worlds: community living with easy access to everything Las Vegas has to offer.
             </p>
           </div>
         </div>

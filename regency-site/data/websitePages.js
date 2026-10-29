@@ -94,7 +94,7 @@ export const homepageContent = {
   },
   dreamReality: {
     title: "Make your Dream a Reality",
-    description: "Here is your chance to wrap yourself in the unmatched serenity that is MacDonald Highlands. Behind two beautifully landscaped, 24-hour guard-gated entries, this desert oasis has quickly become the premier luxury development in the Las Vegas Valley by offering privacy, security, and exclusivity to a growing number of residents looking to claim their piece of paradise. Just behind the walls of the community, you will find exceptional schools, upscale shopping, fine dining, and all the best culture and entertainment experiences only Las Vegas has to offer.",
+    description: "Here is your chance to wrap yourself in the unmatched serenity that is MacDonald Highlands. Behind two beautifully landscaped, 24-hour guard-gated entries, this desert oasis has quickly become the premier luxury development in the Las Vegas Valley by offering privacy, security, and exclusivity to a growing number of residents looking to claim their piece of paradise. Just behind the walls of the community, you will find nearby public schools, upscale shopping, fine dining, and all the best culture and entertainment experiences only Las Vegas has to offer.",
     cta: "Search Listings"
   },
   closingQuote: "From up here, we think you will find everything looks better. As you look down over the vast horizon pondering how and where you'll spend your tomorrows, it could become crystal clear."
