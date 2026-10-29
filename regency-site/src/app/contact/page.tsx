@@ -147,7 +147,7 @@ export default function ContactPage() {
                     >
                       {siteConfig.contact.phoneFormatted}
                     </a>
-                    <p className="text-neutral-600 mt-2">Available 7 days a week by appointment</p>
+                    <p className="text-neutral-600 mt-2">{siteConfig.contact.hours}</p>
                   </div>
 
                   <div>
@@ -166,21 +166,8 @@ export default function ContactPage() {
                     <p className="text-lg text-neutral-700">
                       {siteConfig.contact.office.full}
                     </p>
-                    <p className="text-neutral-600 mt-2">
-                      Service Area: {siteConfig.contact.address.full}
-                    </p>
                     <p className="text-neutral-600 mt-1">
                       Specializing in MacDonald Highlands and surrounding Henderson luxury communities
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-semibold mb-3">Brokerage</h3>
-                    <p className="text-lg text-neutral-700">
-                      {siteConfig.agent.brokerage}
-                    </p>
-                    <p className="text-neutral-600 mt-2">
-                      License: {siteConfig.agent.license}
                     </p>
                   </div>
 

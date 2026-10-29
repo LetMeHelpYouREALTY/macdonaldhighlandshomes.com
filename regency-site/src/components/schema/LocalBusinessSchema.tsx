@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "@id": "https://macdonaldhighlandshomes.com/#organization",
-    "name": siteConfig.agent.name,
+    "name": "Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy",
     "alternateName": "MacDonald Highlands Homes and Real Estate",
     "url": "https://macdonaldhighlandshomes.com",
     "logo": "https://macdonaldhighlandshomes.com/Image/person1.jpeg",
@@ -56,8 +56,8 @@ export default function LocalBusinessSchema() {
           "Saturday",
           "Sunday"
         ],
-        "opens": "00:00",
-        "closes": "23:59"
+        "opens": "08:00",
+        "closes": "20:00"
       }
     ],
     "memberOf": {

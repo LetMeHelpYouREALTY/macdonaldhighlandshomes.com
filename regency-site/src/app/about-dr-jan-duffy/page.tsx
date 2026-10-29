@@ -7,14 +7,14 @@ import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | MacDonald Highlands Real Estate Expert",
-  description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience} with ${siteConfig.agent.brokerage}.`,
-  keywords: "Dr. Jan Duffy REALTOR, MacDonald Highlands real estate agent, Henderson luxury homes expert, Berkshire Hathaway HomeServices",
+  description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience}. In real estate since 1983.`,
+  keywords: "Dr. Jan Duffy REALTOR, MacDonald Highlands real estate agent, Henderson luxury homes expert",
   alternates: {
     canonical: 'https://macdonaldhighlandshomes.com/about-dr-jan-duffy',
   },
   openGraph: {
     title: "About Dr. Jan Duffy | MacDonald Highlands Real Estate Expert",
-    description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience} with ${siteConfig.agent.brokerage}.`,
+    description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience}. In real estate since 1983.`,
     url: 'https://macdonaldhighlandshomes.com/about-dr-jan-duffy',
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -86,10 +86,7 @@ export default function AboutPage() {
                   <strong>Credentials:</strong> {siteConfig.agent.credentials}
                 </p>
                 <p className="text-lg text-neutral-700 mb-4">
-                  <strong>License:</strong> {siteConfig.agent.license}
-                </p>
-                <p className="text-lg text-neutral-700 mb-4">
-                  <strong>Brokerage:</strong> {siteConfig.agent.brokerage}
+                  <strong>Recognition:</strong> Top 1% Las Vegas REALTOR®, in real estate since 1983
                 </p>
               </div>
             </div>
@@ -97,7 +94,7 @@ export default function AboutPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-serif font-bold mb-6">A Trusted Expert in MacDonald Highlands Real Estate</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                With over {siteConfig.agent.experience.split("+")[0]} families served and more than $127 million in sales volume, Dr. Jan Duffy has established herself as Henderson&apos;s premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with advanced academic credentials and the backing of Berkshire Hathaway HomeServices Nevada Properties, provides clients with unmatched expertise in the ultra-luxury market. This proven track record demonstrates not just success, but a commitment to excellence that has earned the trust of MacDonald Highlands homeowners, luxury property investors, and high-net-worth buyers and sellers throughout the Henderson area.
+                With over {siteConfig.agent.experience.split("+")[0]} families served and more than $127 million in sales volume, Dr. Jan Duffy has established herself as Henderson&apos;s premier luxury real estate specialist. Her deep knowledge of MacDonald Highlands, combined with a Ph.D. in Research and a career in real estate since 1983, provides clients with unmatched expertise in the ultra-luxury market. This proven track record demonstrates not just success, but a commitment to excellence that has earned the trust of MacDonald Highlands homeowners, luxury property investors, and high-net-worth buyers and sellers throughout the Henderson area.
               </p>
               <p className="text-lg text-neutral-700 mb-6">
                 What sets Dr. Jan apart in the MacDonald Highlands real estate market is her combination of local expertise, luxury market specialization, and personalized service. She doesn&apos;t just list properties—she strategically positions them in the market, connects them with qualified buyers through her global network, and negotiates deals that maximize value. This comprehensive approach has resulted in successful transactions ranging from $1M starter luxury homes to $15M+ estate properties, each handled with the same meticulous attention to detail and white-glove service.
@@ -184,7 +181,7 @@ export default function AboutPage() {
 
               <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Advanced Credentials & Professional Excellence</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                Dr. Jan Duffy&apos;s {siteConfig.agent.credentials} reflects a commitment to excellence and analytical rigor that translates directly to her real estate practice. This advanced education, combined with continuous professional development in luxury real estate, ensures clients receive sophisticated market analysis and strategic guidance. The Ph.D. credential demonstrates not just academic achievement, but a dedication to thorough research, data-driven decision-making, and professional excellence that benefits every client relationship.
+                Dr. Jan Duffy&apos;s {siteConfig.agent.credentials} reflects a commitment to excellence and analytical rigor that translates directly to her real estate practice. This advanced education, combined with continuous professional development in luxury real estate, ensures clients receive sophisticated market analysis and strategic guidance. The Ph.D. in Research demonstrates not just academic achievement, but a dedication to thorough research, data-driven decision-making, and professional excellence that benefits every client relationship.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Continuous Professional Development</h3>
@@ -197,14 +194,14 @@ export default function AboutPage() {
                 The analytical skills developed through advanced education are applied to every real estate transaction. Market analysis goes beyond surface-level comparisons to include sophisticated evaluation of view premiums, lot positioning factors, architectural features, and buyer demand patterns. This analytical approach ensures pricing strategies and investment decisions are based on comprehensive data, not guesswork.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Berkshire Hathaway HomeServices: Industry-Leading Support</h2>
+              <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Industry-Leading Support</h2>
               <p className="text-lg text-neutral-700 mb-6">
-                As part of {siteConfig.agent.brokerage}, Dr. Jan leverages one of the most respected brands in real estate. This affiliation provides access to resources, networks, and support systems that enhance every client transaction. The Berkshire Hathaway HomeServices brand recognition and reputation for excellence add credibility and trust to every listing and client relationship.
+                Dr. Jan brings resources, networks, and support systems that enhance every client transaction, adding credibility and trust to every listing and client relationship.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Global Luxury Buyer Network</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                Through Berkshire Hathaway HomeServices&apos; international network, MacDonald Highlands properties reach luxury buyers from around the world. This global reach is particularly valuable for high-end estate properties, connecting sellers with executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking second homes in Henderson. This network access significantly expands the buyer pool beyond local markets.
+                Through an international referral network, MacDonald Highlands properties reach luxury buyers from around the world. This global reach is particularly valuable for high-end estate properties, connecting sellers with executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking second homes in Henderson. This network access significantly expands the buyer pool beyond local markets.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Marketing Resources & Technology</h3>
@@ -214,12 +211,12 @@ export default function AboutPage() {
 
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Transaction Support & Coordination</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                Behind every successful transaction is a team of professionals handling details, documentation, and coordination. Berkshire Hathaway HomeServices provides transaction support that ensures all aspects of the deal are handled professionally, from contract preparation to closing coordination. This support allows Dr. Jan to focus on client relationships and strategic guidance while ensuring nothing falls through the cracks.
+                Behind every successful transaction is a team of professionals handling details, documentation, and coordination. Her brokerage provides transaction support that ensures all aspects of the deal are handled professionally, from contract preparation to closing coordination. This support allows Dr. Jan to focus on client relationships and strategic guidance while ensuring nothing falls through the cracks.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Brand Recognition & Market Trust</h3>
+              <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Market Trust</h3>
               <p className="text-lg text-neutral-700 mb-6">
-                The Berkshire Hathaway HomeServices brand carries significant weight in luxury real estate markets. This brand recognition adds credibility to listings and instills confidence in buyers and sellers. The association with such a respected organization reinforces Dr. Jan&apos;s commitment to professional excellence and ethical business practices.
+                A career in real estate since 1983 adds credibility to listings and instills confidence in buyers and sellers, and reinforces Dr. Jan&apos;s commitment to professional excellence and ethical business practices.
               </p>
 
               <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Comprehensive Service Specialties</h2>

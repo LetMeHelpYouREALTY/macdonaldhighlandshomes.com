@@ -139,7 +139,7 @@ export default function SellingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Global Luxury Buyer Network Access</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Through Berkshire Hathaway HomeServices&apos; international network and our own connections, we connect your property with luxury buyers from around the world—executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking a second home in Henderson. This global reach significantly expands your buyer pool beyond local markets, increasing the likelihood of finding the right buyer at the right price. Our network includes buyers actively seeking MacDonald Highlands properties, ensuring your listing reaches interested parties.
+              Through an international referral network and our own connections, we connect your property with luxury buyers from around the world—executives relocating to Las Vegas, international investors, and high-net-worth individuals seeking a second home in Henderson. This global reach significantly expands your buyer pool beyond local markets, increasing the likelihood of finding the right buyer at the right price. Our network includes buyers actively seeking MacDonald Highlands properties, ensuring your listing reaches interested parties.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Negotiation Expertise for High-Net-Worth Transactions</h3>

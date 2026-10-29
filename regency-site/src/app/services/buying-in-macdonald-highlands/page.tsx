@@ -152,7 +152,7 @@ export default function BuyingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Builder Reputation Insights</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              With decades of experience in the Henderson luxury market, we have deep knowledge of local builders&apos; track records, quality standards, and customer service reputations. We&apos;ll help you choose a builder who aligns with your vision and timeline. Our builder relationships provide access to new construction opportunities and ensure you work with reputable professionals who understand MacDonald Highlands standards.
+              In real estate since 1983, including the Henderson luxury market, we have deep knowledge of local builders&apos; track records, quality standards, and customer service reputations. We&apos;ll help you choose a builder who aligns with your vision and timeline. Our builder relationships provide access to new construction opportunities and ensure you work with reputable professionals who understand MacDonald Highlands standards.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">HOA & Gate Community Orientation</h3>

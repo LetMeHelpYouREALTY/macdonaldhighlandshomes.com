@@ -40,13 +40,8 @@ export default function Footer() {
                 REALTOR®
               </p>
               <p className="mt-4 text-neutral-300 text-sm leading-relaxed">
-                MacDonald Highlands Real Estate Expert. {siteConfig.agent.experience} with {siteConfig.agent.brokerage}.
+                MacDonald Highlands Real Estate Expert. {siteConfig.agent.experience}. In real estate since 1983.
               </p>
-              <div className="mt-6">
-                <p className="text-xs text-neutral-400">
-                  {siteConfig.agent.brokerage}
-                </p>
-              </div>
             </div>
 
             {/* Services Column */}
@@ -89,11 +84,10 @@ export default function Footer() {
               <div className="space-y-4">
                 <div>
                   <p className="text-gold-500 font-semibold">Dr. Jan Duffy, REALTOR®</p>
-                  <p className="text-xs text-neutral-300 mt-1">NV License #S.0197614.LLC</p>
                 </div>
                 
                 <a
-                  href="tel:702-744-8474"
+                  href="tel:702-500-1955"
                   className="flex items-center gap-3 text-neutral-100 hover:text-gold-500 transition-colors"
                 >
                   <FaPhone className="h-4 w-4 text-gold-500" />
@@ -113,7 +107,8 @@ export default function Footer() {
                   <span>
                     Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy<br />
                     {siteConfig.contact.office.street}<br />
-                    {siteConfig.contact.office.city}, {siteConfig.contact.office.state} {siteConfig.contact.office.zip}
+                    {siteConfig.contact.office.city}, {siteConfig.contact.office.state} {siteConfig.contact.office.zip}<br />
+                    {siteConfig.contact.hours}
                   </span>
                 </div>
               </div>
@@ -128,6 +123,8 @@ export default function Footer() {
               <p className="text-xs text-neutral-300">
                 © {currentYear} Dr. Jan Duffy. All rights reserved. 
                 Equal Housing Opportunity.
+                <br />
+                {siteConfig.agent.brokerage} since September 2008 · License {siteConfig.agent.license}
               </p>
               <div className="flex gap-6 text-xs text-neutral-300">
                 <Link href="/contact" className="hover:text-gold-500 transition-colors">
@@ -146,7 +143,7 @@ export default function Footer() {
           className="flex items-center justify-center gap-3 text-neutral-900 font-semibold"
         >
           <FaPhone className="h-5 w-5" />
-          <span>Call Dr. Jan: 702-744-8474</span>
+          <span>Call Dr. Jan: (702) 500-1955</span>
         </a>
       </div>
     </>

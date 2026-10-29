@@ -155,7 +155,7 @@ export default function HomePage() {
               Why Choose Dr. Jan Duffy for Your MacDonald Highlands Real Estate Needs
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto mb-8">
-              {siteConfig.agent.experience} • {siteConfig.agent.credentials} • {siteConfig.agent.brokerage}
+              Top 1% Las Vegas REALTOR® • {siteConfig.agent.experience} • {siteConfig.agent.credentials}
             </p>
             <p className="text-lg text-neutral-700 max-w-4xl mx-auto">
               When it comes to buying or selling luxury real estate in MacDonald Highlands, experience and expertise matter. Dr. Jan Duffy brings unparalleled knowledge of Henderson&apos;s premier guard-gated community, combined with a proven track record of success in the ultra-luxury market. Our deep understanding of the neighborhood, from DragonRidge Country Club properties to custom estate lots, ensures you receive guidance that goes far beyond generic real estate advice.
@@ -174,13 +174,13 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <div className="text-5xl mb-4">Ph.D.</div>
-              <h3 className="text-xl font-semibold mb-2">Advanced Credentials</h3>
+              <h3 className="text-xl font-semibold mb-2">Ph.D. in Research</h3>
               <p className="text-neutral-600">Highest level of professional expertise</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-4">BHHS</div>
-              <h3 className="text-xl font-semibold mb-2">Berkshire Hathaway</h3>
-              <p className="text-neutral-600">Backed by industry-leading brokerage</p>
+              <div className="text-5xl mb-4">Since 1983</div>
+              <h3 className="text-xl font-semibold mb-2">In Real Estate</h3>
+              <p className="text-neutral-600">A career built on Las Vegas Valley homes</p>
             </div>
           </div>
 

@@ -7,11 +7,11 @@ export const siteConfig = {
   agent: {
     name: "Dr. Jan Duffy",
     title: "REALTOR®",
-    phone: "702-744-8474",
+    phone: "702-500-1955",
     email: "DrDuffy@MacDonaldHighlandsHomes.com",
     license: "S.0197614.LLC",
     brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
-    credentials: "Ph.D.",
+    credentials: "Ph.D. in Research",
     experience: "500+ families served, $127M+ in sales",
     specialties: [
       "Luxury Home Sales & Acquisitions",
@@ -33,8 +33,8 @@ export const siteConfig = {
     entries: "Two beautifully landscaped, 24-hour guard-gated entries"
   },
   contact: {
-    phone: "702-744-8474",
-    phoneFormatted: "(702) 744-8474",
+    phone: "702-500-1955",
+    phoneFormatted: "(702) 500-1955",
     email: "DrDuffy@MacDonaldHighlandsHomes.com",
     emailSells: "DrDuffySells@MacDonaldHighlandsHomes.com",
     address: {
@@ -51,7 +51,7 @@ export const siteConfig = {
       zip: "89052",
       full: "3185 St Rose Pkwy, Suite 101, Henderson, NV 89052"
     },
-    hours: "Available 7 days a week by appointment"
+    hours: "Daily 8:00 AM–8:00 PM"
   },
   social: {
     facebook: "https://facebook.com/drjanduffy",
