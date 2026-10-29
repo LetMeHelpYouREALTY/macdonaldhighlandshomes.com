@@ -45,11 +45,11 @@ export const siteConfig = {
       full: "MacDonald Highlands, Henderson, NV 89012"
     },
     office: {
-      street: "3185 St Rose Pkwy UNIT 122",
+      street: "3185 St Rose Pkwy, Suite 101",
       city: "Henderson",
       state: "NV",
       zip: "89052",
-      full: "3185 St Rose Pkwy UNIT 122, Henderson, NV 89052"
+      full: "3185 St Rose Pkwy, Suite 101, Henderson, NV 89052"
     },
     hours: "Available 7 days a week by appointment"
   },
