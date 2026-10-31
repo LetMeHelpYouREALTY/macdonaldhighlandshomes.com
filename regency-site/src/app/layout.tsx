@@ -8,6 +8,8 @@ import Footer from "@/components/common/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import PreconnectResources from "@/components/performance/PreconnectResources";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 // Luxury typography: Inter for body, Playfair Display for headings
 const inter = Inter({ 
@@ -106,6 +108,8 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Script src="/ads-conversions.js" strategy="afterInteractive" />
         <Footer />
+        <VercelAnalytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
