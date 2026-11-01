@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
   keywords: "MacDonald Highlands community, DragonRidge Country Club, Henderson guard-gated community, luxury golf community, Vu SkyVu Vue Pointe",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/macdonald-highlands-community',
+    canonical: 'https://www.macdonaldhighlandshomes.com/macdonald-highlands-community',
   },
   openGraph: {
     title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
     description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
-    url: 'https://macdonaldhighlandshomes.com/macdonald-highlands-community',
+    url: 'https://www.macdonaldhighlandshomes.com/macdonald-highlands-community',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury guard-gated community with DragonRidge Country Club in Henderson, Nevada',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Complete guide to MacDonald Highlands, Henderson's premier guard-gated luxury golf community. Learn about DragonRidge Country Club, neighborhoods, amenities, and lifestyle.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'MacDonald Highlands luxury guard-gated community with DragonRidge Country Club in Henderson, Nevada',
         width: 1200,
         height: 630,

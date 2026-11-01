@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   description: "Executive relocation support for moving to MacDonald Highlands. Virtual tours, area orientation, temporary housing, and timeline management for corporate moves.",
   keywords: "relocating to Henderson, executive relocation Las Vegas, MacDonald Highlands relocation, corporate relocation services",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/services/relocation-concierge',
+    canonical: 'https://www.macdonaldhighlandshomes.com/services/relocation-concierge',
   },
   openGraph: {
     title: "Relocating to MacDonald Highlands: White-Glove Service | Dr. Jan Duffy",
     description: "Executive relocation support for moving to MacDonald Highlands. Virtual tours, area orientation, temporary housing, and timeline management for corporate moves.",
-    url: 'https://macdonaldhighlandshomes.com/services/relocation-concierge',
+    url: 'https://www.macdonaldhighlandshomes.com/services/relocation-concierge',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Executive relocation support for moving to MacDonald Highlands. Virtual tours, area orientation, temporary housing, and timeline management for corporate moves.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -55,7 +55,7 @@ export default function RelocationPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://macdonaldhighlandshomes.com/services/relocation-concierge"
+        serviceUrl="https://www.macdonaldhighlandshomes.com/services/relocation-concierge"
       />
 
       {/* Hero Section */}

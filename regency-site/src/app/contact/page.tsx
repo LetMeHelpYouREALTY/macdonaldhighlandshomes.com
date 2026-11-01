@@ -10,18 +10,18 @@ export const metadata: Metadata = {
   description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
   keywords: "contact Dr. Jan Duffy, MacDonald Highlands REALTOR contact, Henderson real estate agent",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/contact',
+    canonical: 'https://www.macdonaldhighlandshomes.com/contact',
   },
   openGraph: {
     title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
     description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
-    url: 'https://macdonaldhighlandshomes.com/contact',
+    url: 'https://www.macdonaldhighlandshomes.com/contact',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: `Contact ${siteConfig.agent.name} for MacDonald Highlands luxury real estate services in Henderson, Nevada`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: `Contact ${siteConfig.agent.name} for MacDonald Highlands luxury real estate services in Henderson, Nevada`,
         width: 1200,
         height: 630,

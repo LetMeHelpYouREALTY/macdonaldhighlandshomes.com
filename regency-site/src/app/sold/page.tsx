@@ -10,18 +10,18 @@ export const metadata: Metadata = {
   description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
   keywords: "MacDonald Highlands sold properties, Henderson luxury home sales, recent real estate sales",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/sold',
+    canonical: 'https://www.macdonaldhighlandshomes.com/sold',
   },
   openGraph: {
     title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
     description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
-    url: 'https://macdonaldhighlandshomes.com/sold',
+    url: 'https://www.macdonaldhighlandshomes.com/sold',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada',
         width: 1200,
         height: 630,

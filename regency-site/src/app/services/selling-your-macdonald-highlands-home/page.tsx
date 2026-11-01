@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
   keywords: "selling MacDonald Highlands home, luxury home staging, architectural photography, off-market real estate, 1031 exchange",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
+    canonical: 'https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
   },
   openGraph: {
     title: "Selling Your MacDonald Highlands Luxury Home | Dr. Jan Duffy",
     description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
-    url: 'https://macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
+    url: 'https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Selling MacDonald Highlands luxury estate homes with panoramic Las Vegas Strip views in Henderson, Nevada',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'Selling MacDonald Highlands luxury estate homes with panoramic Las Vegas Strip views in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -55,7 +55,7 @@ export default function SellingPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home"
+        serviceUrl="https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home"
       />
 
       {/* Hero Section */}

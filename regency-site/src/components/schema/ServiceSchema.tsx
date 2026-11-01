@@ -21,7 +21,7 @@ export default function ServiceSchema({
       "name": siteConfig.agent.name,
       "telephone": `+1-${siteConfig.contact.phone.replace(/-/g, '-')}`,
       "email": siteConfig.contact.email,
-      "url": "https://macdonaldhighlandshomes.com"
+      "url": "https://www.macdonaldhighlandshomes.com"
     },
     "areaServed": {
       "@type": "Place",

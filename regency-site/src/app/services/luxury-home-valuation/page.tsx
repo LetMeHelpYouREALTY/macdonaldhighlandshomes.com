@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates. Confidential and no obligation.",
   keywords: "MacDonald Highlands home values, luxury home valuation, Henderson property appraisal, home value estimate, real estate comp analysis",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/services/luxury-home-valuation',
+    canonical: 'https://www.macdonaldhighlandshomes.com/services/luxury-home-valuation',
   },
   openGraph: {
     title: "MacDonald Highlands Home Valuation: Beyond the Algorithm | Dr. Jan Duffy",
     description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates. Confidential and no obligation.",
-    url: 'https://macdonaldhighlandshomes.com/services/luxury-home-valuation',
+    url: 'https://www.macdonaldhighlandshomes.com/services/luxury-home-valuation',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -55,7 +55,7 @@ export default function ValuationPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://macdonaldhighlandshomes.com/services/luxury-home-valuation"
+        serviceUrl="https://www.macdonaldhighlandshomes.com/services/luxury-home-valuation"
       />
 
       {/* Hero Section */}

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { siteConfig } from '@/config/siteConfig';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://macdonaldhighlandshomes.com';
+  const baseUrl = 'https://www.macdonaldhighlandshomes.com';
   const now = new Date();
   
   const routes = [

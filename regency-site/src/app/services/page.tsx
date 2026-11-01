@@ -10,18 +10,18 @@ export const metadata: Metadata = {
   description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities in $1M-$15M+ estate homes.",
   keywords: "MacDonald Highlands real estate services, luxury home services Henderson, real estate agent MacDonald Highlands, home selling services, home buying services, luxury home valuation",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/services',
+    canonical: 'https://www.macdonaldhighlandshomes.com/services',
   },
   openGraph: {
     title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
     description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
-    url: 'https://macdonaldhighlandshomes.com/services',
+    url: 'https://www.macdonaldhighlandshomes.com/services',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
         alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -54,7 +54,7 @@ export default function ServicesPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://macdonaldhighlandshomes.com/services"
+        serviceUrl="https://www.macdonaldhighlandshomes.com/services"
       />
       
       {/* Hero Section */}

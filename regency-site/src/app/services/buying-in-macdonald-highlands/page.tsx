@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for buying your dream MacDonald Highlands home.",
   keywords: "buying MacDonald Highlands home, DragonRidge Country Club, new construction Henderson, guard-gated community, luxury home buying",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands',
+    canonical: 'https://www.macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands',
   },
   openGraph: {
     title: "Buying in MacDonald Highlands: Your Insider Advantage | Dr. Jan Duffy",
     description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for buying your dream MacDonald Highlands home.",
-    url: 'https://macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands',
+    url: 'https://www.macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for buying your dream MacDonald Highlands home.",
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -55,7 +55,7 @@ export default function BuyingPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands"
+        serviceUrl="https://www.macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands"
       />
 
       {/* Hero Section */}

@@ -10,18 +10,18 @@ export const metadata: Metadata = {
   description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience}. In real estate since 1983.`,
   keywords: "Dr. Jan Duffy REALTOR, MacDonald Highlands real estate agent, Henderson luxury homes expert",
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com/about-dr-jan-duffy',
+    canonical: 'https://www.macdonaldhighlandshomes.com/about-dr-jan-duffy',
   },
   openGraph: {
     title: "About Dr. Jan Duffy | MacDonald Highlands Real Estate Expert",
     description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience}. In real estate since 1983.`,
-    url: 'https://macdonaldhighlandshomes.com/about-dr-jan-duffy',
+    url: 'https://www.macdonaldhighlandshomes.com/about-dr-jan-duffy',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'profile',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
         width: 1200,
         height: 630,
         alt: `Dr. Jan Duffy, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate in Henderson, Nevada`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: `Learn about ${siteConfig.agent.name}, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate. ${siteConfig.agent.experience}.`,
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
         alt: `Dr. Jan Duffy, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate in Henderson, Nevada`,
         width: 1200,
         height: 630,

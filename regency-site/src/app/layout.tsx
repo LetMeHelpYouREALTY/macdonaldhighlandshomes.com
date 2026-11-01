@@ -32,17 +32,17 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.agent.name }],
   creator: siteConfig.agent.name,
   publisher: siteConfig.agent.brokerage,
-  metadataBase: new URL("https://macdonaldhighlandshomes.com"),
+  metadataBase: new URL("https://www.macdonaldhighlandshomes.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://macdonaldhighlandshomes.com",
+    url: "https://www.macdonaldhighlandshomes.com",
     title: siteConfig.seo.title,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
         width: 1200,
         height: 630,
         alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
         alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
         width: 1200,
         height: 630,

@@ -9,18 +9,18 @@ export const metadata = {
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords,
   alternates: {
-    canonical: 'https://macdonaldhighlandshomes.com',
+    canonical: 'https://www.macdonaldhighlandshomes.com',
   },
   openGraph: {
     title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
     description: siteConfig.seo.description,
-    url: 'https://macdonaldhighlandshomes.com',
+    url: 'https://www.macdonaldhighlandshomes.com',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630, // Standard OG ratio (1.91:1)
         alt: 'MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada',
@@ -34,7 +34,7 @@ export const metadata = {
     description: siteConfig.seo.description,
     images: [
       {
-        url: 'https://macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada',
         width: 1200,
         height: 630, // Works well for both OG and Twitter/X
@@ -43,7 +43,7 @@ export const metadata = {
     // Add site handle if available: site: '@YourHandle',
   },
   // Additional metadata for better social sharing
-  authors: [{ name: siteConfig.agent.name, url: 'https://macdonaldhighlandshomes.com/about-dr-jan-duffy' }],
+  authors: [{ name: siteConfig.agent.name, url: 'https://www.macdonaldhighlandshomes.com/about-dr-jan-duffy' }],
   creator: siteConfig.agent.name,
   publisher: siteConfig.agent.brokerage,
 };
