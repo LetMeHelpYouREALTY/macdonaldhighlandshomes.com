@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
@@ -120,6 +121,12 @@ export default function ListingsPage() {
           </div>
         </div>
       </section>
+
+      <AmenityMapSection
+        title="Explore the MacDonald Highlands Area"
+        description="See restaurants, golf, parks, and services near listings in Henderson's guard-gated community."
+        compact
+      />
 
       {/* Property Types Section */}
       <section className="section-padding bg-white">

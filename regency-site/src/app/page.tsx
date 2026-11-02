@@ -3,6 +3,7 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 
 export const metadata = {
   title: "MacDonald Highlands Real Estate Expert | Dr. Jan Duffy, REALTOR®",
@@ -372,6 +373,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <AmenityMapSection
+        title="What's Nearby MacDonald Highlands"
+        description="From DragonRidge golf to Green Valley dining and healthcare, see what surrounds Henderson's guard-gated luxury community."
+      />
 
       {/* Featured Listings Section */}
       <section className="section-padding bg-neutral-50">
