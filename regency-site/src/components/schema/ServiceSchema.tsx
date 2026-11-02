@@ -1,5 +1,3 @@
-import { siteConfig } from "@/config/siteConfig";
-
 type ServiceSchemaProps = {
   serviceName: string;
   serviceDescription: string;
@@ -17,11 +15,7 @@ export default function ServiceSchema({
     "serviceType": serviceName,
     "description": serviceDescription,
     "provider": {
-      "@type": "RealEstateAgent",
-      "name": siteConfig.agent.name,
-      "telephone": `+1-${siteConfig.contact.phone.replace(/-/g, '-')}`,
-      "email": siteConfig.contact.email,
-      "url": "https://www.macdonaldhighlandshomes.com"
+      "@id": "https://www.macdonaldhighlandshomes.com/#organization"
     },
     "areaServed": {
       "@type": "Place",
@@ -33,7 +27,9 @@ export default function ServiceSchema({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }

@@ -5,6 +5,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import Link from "next/link";
+import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Investment Properties | Dr. Jan Duffy",
@@ -47,6 +48,12 @@ export const metadata: Metadata = {
 
 const serviceName = "Investment Advisory";
 const serviceDescription = "Comprehensive real estate investment advisory services for MacDonald Highlands properties, including rental income analysis, appreciation trends, tax advantages, and 1031 exchange coordination.";
+const pageUrl = "https://www.macdonaldhighlandshomes.com/services/investment-advisory";
+const breadcrumbJson = breadcrumbListJsonLd([
+  { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
+  { name: "Services", url: "https://www.macdonaldhighlandshomes.com/services" },
+  { name: serviceName, url: pageUrl },
+]);
 
 export default function InvestmentPage() {
   return (
@@ -55,7 +62,11 @@ export default function InvestmentPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://www.macdonaldhighlandshomes.com/services/investment-advisory"
+        serviceUrl={pageUrl}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}

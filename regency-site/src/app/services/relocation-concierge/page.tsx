@@ -5,6 +5,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import Link from "next/link";
+import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Relocating to MacDonald Highlands: White-Glove Service | Dr. Jan Duffy",
@@ -47,6 +48,12 @@ export const metadata: Metadata = {
 
 const serviceName = "Relocation Concierge";
 const serviceDescription = "Comprehensive executive relocation services including virtual tour packages, area orientation, temporary housing coordination, moving vendor referrals, and timeline management for corporate moves to MacDonald Highlands.";
+const pageUrl = "https://www.macdonaldhighlandshomes.com/services/relocation-concierge";
+const breadcrumbJson = breadcrumbListJsonLd([
+  { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
+  { name: "Services", url: "https://www.macdonaldhighlandshomes.com/services" },
+  { name: serviceName, url: pageUrl },
+]);
 
 export default function RelocationPage() {
   return (
@@ -55,7 +62,11 @@ export default function RelocationPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://www.macdonaldhighlandshomes.com/services/relocation-concierge"
+        serviceUrl={pageUrl}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}

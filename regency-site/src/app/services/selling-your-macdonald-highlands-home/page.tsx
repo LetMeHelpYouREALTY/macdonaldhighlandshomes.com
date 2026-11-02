@@ -5,6 +5,7 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Selling Your MacDonald Highlands Luxury Home | Dr. Jan Duffy",
@@ -47,6 +48,12 @@ export const metadata: Metadata = {
 
 const serviceName = "Selling Your MacDonald Highlands Luxury Home";
 const serviceDescription = "Comprehensive luxury home selling services including pre-listing strategy, professional staging consultation, architectural photography, private showing coordination, and access to global luxury buyer networks.";
+const pageUrl = "https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home";
+const breadcrumbJson = breadcrumbListJsonLd([
+  { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
+  { name: "Services", url: "https://www.macdonaldhighlandshomes.com/services" },
+  { name: serviceName, url: pageUrl },
+]);
 
 export default function SellingPage() {
   return (
@@ -55,7 +62,11 @@ export default function SellingPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home"
+        serviceUrl={pageUrl}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}

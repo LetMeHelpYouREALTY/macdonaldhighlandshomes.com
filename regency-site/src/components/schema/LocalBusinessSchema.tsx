@@ -8,7 +8,6 @@ export default function LocalBusinessSchema() {
     "name": "Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy",
     "alternateName": "MacDonald Highlands Homes and Real Estate",
     "url": "https://www.macdonaldhighlandshomes.com",
-    "logo": "https://www.macdonaldhighlandshomes.com/Image/person1.jpeg",
     "image": "https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg",
     "description": siteConfig.description,
     "telephone": siteConfig.contact.phoneFormatted,
@@ -94,7 +93,9 @@ export default function LocalBusinessSchema() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }

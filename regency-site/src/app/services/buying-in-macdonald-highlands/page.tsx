@@ -5,6 +5,7 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Buying in MacDonald Highlands: Your Insider Advantage | Dr. Jan Duffy",
@@ -47,6 +48,12 @@ export const metadata: Metadata = {
 
 const serviceName = "Buying in MacDonald Highlands";
 const serviceDescription = "Comprehensive luxury home buying services including private community access, DragonRidge Country Club membership guidance, new construction vs. resale consultation, lot selection, and inspection coordination.";
+const pageUrl = "https://www.macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands";
+const breadcrumbJson = breadcrumbListJsonLd([
+  { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
+  { name: "Services", url: "https://www.macdonaldhighlandshomes.com/services" },
+  { name: serviceName, url: pageUrl },
+]);
 
 export default function BuyingPage() {
   return (
@@ -55,7 +62,11 @@ export default function BuyingPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://www.macdonaldhighlandshomes.com/services/buying-in-macdonald-highlands"
+        serviceUrl={pageUrl}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}
@@ -317,6 +328,16 @@ export default function BuyingPage() {
                 source="buying-service"
               />
               <div className="text-center mt-6">
+                <p className="text-neutral-600 mb-4">
+                  <a
+                    href="https://calendly.com/drjanduffy/showing?utm_source=macdonaldhighlandshomes.com&utm_medium=website&utm_content=buying-page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-600 font-semibold hover:underline"
+                  >
+                    Book a private showing with Dr. Jan Duffy
+                  </a>
+                </p>
                 <p className="text-neutral-600 mb-4">Or call us directly:</p>
                 <a 
                   href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}

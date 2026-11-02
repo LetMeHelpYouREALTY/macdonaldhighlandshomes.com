@@ -5,6 +5,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import Link from "next/link";
+import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Off-Market & Coming Soon: MacDonald Highlands Exclusives | Dr. Jan Duffy",
@@ -47,6 +48,12 @@ export const metadata: Metadata = {
 
 const serviceName = "Off-Market Opportunities";
 const serviceDescription = "Exclusive access to off-market and pocket listings in MacDonald Highlands before they appear on MLS, including privacy-focused selling services and buyer waiting list registration.";
+const pageUrl = "https://www.macdonaldhighlandshomes.com/services/off-market-opportunities";
+const breadcrumbJson = breadcrumbListJsonLd([
+  { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
+  { name: "Services", url: "https://www.macdonaldhighlandshomes.com/services" },
+  { name: serviceName, url: pageUrl },
+]);
 
 export default function OffMarketPage() {
   return (
@@ -55,7 +62,11 @@ export default function OffMarketPage() {
       <ServiceSchema 
         serviceName={serviceName}
         serviceDescription={serviceDescription}
-        serviceUrl="https://www.macdonaldhighlandshomes.com/services/off-market-opportunities"
+        serviceUrl={pageUrl}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}
