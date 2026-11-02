@@ -104,7 +104,7 @@ export default function RelocationPage() {
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/clubhouse-full.jpg"
-                  alt="DragonRidge Country Club amenities for relocating families"
+                  alt="DragonRidge Country Club clubhouse and amenities in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
