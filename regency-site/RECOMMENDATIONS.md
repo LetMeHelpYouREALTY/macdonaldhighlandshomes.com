@@ -25,10 +25,29 @@ Date-stamped for this Listing Specialist upgrade (America/Los_Angeles).
 
 ## Still human / ops
 
-- Submit sitemap in Google Search Console after merge/deploy.
+- Submit sitemap in Google Search Console after merge/deploy: `https://www.macdonaldhighlandshomes.com/sitemap.xml`.
+- After deploy: in GSC → Pages → **Redirect error**, validate fix for `/listings` + `/favicon.ico` (were temporary 307 / case redirects; now 308 www + permanent).
+- Update sister-site backlinks on **regencyvegas.com** from apex `https://macdonaldhighlandshomes.com` → `https://www.macdonaldhighlandshomes.com` (all 7 Regency + SMLS Advisors links currently hit apex).
 - Spot-check GBP hours vs site `Daily 8:00 AM–8:00 PM` (citation sites sometimes show 6AM–9PM or weekday-only — reconcile in GBP dashboard if needed).
 - Upgrade agent photography when a high-resolution licensed portrait is available.
 - Re-run Rich Results Test for FAQ Speakable + AggregateRating after production deploy.
+- Re-run mobile PageSpeed after production deploy of image/script deferrals.
+
+## GSC exports (2026-11-11)
+
+### Coverage — Redirect error (2 URLs)
+- `https://www.macdonaldhighlandshomes.com/favicon.ico` (last crawl 2026-05-16)
+- `https://www.macdonaldhighlandshomes.com/listings` (last crawl 2026-05-14)
+- Likely causes: apex→www **307 temporary**, `/Listings`→`/listings` **307**, stale crawl. Code now forces **308** www host + permanent path redirects; `public/favicon.ico` mirrored.
+
+### Links (Latest + More sample)
+- Almost entirely **regencyvegas.com** internal network links + one SMLS Advisors blog post.
+- Targets are apex homepage only — strengthen www destination after backlink update.
+
+### Performance (Oct 28–Nov 3, 2026 vs prior week)
+- Homepage only in Pages report: impressions **317** (was 18); **0 clicks**; avg position ~4.5.
+- Top queries cluster on “MacDonald Highlands realtor / agent / listing agent / sellers / buyers / new construction” — many positions 1–5 with 0 CTR.
+- Code response: CTR-first title/description; homepage FAQs for recommend-a-realtor, sellers, buyers, listing agent, new construction; listings meta for “homes for sale”.
 
 ## GSC query response (low-volume searches)
 
@@ -36,8 +55,12 @@ Date-stamped for this Listing Specialist upgrade (America/Los_Angeles).
 |-------|--------|---------------|
 | `duffy` | Brand | Homepage/About/Person schema emphasize Dr. Jan Duffy / Duffy alternate names |
 | `macdonald highlands realtor` | Commercial | Title/H1/keywords/FAQ target “MacDonald Highlands realtor” |
+| `realtor for sellers/buyers macdonald highlands` | Commercial | Homepage FAQs + selling/buying service pages |
+| `listing agent macdonald highlands` | Commercial | Title + FAQ “listing agent” |
+| `new construction realtor macdonald highlands` | Commercial | FAQ + GBP new-construction service → buying page |
 | `highlandhomes in henderson nevada for rent` | Rental | FAQ + GBP services: MH leasing/property management (not LV apartment portal) |
 | `rental homes in las vegas` | Rental | Same — MacDonald Highlands HOA-aligned leasing only |
+| `waterfront realtor macdonald highlands` | Noise | Do not chase — MH is foothills/golf, not waterfront |
 
 ## GBP alignment
 

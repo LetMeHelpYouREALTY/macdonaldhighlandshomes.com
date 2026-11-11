@@ -10,37 +10,41 @@ import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
-  title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
-  description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson's premier guard-gated community. RealScout property search with filters for price, bedrooms, and more.",
-  keywords: "MacDonald Highlands homes for sale, Henderson luxury listings, guard-gated community properties, DragonRidge homes",
+  title: "MacDonald Highlands Homes for Sale | Listings by Dr. Jan Duffy",
+  description:
+    "Browse MacDonald Highlands homes for sale in Henderson, NV with Dr. Jan Duffy—live office listings, private showings, and off-market access in the guard-gated DragonRidge community. Call (702) 500-1955.",
+  keywords:
+    "MacDonald Highlands homes for sale, Henderson luxury listings, listing agent MacDonald Highlands, guard-gated community properties, DragonRidge homes",
   alternates: {
-    canonical: 'https://www.macdonaldhighlandshomes.com/listings',
+    canonical: "https://www.macdonaldhighlandshomes.com/listings",
   },
   openGraph: {
-    title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
-    description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson's premier guard-gated community. RealScout property search with filters for price, bedrooms, and more.",
-    url: 'https://www.macdonaldhighlandshomes.com/listings',
+    title: "MacDonald Highlands Homes for Sale | Listings by Dr. Jan Duffy",
+    description:
+      "Browse MacDonald Highlands homes for sale in Henderson, NV with Dr. Jan Duffy—live office listings and private showings in the guard-gated DragonRidge community.",
+    url: "https://www.macdonaldhighlandshomes.com/listings",
     siteName: siteConfig.name,
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.jpg",
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada',
-        type: 'image/jpeg',
+        alt: "MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
-    description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson's premier guard-gated community.",
+    card: "summary_large_image",
+    title: "MacDonald Highlands Homes for Sale | Listings by Dr. Jan Duffy",
+    description:
+      "Browse MacDonald Highlands homes for sale in Henderson, NV with Dr. Jan Duffy—live office listings and private showings.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
-        alt: 'MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada',
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.jpg",
+        alt: "MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada",
         width: 1200,
         height: 630,
       },

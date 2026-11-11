@@ -34,6 +34,31 @@ export const homepageFaqs = [
     answer:
       "Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy is at 3185 St Rose Pkwy, Suite 101, Henderson, NV 89052. Hours are Sunday–Saturday 8:00 AM–8:00 PM (Wednesday until 8:30 PM). Phone or text (702) 500-1955. Email: DrDuffy@MacDonaldHighlandsHomes.com.",
   },
+  {
+    question: "Can you recommend a realtor in MacDonald Highlands?",
+    answer:
+      "Yes. Dr. Jan Duffy is a MacDonald Highlands realtor and Listing Specialist with Berkshire Hathaway HomeServices Nevada Properties (license S.0197614.LLC). She represents buyers and sellers in Henderson’s guard-gated MacDonald Highlands community. Call or text (702) 500-1955 to book a consultation.",
+  },
+  {
+    question: "Who is a realtor for sellers in MacDonald Highlands?",
+    answer:
+      "Dr. Jan Duffy is a MacDonald Highlands listing agent for sellers. She prices to recent MacDonald Highlands closed sales, prepares listing marketing, and manages private guard-gate showings through closing. Call (702) 500-1955 for a listing consultation.",
+  },
+  {
+    question: "Who is a realtor for buyers in MacDonald Highlands?",
+    answer:
+      "Dr. Jan Duffy represents buyers in MacDonald Highlands—comparing view lots, square footage, HOA dues, resale vs new construction, and coordinating private showings through the guard gates. Call (702) 500-1955 for a buyer consultation.",
+  },
+  {
+    question: "Who is the listing agent for MacDonald Highlands homes?",
+    answer:
+      "Dr. Jan Duffy is the MacDonald Highlands listing agent and Listing Specialist focused on $1M–$15M+ estates. She handles pricing, photography direction, MLS or off-market launch, and offer negotiation. Call (702) 500-1955.",
+  },
+  {
+    question: "Do you work with new construction in MacDonald Highlands?",
+    answer:
+      "Yes. Dr. Jan Duffy helps buyers with MacDonald Highlands new-construction guidance—builder registration before model visits, incentive tracking, lot and upgrade choices, and construction walkthroughs. Buyer representation is typically paid by the builder. Call (702) 500-1955.",
+  },
 ];
 
 export const sellingFaqs = [

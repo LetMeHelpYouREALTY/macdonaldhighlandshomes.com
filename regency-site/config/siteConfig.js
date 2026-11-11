@@ -216,11 +216,12 @@ export const siteConfig = {
     tiktok: "https://www.tiktok.com/@drjanduffy",
   },
   seo: {
-    title: "Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
+    // CTR-first: brand name + realtor/listing-agent intent matching GSC top queries
+    title: "Dr. Jan Duffy — MacDonald Highlands Realtor & Listing Agent",
     description:
-      "Dr. Jan Duffy is the MacDonald Highlands realtor and Listing Specialist for $1M–$15M+ guard-gated homes in Henderson, NV—sales, valuations, buyer representation, and HOA-aligned leasing help for MacDonald Highlands owners. Call (702) 500-1955.",
+      "Need a MacDonald Highlands realtor? Dr. Jan Duffy is the Listing Specialist for buyers and sellers of $1M–$15M+ guard-gated homes in Henderson, NV—plus valuations, new-construction guidance, and HOA-aligned leasing. Call (702) 500-1955.",
     keywords:
-      "Dr. Jan Duffy, Duffy realtor, MacDonald Highlands realtor, MacDonald Highlands Listing Specialist, MacDonald Highlands REALTOR, Henderson NV luxury homes for sale, DragonRidge Country Club real estate, sell MacDonald Highlands home",
+      "Dr. Jan Duffy, Duffy realtor, MacDonald Highlands realtor, MacDonald Highlands listing agent, MacDonald Highlands Listing Specialist, realtor for sellers MacDonald Highlands, realtor for buyers MacDonald Highlands, new construction realtor MacDonald Highlands, Henderson NV luxury homes for sale, DragonRidge Country Club real estate",
   },
   // Prefer licensed MacDonald Highlands community photography over AI lifestyle art.
   // Paths point at pre-resized WebP for mobile LCP / PageSpeed (full masters remain under /photos/community/).

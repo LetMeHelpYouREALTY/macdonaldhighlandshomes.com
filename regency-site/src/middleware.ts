@@ -1,48 +1,66 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+/** Prefer permanent redirects so Google does not flag temporary/chain redirect errors. */
+function permanentRedirect(request: NextRequest, pathname: string) {
+  const url = request.nextUrl.clone();
+  url.pathname = pathname;
+  url.search = request.nextUrl.search;
+  return NextResponse.redirect(url, 308);
+}
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const host = (request.headers.get("host") || "").toLowerCase().split(":")[0];
 
-  // Redirect /Services (capital S) to /services (lowercase) for case-insensitivity
-  if (pathname.startsWith('/Services')) {
-    const newPath = pathname.replace('/Services', '/services');
-    return NextResponse.redirect(new URL(newPath, request.url));
+  // Canonical host: apex → www (backlinks + GSC often hit apex; Vercel 307 alone is temporary)
+  if (host === "macdonaldhighlandshomes.com") {
+    const url = request.nextUrl.clone();
+    url.protocol = "https:";
+    url.host = "www.macdonaldhighlandshomes.com";
+    return NextResponse.redirect(url, 308);
+  }
+
+  // Redirect /Services (capital S) to /services (lowercase)
+  if (pathname.startsWith("/Services")) {
+    return permanentRedirect(request, pathname.replace("/Services", "/services"));
   }
 
   // Redirect /About (capital A) to /about-dr-jan-duffy
-  if (pathname === '/About' || pathname.startsWith('/About/')) {
-    const newPath = pathname.replace('/About', '/about-dr-jan-duffy');
-    return NextResponse.redirect(new URL(newPath, request.url));
+  if (pathname === "/About" || pathname.startsWith("/About/")) {
+    return permanentRedirect(request, pathname.replace("/About", "/about-dr-jan-duffy"));
   }
 
   // ThemeWagon demo Property routes → live listings
-  if (pathname === '/Property' || pathname.startsWith('/Property/')) {
-    return NextResponse.redirect(new URL('/listings', request.url));
+  if (pathname === "/Property" || pathname.startsWith("/Property/")) {
+    return permanentRedirect(request, "/listings");
   }
-  if (pathname === '/Login' || pathname.startsWith('/Login/')) {
-    return NextResponse.redirect(new URL('/', request.url));
+  if (pathname === "/Login" || pathname.startsWith("/Login/")) {
+    return permanentRedirect(request, "/");
   }
-  if (pathname === '/Dashboard' || pathname.startsWith('/Dashboard/')) {
-    return NextResponse.redirect(new URL('/', request.url));
+  if (pathname === "/Dashboard" || pathname.startsWith("/Dashboard/")) {
+    return permanentRedirect(request, "/");
   }
-  if (pathname === '/test-images' || pathname === '/image-diagnostic') {
-    return NextResponse.redirect(new URL('/', request.url));
+  if (pathname === "/test-images" || pathname === "/image-diagnostic") {
+    return permanentRedirect(request, "/");
   }
 
-  // Handle common case variations
+  // Handle common case variations with permanent redirects
   const lowerPath = pathname.toLowerCase();
-  
-  // Only redirect if the lowercase version would be different and is a known route
   if (lowerPath !== pathname) {
     const knownRoutes = [
-      '/services', '/listings', '/contact', '/testimonials', 
-      '/about-dr-jan-duffy', '/macdonald-highlands-community'
+      "/services",
+      "/listings",
+      "/contact",
+      "/testimonials",
+      "/about-dr-jan-duffy",
+      "/macdonald-highlands-community",
+      "/sold",
+      "/insights",
     ];
-    
-    // Check if lowercase version matches a known route
-    if (knownRoutes.some(route => lowerPath === route || lowerPath.startsWith(route + '/'))) {
-      return NextResponse.redirect(new URL(lowerPath, request.url));
+
+    if (knownRoutes.some((route) => lowerPath === route || lowerPath.startsWith(`${route}/`))) {
+      return permanentRedirect(request, lowerPath);
     }
   }
 
@@ -52,13 +70,10 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
+     * Match all request paths except:
+     * - api, _next/static, _next/image
+     * Keep favicon.ico in matcher so apex→www still applies to it.
      */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    "/((?!api|_next/static|_next/image).*)",
   ],
 };
-

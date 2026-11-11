@@ -65,13 +65,13 @@ const nextConfig = {
   // Redirect leftover ThemeWagon demo / diagnostic routes to marketing pages
   async redirects() {
     return [
-      { source: '/Property', destination: '/listings', permanent: false },
-      { source: '/Property/:path*', destination: '/listings', permanent: false },
-      { source: '/Login', destination: '/', permanent: false },
-      { source: '/Dashboard', destination: '/', permanent: false },
-      { source: '/Dashboard/:path*', destination: '/', permanent: false },
-      { source: '/test-images', destination: '/', permanent: false },
-      { source: '/image-diagnostic', destination: '/', permanent: false },
+      { source: '/Property', destination: '/listings', permanent: true },
+      { source: '/Property/:path*', destination: '/listings', permanent: true },
+      { source: '/Login', destination: '/', permanent: true },
+      { source: '/Dashboard', destination: '/', permanent: true },
+      { source: '/Dashboard/:path*', destination: '/', permanent: true },
+      { source: '/test-images', destination: '/', permanent: true },
+      { source: '/image-diagnostic', destination: '/', permanent: true },
     ];
   },
 };
