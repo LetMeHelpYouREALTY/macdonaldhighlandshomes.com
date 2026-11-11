@@ -55,8 +55,8 @@ export default function AboutPage() {
         title="About Dr. Jan Duffy, MacDonald Highlands Listing Specialist"
         subtitle="Hyperlocal listing strategy for $1M–$15M+ guard-gated estates in Henderson, NV"
         support="Ph.D. research credential · Top 1% Las Vegas REALTOR® · In real estate since 1983"
-        imageSrc="/photos/agent/dr-jan-duffy-headshot.jpg"
-        imageAlt="Dr. Jan Duffy, MacDonald Highlands Listing Specialist"
+        imageSrc={siteConfig.images.aboutHero}
+        imageAlt="MacDonald Highlands luxury estate with Strip views at dusk — Listing Specialist Dr. Jan Duffy"
         align="left"
         primaryCta={{
           label: "Book on Calendly",

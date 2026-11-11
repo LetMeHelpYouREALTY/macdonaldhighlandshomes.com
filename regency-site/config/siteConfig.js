@@ -68,6 +68,7 @@ export const siteConfig = {
   },
   images: {
     listingSpecialistHero: "/images/sections/hero-pool-strip-dusk.jpg",
+    aboutHero: "/images/sections/listing-specialist-hero.jpg",
     whyListingSpecialist: "/images/sections/why-listing-specialist.jpg",
     servicesOverview: "/images/services/services-portfolio-overview.jpg",
     selling: "/images/services/selling-prelisting-staging.jpg",
