@@ -41,7 +41,7 @@ export default function ConsultationBand({
             <AgentPortrait size="lg" ringOffsetClass="ring-offset-primary-900" />
           </div>
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">{title}</h2>
-          <p className="text-xl text-neutral-200 mb-10">{resolvedSubtitle}</p>
+          <p className="text-xl text-neutral-100 mb-10">{resolvedSubtitle}</p>
           <div className="bg-white p-8 md:p-12 text-neutral-900 shadow-2xl">
             {showForm ? (
               <ContactForm

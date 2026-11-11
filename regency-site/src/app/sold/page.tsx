@@ -235,14 +235,14 @@ export default function SoldPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div className="text-5xl font-bold mb-2">{siteConfig.agent.experience.split("+")[0]}+</div>
-                <p className="text-neutral-300">Families Served</p>
+                <p className="text-neutral-200">Families Served</p>
               </div>
               <div>
                 <div className="text-5xl font-bold mb-2">$127M+</div>
-                <p className="text-neutral-300">In Sales Volume</p>
+                <p className="text-neutral-200">In Sales Volume</p>
               </div>
             </div>
-            <p className="mt-12 text-neutral-300 text-lg">
+            <p className="mt-12 text-neutral-200 text-lg">
               Verified results from Dr. Jan Duffy&apos;s MacDonald Highlands practice—listing strategy measured in closed
               outcomes and client trust.
             </p>

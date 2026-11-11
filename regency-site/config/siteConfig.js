@@ -4,8 +4,13 @@
 export const siteConfig = {
   // Exact GBP business name
   name: "Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy",
-  shortName: "MacDonald Highlands Homes",
-  tagline: "MacDonald Highlands Listing Specialist",
+  shortName: "MacDonald Highlands",
+  tagline: "Homes by Dr. Jan Duffy",
+  /** Navbar / footer brand mark */
+  logo: {
+    title: "MacDonald Highlands",
+    subtitle: "Homes by Dr. Jan Duffy",
+  },
   // Exact GBP description
   description:
     "MacDonald Highlands is a guard-gated golf community in Henderson (89012), built around DragonRidge Country Club in the McCullough Range foothills. Dr. Jan Duffy, REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, helps buyers and sellers here compare custom estates, view lots, and resales by lot size, Strip and valley views, square footage, and HOA dues. Buyers get private showings and guidance on custom builds. Sellers get pricing built on recent MacDonald Highlands closed sales and marketing aimed at luxury and relocating buyers. Book a private consultation.",

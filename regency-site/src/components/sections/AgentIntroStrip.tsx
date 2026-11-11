@@ -32,7 +32,7 @@ export default function AgentIntroStrip({
             <p className="font-serif text-xl md:text-2xl font-bold">{siteConfig.agent.name}</p>
             <p
               className={`text-sm md:text-base mt-1 ${
-                isDark ? "text-neutral-300" : "text-neutral-600"
+                isDark ? "text-neutral-200" : "text-neutral-600"
               }`}
             >
               {siteConfig.agent.title} · MacDonald Highlands · {siteConfig.agent.experience}

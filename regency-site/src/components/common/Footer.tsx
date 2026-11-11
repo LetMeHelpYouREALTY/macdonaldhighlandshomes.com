@@ -15,6 +15,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { siteConfig } from "@/config/siteConfig";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import SiteLogo from "@/components/common/SiteLogo";
 import AgentPortrait from "@/components/ui/AgentPortrait";
 
 const services = [
@@ -55,17 +56,10 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="lg:col-span-1">
-              <Link href="/" className="inline-flex items-center gap-3">
-                <AgentPortrait
-                  size="sm"
-                  href={false}
-                  ringOffsetClass="ring-offset-neutral-900"
-                />
-                <span className="font-serif text-2xl text-white font-bold">Dr. Jan Duffy</span>
-              </Link>
-              <p className="mt-3 text-neutral-300 text-sm">{siteConfig.agent.title}</p>
-              <p className="mt-3 text-neutral-300 text-sm leading-relaxed font-medium">{siteConfig.name}</p>
-              <p className="mt-3 text-neutral-400 text-sm leading-relaxed">
+              <SiteLogo tone="dark" portraitSize="sm" />
+              <p className="mt-3 text-neutral-200 text-sm">{siteConfig.agent.title}</p>
+              <p className="mt-3 text-neutral-200 text-sm leading-relaxed font-medium">{siteConfig.name}</p>
+              <p className="mt-3 text-neutral-300 text-sm leading-relaxed">
                 {siteConfig.agent.experience}. GBP opening date {siteConfig.foundingDate}.{" "}
                 {siteConfig.categories.primary}.
               </p>
@@ -77,7 +71,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="text-neutral-400 hover:text-gold-500 transition-colors"
+                    className="text-neutral-200 hover:text-gold-500 transition-colors"
                   >
                     <Icon className="h-5 w-5" />
                   </a>
@@ -92,7 +86,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-sm text-neutral-300 hover:text-gold-500 transition-colors"
+                      className="text-sm text-neutral-200 hover:text-gold-500 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -108,7 +102,7 @@ export default function Footer() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-sm text-neutral-300 hover:text-gold-500 transition-colors"
+                      className="text-sm text-neutral-200 hover:text-gold-500 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -147,13 +141,13 @@ export default function Footer() {
 
                 <a
                   href={`mailto:${siteConfig.contact.email}`}
-                  className="flex items-center gap-3 text-neutral-300 hover:text-gold-500 transition-colors text-sm"
+                  className="flex items-center gap-3 text-neutral-200 hover:text-gold-500 transition-colors text-sm"
                 >
                   <FaEnvelope className="h-4 w-4 text-gold-500" />
                   <span>{siteConfig.contact.email}</span>
                 </a>
 
-                <div className="flex items-start gap-3 text-neutral-300 text-sm">
+                <div className="flex items-start gap-3 text-neutral-200 text-sm">
                   <FaMapMarkerAlt className="h-4 w-4 text-gold-500 mt-0.5 flex-shrink-0" />
                   <span>
                     {siteConfig.name}
@@ -174,13 +168,13 @@ export default function Footer() {
         <div className="border-t border-neutral-700">
           <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-xs text-neutral-300">
+              <p className="text-xs text-neutral-200">
                 © {currentYear} {siteConfig.name}. All rights reserved. Equal Housing Opportunity.
                 <br />
                 {siteConfig.agent.brokerage} · License {siteConfig.agent.license} · Women-owned ·
                 Veteran-owned · LGBTQ+ friendly
               </p>
-              <div className="flex gap-6 text-xs text-neutral-300">
+              <div className="flex gap-6 text-xs text-neutral-200">
                 <Link href="/contact" className="hover:text-gold-500 transition-colors">
                   Contact
                 </Link>

@@ -420,7 +420,7 @@ export default function HomePage() {
               <AgentPortrait size="md" ringOffsetClass="ring-offset-charcoal-900" />
             </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">What Clients Say</h2>
-            <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-xl text-neutral-200 max-w-2xl mx-auto">
               Feedback from MacDonald Highlands sellers, buyers, and relocating clients
             </p>
           </div>
@@ -434,10 +434,10 @@ export default function HomePage() {
                     </span>
                   ))}
                 </div>
-                <p className="text-neutral-200 mb-6 italic leading-relaxed">&quot;{testimonial.content}&quot;</p>
+                <p className="text-neutral-100 mb-6 italic leading-relaxed">&quot;{testimonial.content}&quot;</p>
                 <div>
                   <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-neutral-400 text-sm">{testimonial.role}</p>
+                  <p className="text-neutral-200 text-sm">{testimonial.role}</p>
                 </div>
               </div>
             ))}
