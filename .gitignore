@@ -1,2 +1,58 @@
-.next
-node_modules
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js / build
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Vercel / local tooling
+.vercel
+.turbo
+.DS_Store
+Thumbs.db
+
+# Logs & debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Coverage / test
+coverage/
+.nyc_output/
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# OS / temp
+*.swp
+*.swo
+*~
+tmp/
+temp/
+.cache/
+
+# Local exports (Search Console, ads, etc.)
+*.xlsx
+*.xls
+!docs/**/*.xlsx
+
+# Agent / local scratch
+.cursor/
+*.local.md

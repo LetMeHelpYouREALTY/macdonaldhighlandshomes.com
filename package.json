@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DrJanDuffy/macdonaldhighlandshomes.com.git"
+    "url": "git+https://github.com/LetMeHelpYouREALTY/macdonaldhighlandshomes.com.git"
   },
   "author": "Dr. Jan Duffy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DrJanDuffy/macdonaldhighlandshomes.com/issues"
+    "url": "https://github.com/LetMeHelpYouREALTY/macdonaldhighlandshomes.com/issues"
   },
-  "homepage": "https://macdonaldhighlandshomes.com"
+  "homepage": "https://www.macdonaldhighlandshomes.com"
 }
