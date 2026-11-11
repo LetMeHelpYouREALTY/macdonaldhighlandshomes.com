@@ -70,7 +70,7 @@ export default function AboutPage() {
         }}
       />
 
-<OfficeListingsBelowHero
+      <OfficeListingsBelowHero
         title="Current Office Listings"
         description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
         utmContent="about-dr-jan-duffy"

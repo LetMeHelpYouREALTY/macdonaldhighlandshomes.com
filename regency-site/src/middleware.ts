@@ -16,9 +16,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(newPath, request.url));
   }
 
-  // Redirect /Property/Property_type/ (trailing slash or empty) to /Property
-  if (pathname === '/Property/Property_type' || pathname === '/Property/Property_type/') {
-    return NextResponse.redirect(new URL('/Property', request.url));
+  // ThemeWagon demo Property routes → live listings
+  if (pathname === '/Property' || pathname.startsWith('/Property/')) {
+    return NextResponse.redirect(new URL('/listings', request.url));
+  }
+  if (pathname === '/Login' || pathname.startsWith('/Login/')) {
+    return NextResponse.redirect(new URL('/', request.url));
+  }
+  if (pathname === '/Dashboard' || pathname.startsWith('/Dashboard/')) {
+    return NextResponse.redirect(new URL('/', request.url));
+  }
+  if (pathname === '/test-images' || pathname === '/image-diagnostic') {
+    return NextResponse.redirect(new URL('/', request.url));
   }
 
   // Handle common case variations

@@ -24,7 +24,15 @@ const AI_CRAWLERS = [
 
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = 'https://www.macdonaldhighlandshomes.com';
-  const disallow = ['/api/', '/admin/', '/Dashboard/', '/Login/', '/image-diagnostic/', '/test-images/'];
+  const disallow = [
+    '/api/',
+    '/admin/',
+    '/Dashboard/',
+    '/Login/',
+    '/Property/',
+    '/image-diagnostic/',
+    '/test-images/',
+  ];
 
   return {
     rules: [

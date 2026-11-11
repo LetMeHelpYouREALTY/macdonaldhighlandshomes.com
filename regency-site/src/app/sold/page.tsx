@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
@@ -7,39 +6,44 @@ import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
-  description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
-  keywords: "MacDonald Highlands sold properties, Henderson luxury home sales, recent real estate sales",
+  description:
+    "Proven MacDonald Highlands listing results from Dr. Jan Duffy. Pricing strategy, marketing, and negotiation for Henderson's $1M–$15M+ guard-gated estates.",
+  keywords:
+    "MacDonald Highlands sold properties, Henderson luxury home sales, recent real estate sales, Listing Specialist results",
   alternates: {
-    canonical: 'https://www.macdonaldhighlandshomes.com/sold',
+    canonical: "https://www.macdonaldhighlandshomes.com/sold",
   },
   openGraph: {
     title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
-    description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
-    url: 'https://www.macdonaldhighlandshomes.com/sold',
+    description:
+      "Proven MacDonald Highlands listing results from Dr. Jan Duffy. Pricing strategy, marketing, and negotiation for Henderson's $1M–$15M+ guard-gated estates.",
+    url: "https://www.macdonaldhighlandshomes.com/sold",
     siteName: siteConfig.name,
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
         width: 1200,
         height: 630,
-        alt: 'Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada',
-        type: 'image/jpeg',
+        alt: "Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
-    description: "View recent sales in MacDonald Highlands. See examples of luxury properties sold by Dr. Jan Duffy in Henderson's premier guard-gated community.",
+    description:
+      "Proven MacDonald Highlands listing results from Dr. Jan Duffy. Pricing strategy, marketing, and negotiation for Henderson's $1M–$15M+ guard-gated estates.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
-        alt: 'Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada',
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        alt: "Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada",
         width: 1200,
         height: 630,
       },
@@ -47,40 +51,18 @@ export const metadata: Metadata = {
   },
 };
 
-// Placeholder sold properties - replace with actual data
-const recentSales = [
+const resultPillars = [
   {
-    address: "1234 Mountain View Drive",
-    neighborhood: "Vu",
-    salePrice: "$2,850,000",
-    soldDate: "2024",
-    bedrooms: 5,
-    bathrooms: 6,
-    squareFeet: "6,500",
-    lotSize: "0.75 acres",
-    image: "/Image/house.jpeg",
+    title: "Pricing that protects value",
+    body: "Closed-comp analysis for view premiums, lot position, and estate finishes—so list price invites qualified buyers without leaving money on the table.",
   },
   {
-    address: "5678 Strip Vista Lane",
-    neighborhood: "SkyVu",
-    salePrice: "$4,200,000",
-    soldDate: "2024",
-    bedrooms: 6,
-    bathrooms: 7,
-    squareFeet: "8,200",
-    lotSize: "1.2 acres",
-    image: "/Image/house.jpeg",
+    title: "Marketing built for luxury buyers",
+    body: "Architectural photography, staging guidance, and targeted outreach to buyers who already shop MacDonald Highlands and DragonRidge lifestyle estates.",
   },
   {
-    address: "9012 Golf Course Drive",
-    neighborhood: "Vue Pointe",
-    salePrice: "$3,650,000",
-    soldDate: "2023",
-    bedrooms: 5,
-    bathrooms: 6,
-    squareFeet: "7,100",
-    lotSize: "0.9 acres",
-    image: "/Image/house.jpeg",
+    title: "Negotiation with discretion",
+    body: "Private showing coordination, offer strategy, and confidential handling for sellers who expect white-glove service from first conversation through closing.",
   },
 ];
 
@@ -114,8 +96,6 @@ export default function SoldPage() {
         utmContent="sold"
       />
 
-
-      {/* Introduction Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
           <div className="max-w-4xl mx-auto">
@@ -123,13 +103,26 @@ export default function SoldPage() {
               Proven Results in the MacDonald Highlands Luxury Market
             </h2>
             <p className="text-lg text-neutral-700 mb-6 text-center">
-              These recent sales demonstrate our expertise in the MacDonald Highlands luxury market. All sales completed with discretion, professionalism, and results that exceed client expectations. From $2M+ estate homes to $4M+ custom properties, our track record speaks to our ability to navigate complex luxury transactions and deliver exceptional outcomes for both buyers and sellers.
+              Dr. Jan Duffy brings listing-specialist execution to MacDonald Highlands sellers—from $1M+ estates to
+              custom properties with Strip views and DragonRidge access. Outcomes are measured in client results, not
+              fabricated listing cards.
             </p>
             <p className="text-lg text-neutral-700 mb-8 text-center">
-              Understanding recent sales data helps both buyers and sellers make informed decisions. These examples showcase the diversity of properties in MacDonald Highlands—from golf course frontage homes to panoramic view estates. Each sale represents a successful transaction that maximized value while meeting all parties&apos; objectives. Learn more about our <Link href="/services" className="text-primary-600 hover:underline font-semibold">selling services</Link> or explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">currently available properties</Link>.
+              Explore live inventory on our{" "}
+              <Link href="/listings" className="text-primary-800 hover:underline font-semibold">
+                listings page
+              </Link>
+              , review{" "}
+              <Link
+                href="/services/selling-your-macdonald-highlands-home"
+                className="text-primary-800 hover:underline font-semibold"
+              >
+                selling services
+              </Link>
+              , or request a confidential valuation.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/view-lifestyle-00024-full.jpg"
                   alt="MacDonald Highlands estate homes with panoramic Strip views"
@@ -138,7 +131,7 @@ export default function SoldPage() {
                   decoding="async"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/golf-lifestyle-full.jpg"
                   alt="Golf course frontage properties in MacDonald Highlands"
@@ -147,7 +140,7 @@ export default function SoldPage() {
                   decoding="async"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
                   src="/photos/community/clubhouse-full.jpg"
                   alt="DragonRidge Country Club luxury amenities"
@@ -161,67 +154,36 @@ export default function SoldPage() {
         </div>
       </section>
 
-      {/* Sales Grid */}
       <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
-          <h2 className="text-3xl font-serif font-bold mb-12 text-center">
-            Recent MacDonald Highlands Sales
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recentSales.map((sale, index) => (
-              <div key={index} className="card-luxury overflow-hidden">
-                <div className="relative h-64">
-                  <Image
-                    src={sale.image}
-                    alt={`${sale.address}, ${sale.neighborhood}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <span className="text-sm font-semibold text-primary-600 uppercase tracking-wide">
-                      {sale.neighborhood}
-                    </span>
-                    <h3 className="text-xl font-serif font-bold mt-2 mb-1">
-                      {sale.address}
-                    </h3>
-                    <p className="text-2xl font-bold text-primary-600 mt-2">
-                      {sale.salePrice}
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 text-sm text-neutral-600 border-t border-neutral-200 pt-4">
-                    <div>
-                      <span className="font-semibold">{sale.bedrooms}</span> Bedrooms
-                    </div>
-                    <div>
-                      <span className="font-semibold">{sale.bathrooms}</span> Bathrooms
-                    </div>
-                    <div>
-                      <span className="font-semibold">{sale.squareFeet}</span> sq ft
-                    </div>
-                    <div>
-                      <span className="font-semibold">{sale.lotSize}</span> Lot
-                    </div>
-                  </div>
-                  <p className="text-xs text-neutral-500 mt-4">Sold: {sale.soldDate}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 bg-white rounded-lg p-8 text-center">
-            <p className="text-lg text-neutral-700 mb-4">
-              Interested in seeing what your MacDonald Highlands home could sell for?
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold mb-4 text-center">How Listing Results Are Won</h2>
+            <p className="text-lg text-neutral-700 mb-12 text-center max-w-3xl mx-auto">
+              Every MacDonald Highlands sale starts with neighborhood-specific strategy—not a generic MLS upload.
             </p>
-            <Link href="/services/luxury-home-valuation" className="btn-primary text-lg px-8 py-4 inline-block">
-              Request Your Home Valuation
-            </Link>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+              {resultPillars.map((pillar) => (
+                <div key={pillar.title}>
+                  <h3 className="text-xl font-serif font-bold mb-3 text-charcoal-900">{pillar.title}</h3>
+                  <p className="text-neutral-700 leading-relaxed">{pillar.body}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-12 text-center flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/services/luxury-home-valuation" className="btn-primary text-lg px-8 py-4 inline-block">
+                Request Your Home Valuation
+              </Link>
+              <CalendlyCta
+                event="listing"
+                utmContent="sold-results-cta"
+                label="Book Listing Consultation"
+                className="btn-secondary text-lg px-8 py-4"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Market Analysis Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
           <div className="max-w-4xl mx-auto">
@@ -229,62 +191,44 @@ export default function SoldPage() {
               Understanding MacDonald Highlands Sales Trends
             </h2>
             <p className="text-lg text-neutral-700 mb-8 text-center">
-              Recent sales data provides valuable insights into the MacDonald Highlands luxury market. Understanding these trends helps both buyers and sellers make informed decisions based on actual market performance rather than assumptions.
+              Market context for Vu, SkyVu, and Vue Pointe helps sellers price correctly and helps buyers evaluate
+              true value—view premiums, golf adjacency, lot size, and days on market all matter.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              Price Range and Property Types
-            </h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Price Range and Property Types</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Recent sales in MacDonald Highlands span a wide price range, from $2M+ starter luxury homes to $4M+ custom estate properties. This diversity reflects the community&apos;s appeal to various buyer profiles—from first-time luxury buyers to ultra-high-net-worth individuals. Understanding where your property fits within this range is crucial for effective pricing strategies and realistic market expectations.
+              MacDonald Highlands inventory spans starter luxury through custom estate properties. Positioning your home
+              within that spectrum requires closed comps and neighborhood nuance, not algorithm estimates.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              View Premium Impact on Sales Prices
-            </h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">View Premium Impact</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Properties with panoramic Strip views consistently command premium prices in MacDonald Highlands. Recent sales demonstrate that view quality significantly impacts property values, with unobstructed views adding substantial value over similar properties without views. Understanding these view premiums helps sellers position their properties effectively and helps buyers evaluate value propositions accurately.
+              Strip-view and elevated lots consistently influence buyer demand. Highlighting view quality in marketing
+              and photography is essential to defending list price.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              Golf Course Frontage Value
-            </h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Golf Course and Lifestyle Access</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Golf course frontage properties represent some of the most valuable real estate in MacDonald Highlands. Recent sales show that DragonRidge Country Club proximity and membership access add significant value to properties. These sales demonstrate the premium buyers are willing to pay for golf course lifestyle access, making golf course properties attractive investment opportunities.
+              DragonRidge proximity and membership context remain meaningful differentiators for qualified buyers
+              shopping Henderson&apos;s guard-gated lifestyle estates.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              Lot Size and Positioning Factors
-            </h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Lot Size and Positioning</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              Recent sales data shows that lot size and positioning significantly impact property values. Larger lots with elevated positions command premium prices, reflecting buyer demand for privacy, space, and views. Understanding how lot characteristics influence sales prices helps both buyers and sellers make informed decisions about property value and investment potential.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              Days on Market and Transaction Timelines
-            </h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              Well-positioned MacDonald Highlands properties with premium features often sell quickly to qualified buyers. Recent sales demonstrate that properties priced correctly and marketed effectively can achieve successful outcomes within reasonable timeframes. Understanding typical days on market helps sellers set realistic expectations while helping buyers understand market dynamics and competition levels.
-            </p>
-
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">
-              Neighborhood Performance Variations
-            </h3>
-            <p className="text-lg text-neutral-700 mb-6">
-              Different neighborhoods within MacDonald Highlands—Vu, SkyVu, and Vue Pointe—show varying performance characteristics in recent sales. Understanding these neighborhood-specific trends helps buyers identify areas that align with their preferences and helps sellers understand how neighborhood factors impact property values. Our market analysis includes neighborhood-specific insights to support informed decision-making.
+              Larger lots and elevated positions support privacy, outdoor living, and long-term value. These factors
+              should be explicit in pricing strategy and presentation.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="section-padding bg-neutral-900 text-white">
+      <section className="section-padding bg-charcoal-900 text-white">
         <div className="container-luxury">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-white">
               Proven Results in MacDonald Highlands
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div className="text-5xl font-bold mb-2">{siteConfig.agent.experience.split("+")[0]}+</div>
                 <p className="text-neutral-300">Families Served</p>
@@ -293,13 +237,10 @@ export default function SoldPage() {
                 <div className="text-5xl font-bold mb-2">$127M+</div>
                 <p className="text-neutral-300">In Sales Volume</p>
               </div>
-              <div>
-                <div className="text-5xl font-bold mb-2">45</div>
-                <p className="text-neutral-300">Average Days on Market</p>
-              </div>
             </div>
             <p className="mt-12 text-neutral-300 text-lg">
-              These metrics demonstrate our commitment to achieving exceptional results for MacDonald Highlands clients. Our proven track record gives you confidence that your real estate transaction is in expert hands.
+              Verified results from Dr. Jan Duffy&apos;s MacDonald Highlands practice—listing strategy measured in closed
+              outcomes and client trust.
             </p>
           </div>
         </div>
@@ -311,7 +252,6 @@ export default function SoldPage() {
         calendlyEvent="listing"
         title="Ready to Sell Your MacDonald Highlands Home?"
       />
-
     </>
   );
 }

@@ -445,23 +445,6 @@ export default function HomePage() {
 
       <NapMapSection />
       <ConsultationBand source="homepage-cta" calendlyEvent="listing" />
-
-      <div className="fixed bottom-0 left-0 right-0 z-50 bg-primary-900 text-white p-4 shadow-2xl md:hidden">
-        <div className="flex items-center justify-between gap-2">
-          <a
-            href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-            className="flex-1 text-center py-2 bg-white text-primary-900 rounded-md font-semibold"
-          >
-            Call {siteConfig.contact.phoneFormatted}
-          </a>
-          <a
-            href={`sms:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-            className="flex-1 text-center py-2 border-2 border-white rounded-md font-semibold"
-          >
-            Text Us
-          </a>
-        </div>
-      </div>
     </>
   );
 }

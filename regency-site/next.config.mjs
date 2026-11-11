@@ -62,6 +62,19 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['@fortawesome/react-fontawesome', 'framer-motion'],
   },
+
+  // Redirect leftover ThemeWagon demo / diagnostic routes to marketing pages
+  async redirects() {
+    return [
+      { source: '/Property', destination: '/listings', permanent: false },
+      { source: '/Property/:path*', destination: '/listings', permanent: false },
+      { source: '/Login', destination: '/', permanent: false },
+      { source: '/Dashboard', destination: '/', permanent: false },
+      { source: '/Dashboard/:path*', destination: '/', permanent: false },
+      { source: '/test-images', destination: '/', permanent: false },
+      { source: '/image-diagnostic', destination: '/', permanent: false },
+    ];
+  },
 };
 
 export default nextConfig;

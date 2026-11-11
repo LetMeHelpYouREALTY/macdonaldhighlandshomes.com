@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    /* Luxury Color Palette - MacDonald Highlands */
-    --color-primary: 99 102 241; /* Indigo 500 */
-    --color-primary-dark: 79 70 229; /* Indigo 600 */
-    --color-primary-light: 129 140 248; /* Indigo 400 */
-    --color-accent: 16 185 129; /* Emerald 500 */
+    /* Luxury Color Palette - MacDonald Highlands (charcoal + gold) */
+    --color-primary: 55 65 81; /* Charcoal 700 */
+    --color-primary-dark: 31 41 55; /* Charcoal 800 */
+    --color-primary-light: 75 85 99; /* Slate 600 */
+    --color-accent: 180 83 9; /* Gold dark */
     --color-gold: 217 119 6; /* Amber 600 */
     
     /* Neutral Palette */
@@ -86,18 +86,29 @@
 }
 
 @layer components {
-  /* Luxury Button Styles */
+  /* Luxury Button Styles — charcoal (not indigo) */
   .btn-primary {
-    @apply bg-indigo-900 text-white px-6 py-3 rounded-md font-semibold;
-    @apply hover:bg-indigo-800 transition-all duration-300;
+    background-color: rgb(17 24 39);
+    color: #fff;
+    @apply px-6 py-3 rounded-md font-semibold;
+    @apply transition-all duration-300;
     @apply shadow-lg hover:shadow-xl;
     @apply transform hover:-translate-y-0.5;
   }
+  .btn-primary:hover {
+    background-color: rgb(31 41 55);
+  }
 
   .btn-secondary {
-    @apply bg-white text-indigo-900 px-6 py-3 rounded-md font-semibold border-2 border-indigo-900;
-    @apply hover:bg-indigo-50 transition-all duration-300;
+    background-color: #fff;
+    color: rgb(17 24 39);
+    border: 2px solid rgb(17 24 39);
+    @apply px-6 py-3 rounded-md font-semibold;
+    @apply transition-all duration-300;
     @apply shadow-md hover:shadow-lg;
+  }
+  .btn-secondary:hover {
+    background-color: rgb(249 250 251);
   }
 
   .btn-ghost {

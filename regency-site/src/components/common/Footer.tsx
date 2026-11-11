@@ -16,7 +16,9 @@ const services = [
 const community = [
   { name: "About MacDonald Highlands", href: "/macdonald-highlands-community" },
   { name: "About Dr. Jan Duffy", href: "/about-dr-jan-duffy" },
+  { name: "All Services", href: "/services" },
   { name: "Current Listings", href: "/listings" },
+  { name: "Sold / Results", href: "/sold" },
   { name: "Testimonials", href: "/testimonials" },
 ];
 
