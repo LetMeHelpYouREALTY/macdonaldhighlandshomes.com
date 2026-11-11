@@ -8,6 +8,12 @@ export default function PreconnectResources() {
     const links = [
       { rel: "preconnect", href: "https://em.realscout.com", crossOrigin: "anonymous" },
       { rel: "dns-prefetch", href: "https://em.realscout.com" },
+      { rel: "preconnect", href: "https://www.realscout.com", crossOrigin: "anonymous" },
+      { rel: "dns-prefetch", href: "https://www.realscout.com" },
+      { rel: "preconnect", href: "https://assets.calendly.com", crossOrigin: "anonymous" },
+      { rel: "dns-prefetch", href: "https://assets.calendly.com" },
+      { rel: "preconnect", href: "https://calendly.com", crossOrigin: "anonymous" },
+      { rel: "dns-prefetch", href: "https://calendly.com" },
       { rel: "preconnect", href: "https://d1buiexcd5gara.cloudfront.net", crossOrigin: "anonymous" },
       { rel: "dns-prefetch", href: "https://d1buiexcd5gara.cloudfront.net" },
     ];

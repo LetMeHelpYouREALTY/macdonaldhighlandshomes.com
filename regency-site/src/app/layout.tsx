@@ -97,6 +97,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${inter.className} antialiased`}>
         {/* Preconnect resources for faster loading (320ms LCP savings) */}
         <PreconnectResources />
@@ -106,6 +112,17 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Navbar />
         <main className="min-h-screen">{children}</main>
+        {/* RealScout once globally — widget components render without reloading script */}
+        <Script
+          src={siteConfig.realscout.widgetScript}
+          type="module"
+          strategy="afterInteractive"
+        />
+        {/* Calendly once globally — popup CTA + inline embeds */}
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="lazyOnload"
+        />
         <Script src="/ads-conversions.js" strategy="afterInteractive" />
         <Footer />
       </body>

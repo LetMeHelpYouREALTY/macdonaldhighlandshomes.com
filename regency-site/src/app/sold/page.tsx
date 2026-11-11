@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
@@ -97,6 +99,13 @@ export default function SoldPage() {
           </p>
         </div>
       </section>
+
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="sold"
+      />
+
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">
@@ -288,40 +297,6 @@ export default function SoldPage() {
         </div>
       </section>
 
-      {/* RealScout Office Listings Section */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
-                Current MacDonald Highlands Listings
-              </h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
-              </p>
-            </div>
-            
-            <RealScoutWidgetWrapper />
-            
-            <div className="mt-8 text-center">
-              <p className="text-neutral-600 mb-4">
-                Looking for off-market opportunities?{" "}
-                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
-                  Join our private buyer list
-                </Link>
-                .
-              </p>
-              <Link 
-                href="/listings" 
-                className="btn-primary text-lg px-8 py-4 inline-block"
-              >
-                View All Listings
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
@@ -333,7 +308,13 @@ export default function SoldPage() {
               Whether you&apos;re selling your MacDonald Highlands home or exploring investment opportunities, we&apos;re here to help you achieve exceptional results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/services/luxury-home-valuation" className="btn-primary text-lg px-8 py-4">
+              <CalendlyCta
+                event="listing"
+                utmContent="sold-valuation"
+                label="Book Listing Consultation"
+                className="text-lg px-8 py-4"
+              />
+              <Link href="/services/luxury-home-valuation" className="btn-secondary text-lg px-8 py-4">
                 Request Home Valuation
               </Link>
               <a
@@ -342,6 +323,14 @@ export default function SoldPage() {
               >
                 Call {siteConfig.contact.phoneFormatted}
               </a>
+            </div>
+            <div className="mt-10">
+              <CalendlyInline
+                event="listing"
+                utmContent="sold-cta"
+                title="Book Your Listing Consultation"
+                description="Ready for similar results? Schedule time with Dr. Jan Duffy."
+              />
             </div>
             <p className="mt-8 text-neutral-600">
               Learn more about our <Link href="/services" className="text-primary-600 hover:underline font-semibold">selling services</Link> or explore <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link>.

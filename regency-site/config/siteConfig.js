@@ -80,7 +80,15 @@ export const siteConfig = {
 
   realscout: {
     agentId: "QWdlbnQtMjI1MDUw",
-    widgetScript: "https://em.realscout.com/widgets/realscout-web-components.umd.js"
-  }
+    widgetScript: "https://em.realscout.com/widgets/realscout-web-components.umd.js",
+  },
+  calendly: {
+    profileUrl: "https://calendly.com/drjanduffy",
+    showingUrl: "https://calendly.com/drjanduffy/showing",
+    listingConsultationUrl: "https://calendly.com/drjanduffy/listing-consultation",
+    buyerConsultationUrl: "https://calendly.com/drjanduffy/buyer-consultation-30-min",
+    marketStrategyUrl: "https://calendly.com/drjanduffy/15min",
+    zoomMeetingUrl: "https://calendly.com/drjanduffy/meet-on-zoom",
+  },
 };
 

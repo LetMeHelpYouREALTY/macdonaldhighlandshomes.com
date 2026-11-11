@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import Link from "next/link";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
@@ -110,6 +112,13 @@ export default function TestimonialsPage() {
           </p>
         </div>
       </section>
+
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="testimonials"
+      />
+
 
       {/* Introduction Section */}
       <section className="section-padding bg-white">
@@ -247,40 +256,6 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* RealScout Office Listings Section */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
-                Current MacDonald Highlands Listings
-              </h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
-              </p>
-            </div>
-            
-            <RealScoutWidgetWrapper />
-            
-            <div className="mt-8 text-center">
-              <p className="text-neutral-600 mb-4">
-                Looking for off-market opportunities?{" "}
-                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
-                  Join our private buyer list
-                </Link>
-                .
-              </p>
-              <Link 
-                href="/listings" 
-                className="btn-primary text-lg px-8 py-4 inline-block"
-              >
-                View All Listings
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
@@ -292,8 +267,14 @@ export default function TestimonialsPage() {
               Join hundreds of satisfied clients who have trusted Dr. Jan for their MacDonald Highlands real estate needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
-                Get Started Today
+              <CalendlyCta
+                event="listing"
+                utmContent="testimonials-cta"
+                label="Book a Consultation"
+                className="text-lg px-8 py-4"
+              />
+              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
+                Contact Form
               </Link>
               <a
                 href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
@@ -301,6 +282,14 @@ export default function TestimonialsPage() {
               >
                 Call {siteConfig.contact.phoneFormatted}
               </a>
+            </div>
+            <div className="mt-10">
+              <CalendlyInline
+                event="listing"
+                utmContent="testimonials-inline"
+                title="Schedule with Dr. Jan Duffy"
+                description="Join clients who trusted a MacDonald Highlands listing specialist."
+              />
             </div>
           </div>
         </div>

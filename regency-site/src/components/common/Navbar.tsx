@@ -2,6 +2,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -71,13 +72,14 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="btn-primary mt-2 lg:mt-0 lg:ml-2 text-sm uppercase tracking-wide"
-              >
-                Get Started
-              </Link>
+              <span className="mt-2 lg:mt-0 lg:ml-2 inline-flex" onClick={() => setIsMobileMenuOpen(false)}>
+                <CalendlyCta
+                  event="listing"
+                  utmContent="nav-get-started"
+                  label="Get Started"
+                  className="text-sm uppercase tracking-wide"
+                />
+              </span>
             </div>
           </div>
         </div>

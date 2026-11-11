@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Listings | Luxury Homes for Sale | Dr. Jan Duffy",
@@ -60,6 +62,13 @@ export default function ListingsPage() {
         </div>
       </section>
 
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="listings"
+      />
+
+
       {/* Introduction Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
@@ -77,36 +86,25 @@ export default function ListingsPage() {
         </div>
       </section>
 
-      {/* RealScout Widget Section */}
       <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
-          <div className="mb-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-              Available MacDonald Highlands Properties
-            </h2>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Use the filters below to find your perfect MacDonald Highlands home. Search by price range, property type, bedrooms, bathrooms, and neighborhood. For off-market opportunities,{" "}
-              <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
-                join our private buyer list
-              </Link>
-              .
-            </p>
-          </div>
-
-          <RealScoutWidgetWrapper />
-
-          {/* Additional Info */}
-          <div className="mt-12 bg-primary-50 border-l-4 border-primary-600 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-primary-900 mb-2">
-              Looking for Something Specific?
-            </h3>
-            <p className="text-neutral-700 mb-4">
-              Not seeing what you&apos;re looking for? We have access to off-market properties and coming soon listings that aren&apos;t publicly available. Our network of luxury real estate professionals and relationships within MacDonald Highlands provide exclusive access to properties before they hit the market.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+          <div className="max-w-4xl mx-auto">
+            <CalendlyInline
+              event="showing"
+              utmContent="listings-cta"
+              title="Schedule a Private Showing"
+              description="Book a MacDonald Highlands property tour with Dr. Jan Duffy."
+            />
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+              <CalendlyCta
+                event="buyer"
+                utmContent="listings-buyer"
+                label="Book Buyer Consultation"
+                className="text-center"
+              />
               <Link
                 href="/services/off-market-opportunities"
-                className="btn-primary text-center"
+                className="btn-secondary text-center"
               >
                 Join Private Buyer List
               </Link>

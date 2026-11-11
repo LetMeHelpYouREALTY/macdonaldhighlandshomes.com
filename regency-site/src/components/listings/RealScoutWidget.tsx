@@ -1,31 +1,18 @@
 "use client";
 
-import { useEffect } from "react";
 import { siteConfig } from "@/config/siteConfig";
 
+/**
+ * Office listings widget. Script is loaded once from root layout.
+ */
 export default function RealScoutWidget() {
-  useEffect(() => {
-    // Load RealScout widget script
-    const script = document.createElement("script");
-    script.src = siteConfig.realscout.widgetScript;
-    script.type = "module";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup script on unmount
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
-    <div className="bg-neutral-50 rounded-lg p-8">
+    <div className="bg-white rounded-lg p-4 md:p-6 border border-neutral-200 shadow-sm">
       <style jsx>{`
         realscout-office-listings {
-          --rs-listing-divider-color: #0e64c8;
+          --rs-listing-divider-color: #312e81;
           width: 100%;
+          display: block;
         }
       `}</style>
       <realscout-office-listings
@@ -34,11 +21,9 @@ export default function RealScoutWidget() {
         sort-order="PRICE_HIGH"
         listing-status="For Sale"
         property-types=",SFR"
-        price-min="400000"
-        price-max="1100000"
+        price-min="1000000"
+        price-max="20000000"
       ></realscout-office-listings>
     </div>
   );
 }
-
-

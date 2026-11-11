@@ -3,7 +3,9 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import FaqSchema from "@/components/schema/FaqSchema";
 import ContactForm from "@/components/forms/ContactForm";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import FaqSection from "@/components/sections/FaqSection";
 import { homepageFaqs } from "@/lib/faqs";
 
@@ -169,15 +171,24 @@ export default function HomePage() {
             Trust your MacDonald Highlands estate to the specialist who understands its value—and DragonRidge living.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/services/luxury-home-valuation" className="btn-primary text-lg px-8 py-4 uppercase tracking-wide">
-              Free Home Valuation
-            </Link>
+            <CalendlyCta
+              event="listing"
+              utmContent="home-hero"
+              label="Book Listing Consultation"
+              className="text-lg px-8 py-4 uppercase tracking-wide"
+            />
             <Link href="/listings" className="btn-ghost text-lg px-8 py-4 uppercase tracking-wide">
               View Listings
             </Link>
           </div>
         </div>
       </section>
+
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="homepage"
+      />
 
       {/* Why Sellers Choose */}
       <section className="section-padding bg-white">
@@ -395,32 +406,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Listings — live MLS via RealScout (no fabricated cards) */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-charcoal-900">
-                Current MacDonald Highlands Listings
-              </h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Live inventory for Henderson&apos;s premier guard-gated community. Prefer privacy?{" "}
-                <Link href="/services/off-market-opportunities" className="text-primary-700 font-semibold hover:underline">
-                  Ask about off-market
-                </Link>
-                .
-              </p>
-            </div>
-            <RealScoutWidgetWrapper />
-            <div className="mt-10 text-center">
-              <Link href="/listings" className="btn-primary text-lg px-10 py-4 inline-block uppercase tracking-wide">
-                View All Listings
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="section-padding bg-charcoal-900 text-white">
         <div className="container-luxury">
@@ -519,6 +504,22 @@ export default function HomePage() {
                 ctaText="Request a Consultation"
                 source="homepage-cta"
               />
+              <div className="mt-10">
+                <CalendlyInline
+                  event="listing"
+                  utmContent="homepage-cta"
+                  title="Or Book Directly on Calendly"
+                  description="Pick a time for your listing consultation with Dr. Jan Duffy."
+                />
+              </div>
+              <div className="mt-6 text-center">
+                <CalendlyCta
+                  event="showing"
+                  utmContent="homepage-showing"
+                  label="Prefer a property showing? Book here →"
+                  variant="link"
+                />
+              </div>
             </div>
           </div>
         </div>

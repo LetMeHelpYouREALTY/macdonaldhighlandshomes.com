@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import Link from "next/link";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
@@ -67,6 +69,13 @@ export default function CommunityPage() {
           </p>
         </div>
       </section>
+
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="macdonald-highlands-community"
+      />
+
 
       {/* Main Content */}
       <section className="section-padding bg-white">
@@ -467,40 +476,6 @@ export default function CommunityPage() {
         </div>
       </section>
 
-      {/* RealScout Office Listings Section */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
-                Current MacDonald Highlands Listings
-              </h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
-              </p>
-            </div>
-            
-            <RealScoutWidgetWrapper />
-            
-            <div className="mt-8 text-center">
-              <p className="text-neutral-600 mb-4">
-                Looking for off-market opportunities?{" "}
-                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
-                  Join our private buyer list
-                </Link>
-                .
-              </p>
-              <Link 
-                href="/listings" 
-                className="btn-primary text-lg px-8 py-4 inline-block"
-              >
-                View All Listings
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
@@ -512,12 +487,23 @@ export default function CommunityPage() {
               Ready to find your dream home in MacDonald Highlands? Let&apos;s schedule a private community tour. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">real estate services</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/services/buying-in-macdonald-highlands" className="btn-primary text-lg px-8 py-4">
-                Schedule Private Tour
-              </Link>
+              <CalendlyCta
+                event="showing"
+                utmContent="community-tour"
+                label="Schedule Private Tour"
+                className="text-lg px-8 py-4"
+              />
               <Link href="/listings" className="btn-secondary text-lg px-8 py-4">
                 View Available Properties
               </Link>
+            </div>
+            <div className="mt-10">
+              <CalendlyInline
+                event="market"
+                utmContent="community-cta"
+                title="Book a Market Strategy Call"
+                description="Get a hyperlocal MacDonald Highlands market read with Dr. Jan Duffy."
+              />
             </div>
             <p className="mt-8 text-neutral-600">
               Or call us directly:{" "}

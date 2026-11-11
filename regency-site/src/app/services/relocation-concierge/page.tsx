@@ -3,7 +3,8 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
-import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import Link from "next/link";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
@@ -93,6 +94,13 @@ export default function RelocationPage() {
           </p>
         </div>
       </section>
+
+      <OfficeListingsBelowHero
+        title="Current Office Listings"
+        description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
+        utmContent="relocation-concierge"
+      />
+
 
       {/* Main Content */}
       <section className="section-padding bg-white">
@@ -282,40 +290,6 @@ export default function RelocationPage() {
         </div>
       </section>
 
-      {/* RealScout Office Listings Section */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-neutral-900">
-                Current MacDonald Highlands Listings
-              </h2>
-              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Browse available luxury homes for sale in Henderson&apos;s premier guard-gated community. Use the filters below to find your perfect property.
-              </p>
-            </div>
-            
-            <RealScoutWidgetWrapper />
-            
-            <div className="mt-8 text-center">
-              <p className="text-neutral-600 mb-4">
-                Looking for off-market opportunities?{" "}
-                <Link href="/services/off-market-opportunities" className="text-primary-600 font-semibold hover:underline">
-                  Join our private buyer list
-                </Link>
-                .
-              </p>
-              <Link 
-                href="/listings" 
-                className="btn-primary text-lg px-8 py-4 inline-block"
-              >
-                View All Listings
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="container-luxury">
@@ -333,8 +307,17 @@ export default function RelocationPage() {
                 ctaText="Start Planning"
                 source="relocation-service"
               />
-              <div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Or call us directly:</p>
+              
+              <div className="mt-10">
+                <CalendlyInline
+                  event="buyer"
+                  utmContent="relocation-concierge-cta"
+                  title="Or Book Directly on Calendly"
+                  description="Pick a time that works — listing consultation, private showing, or strategy call."
+                />
+              </div>
+<div className="text-center mt-6">
+                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
                 <a 
                   href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
                   className="text-2xl font-bold text-primary-600 hover:underline"
