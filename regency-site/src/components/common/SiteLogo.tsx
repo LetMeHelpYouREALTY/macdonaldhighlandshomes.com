@@ -32,7 +32,6 @@ export default function SiteLogo({
     <Link
       href="/"
       className={`inline-flex items-center gap-3 hover:opacity-90 transition-opacity duration-300 shrink-0 ${className}`}
-      aria-label={`${siteConfig.logo.title} — ${siteConfig.logo.subtitle}`}
     >
       {showPortrait ? (
         <AgentPortrait
@@ -40,6 +39,7 @@ export default function SiteLogo({
           href={false}
           priority
           showRing
+          decorative
           ringOffsetClass={isDark ? "ring-offset-neutral-900" : "ring-offset-white"}
           className={compact ? undefined : "hidden sm:inline-block"}
         />

@@ -114,7 +114,7 @@ export default function Footer() {
             <div>
               <h3 className="font-serif text-lg text-white mb-4">Contact</h3>
               <div className="space-y-4">
-                <p className="text-gold-500 font-semibold">Dr. Jan Duffy, REALTOR®</p>
+                <p className="text-cream-200 font-semibold">Dr. Jan Duffy, REALTOR®</p>
 
                 <a
                   href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
@@ -126,7 +126,7 @@ export default function Footer() {
                 <div className="pl-7 space-y-2">
                   <a
                     href={siteConfig.contact.smsHref}
-                    className="block text-sm text-gold-500 hover:underline"
+                    className="block text-sm text-cream-200 hover:text-white hover:underline"
                   >
                     Text / SMS
                   </a>
@@ -135,7 +135,7 @@ export default function Footer() {
                     utmContent="footer-beside-phone"
                     label="Book on Calendly →"
                     variant="link"
-                    className="text-gold-500 hover:text-gold-light text-sm"
+                    className="text-cream-200 hover:text-white text-sm"
                   />
                 </div>
 

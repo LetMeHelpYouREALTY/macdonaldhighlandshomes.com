@@ -307,7 +307,6 @@ export default function ContactPage() {
         source="contact"
         calendlyEvent="listing"
         title="Ready to Book with MacDonald Highlands Listing Specialist Dr. Jan Duffy?"
-        showListings={false}
       />
     </>
   );

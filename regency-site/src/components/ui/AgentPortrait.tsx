@@ -10,6 +10,8 @@ type AgentPortraitProps = {
   className?: string;
   priority?: boolean;
   showRing?: boolean;
+  /** When true, image is decorative (empty alt) for parent links with visible text */
+  decorative?: boolean;
   /** Tailwind ring-offset background class for dark/light surfaces */
   ringOffsetClass?: string;
 };
@@ -31,6 +33,7 @@ export default function AgentPortrait({
   className = "",
   priority = false,
   showRing = true,
+  decorative = false,
   ringOffsetClass = "ring-offset-white",
 }: AgentPortraitProps) {
   const dims = SIZE_MAP[size];
@@ -42,7 +45,7 @@ export default function AgentPortrait({
     >
       <OptimizedImage
         src={siteConfig.images.agentHeadshot}
-        alt={siteConfig.images.agentHeadshotAlt}
+        alt={decorative ? "" : siteConfig.images.agentHeadshotAlt}
         fill
         priority={priority}
         sizes={`${dims.px}px`}

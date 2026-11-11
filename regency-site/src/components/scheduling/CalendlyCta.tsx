@@ -46,6 +46,9 @@ export default function CalendlyCta({
   url.searchParams.set("utm_medium", "website");
   url.searchParams.set("utm_content", utmContent);
 
+  // Link variant omits a forced text color so dark surfaces (footer) can pass
+  // high-contrast classes without fighting text-primary-700.
+  const hasExplicitTextColor = /\btext-/.test(className);
   const variantClass =
     variant === "primary"
       ? "btn-primary"
@@ -53,7 +56,7 @@ export default function CalendlyCta({
         ? "btn-secondary"
         : variant === "ghost"
           ? "btn-ghost"
-          : "text-primary-700 font-semibold hover:underline";
+          : `font-semibold hover:underline ${hasExplicitTextColor ? "" : "text-primary-800"}`.trim();
 
   function handleClick(e: MouseEvent<HTMLAnchorElement>) {
     const calendly = (

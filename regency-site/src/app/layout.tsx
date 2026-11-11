@@ -120,17 +120,12 @@ export default function RootLayout({
         <CalendlyAssets />
         <Navbar />
         <main className="min-h-screen">{children}</main>
-        {/* RealScout / ads deferred until after load — below-fold widgets */}
-        <Script
-          src={siteConfig.realscout.widgetScript}
-          type="module"
-          strategy="lazyOnload"
-        />
-        {/* Calendly once globally — popup CTA + inline embeds */}
+        {/* Calendly popup widget only — heavy booking bundle loads on /contact & /listings embeds */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="lazyOnload"
         />
+        {/* Ads conversions after idle; RealScout script loads from widget when in view */}
         <Script src="/ads-conversions.js" strategy="lazyOnload" />
         <Footer />
         <VercelAnalytics />
