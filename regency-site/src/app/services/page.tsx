@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
-import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
@@ -64,30 +65,24 @@ export default function ServicesPage() {
       />
       <FaqSchema faqs={servicesFaqs} />
       
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.servicesOverview}
-            alt="Aerial view of MacDonald Highlands luxury community at sunset"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: 'absolute', inset: 0 }}
-            loading="eager"
-            decoding="async"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Dr. Jan Duffy · Listing Specialist
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            MacDonald Highlands Listing Specialist Services
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Hyperfocused selling expertise—plus buying, valuation, relocation, investment, and off-market access
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="MacDonald Highlands Listing Specialist Services"
+        subtitle="Hyperfocused selling expertise—plus buying, valuation, relocation, investment, and off-market access"
+        support="White-glove guidance for $1M–$15M+ estates in Henderson, NV."
+        imageSrc={siteConfig.images.servicesOverview}
+        imageAlt="Aerial view of MacDonald Highlands luxury community at sunset"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "services-hero",
+        }}
+        secondaryCta={{
+          label: "View Listings",
+          href: "/listings",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -386,49 +381,13 @@ export default function ServicesPage() {
 
       <FaqSection title="Services FAQs" faqs={servicesFaqs} />
 
-      {/* CTA Section */}
-      <section className="section-padding bg-neutral-50">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Ready to Begin Your MacDonald Highlands Real Estate Journey?
-            </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Whether you&apos;re buying, selling, or exploring investment opportunities, we&apos;re here to provide expert guidance tailored to your unique needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyCta
-                event="listing"
-                utmContent="services-cta"
-                label="Book Listing Consultation"
-                className="text-lg px-8 py-4"
-              />
-              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
-                Contact Form
-              </Link>
-              <a 
-                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="btn-secondary text-lg px-8 py-4"
-              >
-                Call {siteConfig.contact.phoneFormatted}
-              </a>
-            </div>
-            <div className="mt-10">
-              <CalendlyInline
-                event="listing"
-                utmContent="services-inline"
-                title="Book a Listing Consultation"
-                description="Schedule directly with Dr. Jan Duffy — listing strategy, valuation, or next steps."
-              />
-            </div>
-            <div className="mt-8 text-center">
-              <p className="text-neutral-600 mb-4">
-                Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore <Link href="/macdonald-highlands-community" className="text-primary-600 hover:underline font-semibold">MacDonald Highlands community details</Link>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="services"
+        calendlyEvent="listing"
+        title="Ready for Listing Specialist Guidance?"
+      />
+
     </>
   );
 }

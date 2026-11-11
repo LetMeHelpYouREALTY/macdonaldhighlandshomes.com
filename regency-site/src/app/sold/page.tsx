@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
-import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
@@ -88,17 +89,24 @@ export default function SoldPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Recent Sales in MacDonald Highlands
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Examples of luxury properties successfully sold in Henderson&apos;s premier guard-gated community
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="MacDonald Highlands Sold Properties"
+        subtitle="Proven listing results in Henderson's premier guard-gated community"
+        support="Pricing strategy, marketing, and negotiation that protect seller value."
+        imageSrc={siteConfig.images.selling}
+        imageAlt="Staged luxury living room prepared for a MacDonald Highlands listing"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "sold-hero",
+        }}
+        secondaryCta={{
+          label: "Get a Valuation",
+          href: "/services/luxury-home-valuation",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -297,47 +305,13 @@ export default function SoldPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Ready to Achieve Similar Results?
-            </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Whether you&apos;re selling your MacDonald Highlands home or exploring investment opportunities, we&apos;re here to help you achieve exceptional results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyCta
-                event="listing"
-                utmContent="sold-valuation"
-                label="Book Listing Consultation"
-                className="text-lg px-8 py-4"
-              />
-              <Link href="/services/luxury-home-valuation" className="btn-secondary text-lg px-8 py-4">
-                Request Home Valuation
-              </Link>
-              <a
-                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="btn-secondary text-lg px-8 py-4"
-              >
-                Call {siteConfig.contact.phoneFormatted}
-              </a>
-            </div>
-            <div className="mt-10">
-              <CalendlyInline
-                event="listing"
-                utmContent="sold-cta"
-                title="Book Your Listing Consultation"
-                description="Ready for similar results? Schedule time with Dr. Jan Duffy."
-              />
-            </div>
-            <p className="mt-8 text-neutral-600">
-              Learn more about our <Link href="/services" className="text-primary-600 hover:underline font-semibold">selling services</Link> or explore <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="sold"
+        calendlyEvent="listing"
+        title="Ready to Sell Your MacDonald Highlands Home?"
+      />
+
     </>
   );
 }

@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ServiceSchema from "@/components/schema/ServiceSchema";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
-import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
@@ -76,29 +76,24 @@ export default function BuyingPage() {
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.buying}
-            alt="Private tour foyer of a MacDonald Highlands luxury estate"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Buyer Representation
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Buying in MacDonald Highlands: Your Insider Advantage
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Navigate Henderson&apos;s premier guard-gated community with expert guidance from a neighborhood specialist
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Buying in MacDonald Highlands"
+        subtitle="Navigate Henderson's premier guard-gated community with expert guidance from a neighborhood specialist"
+        support="Private tours, view-premium analysis, and DragonRidge membership context."
+        imageSrc={siteConfig.images.buying}
+        imageAlt="Grand foyer of a MacDonald Highlands estate for a private buyer tour"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "buyer",
+          utmContent: "buying-hero",
+        }}
+        secondaryCta={{
+          label: "View Listings",
+          href: "/listings",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -304,48 +299,13 @@ export default function BuyingPage() {
 
       <FaqSection title="Buying FAQs — MacDonald Highlands" faqs={buyingFaqs} />
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Schedule Your Private Community Tour
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Experience MacDonald Highlands firsthand with a guided tour of available properties and the community.
-              </p>
-              <ContactForm
-                formTitle="Request a Private Tour"
-                formDescription="Tell us what you're looking for and we'll arrange a personalized community tour."
-                ctaText="Schedule Tour"
-                source="buying-service"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="buyer"
-                  utmContent="buying-in-macdonald-highlands-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">
-                  <CalendlyCta event="showing" utmContent="buying-in-macdonald-highlands-link" label="Book a private showing with Dr. Jan Duffy" variant="link" />
-                </p>
-                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="buying"
+        calendlyEvent="buyer"
+        title="Ready to Buy in MacDonald Highlands?"
+      />
+
     </>
   );
 }

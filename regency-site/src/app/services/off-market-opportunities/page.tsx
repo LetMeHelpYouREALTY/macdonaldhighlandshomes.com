@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ServiceSchema from "@/components/schema/ServiceSchema";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import Link from "next/link";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
@@ -71,29 +72,24 @@ export default function OffMarketPage() {
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.offMarket}
-            alt="Private courtyard entrance for discreet off-market MacDonald Highlands listings"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Off-Market Listings
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Off-Market & Coming Soon: MacDonald Highlands Exclusives
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Access to pocket listings and exclusive properties before they hit the public market
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Off-Market Opportunities in MacDonald Highlands"
+        subtitle="Pocket listings and privacy-focused marketing for qualified buyers and sellers"
+        support="Exclusive access before MLS when discretion is the priority."
+        imageSrc={siteConfig.images.offMarket}
+        imageAlt="Private courtyard entrance representing discreet off-market listings"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "buyer",
+          utmContent: "off-market-hero",
+        }}
+        secondaryCta={{
+          label: "Join the List",
+          href: "/contact",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -291,45 +287,13 @@ export default function OffMarketPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Join the Private Buyer List
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Get exclusive access to off-market properties and coming soon listings in MacDonald Highlands.
-              </p>
-              <ContactForm
-                formTitle="Register for Exclusive Access"
-                formDescription="Tell us what you're looking for and we'll add you to our private buyer network."
-                ctaText="Join Waiting List"
-                source="off-market-service"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="buyer"
-                  utmContent="off-market-opportunities-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="off-market"
+        calendlyEvent="buyer"
+        title="Ready for Off-Market Access in MacDonald Highlands?"
+      />
+
     </>
   );
 }

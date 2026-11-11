@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import Link from "next/link";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
-import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
@@ -101,17 +102,24 @@ export default function TestimonialsPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Client Testimonials
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Trusted by {siteConfig.agent.experience.split("+")[0]} families for MacDonald Highlands real estate
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Client Testimonials"
+        subtitle="What MacDonald Highlands sellers and buyers say about working with Dr. Jan Duffy"
+        support="Listing specialist service measured in closed outcomes and client trust."
+        imageSrc={siteConfig.images.whyListingSpecialist}
+        imageAlt="Luxury listing presentation materials from Dr. Jan Duffy"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "testimonials-hero",
+        }}
+        secondaryCta={{
+          label: "Contact Form",
+          href: "/contact",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -256,44 +264,13 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Ready to Work With Dr. Jan Duffy?
-            </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Join hundreds of satisfied clients who have trusted Dr. Jan for their MacDonald Highlands real estate needs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyCta
-                event="listing"
-                utmContent="testimonials-cta"
-                label="Book a Consultation"
-                className="text-lg px-8 py-4"
-              />
-              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
-                Contact Form
-              </Link>
-              <a
-                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="btn-secondary text-lg px-8 py-4"
-              >
-                Call {siteConfig.contact.phoneFormatted}
-              </a>
-            </div>
-            <div className="mt-10">
-              <CalendlyInline
-                event="listing"
-                utmContent="testimonials-inline"
-                title="Schedule with Dr. Jan Duffy"
-                description="Join clients who trusted a MacDonald Highlands listing specialist."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="testimonials"
+        calendlyEvent="listing"
+        title="Ready to Experience Listing Specialist Service?"
+      />
+
     </>
   );
 }

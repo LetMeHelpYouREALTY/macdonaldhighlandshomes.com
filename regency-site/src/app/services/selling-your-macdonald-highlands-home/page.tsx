@@ -2,11 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import FaqSchema from "@/components/schema/FaqSchema";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 import { sellingFaqs } from "@/lib/faqs";
@@ -75,29 +76,24 @@ export default function SellingPage() {
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.selling}
-            alt="Staged luxury living room prepared for a MacDonald Highlands listing"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Listing Specialist Services
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Selling Your MacDonald Highlands Luxury Home
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Listing-specialist guidance for $1M–$15M+ estates—pricing, marketing, and negotiation that protect value
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Selling Your MacDonald Highlands Luxury Home"
+        subtitle="Listing-specialist guidance for $1M–$15M+ estates—pricing, marketing, and negotiation that protect value"
+        support="Pre-listing strategy, staging, architectural photography, and qualified buyer outreach."
+        imageSrc={siteConfig.images.selling}
+        imageAlt="Staged luxury living room prepared for a MacDonald Highlands listing"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "selling-hero",
+        }}
+        secondaryCta={{
+          label: "Get a Valuation",
+          href: "/services/luxury-home-valuation",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -262,45 +258,13 @@ export default function SellingPage() {
 
       <FaqSection title="Selling FAQs — MacDonald Highlands" faqs={sellingFaqs} />
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Request Your Confidential Home Valuation
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Get an expert market analysis for your MacDonald Highlands property. No obligation, no pressure—just honest, data-driven insights.
-              </p>
-              <ContactForm
-                formTitle="Get Your Home Valuation"
-                formDescription="Tell us about your property and we&apos;ll provide a comprehensive market analysis."
-                ctaText="Request Valuation"
-                source="selling-service"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="listing"
-                  utmContent="selling-your-macdonald-highlands-home-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="selling"
+        calendlyEvent="listing"
+        title="Ready to List Your MacDonald Highlands Estate?"
+      />
+
     </>
   );
 }

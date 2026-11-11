@@ -2,6 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyInline from "@/components/scheduling/CalendlyInline";
@@ -50,17 +53,24 @@ export default function ContactPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Contact Dr. Jan Duffy
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Let&apos;s discuss your MacDonald Highlands real estate goals
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Contact Dr. Jan Duffy"
+        subtitle="Let's discuss your MacDonald Highlands real estate goals"
+        support="Listing consultations, private showings, and valuations — confidential and no obligation."
+        imageSrc={siteConfig.images.listingSpecialistHero}
+        imageAlt="MacDonald Highlands luxury estate with Strip views at dusk"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "contact-hero",
+        }}
+        secondaryCta={{
+          label: `Call ${siteConfig.contact.phoneFormatted}`,
+          href: `tel:${siteConfig.contact.phone.replace(/\D/g, "")}`,
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -298,7 +308,15 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-</>
+
+      <NapMapSection />
+      <ConsultationBand
+        source="contact"
+        calendlyEvent="listing"
+        title="Ready to Book with MacDonald Highlands Listing Specialist Dr. Jan Duffy?"
+        showForm={false}
+      />
+    </>
   );
 }
 

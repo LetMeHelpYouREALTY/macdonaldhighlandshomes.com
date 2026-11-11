@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ServiceSchema from "@/components/schema/ServiceSchema";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import Link from "next/link";
 import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
@@ -75,29 +76,24 @@ export default function ValuationPage() {
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.valuation}
-            alt="Luxury home valuation analysis materials for MacDonald Highlands"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Listing Specialist Valuation
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            MacDonald Highlands Home Valuation: Beyond the Algorithm
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Get a true market value assessment based on actual closed sales, not automated estimates
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="MacDonald Highlands Home Valuation"
+        subtitle="True market value from closed comps—not algorithm estimates"
+        support="View premiums, lot position, and estate finishes priced by a listing specialist."
+        imageSrc={siteConfig.images.valuation}
+        imageAlt="Luxury home valuation workspace with floor plans and comps"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "valuation-hero",
+        }}
+        secondaryCta={{
+          label: "Selling Services",
+          href: "/services/selling-your-macdonald-highlands-home",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -297,44 +293,13 @@ export default function ValuationPage() {
       {/* CTA Section */}
       <FaqSection title="Frequently Asked Questions" faqs={valuationFaqs} />
 
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Get Your True Market Value
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Receive a comprehensive market analysis for your MacDonald Highlands property. Confidential, expert, and no obligation.
-              </p>
-              <ContactForm
-                formTitle="Request Your Home Valuation"
-                formDescription="Tell us about your property and we&apos;ll provide a detailed market analysis."
-                ctaText="Get Valuation"
-                source="valuation-service"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="listing"
-                  utmContent="luxury-home-valuation-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="valuation"
+        calendlyEvent="listing"
+        title="Ready for a True Market Valuation?"
+      />
+
     </>
   );
 }

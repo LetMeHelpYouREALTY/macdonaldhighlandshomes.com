@@ -2,6 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
@@ -50,17 +53,24 @@ export default function ListingsPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            MacDonald Highlands Properties
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Explore luxury homes currently available in Henderson&apos;s premier guard-gated community
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="MacDonald Highlands Properties"
+        subtitle="Explore luxury homes currently available in Henderson's premier guard-gated community"
+        support="Live office inventory with filters — plus off-market access when privacy matters."
+        imageSrc={siteConfig.images.servicesOverview}
+        imageAlt="Aerial view of MacDonald Highlands luxury homes at sunset"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "showing",
+          utmContent: "listings-hero",
+        }}
+        secondaryCta={{
+          label: "Off-Market Access",
+          href: "/services/off-market-opportunities",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -217,33 +227,13 @@ export default function ListingsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Ready to Find Your MacDonald Highlands Home?
-            </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Whether you&apos;re buying your first luxury home or adding to your portfolio, we&apos;re here to help you navigate the MacDonald Highlands market with expert guidance.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
-                Schedule Consultation
-              </Link>
-              <a
-                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="btn-secondary text-lg px-8 py-4"
-              >
-                Call {siteConfig.contact.phoneFormatted}
-              </a>
-            </div>
-            <p className="mt-8 text-neutral-600">
-              Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="listings"
+        calendlyEvent="showing"
+        title="Ready for a Private Showing in MacDonald Highlands?"
+      />
+
     </>
   );
 }

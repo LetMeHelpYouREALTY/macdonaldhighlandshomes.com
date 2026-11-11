@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import ServiceSchema from "@/components/schema/ServiceSchema";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import Link from "next/link";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
@@ -71,29 +72,24 @@ export default function InvestmentPage() {
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={siteConfig.images.investment}
-            alt="MacDonald Highlands hillside villa reflecting investment potential at dusk"
-            className="w-full h-full object-cover opacity-35"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
-            Investment Advisory
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            MacDonald Highlands Investment Properties
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Strategic real estate investment guidance for luxury property portfolios
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="MacDonald Highlands Investment Advisory"
+        subtitle="Portfolio fit, appreciation context, and 1031 coordination for luxury estates"
+        support="Data-driven guidance for Henderson's $1M–$15M+ guard-gated inventory."
+        imageSrc={siteConfig.images.investment}
+        imageAlt="MacDonald Highlands hillside villa with infinity pool at dusk"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "investment-hero",
+        }}
+        secondaryCta={{
+          label: "View Inventory",
+          href: "/listings",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -281,45 +277,13 @@ export default function InvestmentPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Request Investment Analysis
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Get a comprehensive investment analysis for MacDonald Highlands properties, including ROI projections and market insights.
-              </p>
-              <ContactForm
-                formTitle="Investment Consultation"
-                formDescription="Tell us about your investment goals and we&apos;ll provide detailed analysis."
-                ctaText="Request Analysis"
-                source="investment-service"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="listing"
-                  utmContent="investment-advisory-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Book a time on Calendly, or call us directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="investment"
+        calendlyEvent="listing"
+        title="Ready to Evaluate a MacDonald Highlands Investment?"
+      />
+
     </>
   );
 }

@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import Link from "next/link";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
-import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
@@ -50,25 +51,24 @@ export default function CommunityPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/photos/community/view-lifestyle-00024-full.jpg"
-            alt="MacDonald Highlands luxury community with panoramic Las Vegas Strip and mountain views"
-            className="w-full h-full object-cover opacity-30"
-            style={{ position: 'absolute', inset: 0 }}
-          />
-        </div>
-        <div className="relative z-10 container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            MacDonald Highlands Community
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Henderson&apos;s Premier Guard-Gated Luxury Golf Community
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Discover MacDonald Highlands"
+        subtitle="Henderson's premier guard-gated community with DragonRidge golf and Strip views"
+        support="Estate lots, privacy, and lifestyle amenities that define this luxury market."
+        imageSrc="/photos/community/view-lifestyle-00024-full.jpg"
+        imageAlt="MacDonald Highlands luxury homes with panoramic Las Vegas Strip views"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "market",
+          utmContent: "community-hero",
+        }}
+        secondaryCta={{
+          label: "View Listings",
+          href: "/listings",
+          variant: "ghost",
+        }}
+      />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -476,47 +476,13 @@ export default function CommunityPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Explore MacDonald Highlands Real Estate
-            </h2>
-            <p className="text-xl text-neutral-600 mb-8">
-              Ready to find your dream home in MacDonald Highlands? Let&apos;s schedule a private community tour. Learn more about <Link href="/about-dr-jan-duffy" className="text-primary-600 hover:underline font-semibold">Dr. Jan Duffy&apos;s expertise</Link> or explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">real estate services</Link>.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CalendlyCta
-                event="showing"
-                utmContent="community-tour"
-                label="Schedule Private Tour"
-                className="text-lg px-8 py-4"
-              />
-              <Link href="/listings" className="btn-secondary text-lg px-8 py-4">
-                View Available Properties
-              </Link>
-            </div>
-            <div className="mt-10">
-              <CalendlyInline
-                event="market"
-                utmContent="community-cta"
-                title="Book a Market Strategy Call"
-                description="Get a hyperlocal MacDonald Highlands market read with Dr. Jan Duffy."
-              />
-            </div>
-            <p className="mt-8 text-neutral-600">
-              Or call us directly:{" "}
-              <a 
-                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                className="text-primary-600 font-semibold hover:underline"
-              >
-                {siteConfig.contact.phoneFormatted}
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="community"
+        calendlyEvent="market"
+        title="Ready to Explore MacDonald Highlands Living?"
+      />
+
     </>
   );
 }

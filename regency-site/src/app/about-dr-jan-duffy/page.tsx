@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
-import ContactForm from "@/components/forms/ContactForm";
+import PageHero from "@/components/sections/PageHero";
+import NapMapSection from "@/components/sections/NapMapSection";
+import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
-import CalendlyInline from "@/components/scheduling/CalendlyInline";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | MacDonald Highlands Listing Specialist",
@@ -50,19 +51,26 @@ export default function AboutPage() {
     <>
       <RealEstateAgentSchema />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            About Dr. Jan Duffy, MacDonald Highlands Listing Specialist
-          </h1>
-          <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Hyperlocal listing strategy for $1M–$15M+ guard-gated estates in Henderson, NV
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="About Dr. Jan Duffy, MacDonald Highlands Listing Specialist"
+        subtitle="Hyperlocal listing strategy for $1M–$15M+ guard-gated estates in Henderson, NV"
+        support="Ph.D. research credential · Top 1% Las Vegas REALTOR® · In real estate since 1983"
+        imageSrc="/photos/agent/dr-jan-duffy-headshot.jpg"
+        imageAlt="Dr. Jan Duffy, MacDonald Highlands Listing Specialist"
+        align="left"
+        primaryCta={{
+          label: "Book on Calendly",
+          calendlyEvent: "listing",
+          utmContent: "about-hero",
+        }}
+        secondaryCta={{
+          label: "Explore Selling Services",
+          href: "/services/selling-your-macdonald-highlands-home",
+          variant: "ghost",
+        }}
+      />
 
-      <OfficeListingsBelowHero
+<OfficeListingsBelowHero
         title="Current Office Listings"
         description="Browse live inventory from Dr. Jan Duffy’s Berkshire Hathaway HomeServices Nevada Properties office."
         utmContent="about-dr-jan-duffy"
@@ -287,46 +295,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-white">
-        <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-neutral-50 rounded-lg shadow-xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-center">
-                Work With Dr. Jan Duffy
-              </h2>
-              <p className="text-center text-neutral-600 mb-8">
-                Ready to buy, sell, or invest in MacDonald Highlands? Let&apos;s discuss your real estate goals. Explore our <Link href="/services" className="text-primary-600 hover:underline font-semibold">comprehensive services</Link> or <Link href="/testimonials" className="text-primary-600 hover:underline font-semibold">read client testimonials</Link>.
-              </p>
-              <ContactForm
-                formTitle="Get in Touch"
-                formDescription="Schedule a consultation to discuss your MacDonald Highlands real estate needs."
-                ctaText="Schedule Consultation"
-                source="about-page"
-              />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="listing"
-                  utmContent="about-dr-jan-duffy-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-<div className="text-center mt-6">
-                <p className="text-neutral-600 mb-4">Or call directly:</p>
-                <a 
-                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
-                  className="text-2xl font-bold text-primary-600 hover:underline"
-                >
-                  {siteConfig.contact.phoneFormatted}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <NapMapSection />
+      <ConsultationBand
+        source="about"
+        calendlyEvent="listing"
+        title="Ready to Work with MacDonald Highlands Listing Specialist Dr. Jan Duffy?"
+      />
     </>
   );
 }
+
 
 
