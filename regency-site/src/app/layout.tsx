@@ -1,15 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "../../config/siteConfig";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
-import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import WebsiteSchema from "@/components/schema/WebsiteSchema";
 import PreconnectResources from "@/components/performance/PreconnectResources";
-import CalendlyAssets from "@/components/performance/CalendlyAssets";
+import DeferredThirdParties from "@/components/performance/DeferredThirdParties";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
@@ -111,22 +109,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className={`${inter.className} antialiased`}>
-        {/* Preconnect resources for faster loading */}
+        {/* DNS hints only — no early preconnect to third parties */}
         <PreconnectResources />
         {/* Entity graph: RealEstateAgent + Person + WebSite for SEO/GEO/AEO */}
         <LocalBusinessSchema />
         <WebsiteSchema />
-        <GoogleAnalytics />
-        <CalendlyAssets />
+        {/* GA / Ads / Calendly after interaction — protects mobile TTI */}
+        <DeferredThirdParties />
         <Navbar />
         <main className="min-h-screen">{children}</main>
-        {/* Calendly popup widget only — heavy booking bundle loads on /contact & /listings embeds */}
-        <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
-        />
-        {/* Ads conversions after idle; RealScout script loads from widget when in view */}
-        <Script src="/ads-conversions.js" strategy="lazyOnload" />
         <Footer />
         <VercelAnalytics />
         <VercelSpeedInsights />

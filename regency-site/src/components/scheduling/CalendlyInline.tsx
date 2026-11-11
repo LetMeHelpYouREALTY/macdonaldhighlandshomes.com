@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { siteConfig } from "@/config/siteConfig";
 
 export type CalendlyEventKey =
@@ -16,6 +17,9 @@ type CalendlyInlineProps = {
   description?: string;
   minHeight?: number;
 };
+
+const CALENDLY_JS = "https://assets.calendly.com/assets/external/widget.js";
+const CALENDLY_CSS = "https://assets.calendly.com/assets/external/widget.css";
 
 function resolveCalendlyUrl(event: CalendlyEventKey = "listing"): string {
   switch (event) {
@@ -36,8 +40,25 @@ function resolveCalendlyUrl(event: CalendlyEventKey = "listing"): string {
   }
 }
 
+function ensureCalendlyAssets() {
+  if (typeof document === "undefined") return;
+  if (!document.querySelector(`link[href="${CALENDLY_CSS}"]`)) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = CALENDLY_CSS;
+    document.head.appendChild(link);
+  }
+  if (!document.querySelector(`script[src="${CALENDLY_JS}"]`)) {
+    const script = document.createElement("script");
+    script.src = CALENDLY_JS;
+    script.async = true;
+    document.body.appendChild(script);
+  }
+}
+
 /**
- * Inline Calendly embed. Widget script loads once from root layout.
+ * Inline Calendly embed for /contact and /listings.
+ * Loads Calendly assets on mount only (not sitewide).
  */
 export default function CalendlyInline({
   event = "listing",
@@ -50,6 +71,10 @@ export default function CalendlyInline({
   url.searchParams.set("utm_source", "macdonaldhighlandshomes.com");
   url.searchParams.set("utm_medium", "website");
   url.searchParams.set("utm_content", utmContent);
+
+  useEffect(() => {
+    ensureCalendlyAssets();
+  }, []);
 
   return (
     <div className="w-full">

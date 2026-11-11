@@ -37,6 +37,11 @@ export default function AgentPortrait({
   ringOffsetClass = "ring-offset-white",
 }: AgentPortraitProps) {
   const dims = SIZE_MAP[size];
+  // Prefer the tiny nav asset for xs/sm so next/image does not request a 640w headshot.
+  const src =
+    size === "xs" || size === "sm"
+      ? siteConfig.images.agentNav
+      : siteConfig.images.agentHeadshot;
   const image = (
     <span
       className={`relative inline-block shrink-0 overflow-hidden rounded-full bg-neutral-200 ${dims.box} ${
@@ -44,7 +49,7 @@ export default function AgentPortrait({
       } ${className}`}
     >
       <OptimizedImage
-        src={siteConfig.images.agentHeadshot}
+        src={src}
         alt={decorative ? "" : siteConfig.images.agentHeadshotAlt}
         fill
         priority={priority}
