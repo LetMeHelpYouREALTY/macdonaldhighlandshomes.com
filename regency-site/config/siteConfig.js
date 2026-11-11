@@ -153,7 +153,7 @@ export const siteConfig = {
     license: "S.0197614.LLC",
     brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
     credentials: "Ph.D. in Research",
-    experience: "500+ families served, $127M+ in sales",
+    experience: "500+ team sales, $127M+ in Dr. Duffy Group career sales",
     specialties: [
       "MacDonald Highlands Listing Specialist",
       "Luxury Home Sales & Acquisitions",

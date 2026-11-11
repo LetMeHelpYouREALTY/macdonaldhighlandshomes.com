@@ -67,7 +67,7 @@ export const macdonaldHighlandsProperties = [
     
     neighborhood: "SkyVu",
     golfAccess: "DragonRidge Country Club membership available",
-    schools: "Top-rated Henderson schools",
+    schools: "CCSD schools, zoned by address",
     proximity: "15 minutes to Las Vegas Strip, 20 minutes to airport"
   },
 
@@ -133,7 +133,7 @@ export const macdonaldHighlandsProperties = [
     
     neighborhood: "Vu",
     golfAccess: "DragonRidge Country Club membership available",
-    schools: "Top-rated Henderson schools",
+    schools: "CCSD schools, zoned by address",
     proximity: "15 minutes to Las Vegas Strip, 20 minutes to airport"
   },
 
@@ -201,7 +201,7 @@ export const macdonaldHighlandsProperties = [
     
     neighborhood: "Vue Pointe",
     golfAccess: "DragonRidge Country Club membership available",
-    schools: "Top-rated Henderson schools",
+    schools: "CCSD schools, zoned by address",
     proximity: "15 minutes to Las Vegas Strip, 20 minutes to airport"
   },
 
@@ -267,7 +267,7 @@ export const macdonaldHighlandsProperties = [
     
     neighborhood: "MacDonald Highlands",
     golfAccess: "DragonRidge Country Club membership available",
-    schools: "Top-rated Henderson schools",
+    schools: "CCSD schools, zoned by address",
     proximity: "15 minutes to Las Vegas Strip, 20 minutes to airport"
   },
 
@@ -343,7 +343,7 @@ export const macdonaldHighlandsProperties = [
     
     neighborhood: "SkyVu",
     golfAccess: "DragonRidge Country Club membership available",
-    schools: "Top-rated Henderson schools",
+    schools: "CCSD schools, zoned by address",
     proximity: "15 minutes to Las Vegas Strip, 20 minutes to airport"
   }
 ];

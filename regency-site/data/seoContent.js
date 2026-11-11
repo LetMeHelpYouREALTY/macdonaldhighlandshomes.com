@@ -19,11 +19,11 @@ export const landingPages = {
   },
   
   families: {
-    title: "Gated Community | MacDonald Highlands Henderson",
-    headline: "Secure, Luxury Family Living in Henderson's Premier Gated Community",
-    content: `MacDonald Highlands offers families the perfect combination of luxury living, security, and community amenities in Henderson, Nevada. Behind two beautifully landscaped, 24-hour guard-gated entries, this master-planned community provides the peace of mind that comes with controlled access and security, while offering an exceptional lifestyle for families of all sizes. The community's extensive park system, dog parks, hiking and biking trails, and recreation areas create an environment where children can safely explore and play, while parents enjoy the privacy and security of guard-gated living. Top-rated Henderson schools are just minutes away, and the community's proximity to the Las Vegas Strip means world-class entertainment, dining, and cultural experiences are easily accessible. The DragonRidge Country Club offers community amenities including pools, tennis courts, and community events that bring neighbors together. With lot sizes ranging from one-third to over one acre, families have room to grow, play, and create lasting memories. The low-density development ensures privacy and tranquility, while the community's design philosophy preserves natural landscapes and creates beautiful outdoor spaces for families to enjoy. For families seeking luxury living without sacrificing security, community, or access to amenities, MacDonald Highlands represents the ideal Henderson real estate choice.`,
-    keywords: ["gated community Henderson", "guard-gated luxury homes Henderson", "MacDonald Highlands homes"],
-    cta: "Find Your Family Home"
+    title: "Gated Golf Community | MacDonald Highlands Henderson",
+    headline: "Secure Luxury Living in Henderson's Premier Gated Community",
+    content: `MacDonald Highlands offers a combination of luxury living, security, and community amenities in Henderson, Nevada. Behind two beautifully landscaped, 24-hour guard-gated entries, this master-planned community provides controlled access with parks, dog parks, hiking and biking trails, and recreation areas. Most addresses are served by Clark County School District zoning (confirm with the CCSD Zoning Search). The community's proximity to the Las Vegas Strip means world-class entertainment, dining, and cultural experiences are easily accessible. The DragonRidge Country Club offers amenities including pools, tennis courts, and community events. With lot sizes ranging from one-third to over one acre, the low-density development ensures privacy and tranquility while preserving natural landscapes. For buyers seeking luxury living with security, community amenities, and golf-course lifestyle, MacDonald Highlands represents a strong Henderson real estate choice.`,
+    keywords: ["gated golf community Henderson", "guard-gated luxury homes Henderson", "MacDonald Highlands homes"],
+    cta: "Explore Available Homes"
   },
   
   retirees: {
@@ -148,7 +148,7 @@ export const faqContent = {
       },
       {
         question: "What schools serve the community?",
-        answer: "MacDonald Highlands is served by top-rated Henderson schools. Contact us for specific school information and district details."
+        answer: "MacDonald Highlands is served by Clark County School District. Most homes are zoned for Foothill High School; some addresses are zoned for Coronado High School. Confirm zoning for any address with the CCSD Zoning Search."
       }
     ],
     buying: [

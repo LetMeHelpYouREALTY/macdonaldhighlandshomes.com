@@ -483,9 +483,9 @@ export default function CommunityPage() {
               The 15-20 minute drive to the Las Vegas Strip means residents can enjoy world-class dining, entertainment, and nightlife without sacrificing the tranquility of guard-gated community living. This proximity is particularly valuable for executives, entertainers, and business professionals who need easy access to Strip venues while maintaining a private residential base. The convenience factor adds significant lifestyle value that enhances the community&apos;s appeal.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Henderson School District Excellence</h3>
+            <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Nearby Schools (CCSD Zoning)</h3>
             <p className="text-lg text-neutral-700 mb-6">
-              MacDonald Highlands is served by Clark County School District schools in Henderson, plus nearby private schools; check CCSD and state data for current ratings. Luxury living doesn&apos;t require compromising on educational quality.
+              MacDonald Highlands is served by the Clark County School District. Most homes are zoned for Foothill High School, with some addresses zoned for Coronado High School. Confirm zoning for any address with the CCSD Zoning Search.
             </p>
 
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">MacDonald Highlands Real Estate Market Overview</h2>

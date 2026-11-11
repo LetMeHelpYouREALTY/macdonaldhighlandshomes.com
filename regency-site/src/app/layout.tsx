@@ -10,6 +10,8 @@ import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import WebsiteSchema from "@/components/schema/WebsiteSchema";
 import PreconnectResources from "@/components/performance/PreconnectResources";
 import CalendlyAssets from "@/components/performance/CalendlyAssets";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 // Luxury typography: Inter for body, Playfair Display for headings
 const inter = Inter({ 
@@ -131,6 +133,8 @@ export default function RootLayout({
         />
         <Script src="/ads-conversions.js" strategy="lazyOnload" />
         <Footer />
+        <VercelAnalytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
