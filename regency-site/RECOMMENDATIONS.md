@@ -17,7 +17,7 @@ Date-stamped for this Listing Specialist upgrade (America/Los_Angeles).
 | Priority | Action | Status |
 |----------|--------|--------|
 | A | Confirm GBP NAP matches `(702) 500-1955` + `3185 St Rose Pkwy, Suite 101` and submit updated sitemap in GSC | **NAP confirmed** against public GBP citations (phone + Suite 101 address match site/schema/`llms.txt`). **GSC sitemap submit still requires human** in Google Search Console → Sitemaps → `https://www.macdonaldhighlandshomes.com/sitemap.xml`. |
-| A | Replace AI lifestyle images with licensed community/agent photography where available | **Done** — `siteConfig.images` + OG paths now use `photos/community/*`. Agent headshot kept for bio/schema only (180px — not suitable as hero). |
+| A | Replace AI lifestyle images with licensed community/agent photography where available | **Done** — community heroes + official circular Dr. Jan Duffy portrait as favicon and sitewide agent identity (`AgentPortrait` / `AgentIntroStrip` in nav, hero, listings, NAP, FAQ, consultation, footer). |
 | B | Add SpeakableSpecification on FAQ answers after Rich Results validation | **Done in code** — `FaqSchema` + `.faq-question` / `.faq-answer` selectors. Re-validate in Google Rich Results Test after deploy. |
 | B | Publish 1 monthly “MacDonald Highlands listing market” note with `Article` + `dateModified` | **Done** — `/insights/macdonald-highlands-listing-market` (published/modified `2026-11-11`). |
 | C | Wire Calendly booking CTA beside phone if link is confirmed | **Done** — NAP + footer beside `(702) 500-1955`; live Calendly listing consultation URL. |

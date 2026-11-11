@@ -15,6 +15,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { siteConfig } from "@/config/siteConfig";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import AgentPortrait from "@/components/ui/AgentPortrait";
 
 const services = [
   { name: "Selling Your Home", href: "/services/selling-your-macdonald-highlands-home" },
@@ -54,10 +55,15 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="lg:col-span-1">
-              <Link href="/" className="inline-block">
+              <Link href="/" className="inline-flex items-center gap-3">
+                <AgentPortrait
+                  size="sm"
+                  href={false}
+                  ringOffsetClass="ring-offset-neutral-900"
+                />
                 <span className="font-serif text-2xl text-white font-bold">Dr. Jan Duffy</span>
               </Link>
-              <p className="mt-2 text-neutral-300 text-sm">{siteConfig.agent.title}</p>
+              <p className="mt-3 text-neutral-300 text-sm">{siteConfig.agent.title}</p>
               <p className="mt-3 text-neutral-300 text-sm leading-relaxed font-medium">{siteConfig.name}</p>
               <p className="mt-3 text-neutral-400 text-sm leading-relaxed">
                 {siteConfig.agent.experience}. GBP opening date {siteConfig.foundingDate}.{" "}
@@ -185,7 +191,8 @@ export default function Footer() {
       </footer>
 
       <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-gold-500 p-3 z-50 shadow-lg">
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
+          <AgentPortrait size="xs" href="/about-dr-jan-duffy" showRing={false} className="ml-1" />
           <a
             href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
             className="flex-1 flex items-center justify-center gap-2 text-neutral-900 font-semibold py-2"

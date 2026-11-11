@@ -8,6 +8,8 @@ import FaqSection from "@/components/sections/FaqSection";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
 import OptimizedImage from "@/components/ui/OptimizedImage";
+import AgentPortrait from "@/components/ui/AgentPortrait";
+import AgentIntroStrip from "@/components/sections/AgentIntroStrip";
 import { homepageFaqs } from "@/lib/faqs";
 
 export const metadata = {
@@ -160,9 +162,12 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/75 via-charcoal-900/50 to-charcoal-900/80" />
         </div>
         <div className="relative z-10 container-luxury text-center text-white py-28 md:py-32">
-          <p className="text-sm md:text-base uppercase tracking-[0.22em] text-white/80 mb-5 font-semibold">
-            Dr. Jan Duffy · MacDonald Highlands Realtor
-          </p>
+          <div className="flex flex-col items-center mb-6">
+            <AgentPortrait size="lg" href={false} priority ringOffsetClass="ring-offset-charcoal-900" />
+            <p className="mt-4 text-sm md:text-base uppercase tracking-[0.22em] text-white/80 font-semibold">
+              Dr. Jan Duffy · MacDonald Highlands Realtor
+            </p>
+          </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-balance text-white">
             MacDonald Highlands Realtor &amp; Listing Specialist
           </h1>
@@ -186,6 +191,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <AgentIntroStrip utmContent="homepage-after-hero" />
 
       <OfficeListingsBelowHero
         title="Current Office Listings"
@@ -211,14 +218,8 @@ export default function HomePage() {
                 Meet Dr. Jan Duffy
               </Link>
             </div>
-            <div className="relative h-80 md:h-[28rem] overflow-hidden shadow-xl">
-              <OptimizedImage
-                src={siteConfig.images.whyListingSpecialist}
-                alt="Luxury listing presentation materials prepared by a MacDonald Highlands listing specialist"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
+            <div className="relative flex items-center justify-center h-80 md:h-[28rem]">
+              <AgentPortrait size="xl" />
             </div>
           </div>
 
@@ -415,6 +416,9 @@ export default function HomePage() {
       <section className="section-padding bg-charcoal-900 text-white">
         <div className="container-luxury">
           <div className="text-center mb-16">
+            <div className="flex justify-center mb-6">
+              <AgentPortrait size="md" ringOffsetClass="ring-offset-charcoal-900" />
+            </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">What Clients Say</h2>
             <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
               Feedback from MacDonald Highlands sellers, buyers, and relocating clients

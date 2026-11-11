@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import AgentPortrait from "@/components/ui/AgentPortrait";
 
 /**
  * GBP-aligned NAP + map block (name, address, hours, phone, SMS, Calendly).
@@ -11,9 +12,17 @@ export default function NapMapSection() {
       <div className="container-luxury">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="text-3xl font-serif font-bold mb-4 text-charcoal-900">
-              Visit or Call Dr. Jan Duffy
-            </h2>
+            <div className="flex items-start gap-5 mb-6">
+              <AgentPortrait size="lg" />
+              <div>
+                <h2 className="text-3xl font-serif font-bold text-charcoal-900">
+                  Visit or Call Dr. Jan Duffy
+                </h2>
+                <p className="text-neutral-600 mt-2 text-sm md:text-base">
+                  {siteConfig.agent.title}
+                </p>
+              </div>
+            </div>
             <p className="text-lg text-neutral-800 font-semibold mb-2">{siteConfig.name}</p>
             <p className="text-neutral-700 mb-1">
               Real estate agent · {siteConfig.agent.brokerage}

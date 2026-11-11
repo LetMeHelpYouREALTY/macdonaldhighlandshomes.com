@@ -3,6 +3,7 @@ import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import type { CalendlyEventKey } from "@/components/scheduling/CalendlyInline";
 import { siteConfig } from "@/config/siteConfig";
+import AgentPortrait from "@/components/ui/AgentPortrait";
 
 type ConsultationBandProps = {
   title?: string;
@@ -36,6 +37,9 @@ export default function ConsultationBand({
     <section className="section-padding bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 text-white">
       <div className="container-luxury">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-6">
+            <AgentPortrait size="lg" ringOffsetClass="ring-offset-primary-900" />
+          </div>
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">{title}</h2>
           <p className="text-xl text-neutral-200 mb-10">{resolvedSubtitle}</p>
           <div className="bg-white p-8 md:p-12 text-neutral-900 shadow-2xl">

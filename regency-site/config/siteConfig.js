@@ -236,6 +236,12 @@ export const siteConfig = {
     relocation: "/photos/community/optimized/clubhouse-full-1280.webp",
     investment: "/photos/community/optimized/golf-lifestyle-full-1280.webp",
     offMarket: "/photos/community/optimized/guard-gate-full-1280.webp",
+    /** Official circular brand portrait — favicon + sitewide agent identity */
+    agentHeadshot: "/photos/agent/dr-jan-duffy-headshot.webp",
+    agentHeadshotJpg: "/photos/agent/dr-jan-duffy-headshot.jpg",
+    agentHeadshotAlt:
+      "Dr. Jan Duffy, MacDonald Highlands Listing Specialist and REALTOR® in Henderson, Nevada",
+    agentNav: "/photos/agent/dr-jan-duffy-nav.webp",
   },
   // GBP-cited rating (5.0 / 6 reviews). Keep in sync with live Google Business Profile — never invent.
   reviews: {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import AgentPortrait from "@/components/ui/AgentPortrait";
 
 type OfficeListingsBelowHeroProps = {
   title?: string;
@@ -24,6 +25,9 @@ export default function OfficeListingsBelowHero({
       <div className="container-luxury">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
+            <div className="flex justify-center mb-5">
+              <AgentPortrait size="md" />
+            </div>
             <h2
               id="office-listings-heading"
               className="text-3xl md:text-4xl font-serif font-bold mb-4 text-charcoal-900"

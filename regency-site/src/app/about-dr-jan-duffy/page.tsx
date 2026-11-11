@@ -6,6 +6,8 @@ import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import AgentPortrait from "@/components/ui/AgentPortrait";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
@@ -23,24 +25,24 @@ export const metadata: Metadata = {
     type: 'profile',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
+        url: "https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: `Dr. Jan Duffy, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate in Henderson, Nevada`,
-        type: 'image/jpeg',
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: "About Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
     description: `Meet Dr. Jan Duffy (Duffy)—MacDonald Highlands realtor and Listing Specialist for Henderson luxury estate sales.`,
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
+        url: "https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg",
         alt: `Dr. Jan Duffy, ${siteConfig.agent.title} specializing in MacDonald Highlands luxury real estate in Henderson, Nevada`,
         width: 1200,
-        height: 630,
+        height: 1200,
       },
     ],
   },
@@ -83,12 +85,18 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
               <div className="md:col-span-1">
-                <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-neutral-100">
-                  <img
-                    src="/photos/agent/dr-jan-duffy-headshot.jpg"
+                <div className="relative w-full aspect-square overflow-hidden shadow-xl bg-black">
+                  <OptimizedImage
+                    src={siteConfig.images.agentHeadshotJpg}
                     alt={`${siteConfig.agent.name}, ${siteConfig.agent.title}`}
-                    className="object-cover w-full h-full rounded-lg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
+                    priority
                   />
+                </div>
+                <div className="mt-5 flex justify-center md:justify-start">
+                  <AgentPortrait size="md" />
                 </div>
               </div>
               <div className="md:col-span-2">

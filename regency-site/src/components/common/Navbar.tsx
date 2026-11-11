@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import AgentPortrait from "@/components/ui/AgentPortrait";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
@@ -37,12 +38,18 @@ export default function Navbar() {
     >
       <div className="container-luxury">
         <div className="flex justify-between items-center gap-4">
-          <Link href="/" className="cursor-pointer hover:opacity-90 transition-opacity duration-300 shrink-0">
-            <span className="block text-xl md:text-2xl lg:text-3xl font-serif font-bold text-charcoal-900 leading-tight">
-              Dr. Jan Duffy
-            </span>
-            <span className="block text-[10px] md:text-xs uppercase tracking-[0.18em] text-neutral-500 font-semibold">
-              Listing Specialist
+          <Link
+            href="/"
+            className="cursor-pointer hover:opacity-90 transition-opacity duration-300 shrink-0 flex items-center gap-3"
+          >
+            <AgentPortrait size="xs" href={false} priority showRing className="hidden sm:inline-block" />
+            <span>
+              <span className="block text-xl md:text-2xl lg:text-3xl font-serif font-bold text-charcoal-900 leading-tight">
+                Dr. Jan Duffy
+              </span>
+              <span className="block text-[10px] md:text-xs uppercase tracking-[0.18em] text-neutral-500 font-semibold">
+                Listing Specialist
+              </span>
             </span>
           </Link>
 

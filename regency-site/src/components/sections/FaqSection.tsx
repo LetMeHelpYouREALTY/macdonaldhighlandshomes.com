@@ -1,3 +1,5 @@
+import AgentPortrait from "@/components/ui/AgentPortrait";
+
 type FaqItem = {
   question: string;
   answer: string;
@@ -21,6 +23,9 @@ export default function FaqSection({
     <section className="section-padding bg-neutral-50" aria-labelledby="faq-heading">
       <div className="container-luxury">
         <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <AgentPortrait size="sm" />
+          </div>
           <h2 id="faq-heading" className="text-3xl md:text-4xl font-serif font-bold mb-10 text-center">
             {title}
           </h2>
