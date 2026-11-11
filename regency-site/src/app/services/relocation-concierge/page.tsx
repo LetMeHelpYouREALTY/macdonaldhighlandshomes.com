@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/relocation-concierge.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Executive relocation support for moving to MacDonald Highlands. Virtual tours, area orientation, temporary housing, and timeline management for corporate moves.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/relocation-concierge.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
         width: 1200,
         height: 630,

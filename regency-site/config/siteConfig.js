@@ -66,17 +66,26 @@ export const siteConfig = {
     description: "Hire Dr. Jan Duffy, MacDonald Highlands Listing Specialist, for luxury home sales, valuations, and buyer representation in Henderson's guard-gated community—$1M–$15M+ estates with DragonRidge golf access.",
     keywords: "MacDonald Highlands Listing Specialist, MacDonald Highlands REALTOR, sell MacDonald Highlands home, MacDonald Highlands homes for sale, DragonRidge Country Club real estate, Henderson luxury homes, Dr. Jan Duffy",
   },
+  // Prefer licensed MacDonald Highlands community photography over AI lifestyle art.
+  // Agent headshot remains /photos/agent/dr-jan-duffy-headshot.jpg (bio/schema only — low-res for heroes).
   images: {
-    listingSpecialistHero: "/images/sections/hero-pool-strip-dusk.jpg",
-    aboutHero: "/images/sections/listing-specialist-hero.jpg",
-    whyListingSpecialist: "/images/sections/why-listing-specialist.jpg",
-    servicesOverview: "/images/services/services-portfolio-overview.jpg",
-    selling: "/images/services/selling-prelisting-staging.jpg",
-    buying: "/images/services/buying-private-access.jpg",
-    valuation: "/images/services/luxury-home-valuation.jpg",
-    relocation: "/images/services/relocation-concierge.jpg",
-    investment: "/images/services/investment-advisory.jpg",
-    offMarket: "/images/services/off-market-opportunities.jpg",
+    listingSpecialistHero: "/photos/community/hero-view-lifestyle.jpg",
+    aboutHero: "/photos/community/view-lifestyle-00024-full.jpg",
+    whyListingSpecialist: "/photos/community/clubhouse-full.jpg",
+    servicesOverview: "/photos/community/foothills-village.jpg",
+    selling: "/photos/community/pool-full.jpg",
+    buying: "/photos/community/guard-gate-full.jpg",
+    valuation: "/photos/community/view-lifestyle-00024-full.jpg",
+    relocation: "/photos/community/clubhouse-full.jpg",
+    investment: "/photos/community/golf-lifestyle-full.jpg",
+    offMarket: "/photos/community/guard-gate-full.jpg",
+  },
+  // GBP-cited rating (5.0 / 6 reviews). Keep in sync with live Google Business Profile — never invent.
+  reviews: {
+    ratingValue: 5,
+    reviewCount: 6,
+    bestRating: 5,
+    worstRating: 1,
   },
 
   realscout: {

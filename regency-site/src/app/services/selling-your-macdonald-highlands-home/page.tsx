@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/selling-prelisting-staging.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/pool-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Listing specialist pre-listing strategy, staging, architectural photography, and luxury buyer outreach for $1M–$15M+ MacDonald Highlands estate homes.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/selling-prelisting-staging.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/pool-full.jpg',
         alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
         width: 1200,
         height: 630,

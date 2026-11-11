@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 /**
  * Homepage-style NAP + map block for local SEO consistency.
@@ -17,7 +18,22 @@ export default function NapMapSection() {
               Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy
             </p>
             <p className="text-neutral-700 mb-1">{siteConfig.contact.office.full}</p>
-            <p className="text-neutral-700 mb-6">{siteConfig.contact.hours}</p>
+            <p className="text-neutral-700 mb-2">{siteConfig.contact.hours}</p>
+            <p className="text-neutral-800 font-semibold mb-6">
+              <a
+                href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
+                className="hover:underline"
+              >
+                {siteConfig.contact.phoneFormatted}
+              </a>
+              <span className="mx-2 text-neutral-400">·</span>
+              <CalendlyCta
+                event="listing"
+                utmContent="nap-book-beside-phone"
+                label="Book on Calendly"
+                variant="link"
+              />
+            </p>
             <div className="flex flex-wrap gap-3">
               <a
                 href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
@@ -25,6 +41,13 @@ export default function NapMapSection() {
               >
                 Call Now
               </a>
+              <CalendlyCta
+                event="listing"
+                utmContent="nap-cta"
+                label="Book Consultation"
+                className="btn-secondary px-6 py-3 uppercase tracking-wide text-sm"
+                variant="secondary"
+              />
               <a
                 href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
                   siteConfig.contact.office.full

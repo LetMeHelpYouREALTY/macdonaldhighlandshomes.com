@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { siteConfig } from "@/config/siteConfig";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 const services = [
   { name: "Selling Your Home", href: "/services/selling-your-macdonald-highlands-home" },
@@ -19,6 +20,7 @@ const community = [
   { name: "All Services", href: "/services" },
   { name: "Current Listings", href: "/listings" },
   { name: "Sold / Results", href: "/sold" },
+  { name: "Market Note", href: "/insights/macdonald-highlands-listing-market" },
   { name: "Testimonials", href: "/testimonials" },
 ];
 
@@ -89,12 +91,21 @@ export default function Footer() {
                 </div>
                 
                 <a
-                  href="tel:702-500-1955"
+                  href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
                   className="flex items-center gap-3 text-neutral-100 hover:text-gold-500 transition-colors"
                 >
                   <FaPhone className="h-4 w-4 text-gold-500" />
                   <span className="font-semibold">{siteConfig.contact.phoneFormatted}</span>
                 </a>
+                <div className="pl-7">
+                  <CalendlyCta
+                    event="listing"
+                    utmContent="footer-beside-phone"
+                    label="Book on Calendly →"
+                    variant="link"
+                    className="text-gold-500 hover:text-gold-light text-sm"
+                  />
+                </div>
                 
                 <a
                   href={`mailto:${siteConfig.contact.email}`}

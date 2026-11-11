@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/services-portfolio-overview.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/foothills-village.jpg',
         width: 1200,
         height: 630,
         alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Listing specialist services in MacDonald Highlands: selling, buying, valuations, relocation, investment advisory, and off-market opportunities.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/services-portfolio-overview.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/foothills-village.jpg',
         alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
         width: 1200,
         height: 630,

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/off-market-opportunities.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/guard-gate-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Access to pocket listings and off-market properties in MacDonald Highlands before they hit MLS. Privacy-focused selling and buyer waiting list registration.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/off-market-opportunities.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/guard-gate-full.jpg',
         alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
         width: 1200,
         height: 630,

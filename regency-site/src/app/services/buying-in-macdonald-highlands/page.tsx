@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/buying-private-access.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/guard-gate-full.jpg',
         width: 1200,
         height: 630,
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for buying your dream MacDonald Highlands home.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/buying-private-access.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/guard-gate-full.jpg',
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
         width: 1200,
         height: 630,

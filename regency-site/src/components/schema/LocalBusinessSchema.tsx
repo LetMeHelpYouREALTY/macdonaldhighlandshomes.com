@@ -56,6 +56,13 @@ export default function LocalBusinessSchema() {
         priceRange: "$$$",
         paymentAccepted: "Cash, Check, Credit Card, Wire Transfer",
         currenciesAccepted: "USD",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: siteConfig.reviews.ratingValue,
+          reviewCount: siteConfig.reviews.reviewCount,
+          bestRating: siteConfig.reviews.bestRating,
+          worstRating: siteConfig.reviews.worstRating,
+        },
         openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",

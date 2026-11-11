@@ -25,7 +25,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/images/sections/hero-pool-strip-dusk.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/hero-view-lifestyle.jpg",
         width: 1200,
         height: 630,
         alt: "MacDonald Highlands infinity pool overlooking Las Vegas Strip at dusk — Dr. Jan Duffy Listing Specialist",
@@ -39,7 +39,7 @@ export const metadata = {
     description: siteConfig.seo.description,
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/images/sections/hero-pool-strip-dusk.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/hero-view-lifestyle.jpg",
         alt: "MacDonald Highlands infinity pool overlooking Las Vegas Strip at dusk — Dr. Jan Duffy Listing Specialist",
         width: 1200,
         height: 630,

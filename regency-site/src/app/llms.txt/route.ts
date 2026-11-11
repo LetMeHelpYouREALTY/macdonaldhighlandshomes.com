@@ -26,12 +26,14 @@ const body = `# MacDonald Highlands Homes | Dr. Jan Duffy, Listing Specialist
 - [Sold](https://www.macdonaldhighlandshomes.com/sold): Recent results
 - [Testimonials](https://www.macdonaldhighlandshomes.com/testimonials): Client feedback
 - [Contact](https://www.macdonaldhighlandshomes.com/contact): Schedule a listing consultation
+- [Listing Market Note](https://www.macdonaldhighlandshomes.com/insights/macdonald-highlands-listing-market): Monthly MacDonald Highlands listing market Article
 
-## NAP (matches site + schema)
+## NAP (matches site + schema + public GBP citations)
 - Business: Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy
 - Address: 3185 St Rose Pkwy, Suite 101, Henderson, NV 89052
 - Phone: (702) 500-1955
 - Hours: Daily 8:00 AM–8:00 PM
+- Reviews: 5.0 / 5 from 6 Google reviews (keep AggregateRating synced to live GBP)
 
 ## Optional
 - [Sitemap](https://www.macdonaldhighlandshomes.com/sitemap.xml)

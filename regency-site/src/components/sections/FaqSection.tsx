@@ -30,7 +30,7 @@ export default function FaqSection({
                 key={faq.question}
                 className="group rounded-lg border border-neutral-200 bg-white p-6 open:shadow-md"
               >
-                <summary className="cursor-pointer list-none font-serif text-xl font-semibold text-neutral-900 marker:content-none flex items-start justify-between gap-4">
+                <summary className="faq-question cursor-pointer list-none font-serif text-xl font-semibold text-neutral-900 marker:content-none flex items-start justify-between gap-4">
                   <span>{faq.question}</span>
                   <span
                     className="text-primary-600 text-2xl leading-none transition group-open:rotate-45"
@@ -39,7 +39,7 @@ export default function FaqSection({
                     +
                   </span>
                 </summary>
-                <p className="mt-4 text-lg text-neutral-700 leading-relaxed">{faq.answer}</p>
+                <p className="faq-answer mt-4 text-lg text-neutral-700 leading-relaxed">{faq.answer}</p>
               </details>
             ))}
           </div>

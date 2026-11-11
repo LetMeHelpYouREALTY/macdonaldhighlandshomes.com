@@ -10,6 +10,7 @@ type FaqSchemaProps = {
 /**
  * FAQPage JSON-LD for visible on-page Q&A only.
  * Keep question/answer text identical to rendered FAQ content (AEO / AI extraction).
+ * SpeakableSpecification targets .faq-question / .faq-answer CSS selectors on FaqSection.
  */
 export default function FaqSchema({ faqs }: FaqSchemaProps) {
   if (!faqs.length) return null;
@@ -17,12 +18,20 @@ export default function FaqSchema({ faqs }: FaqSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".faq-question", ".faq-answer"],
+    },
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
         text: faq.answer,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".faq-answer"],
+        },
       },
     })),
   };

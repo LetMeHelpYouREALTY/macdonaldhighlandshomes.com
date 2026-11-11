@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/investment-advisory.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/investment-advisory.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
         width: 1200,
         height: 630,

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/luxury-home-valuation.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/images/services/luxury-home-valuation.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
         width: 1200,
         height: 630,
