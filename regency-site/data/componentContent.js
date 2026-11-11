@@ -192,20 +192,11 @@ export const contactPageContent = {
     title: "Contact Us",
     subtitle: "Let us help you discover your dream home in MacDonald Highlands"
   },
-  form: {
-    title: "Get in Touch",
-    subtitle: "Fill out the form below and our team will contact you within 24 hours",
-    fields: {
-      name: { label: "Full Name", placeholder: "Enter your name", required: true },
-      email: { label: "Email Address", placeholder: "your.email@example.com", required: true },
-      phone: { label: "Phone Number", placeholder: "(702) 555-0123", required: false },
-      propertyInterest: { label: "Property of Interest", placeholder: "Select a property", required: false },
-      budget: { label: "Price Range", placeholder: "Select your budget", required: false },
-      message: { label: "Message", placeholder: "Tell us how we can help...", required: false }
-    },
-    submitText: "Send Message",
-    successMessage: "Thank you! We'll contact you within 24 hours.",
-    errorMessage: "There was an error sending your message. Please try again."
+  scheduling: {
+    title: "Book on Calendly",
+    subtitle: "Schedule a listing consultation, private showing, or strategy call — no contact forms.",
+    listingsTitle: "Browse with RealScout",
+    listingsSubtitle: "Search live office listings from Berkshire Hathaway HomeServices Nevada Properties."
   },
   contactInfo: {
     title: "Contact Information",

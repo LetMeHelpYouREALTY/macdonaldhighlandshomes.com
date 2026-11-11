@@ -8,21 +8,24 @@ import ConsultationBand from "@/components/sections/ConsultationBand";
 import FaqSection from "@/components/sections/FaqSection";
 import FaqSchema from "@/components/schema/FaqSchema";
 import { contactFaqs } from "@/lib/faqs";
-import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import OptimizedImage from "@/components/ui/OptimizedImage";
+
+const contactMetaDescription = `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate. Book on Calendly, browse RealScout listings, or call ${siteConfig.contact.phoneFormatted}.`;
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
-  description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
+  description: contactMetaDescription,
   keywords: "contact Dr. Jan Duffy, MacDonald Highlands REALTOR contact, Henderson real estate agent",
   alternates: {
     canonical: 'https://www.macdonaldhighlandshomes.com/contact',
   },
   openGraph: {
     title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
-    description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
+    description: contactMetaDescription,
     url: 'https://www.macdonaldhighlandshomes.com/contact',
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
-    description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
+    description: contactMetaDescription,
     images: [
       {
         url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
@@ -138,40 +141,32 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Schedule + Search — Calendly & RealScout only */}
       <section className="section-padding bg-neutral-50">
         <div className="container-luxury">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-14">
               <div>
-                <h2 className="text-3xl font-serif font-bold mb-6">Send a Message</h2>
+                <h2 className="text-3xl font-serif font-bold mb-6">Book on Calendly</h2>
                 <p className="text-neutral-600 mb-6">
-                  Fill out the form below and we&apos;ll respond within 24 hours. All inquiries are confidential and come with no obligation.
+                  Schedule a listing consultation, private showing, or strategy call. No contact forms — pick a time that works.
                 </p>
-                <ContactForm
-                  formTitle=""
-                  formDescription=""
-                  ctaText="Send Message"
-                  source="contact-page"
-                />
-              
-              <div className="mt-10">
-                <CalendlyInline
-                  event="listing"
-                  utmContent="contact-cta"
-                  title="Or Book Directly on Calendly"
-                  description="Pick a time that works — listing consultation, private showing, or strategy call."
-                />
-              </div>
-</div>
-
-              {/* Contact Info */}
-              <div>
-                <h2 className="text-3xl font-serif font-bold mb-6">Get in Touch</h2>
-                <div className="space-y-8">
+                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                  <CalendlyCta
+                    event="listing"
+                    utmContent="contact-listing"
+                    label="Listing consultation"
+                  />
+                  <CalendlyCta
+                    event="showing"
+                    utmContent="contact-showing"
+                    label="Private showing"
+                    variant="secondary"
+                  />
+                </div>
+                <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Phone</h3>
+                    <h3 className="text-xl font-semibold mb-2">Phone</h3>
                     <a
                       href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
                       className="text-2xl text-primary-600 font-bold hover:underline block"
@@ -180,52 +175,43 @@ export default function ContactPage() {
                     </a>
                     <p className="text-neutral-600 mt-2">{siteConfig.contact.hours}</p>
                   </div>
-
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Email</h3>
+                    <h3 className="text-xl font-semibold mb-2">Email</h3>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
                       className="text-lg text-primary-600 hover:underline block"
                     >
                       {siteConfig.contact.email}
                     </a>
-                    <p className="text-neutral-600 mt-2">We respond within 24 hours</p>
                   </div>
-
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Office Location</h3>
-                    <p className="text-lg text-neutral-700">
-                      {siteConfig.contact.office.full}
-                    </p>
-                    <p className="text-neutral-600 mt-1">
-                      Specializing in MacDonald Highlands and surrounding Henderson luxury communities
-                    </p>
-                  </div>
-
-                  <div className="pt-6 border-t border-neutral-200">
-                    <h3 className="text-xl font-semibold mb-3">Quick Actions</h3>
-                    <div className="space-y-3">
-                      <a
-                        href="/services/luxury-home-valuation"
-                        className="block text-primary-600 hover:underline font-semibold"
-                      >
-                        → Request Home Valuation
-                      </a>
-                      <a
-                        href="/services/buying-in-macdonald-highlands"
-                        className="block text-primary-600 hover:underline font-semibold"
-                      >
-                        → Schedule Community Tour
-                      </a>
-                      <a
-                        href="/services/off-market-opportunities"
-                        className="block text-primary-600 hover:underline font-semibold"
-                      >
-                        → Join Private Buyer List
-                      </a>
-                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Office</h3>
+                    <p className="text-lg text-neutral-700">{siteConfig.contact.office.full}</p>
                   </div>
                 </div>
+              </div>
+
+              <div>
+                <CalendlyInline
+                  event="listing"
+                  utmContent="contact-inline"
+                  title=""
+                  description=""
+                  minHeight={640}
+                />
+              </div>
+            </div>
+
+            <div className="border-t border-neutral-200 pt-12">
+              <h2 className="text-3xl font-serif font-bold mb-4 text-center">Browse with RealScout</h2>
+              <p className="text-neutral-600 mb-8 text-center max-w-2xl mx-auto">
+                Search live office listings from Berkshire Hathaway HomeServices Nevada Properties.
+              </p>
+              <RealScoutWidgetWrapper />
+              <div className="mt-8 text-center">
+                <Link href="/listings" className="btn-primary inline-block uppercase tracking-wide text-sm">
+                  View All Listings
+                </Link>
               </div>
             </div>
           </div>
@@ -321,7 +307,7 @@ export default function ContactPage() {
         source="contact"
         calendlyEvent="listing"
         title="Ready to Book with MacDonald Highlands Listing Specialist Dr. Jan Duffy?"
-        showForm={false}
+        showListings={false}
       />
     </>
   );

@@ -130,7 +130,7 @@ export const contactFaqs = [
   {
     question: "How do I contact Dr. Jan Duffy about MacDonald Highlands?",
     answer:
-      "Call or text (702) 500-1955, email DrDuffy@MacDonaldHighlandsHomes.com, visit 3185 St Rose Pkwy Suite 101, or book a Calendly consultation from this site.",
+      "Book on Calendly from this site, browse live inventory with RealScout, call or text (702) 500-1955, email DrDuffy@MacDonaldHighlandsHomes.com, or visit 3185 St Rose Pkwy Suite 101.",
   },
   {
     question: "What should I prepare for a listing or buyer consultation?",
