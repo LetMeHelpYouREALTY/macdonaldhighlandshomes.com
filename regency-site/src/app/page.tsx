@@ -10,14 +10,14 @@ import ConsultationBand from "@/components/sections/ConsultationBand";
 import { homepageFaqs } from "@/lib/faqs";
 
 export const metadata = {
-  title: "MacDonald Highlands Listing Specialist | Dr. Jan Duffy, REALTOR®",
+  title: siteConfig.seo.title,
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords,
   alternates: {
     canonical: "https://www.macdonaldhighlandshomes.com",
   },
   openGraph: {
-    title: "MacDonald Highlands Listing Specialist | Dr. Jan Duffy, REALTOR®",
+    title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     url: "https://www.macdonaldhighlandshomes.com",
     siteName: siteConfig.name,
@@ -35,7 +35,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MacDonald Highlands Listing Specialist | Dr. Jan Duffy, REALTOR®",
+    title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     images: [
       {
@@ -159,16 +159,17 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 container-luxury text-center text-white py-28 md:py-32">
           <p className="text-sm md:text-base uppercase tracking-[0.22em] text-white/80 mb-5 font-semibold">
-            Dr. Jan Duffy · Listing Specialist
+            Dr. Jan Duffy · MacDonald Highlands Realtor
           </p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-balance text-white">
-            MacDonald Highlands Listing Specialist
+            MacDonald Highlands Realtor &amp; Listing Specialist
           </h1>
           <p className="text-xl md:text-2xl mb-5 text-neutral-100 max-w-3xl mx-auto font-medium">
-            The trusted authority for high-end real estate in MacDonald Highlands
+            Buy and sell $1M–$15M+ estates in Henderson&apos;s premier guard-gated community
           </p>
           <p className="text-lg md:text-xl mb-12 text-neutral-200 max-w-2xl mx-auto">
-            Trust your MacDonald Highlands estate to the specialist who understands its value—and DragonRidge living.
+            Trust Duffy—your MacDonald Highlands listing specialist for DragonRidge living, Strip views, discreet
+            high-end sales, and HOA-aligned leasing help for MacDonald Highlands owners.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CalendlyCta

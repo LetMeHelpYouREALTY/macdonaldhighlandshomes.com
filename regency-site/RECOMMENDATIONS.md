@@ -30,6 +30,20 @@ Date-stamped for this Listing Specialist upgrade (America/Los_Angeles).
 - Upgrade agent photography when a high-resolution licensed portrait is available.
 - Re-run Rich Results Test for FAQ Speakable + AggregateRating after production deploy.
 
+## GSC query response (low-volume searches)
+
+| Query | Intent | Site response |
+|-------|--------|---------------|
+| `duffy` | Brand | Homepage/About/Person schema emphasize Dr. Jan Duffy / Duffy alternate names |
+| `macdonald highlands realtor` | Commercial | Title/H1/keywords/FAQ target “MacDonald Highlands realtor” |
+| `highlandhomes in henderson nevada for rent` | Rental | FAQ + GBP services: MH leasing/property management (not LV apartment portal) |
+| `rental homes in las vegas` | Rental | Same — MacDonald Highlands HOA-aligned leasing only |
+
+## GBP alignment
+
+- Business name, description, phone/SMS, Suite 101 address, service area 89012, hours (Wed until 8:30 PM), founding date 2013-09-19, social profiles, attributes, and full GBP service catalog live in `siteConfig` + LocalBusiness schema + `/services` + `/llms.txt`.
+- Human still needed: submit sitemap in GSC after deploy; re-validate Rich Results.
+
 ## Fair Housing reminder
 
 Avoid “safe / family-friendly / good schools” language. Prefer sqft, amenities, commute times, and named schools without quality judgments.

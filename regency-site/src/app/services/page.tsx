@@ -279,6 +279,25 @@ export default function ServicesPage() {
               Learn more about off-market opportunities →
             </Link>
 
+            <h2 className="text-3xl font-serif font-bold mt-16 mb-6">
+              Google Business Profile Services for MacDonald Highlands
+            </h2>
+            <p className="text-lg text-neutral-700 mb-6">
+              These offerings match the services listed on Google for {siteConfig.name} under Real estate agent
+              (primary), Real estate agency, Real estate consultant, and Property management company.
+            </p>
+            <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {siteConfig.gbpServices.map((service) => (
+                <div key={service.name} className="border border-neutral-200 p-6 bg-neutral-50">
+                  <h3 className="text-xl font-serif font-bold mb-2">{service.name}</h3>
+                  <p className="text-neutral-700 mb-4 text-base leading-relaxed">{service.description}</p>
+                  <Link href={service.href} className="text-primary-800 hover:underline font-semibold">
+                    Learn more →
+                  </Link>
+                </div>
+              ))}
+            </div>
+
             <h2 className="text-3xl font-serif font-bold mt-16 mb-6">Service Comparison Guide</h2>
             <p className="text-lg text-neutral-700 mb-6">
               Understanding which services align with your goals helps you make informed decisions about your MacDonald Highlands real estate journey. This comparison guide highlights key differences and helps you identify the services that best match your needs.

@@ -8,15 +8,15 @@ import ConsultationBand from "@/components/sections/ConsultationBand";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 
 export const metadata: Metadata = {
-  title: "About Dr. Jan Duffy | MacDonald Highlands Listing Specialist",
-  description: `Meet ${siteConfig.agent.name}, ${siteConfig.agent.title} for MacDonald Highlands luxury estates. ${siteConfig.agent.experience}. In real estate since 1983.`,
-  keywords: "Dr. Jan Duffy Listing Specialist, MacDonald Highlands REALTOR, Henderson luxury homes expert",
+  title: "About Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
+  description: `Meet Dr. Jan Duffy (Duffy)—MacDonald Highlands realtor and Listing Specialist for Henderson luxury estate sales. ${siteConfig.agent.experience}. Call ${siteConfig.contact.phoneFormatted}.`,
+  keywords: "Dr. Jan Duffy, Duffy realtor, MacDonald Highlands realtor, MacDonald Highlands Listing Specialist, Henderson NV REALTOR",
   alternates: {
     canonical: 'https://www.macdonaldhighlandshomes.com/about-dr-jan-duffy',
   },
   openGraph: {
-    title: "About Dr. Jan Duffy | MacDonald Highlands Listing Specialist",
-    description: `Meet ${siteConfig.agent.name}, ${siteConfig.agent.title} for MacDonald Highlands luxury estates. ${siteConfig.agent.experience}. In real estate since 1983.`,
+    title: "About Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
+    description: `Meet Dr. Jan Duffy (Duffy)—MacDonald Highlands realtor and Listing Specialist for Henderson luxury estate sales. ${siteConfig.agent.experience}.`,
     url: 'https://www.macdonaldhighlandshomes.com/about-dr-jan-duffy',
     siteName: siteConfig.name,
     locale: 'en_US',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "About Dr. Jan Duffy | MacDonald Highlands Listing Specialist",
-    description: `Meet ${siteConfig.agent.name}, ${siteConfig.agent.title} for MacDonald Highlands luxury estates. ${siteConfig.agent.experience}.`,
+    title: "About Dr. Jan Duffy | MacDonald Highlands Realtor & Listing Specialist",
+    description: `Meet Dr. Jan Duffy (Duffy)—MacDonald Highlands realtor and Listing Specialist for Henderson luxury estate sales.`,
     images: [
       {
         url: 'https://www.macdonaldhighlandshomes.com/photos/agent/dr-jan-duffy-headshot.jpg',
@@ -52,8 +52,8 @@ export default function AboutPage() {
       <RealEstateAgentSchema />
 
       <PageHero
-        title="About Dr. Jan Duffy, MacDonald Highlands Listing Specialist"
-        subtitle="Hyperlocal listing strategy for $1M–$15M+ guard-gated estates in Henderson, NV"
+        title="About Dr. Jan Duffy, MacDonald Highlands Realtor"
+        subtitle="Listing Specialist for $1M–$15M+ guard-gated estates in Henderson, NV—buy and sell, not rentals"
         support="Ph.D. research credential · Top 1% Las Vegas REALTOR® · In real estate since 1983"
         imageSrc={siteConfig.images.aboutHero}
         imageAlt="MacDonald Highlands luxury estate with Strip views at dusk — Listing Specialist Dr. Jan Duffy"

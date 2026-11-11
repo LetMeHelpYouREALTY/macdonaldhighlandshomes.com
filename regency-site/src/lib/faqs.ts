@@ -5,6 +5,11 @@
 
 export const homepageFaqs = [
   {
+    question: "Who is the MacDonald Highlands realtor Dr. Jan Duffy?",
+    answer:
+      "Dr. Jan Duffy (often searched simply as “Duffy”) is the MacDonald Highlands realtor and Listing Specialist at Berkshire Hathaway HomeServices Nevada Properties (license S.0197614.LLC). She focuses on buying and selling $1M–$15M+ guard-gated estate homes in Henderson, NV, plus HOA-aligned leasing and property-management support for MacDonald Highlands owners. Call (702) 500-1955 for a confidential consultation.",
+  },
+  {
     question: "Who is the listing specialist for MacDonald Highlands in Henderson?",
     answer:
       "Dr. Jan Duffy is the MacDonald Highlands listing specialist at Berkshire Hathaway HomeServices Nevada Properties (license S.0197614.LLC). She focuses on $1M–$15M+ guard-gated estate homes, pre-listing strategy, architectural marketing, and private buyer outreach. Call (702) 500-1955 for a confidential listing consultation.",
@@ -15,6 +20,11 @@ export const homepageFaqs = [
       "A listing specialist prices to view and lot premiums, coordinates guard-gate showings, stages for luxury photography, and markets to qualified high-net-worth buyers—including off-market channels when privacy matters. Dr. Jan Duffy manages that full listing workflow from valuation through closing.",
   },
   {
+    question: "Do you help with MacDonald Highlands rentals or property management?",
+    answer:
+      "Yes—for MacDonald Highlands owners and investors. Dr. Jan Duffy provides rental pricing from current MacDonald Highlands comparables, HOA rental-rule guidance, and leasing help. This is neighborhood leasing support—not a Las Vegas apartment-rental portal. Call (702) 500-1955.",
+  },
+  {
     question: "How much are homes in MacDonald Highlands?",
     answer:
       "MacDonald Highlands estate homes typically trade from about $1 million to $15 million and above, depending on Strip or mountain views, lot size, golf-course frontage, and finishes. Dr. Jan Duffy provides a confidential, comps-based valuation rather than a generic online estimate.",
@@ -22,7 +32,7 @@ export const homepageFaqs = [
   {
     question: "Where is Dr. Jan Duffy’s office for MacDonald Highlands clients?",
     answer:
-      "Dr. Jan Duffy meets clients through Berkshire Hathaway HomeServices Nevada Properties at 3185 St Rose Pkwy, Suite 101, Henderson, NV 89052. Hours are daily 8:00 AM–8:00 PM. Phone: (702) 500-1955. Email: DrDuffy@MacDonaldHighlandsHomes.com.",
+      "Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy is at 3185 St Rose Pkwy, Suite 101, Henderson, NV 89052. Hours are Sunday–Saturday 8:00 AM–8:00 PM (Wednesday until 8:30 PM). Phone or text (702) 500-1955. Email: DrDuffy@MacDonaldHighlandsHomes.com.",
   },
 ];
 
@@ -69,7 +79,7 @@ export const servicesFaqs = [
   {
     question: "What luxury real estate services does Dr. Jan Duffy offer in MacDonald Highlands?",
     answer:
-      "Services center on listing specialist work—selling, buyer representation, luxury valuations, relocation concierge, investment advisory, and off-market opportunities—for $1M–$15M+ MacDonald Highlands estate homes in Henderson, NV.",
+      "GBP-aligned services include seller’s and buyer’s agent representation, luxury sales, comparative market analysis, relocation assistance, new construction guidance, investment consulting, MacDonald Highlands property management and leasing help, staging, marketing, and photography—centered on Henderson’s guard-gated MacDonald Highlands community.",
   },
   {
     question: "Why hire a MacDonald Highlands specialist instead of a general Las Vegas agent?",

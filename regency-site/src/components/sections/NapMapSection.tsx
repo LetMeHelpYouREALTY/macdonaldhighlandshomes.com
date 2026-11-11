@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/siteConfig";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
 
 /**
- * Homepage-style NAP + map block for local SEO consistency.
+ * GBP-aligned NAP + map block (name, address, hours, phone, SMS, Calendly).
  */
 export default function NapMapSection() {
   return (
@@ -14,19 +14,33 @@ export default function NapMapSection() {
             <h2 className="text-3xl font-serif font-bold mb-4 text-charcoal-900">
               Visit or Call Dr. Jan Duffy
             </h2>
-            <p className="text-lg text-neutral-700 mb-2">
-              Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy
+            <p className="text-lg text-neutral-800 font-semibold mb-2">{siteConfig.name}</p>
+            <p className="text-neutral-700 mb-1">
+              Real estate agent · {siteConfig.agent.brokerage}
             </p>
             <p className="text-neutral-700 mb-1">{siteConfig.contact.office.full}</p>
-            <p className="text-neutral-700 mb-2">{siteConfig.contact.hours}</p>
-            <p className="text-neutral-800 font-semibold mb-6">
+            <p className="text-neutral-700 mb-1">
+              Service area: {siteConfig.contact.address.full}
+            </p>
+            <p className="text-neutral-700 mb-4">{siteConfig.contact.hours}</p>
+            <ul className="text-sm text-neutral-600 mb-4 space-y-0.5 columns-2 gap-6 max-w-md">
+              {siteConfig.contact.hoursDetailed.map((h) => (
+                <li key={h.day}>
+                  <span className="inline-block w-24 font-medium text-neutral-800">{h.day}</span>
+                  {h.label}
+                </li>
+              ))}
+            </ul>
+            <p className="text-neutral-800 font-semibold mb-6 flex flex-wrap items-center gap-x-3 gap-y-2">
               <a
                 href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
                 className="hover:underline"
               >
                 {siteConfig.contact.phoneFormatted}
               </a>
-              <span className="mx-2 text-neutral-400">·</span>
+              <a href={siteConfig.contact.smsHref} className="hover:underline text-primary-800 font-medium">
+                Text / SMS
+              </a>
               <CalendlyCta
                 event="listing"
                 utmContent="nap-book-beside-phone"
@@ -40,6 +54,12 @@ export default function NapMapSection() {
                 className="btn-primary px-6 py-3 uppercase tracking-wide text-sm"
               >
                 Call Now
+              </a>
+              <a
+                href={siteConfig.contact.smsHref}
+                className="btn-secondary px-6 py-3 uppercase tracking-wide text-sm"
+              >
+                Text Us
               </a>
               <CalendlyCta
                 event="listing"
@@ -62,6 +82,9 @@ export default function NapMapSection() {
                 Contact Me
               </Link>
             </div>
+            <p className="mt-6 text-xs text-neutral-500">
+              Women-owned · Veteran-owned · LGBTQ+ friendly · Wheelchair accessible · Online appointments available
+            </p>
           </div>
           <div className="overflow-hidden shadow-lg aspect-video bg-neutral-100">
             <iframe
