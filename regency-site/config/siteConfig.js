@@ -67,7 +67,7 @@ export const siteConfig = {
     keywords: "MacDonald Highlands Listing Specialist, MacDonald Highlands REALTOR, sell MacDonald Highlands home, MacDonald Highlands homes for sale, DragonRidge Country Club real estate, Henderson luxury homes, Dr. Jan Duffy",
   },
   images: {
-    listingSpecialistHero: "/images/sections/listing-specialist-hero.jpg",
+    listingSpecialistHero: "/images/sections/hero-pool-strip-dusk.jpg",
     whyListingSpecialist: "/images/sections/why-listing-specialist.jpg",
     servicesOverview: "/images/services/services-portfolio-overview.jpg",
     selling: "/images/services/selling-prelisting-staging.jpg",

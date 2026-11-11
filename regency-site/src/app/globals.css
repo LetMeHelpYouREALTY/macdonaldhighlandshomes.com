@@ -100,6 +100,11 @@
     @apply shadow-md hover:shadow-lg;
   }
 
+  .btn-ghost {
+    @apply bg-transparent text-white px-6 py-3 rounded-md font-semibold border-2 border-white;
+    @apply hover:bg-white hover:bg-opacity-10 transition-all duration-300;
+  }
+
   /* Luxury Card Styles */
   .card-luxury {
     @apply bg-white rounded-lg shadow-xl overflow-hidden;
