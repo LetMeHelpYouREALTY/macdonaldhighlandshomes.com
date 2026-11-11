@@ -11,6 +11,7 @@ import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 import { valuationFaqs } from "@/lib/faqs";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Home Valuation: Beyond the Algorithm | Dr. Jan Duffy",
@@ -139,21 +140,21 @@ export default function ValuationPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Premium Adjustments: Views, Lot Size, Custom Finishes</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="Panoramic Las Vegas Strip views add significant value to MacDonald Highlands properties"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/golf-lifestyle-00010-full.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00010-full-960.webp"
                   alt="Golf course frontage properties command premium prices in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>

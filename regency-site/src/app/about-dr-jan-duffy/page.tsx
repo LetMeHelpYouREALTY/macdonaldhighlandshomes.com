@@ -5,6 +5,9 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { aboutFaqs } from "@/lib/faqs";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import AgentPortrait from "@/components/ui/AgentPortrait";
 import OptimizedImage from "@/components/ui/OptimizedImage";
@@ -132,22 +135,22 @@ export default function AboutPage() {
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Intimate Neighborhood Knowledge</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/view-lifestyle-00023-1024.jpg"
-                    alt="MacDonald Highlands luxury homes with panoramic views"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00023-1024-960.webp"
+                  alt="MacDonald Highlands luxury homes with panoramic views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/view-lifestyle-00021-1024.jpg"
-                    alt="MacDonald Highlands estate homes with Strip views"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00021-1024-960.webp"
+                  alt="MacDonald Highlands estate homes with Strip views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
               </div>
               <p className="text-lg text-neutral-700 mb-6">
@@ -172,31 +175,31 @@ export default function AboutPage() {
               <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Transaction Expertise</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/clubhouse-0003-1024.jpg"
-                    alt="DragonRidge Country Club amenities"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-0003-1024-960.webp"
+                  alt="DragonRidge Country Club amenities"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/clubhouse-0005-1024.jpg"
-                    alt="MacDonald Highlands luxury community features"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-0005-1024-960.webp"
+                  alt="MacDonald Highlands luxury community features"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/pool-0007-1024.jpg"
-                    alt="Resort-style pool in MacDonald Highlands"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/pool-0007-1024-960.webp"
+                  alt="Resort-style pool in MacDonald Highlands"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
               </div>
               <p className="text-lg text-neutral-700 mb-6">
@@ -303,6 +306,9 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
+      <FaqSchema faqs={aboutFaqs} />
+      <FaqSection title="About Dr. Jan Duffy FAQs" faqs={aboutFaqs} />
+
       <NapMapSection />
       <ConsultationBand
         source="about"

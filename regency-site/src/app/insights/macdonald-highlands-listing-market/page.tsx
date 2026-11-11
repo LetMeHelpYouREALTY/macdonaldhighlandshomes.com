@@ -5,6 +5,9 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { marketNoteFaqs } from "@/lib/faqs";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 
@@ -168,6 +171,9 @@ export default function ListingMarketNotePage() {
           </div>
         </div>
       </article>
+
+      <FaqSchema faqs={marketNoteFaqs} />
+      <FaqSection title="Market Note FAQs" faqs={marketNoteFaqs} />
 
       <NapMapSection />
       <ConsultationBand

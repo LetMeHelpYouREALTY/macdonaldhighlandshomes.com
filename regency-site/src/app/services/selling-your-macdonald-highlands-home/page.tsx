@@ -11,6 +11,7 @@ import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHe
 import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 import { sellingFaqs } from "@/lib/faqs";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Sell Your MacDonald Highlands Home | Listing Specialist Dr. Jan Duffy",
@@ -113,13 +114,13 @@ export default function SellingPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Professional Staging Consultation</h3>
             <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={siteConfig.images.selling}
-                alt="Professionally staged MacDonald Highlands living room ready for listing photography"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+              <OptimizedImage
+                  src={siteConfig.images.selling}
+                  alt="Professionally staged MacDonald Highlands living room ready for listing photography"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               First impressions are everything in luxury real estate. We work with premier staging professionals who understand how to showcase your home&apos;s architectural features, maximize natural light, and create an aspirational lifestyle presentation that resonates with high-net-worth buyers. Staging recommendations are tailored to your property&apos;s unique characteristics, ensuring that every room tells a story of luxury living. This professional presentation helps buyers envision themselves in your home, creating emotional connections that drive purchase decisions.
@@ -128,21 +129,21 @@ export default function SellingPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Architectural & Twilight Photography + Drone Aerials</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-2-800.webp"
                   alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/views-lifestyle-3.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/views-lifestyle-3-960.webp"
                   alt="MacDonald Highlands luxury estate with mountain views"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>

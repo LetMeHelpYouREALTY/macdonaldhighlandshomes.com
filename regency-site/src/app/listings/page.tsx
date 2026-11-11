@@ -5,6 +5,9 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { listingsFaqs } from "@/lib/faqs";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyInline from "@/components/scheduling/CalendlyInline";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
@@ -230,6 +233,9 @@ export default function ListingsPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={listingsFaqs} />
+      <FaqSection title="Listings FAQs" faqs={listingsFaqs} />
 
       <NapMapSection />
       <ConsultationBand

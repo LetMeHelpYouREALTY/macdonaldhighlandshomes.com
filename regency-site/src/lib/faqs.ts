@@ -112,3 +112,133 @@ export const servicesFaqs = [
       "Guard-gate logistics, view premiums, DragonRidge membership nuances, and estate-lot pricing behave differently than typical Las Vegas inventory. Hyperlocal listing expertise reduces pricing and marketing mistakes on seven- and eight-figure properties.",
   },
 ];
+
+export const aboutFaqs = [
+  {
+    question: "What makes Dr. Jan Duffy a MacDonald Highlands specialist?",
+    answer:
+      "Dr. Jan Duffy focuses on MacDonald Highlands listing and buyer representation—view and lot pricing, guard-gate showings, DragonRidge context, and $1M–$15M+ estate marketing. Call (702) 500-1955.",
+  },
+  {
+    question: "Where can I meet Dr. Jan Duffy in person?",
+    answer:
+      "Her office is at 3185 St Rose Pkwy, Suite 101, Henderson, NV 89052. Hours are Sunday–Saturday 8:00 AM–8:00 PM (Wednesday until 8:30 PM). Book on Calendly or call (702) 500-1955.",
+  },
+];
+
+export const contactFaqs = [
+  {
+    question: "How do I contact Dr. Jan Duffy about MacDonald Highlands?",
+    answer:
+      "Call or text (702) 500-1955, email DrDuffy@MacDonaldHighlandsHomes.com, visit 3185 St Rose Pkwy Suite 101, or book a Calendly consultation from this site.",
+  },
+  {
+    question: "What should I prepare for a listing or buyer consultation?",
+    answer:
+      "Share your timeline, privacy preferences, and property goals. Sellers should note recent improvements and HOA dues; buyers should share budget, preferred views/lot size, and whether new construction is on the table.",
+  },
+];
+
+export const communityFaqs = [
+  {
+    question: "What is MacDonald Highlands in Henderson, NV?",
+    answer:
+      "MacDonald Highlands is a guard-gated luxury golf community in Henderson (89012) built around DragonRidge Country Club in the McCullough Range foothills, with estate lots, Strip and mountain views, and homes typically from about $1M to $15M+.",
+  },
+  {
+    question: "Is MacDonald Highlands guard-gated?",
+    answer:
+      "Yes. MacDonald Highlands has 24-hour guard-gated entries. Showings are pre-authorized; Dr. Jan Duffy coordinates gate access for qualified buyers.",
+  },
+];
+
+export const listingsFaqs = [
+  {
+    question: "Where can I see MacDonald Highlands homes for sale?",
+    answer:
+      "Browse live office listings on this page and at /listings. For privacy-focused inventory, ask Dr. Jan Duffy about off-market opportunities at (702) 500-1955.",
+  },
+  {
+    question: "Can I tour a MacDonald Highlands listing privately?",
+    answer:
+      "Yes. Private showings are scheduled through the guard gates. Book a showing on Calendly or call (702) 500-1955.",
+  },
+];
+
+export const soldFaqs = [
+  {
+    question: "Does Dr. Jan Duffy publish individual sold prices for MacDonald Highlands?",
+    answer:
+      "Closed results vary by privacy and MLS rules. Dr. Jan Duffy discusses relevant comps and outcomes in a confidential consultation—call (702) 500-1955—rather than fabricating sold cards online.",
+  },
+  {
+    question: "How do I get a comps-based value for my MacDonald Highlands home?",
+    answer:
+      "Request a luxury home valuation. Pricing uses recent MacDonald Highlands closed sales, active competition, view/lot adjustments, and days-on-market—not a generic online estimate.",
+  },
+];
+
+export const testimonialsFaqs = [
+  {
+    question: "What do clients say about working with Dr. Jan Duffy?",
+    answer:
+      "Clients highlight listing strategy, private showings, and negotiation for MacDonald Highlands estates. Read testimonials on this page and see verified Google Business Profile reviews (5.0 / 6).",
+  },
+  {
+    question: "How do I leave a review for Dr. Jan Duffy?",
+    answer:
+      "After closing, you can leave a Google Business Profile review for Henderson MacDonald Highlands Real Estate | Homes by Dr. Jan Duffy, or contact the office at (702) 500-1955.",
+  },
+];
+
+export const investmentFaqs = [
+  {
+    question: "Does Dr. Jan Duffy advise on MacDonald Highlands investment property?",
+    answer:
+      "Yes. Investment advisory covers portfolio fit, rental comps, HOA rental rules, and 1031 exchange coordination for MacDonald Highlands owners and buyers. Call (702) 500-1955.",
+  },
+  {
+    question: "Can MacDonald Highlands homes be rented?",
+    answer:
+      "Some owners lease under HOA rules. Dr. Jan Duffy provides rental pricing from current MacDonald Highlands comparables and leasing help—neighborhood leasing support, not a Las Vegas apartment portal.",
+  },
+];
+
+export const relocationFaqs = [
+  {
+    question: "Do you help executives relocating to MacDonald Highlands?",
+    answer:
+      "Yes. Relocation concierge includes virtual or in-person tours, HOA dues guidance, listing comparisons, and closing coordination on your timeline. Call (702) 500-1955.",
+  },
+  {
+    question: "Can out-of-state buyers tour MacDonald Highlands remotely first?",
+    answer:
+      "Yes. Dr. Jan Duffy arranges video walkthroughs and then private on-site showings through the guard gates once you travel to Henderson.",
+  },
+];
+
+export const offMarketFaqs = [
+  {
+    question: "What are off-market opportunities in MacDonald Highlands?",
+    answer:
+      "Off-market or pocket listings reach qualified buyers without full public MLS exposure—useful when privacy matters. Dr. Jan Duffy maintains a private buyer list; call (702) 500-1955.",
+  },
+  {
+    question: "Should I sell my MacDonald Highlands estate off-market?",
+    answer:
+      "It depends on privacy, timeline, and demand. Dr. Jan Duffy recommends MLS vs off-market after reviewing your goals and current buyer activity.",
+  },
+];
+
+export const marketNoteFaqs = [
+  {
+    question: "Where can I read the latest MacDonald Highlands listing market note?",
+    answer:
+      "This page publishes Dr. Jan Duffy’s monthly MacDonald Highlands listing-market Article with dateModified. For a private briefing, call (702) 500-1955.",
+  },
+  {
+    question: "How often is MacDonald Highlands market commentary updated?",
+    answer:
+      "The listing-market note is refreshed monthly with current listing strategy context. Live inventory changes daily—see /listings or book a consultation.",
+  },
+];

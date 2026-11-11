@@ -5,8 +5,12 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { soldFaqs } from "@/lib/faqs";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Recent Sales | MacDonald Highlands Real Estate | Dr. Jan Duffy",
@@ -123,30 +127,30 @@ export default function SoldPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
               <div className="relative h-64 overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands estate homes with panoramic Strip views"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="Golf course frontage properties in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club luxury amenities"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -245,6 +249,9 @@ export default function SoldPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={soldFaqs} />
+      <FaqSection title="Sold & Results FAQs" faqs={soldFaqs} />
 
       <NapMapSection />
       <ConsultationBand

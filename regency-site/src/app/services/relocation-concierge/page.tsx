@@ -4,10 +4,14 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { relocationFaqs } from "@/lib/faqs";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import Link from "next/link";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Relocating to MacDonald Highlands: White-Glove Service | Dr. Jan Duffy",
@@ -110,21 +114,21 @@ export default function RelocationPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Virtual Tour Packages for Out-of-State Buyers</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands luxury community perfect for relocating executives"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club clubhouse and amenities in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -285,6 +289,9 @@ export default function RelocationPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={relocationFaqs} />
+      <FaqSection title="Relocation FAQs" faqs={relocationFaqs} />
 
       <NapMapSection />
       <ConsultationBand

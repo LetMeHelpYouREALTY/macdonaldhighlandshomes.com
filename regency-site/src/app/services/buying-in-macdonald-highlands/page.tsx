@@ -11,6 +11,7 @@ import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
 import { buyingFaqs } from "@/lib/faqs";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Buying in MacDonald Highlands: Your Insider Advantage | Dr. Jan Duffy",
@@ -114,30 +115,30 @@ export default function BuyingPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club Membership Guidance</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00012.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00012-960.webp"
                   alt="DragonRidge Country Club championship golf course"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00013.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00013-960.webp"
                   alt="DragonRidge golf course with Strip views"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00014.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00014-960.webp"
                   alt="MacDonald Highlands golf lifestyle"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>

@@ -4,8 +4,12 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { communityFaqs } from "@/lib/faqs";
 import Link from "next/link";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Community Guide | Henderson Luxury Living",
@@ -86,69 +90,79 @@ export default function CommunityPage() {
               Nestled in the foothills of Henderson, Nevada, MacDonald Highlands is a 1,320-acre master-planned luxury community that represents the pinnacle of guard-gated living. Just 15-20 minutes from the Las Vegas Strip, this guard-gated enclave offers estate homes from $1M to $15M+ with panoramic Strip views, championship golf, and unparalleled privacy. Explore <Link href="/listings" className="text-primary-600 hover:underline font-semibold">available properties</Link> or learn about <Link href="/services" className="text-primary-600 hover:underline font-semibold">our real estate services</Link> for this guard-gated community.
             </p>
 
-            <div className="my-12">
-              <img
-                src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
-                alt="MacDonald Highlands luxury homes with panoramic Strip and mountain views"
-                className="w-full rounded-lg shadow-xl"
-                style={{ maxWidth: '1200px', height: 'auto' }}
-              />
+            <div className="my-12 relative w-full aspect-[16/10] overflow-hidden rounded-lg shadow-xl">
+              <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
+                  alt="MacDonald Highlands luxury homes with panoramic Strip and mountain views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg shadow-xl object-cover"
+                />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/guard-gate-800.webp"
                   alt="MacDonald Highlands guard-gated entrance"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/golf-lifestyle-800.webp"
                   alt="DragonRidge Country Club golf course"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/pool-800.webp"
                   alt="MacDonald Highlands resort-style pool"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
 
-            <div className="my-12">
-              <img
-                src="/photos/community/optimized/clubhouse-full-1280.webp"
-                alt="DragonRidge Country Club clubhouse"
-                className="w-full rounded-lg shadow-xl"
-                style={{ maxWidth: '1200px', height: 'auto' }}
-              />
+            <div className="my-12 relative w-full aspect-[16/10] overflow-hidden rounded-lg shadow-xl">
+              <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
+                  alt="DragonRidge Country Club clubhouse"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg shadow-xl object-cover"
+                />
             </div>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Guard-Gated Security & Privacy</h3>
-            <div className="my-6">
-              <img
-                src="/photos/community/optimized/guard-gate-full-1280.webp"
-                alt="MacDonald Highlands 24-hour guard-gated entrance"
-                className="w-full rounded-lg shadow-lg"
-                style={{ maxWidth: '1000px', height: 'auto' }}
-              />
+            <div className="my-6 relative w-full aspect-[16/10] overflow-hidden rounded-lg shadow-xl">
+              <OptimizedImage
+                  src="/photos/community/optimized/guard-gate-full-1280.webp"
+                  alt="MacDonald Highlands 24-hour guard-gated entrance"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg shadow-lg object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               Two beautifully landscaped, 24-hour guard-gated entries provide residents with peace of mind and exclusivity. The community&apos;s security protocols ensure that only authorized visitors and residents access the neighborhood, creating a private sanctuary for high-net-worth families, executives, and celebrities.
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">DragonRidge Country Club</h3>
-            <div className="my-6">
-              <img
-                src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
-                alt="DragonRidge Country Club championship golf course"
-                className="w-full rounded-lg shadow-lg"
-                style={{ maxWidth: '1000px', height: 'auto' }}
-              />
+            <div className="my-6 relative w-full aspect-[16/10] overflow-hidden rounded-lg shadow-xl">
+              <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
+                  alt="DragonRidge Country Club championship golf course"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="rounded-lg shadow-lg object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               At the heart of MacDonald Highlands lies DragonRidge Country Club, a championship golf course designed by renowned architect Jay Morrish. This private club offers:
@@ -164,57 +178,57 @@ export default function CommunityPage() {
             {/* Golf Lifestyle Gallery */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-0008.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-0008-960.webp"
                   alt="DragonRidge golf course views"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-0009.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-0009-960.webp"
                   alt="DragonRidge golf course lifestyle"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00011.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00011-960.webp"
                   alt="DragonRidge championship golf"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00012.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00012-960.webp"
                   alt="DragonRidge golf course scenery"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00013.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00013-960.webp"
                   alt="DragonRidge golf lifestyle"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00014.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00014-960.webp"
                   alt="DragonRidge Country Club views"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -224,18 +238,22 @@ export default function CommunityPage() {
               <h4 className="text-xl font-serif font-bold mb-4">DragonRidge Clubhouse</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/optimized/clubhouse-full-1280.webp"
-                    alt="DragonRidge Country Club clubhouse exterior"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
+                  alt="DragonRidge Country Club clubhouse exterior"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/clubhouse-2.jpg"
-                    alt="DragonRidge Country Club clubhouse interior"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-2-960.webp"
+                  alt="DragonRidge Country Club clubhouse interior"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
               </div>
             </div>
@@ -262,21 +280,21 @@ export default function CommunityPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Lot Sizes & Home Types</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Custom pools and outdoor living spaces in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-2-800.webp"
                   alt="Estate homes with generous lot sizes in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -293,17 +311,21 @@ export default function CommunityPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Views & Location</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-2-800.webp"
                   alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/views-lifestyle-3.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/views-lifestyle-3-960.webp"
                   alt="Mountain and desert views from MacDonald Highlands"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -337,18 +359,22 @@ export default function CommunityPage() {
               <h4 className="text-xl font-serif font-bold mb-4">Resort-Style Pool & Recreation</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/optimized/pool-full-1280.webp"
-                    alt="MacDonald Highlands resort-style pool"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/pool-full-1280.webp"
+                  alt="MacDonald Highlands resort-style pool"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="/photos/community/optimized/pool-800.webp"
-                    alt="Community pool and recreation area"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/pool-800.webp"
+                  alt="Community pool and recreation area"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
               </div>
             </div>
@@ -358,32 +384,40 @@ export default function CommunityPage() {
               <h4 className="text-xl font-serif font-bold mb-4">Panoramic Views Gallery</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/view-lifestyle-00021-1024.jpg"
-                    alt="MacDonald Highlands Strip views"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00021-1024-960.webp"
+                  alt="MacDonald Highlands Strip views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/view-lifestyle-00023-1024.jpg"
-                    alt="MacDonald Highlands mountain views"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00023-1024-960.webp"
+                  alt="MacDonald Highlands mountain views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/view-lifestyle-00024-1024.jpg"
-                    alt="MacDonald Highlands panoramic vistas"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00024-1024-960.webp"
+                  alt="MacDonald Highlands panoramic vistas"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
                 <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                  <img
-                    src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
-                    alt="MacDonald Highlands luxury views"
-                    className="w-full h-full object-cover"
-                  />
+                  <OptimizedImage
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
+                  alt="MacDonald Highlands luxury views"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 </div>
               </div>
             </div>
@@ -391,11 +425,13 @@ export default function CommunityPage() {
             {/* Community Map */}
             <div className="my-8">
               <h4 className="text-xl font-serif font-bold mb-4">Community Map</h4>
-              <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/maps/community-site-map.jpg"
+              <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-lg">
+                <OptimizedImage
+                  src="/photos/community/optimized/maps/community-site-map-960.webp"
                   alt="MacDonald Highlands community site map"
-                  className="w-full h-auto"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="h-auto object-cover"
                 />
               </div>
             </div>
@@ -403,17 +439,21 @@ export default function CommunityPage() {
             {/* DragonRidge Ad & Foothills Village */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/dragonridge-ad.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/dragonridge-ad-960.webp"
                   alt="DragonRidge Country Club advertisement"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/foothills-village-1280.webp"
                   alt="Foothills Village in MacDonald Highlands"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -475,6 +515,9 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={communityFaqs} />
+      <FaqSection title="MacDonald Highlands Community FAQs" faqs={communityFaqs} />
 
       <NapMapSection />
       <ConsultationBand

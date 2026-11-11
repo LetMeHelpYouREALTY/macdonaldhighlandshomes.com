@@ -4,10 +4,14 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { investmentFaqs } from "@/lib/faqs";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import Link from "next/link";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Investment Properties | Dr. Jan Duffy",
@@ -119,21 +123,21 @@ export default function InvestmentPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Appreciation Trends in Guard-Gated Henderson</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands properties with Strip views show strong appreciation"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="Golf course frontage properties in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -276,6 +280,9 @@ export default function InvestmentPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={investmentFaqs} />
+      <FaqSection title="Investment Advisory FAQs" faqs={investmentFaqs} />
 
       <NapMapSection />
       <ConsultationBand

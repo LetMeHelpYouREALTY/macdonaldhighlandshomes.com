@@ -5,9 +5,13 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { contactFaqs } from "@/lib/faqs";
 import ContactForm from "@/components/forms/ContactForm";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
 import CalendlyInline from "@/components/scheduling/CalendlyInline";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | MacDonald Highlands Real Estate",
@@ -94,39 +98,39 @@ export default function ContactPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands luxury real estate"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club amenities"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="MacDonald Highlands golf lifestyle"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Resort-style living in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -308,6 +312,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={contactFaqs} />
+      <FaqSection title="Contact FAQs" faqs={contactFaqs} />
 
       <NapMapSection />
       <ConsultationBand

@@ -10,6 +10,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import FaqSchema from "@/components/schema/FaqSchema";
 import FaqSection from "@/components/sections/FaqSection";
 import { servicesFaqs } from "@/lib/faqs";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Listing Specialist Services | Dr. Jan Duffy",
@@ -124,17 +125,21 @@ export default function ServicesPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Selling Your MacDonald Highlands Luxury Home</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="Luxury estate home with panoramic Las Vegas Strip views"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club clubhouse in MacDonald Highlands"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -154,17 +159,21 @@ export default function ServicesPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Buying in MacDonald Highlands</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="DragonRidge Country Club championship golf course"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/guard-gate-full-1280.webp"
                   alt="MacDonald Highlands 24-hour guard-gated entrance"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -184,19 +193,21 @@ export default function ServicesPage() {
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Home Valuation Services</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src={siteConfig.images.valuation}
                   alt="Luxury home valuation workspace with floor plans and comps"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <img
+                <OptimizedImage
                   src={siteConfig.images.whyListingSpecialist}
                   alt="Listing specialist presentation materials for MacDonald Highlands homes"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -215,12 +226,13 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Relocation Concierge Services</h3>
             <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={siteConfig.images.relocation}
-                alt="Executive relocation welcome scene in a MacDonald Highlands estate foyer"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+              <OptimizedImage
+                  src={siteConfig.images.relocation}
+                  alt="Executive relocation welcome scene in a MacDonald Highlands estate foyer"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               Corporate relocations and executive moves require white-glove service that goes beyond property search. Our relocation concierge services handle every detail of your move to MacDonald Highlands, from initial virtual tours to area orientation, temporary housing coordination, and timeline management. We understand that relocating to a new city while managing a career requires seamless support.
@@ -237,12 +249,13 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Investment Advisory Services</h3>
             <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={siteConfig.images.investment}
-                alt="MacDonald Highlands hillside villa with infinity pool at dusk"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+              <OptimizedImage
+                  src={siteConfig.images.investment}
+                  alt="MacDonald Highlands hillside villa with infinity pool at dusk"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               MacDonald Highlands properties represent significant investment opportunities, but understanding rental income potential, appreciation trends, and tax advantages requires specialized knowledge. Our investment advisory services provide comprehensive analysis of investment potential, including rental income projections, market appreciation trends, tax advantages, and 1031 exchange coordination for investors looking to optimize their real estate portfolios.
@@ -259,12 +272,13 @@ export default function ServicesPage() {
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Off-Market Opportunities</h3>
             <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={siteConfig.images.offMarket}
-                alt="Private courtyard entrance representing discreet off-market listings"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+              <OptimizedImage
+                  src={siteConfig.images.offMarket}
+                  alt="Private courtyard entrance representing discreet off-market listings"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
             </div>
             <p className="text-lg text-neutral-700 mb-6">
               Access to off-market and pocket listings gives buyers exclusive opportunities before properties hit the MLS. Our off-market opportunity services connect qualified buyers with sellers who prefer privacy-focused marketing approaches. This exclusive access means you can view and purchase properties that never appear in public listings, giving you a competitive advantage in the MacDonald Highlands market.

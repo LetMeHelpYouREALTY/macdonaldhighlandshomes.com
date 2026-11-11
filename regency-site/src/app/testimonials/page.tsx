@@ -4,8 +4,12 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import PageHero from "@/components/sections/PageHero";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import FaqSection from "@/components/sections/FaqSection";
+import FaqSchema from "@/components/schema/FaqSchema";
+import { testimonialsFaqs } from "@/lib/faqs";
 import Link from "next/link";
 import OfficeListingsBelowHero from "@/components/listings/OfficeListingsBelowHero";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 export const metadata: Metadata = {
   title: "Client Testimonials | MacDonald Highlands Homes and Real Estate",
@@ -143,39 +147,39 @@ export default function TestimonialsPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/clubhouse-2.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-2-960.webp"
                   alt="DragonRidge Country Club in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/golf-lifestyle-00012-alt.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/golf-lifestyle-00012-alt-960.webp"
                   alt="MacDonald Highlands luxury lifestyle"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="/photos/community/guard-gate-0001-1024.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/guard-gate-0001-1024-960.webp"
                   alt="MacDonald Highlands guard-gated community"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <img
+                <OptimizedImage
                   src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Resort-style amenities in MacDonald Highlands"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -263,6 +267,9 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </section>
+
+      <FaqSchema faqs={testimonialsFaqs} />
+      <FaqSection title="Testimonials FAQs" faqs={testimonialsFaqs} />
 
       <NapMapSection />
       <ConsultationBand
