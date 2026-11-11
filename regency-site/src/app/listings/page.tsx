@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Browse available luxury homes for sale in MacDonald Highlands, Henderson's premier guard-gated community.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         alt: 'MacDonald Highlands luxury homes for sale with panoramic Las Vegas Strip views in Henderson, Nevada',
         width: 1200,
         height: 630,

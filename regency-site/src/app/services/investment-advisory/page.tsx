@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/golf-lifestyle-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/golf-lifestyle-full-1280.webp',
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -120,7 +120,7 @@ export default function InvestmentPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands properties with Strip views show strong appreciation"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -129,7 +129,7 @@ export default function InvestmentPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/golf-lifestyle-full.jpg"
+                  src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="Golf course frontage properties in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"

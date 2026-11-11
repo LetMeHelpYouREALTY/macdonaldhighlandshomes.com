@@ -223,17 +223,18 @@ export const siteConfig = {
       "Dr. Jan Duffy, Duffy realtor, MacDonald Highlands realtor, MacDonald Highlands Listing Specialist, MacDonald Highlands REALTOR, Henderson NV luxury homes for sale, DragonRidge Country Club real estate, sell MacDonald Highlands home",
   },
   // Prefer licensed MacDonald Highlands community photography over AI lifestyle art.
+  // Paths point at pre-resized WebP for mobile LCP / PageSpeed (full masters remain under /photos/community/).
   images: {
-    listingSpecialistHero: "/photos/community/hero-view-lifestyle.jpg",
-    aboutHero: "/photos/community/view-lifestyle-00024-full.jpg",
-    whyListingSpecialist: "/photos/community/clubhouse-full.jpg",
-    servicesOverview: "/photos/community/foothills-village.jpg",
-    selling: "/photos/community/pool-full.jpg",
-    buying: "/photos/community/guard-gate-full.jpg",
-    valuation: "/photos/community/view-lifestyle-00024-full.jpg",
-    relocation: "/photos/community/clubhouse-full.jpg",
-    investment: "/photos/community/golf-lifestyle-full.jpg",
-    offMarket: "/photos/community/guard-gate-full.jpg",
+    listingSpecialistHero: "/photos/community/optimized/hero-view-lifestyle-1280.webp",
+    aboutHero: "/photos/community/optimized/view-lifestyle-00024-full-1280.webp",
+    whyListingSpecialist: "/photos/community/optimized/clubhouse-full-1280.webp",
+    servicesOverview: "/photos/community/optimized/foothills-village-1280.webp",
+    selling: "/photos/community/optimized/pool-full-1280.webp",
+    buying: "/photos/community/optimized/guard-gate-full-1280.webp",
+    valuation: "/photos/community/optimized/view-lifestyle-00024-full-1280.webp",
+    relocation: "/photos/community/optimized/clubhouse-full-1280.webp",
+    investment: "/photos/community/optimized/golf-lifestyle-full-1280.webp",
+    offMarket: "/photos/community/optimized/guard-gate-full-1280.webp",
   },
   // GBP-cited rating (5.0 / 6 reviews). Keep in sync with live Google Business Profile — never invent.
   reviews: {

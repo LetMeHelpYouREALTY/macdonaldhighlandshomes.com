@@ -14,9 +14,8 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-    // Allow unoptimized images if optimization fails
-    unoptimized: true,
-    // Disable strict mode for image domains (allows local images)
+    // Optimized images enabled for Core Web Vitals (LCP / mobile PSI)
+    unoptimized: false,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },

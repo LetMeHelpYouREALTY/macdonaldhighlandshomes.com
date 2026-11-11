@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import type { CalendlyEventKey } from "@/components/scheduling/CalendlyInline";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 
 type HeroCta = {
   label: string;
@@ -74,12 +75,13 @@ export default function PageHero({
       }`}
     >
       <div className="absolute inset-0 z-0">
-        <img
+        <OptimizedImage
           src={imageSrc}
           alt={imageAlt}
-          className="w-full h-full object-cover"
-          style={{ position: "absolute", inset: 0 }}
-          fetchPriority="high"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/75 via-charcoal-900/55 to-charcoal-900/80" />
       </div>

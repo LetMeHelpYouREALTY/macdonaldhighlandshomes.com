@@ -18,17 +18,17 @@ export default function TestImagesPage() {
           <h2 className="text-xl font-semibold mb-2">Test 1: Regular img tag (absolute path)</h2>
           <div className="relative w-full h-64 bg-gray-200">
             <img
-              src="/photos/community/hero-view-lifestyle.jpg"
+              src="/photos/community/optimized/hero-view-lifestyle-1280.webp"
               alt="Test image"
               className="w-full h-64 object-cover"
               onLoad={() => {
                 // #region agent log
-                fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'test-images/page.tsx:20',message:'Test1 img onLoad',data:{src:'/photos/community/hero-view-lifestyle.jpg'},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'G'})}).catch(()=>{});
+                fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'test-images/page.tsx:20',message:'Test1 img onLoad',data:{src:'/photos/community/optimized/hero-view-lifestyle-1280.webp'},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'G'})}).catch(()=>{});
                 // #endregion
               }}
               onError={(e) => {
                 // #region agent log
-                fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'test-images/page.tsx:27',message:'Test1 img onError',data:{src:'/photos/community/hero-view-lifestyle.jpg',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'H'})}).catch(()=>{});
+                fetch('http://127.0.0.1:7248/ingest/355725de-c768-44a5-a1c0-62e668e27869',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'test-images/page.tsx:27',message:'Test1 img onError',data:{src:'/photos/community/optimized/hero-view-lifestyle-1280.webp',error:String(e)},timestamp:Date.now(),sessionId:'debug-session',runId:'run3',hypothesisId:'H'})}).catch(()=>{});
                 // #endregion
               }}
             />
@@ -37,16 +37,16 @@ export default function TestImagesPage() {
 
         <div>
           <h2 className="text-xl font-semibold mb-2">Test 2: Direct URL link</h2>
-          <p>Click to test direct access: <a href="/photos/community/hero-view-lifestyle.jpg" target="_blank" className="text-blue-600 underline">Open /photos/community/hero-view-lifestyle.jpg</a></p>
+          <p>Click to test direct access: <a href="/photos/community/optimized/hero-view-lifestyle-1280.webp" target="_blank" className="text-blue-600 underline">Open /photos/community/optimized/hero-view-lifestyle-1280.webp</a></p>
         </div>
 
         <div>
           <h2 className="text-xl font-semibold mb-2">Test 3: Multiple community images</h2>
           <div className="grid grid-cols-2 gap-4">
-            <img src="/photos/community/guard-gate.jpg" alt="Guard gate" className="w-full h-48 object-cover" />
-            <img src="/photos/community/golf-lifestyle.jpg" alt="Golf" className="w-full h-48 object-cover" />
-            <img src="/photos/community/clubhouse.jpg" alt="Clubhouse" className="w-full h-48 object-cover" />
-            <img src="/photos/community/pool.jpg" alt="Pool" className="w-full h-48 object-cover" />
+            <img src="/photos/community/optimized/guard-gate-800.webp" alt="Guard gate" className="w-full h-48 object-cover" />
+            <img src="/photos/community/optimized/golf-lifestyle-800.webp" alt="Golf" className="w-full h-48 object-cover" />
+            <img src="/photos/community/optimized/clubhouse-800.webp" alt="Clubhouse" className="w-full h-48 object-cover" />
+            <img src="/photos/community/optimized/pool-800.webp" alt="Pool" className="w-full h-48 object-cover" />
           </div>
         </div>
 

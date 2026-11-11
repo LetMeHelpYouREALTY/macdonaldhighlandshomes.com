@@ -6,9 +6,9 @@ export default function ImageDiagnosticPage() {
   const [testResults, setTestResults] = useState<Array<{src: string, loaded: boolean, error: string | null}>>([]);
   
   const testImages = [
-    "/photos/community/hero-view-lifestyle.jpg",
-    "/photos/community/guard-gate.jpg",
-    "/photos/community/golf-lifestyle.jpg",
+    "/photos/community/optimized/hero-view-lifestyle-1280.webp",
+    "/photos/community/optimized/guard-gate-800.webp",
+    "/photos/community/optimized/golf-lifestyle-800.webp",
     "/photos/agent/dr-jan-duffy-headshot.jpg",
   ];
 

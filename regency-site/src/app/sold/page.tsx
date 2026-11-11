@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp",
         width: 1200,
         height: 630,
         alt: "Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Proven MacDonald Highlands listing results from Dr. Jan Duffy. Pricing strategy, marketing, and negotiation for Henderson's $1M–$15M+ guard-gated estates.",
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp",
         alt: "Recent luxury home sales in MacDonald Highlands guard-gated community, Henderson, Nevada",
         width: 1200,
         height: 630,
@@ -124,7 +124,7 @@ export default function SoldPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
               <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands estate homes with panoramic Strip views"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -133,7 +133,7 @@ export default function SoldPage() {
               </div>
               <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/golf-lifestyle-full.jpg"
+                  src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="Golf course frontage properties in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -142,7 +142,7 @@ export default function SoldPage() {
               </div>
               <div className="relative h-64 overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/clubhouse-full.jpg"
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club luxury amenities"
                   className="w-full h-full object-cover"
                   loading="lazy"

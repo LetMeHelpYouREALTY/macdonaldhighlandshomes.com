@@ -7,6 +7,7 @@ import CalendlyCta from "@/components/scheduling/CalendlyCta";
 import FaqSection from "@/components/sections/FaqSection";
 import NapMapSection from "@/components/sections/NapMapSection";
 import ConsultationBand from "@/components/sections/ConsultationBand";
+import OptimizedImage from "@/components/ui/OptimizedImage";
 import { homepageFaqs } from "@/lib/faqs";
 
 export const metadata = {
@@ -25,7 +26,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/hero-view-lifestyle.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/hero-view-lifestyle-1280.jpg",
         width: 1200,
         height: 630,
         alt: "MacDonald Highlands infinity pool overlooking Las Vegas Strip at dusk — Dr. Jan Duffy Listing Specialist",
@@ -39,7 +40,7 @@ export const metadata = {
     description: siteConfig.seo.description,
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/hero-view-lifestyle.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/hero-view-lifestyle-1280.jpg",
         alt: "MacDonald Highlands infinity pool overlooking Las Vegas Strip at dusk — Dr. Jan Duffy Listing Specialist",
         width: 1200,
         height: 630,
@@ -145,15 +146,16 @@ export default function HomePage() {
       <RealEstateAgentSchema />
       <FaqSchema faqs={homepageFaqs} />
 
-      {/* Hero — full-bleed, brand-first */}
+      {/* Hero — full-bleed, brand-first; next/image priority for LCP */}
       <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <OptimizedImage
             src={siteConfig.images.listingSpecialistHero}
             alt="MacDonald Highlands infinity pool overlooking Las Vegas Strip at dusk"
-            className="w-full h-full object-cover"
-            style={{ position: "absolute", inset: 0 }}
-            fetchPriority="high"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/75 via-charcoal-900/50 to-charcoal-900/80" />
         </div>
@@ -210,12 +212,12 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="relative h-80 md:h-[28rem] overflow-hidden shadow-xl">
-              <img
+              <OptimizedImage
                 src={siteConfig.images.whyListingSpecialist}
                 alt="Luxury listing presentation materials prepared by a MacDonald Highlands listing specialist"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
           </div>
@@ -274,12 +276,12 @@ export default function HomePage() {
             </p>
           </div>
           <div className="mb-12 relative h-56 md:h-80 overflow-hidden shadow-lg">
-            <img
+            <OptimizedImage
               src={siteConfig.images.servicesOverview}
               alt="Aerial view of MacDonald Highlands luxury homes and golf fairways at sunset"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -290,12 +292,12 @@ export default function HomePage() {
                 className="group overflow-hidden border border-neutral-200 hover:border-primary-300 transition-colors bg-white shadow-sm hover:shadow-lg"
               >
                 <div className="relative h-52 overflow-hidden">
-                  <img
+                  <OptimizedImage
                     src={service.image}
                     alt={service.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                    decoding="async"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
@@ -328,25 +330,25 @@ export default function HomePage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14">
               {[
-                { src: "/photos/community/hero-view-lifestyle.jpg", alt: "MacDonald Highlands luxury hillside homes" },
-                { src: "/photos/community/golf-lifestyle.jpg", alt: "DragonRidge Country Club fairways" },
-                { src: "/photos/community/clubhouse.jpg", alt: "DragonRidge clubhouse exterior" },
-                { src: "/photos/community/pool.jpg", alt: "Resort-style pool at a MacDonald Highlands estate" },
+                { src: "/photos/community/optimized/hero-view-lifestyle-1280.webp", alt: "MacDonald Highlands luxury hillside homes" },
+                { src: "/photos/community/optimized/golf-lifestyle-800.webp", alt: "DragonRidge Country Club fairways" },
+                { src: "/photos/community/optimized/clubhouse-800.webp", alt: "DragonRidge clubhouse exterior" },
+                { src: "/photos/community/optimized/pool-800.webp", alt: "Resort-style pool at a MacDonald Highlands estate" },
               ].map((img) => (
                 <div key={img.src} className="relative h-40 md:h-48 overflow-hidden shadow-md">
-                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                  <OptimizedImage src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
                 </div>
               ))}
             </div>
 
             <h3 className="text-2xl font-serif font-bold mt-4 mb-4 text-charcoal-900">Unrivaled Security & Privacy</h3>
-            <div className="my-6">
-              <img
-                src="/photos/community/guard-gate-full.jpg"
+            <div className="relative my-6 mx-auto aspect-[16/10] w-full max-w-[1000px] overflow-hidden shadow-lg">
+              <OptimizedImage
+                src="/photos/community/optimized/guard-gate-full-1280.webp"
                 alt="MacDonald Highlands 24-hour guard-gated entrance"
-                className="w-full shadow-lg"
-                style={{ maxWidth: "1000px", height: "auto" }}
-                loading="lazy"
+                fill
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                className="object-cover"
               />
             </div>
             <p className="text-lg text-neutral-700 mb-10 leading-relaxed">
@@ -354,13 +356,13 @@ export default function HomePage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mb-4 text-charcoal-900">DragonRidge Country Club & Golf Course</h3>
-            <div className="my-6">
-              <img
-                src="/photos/community/golf-lifestyle-full.jpg"
+            <div className="relative my-6 mx-auto aspect-[16/10] w-full max-w-[1000px] overflow-hidden shadow-lg">
+              <OptimizedImage
+                src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                 alt="DragonRidge Country Club championship golf course"
-                className="w-full shadow-lg"
-                style={{ maxWidth: "1000px", height: "auto" }}
-                loading="lazy"
+                fill
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                className="object-cover"
               />
             </div>
             <p className="text-lg text-neutral-700 mb-10 leading-relaxed">
@@ -368,13 +370,13 @@ export default function HomePage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mb-4 text-charcoal-900">Panoramic Strip & Mountain Views</h3>
-            <div className="my-6">
-              <img
-                src="/photos/community/view-lifestyle-2.jpg"
+            <div className="relative my-6 mx-auto aspect-[16/10] w-full max-w-[1000px] overflow-hidden shadow-lg">
+              <OptimizedImage
+                src="/photos/community/optimized/view-lifestyle-2-800.webp"
                 alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
-                className="w-full shadow-lg"
-                style={{ maxWidth: "1000px", height: "auto" }}
-                loading="lazy"
+                fill
+                sizes="(max-width: 1000px) 100vw, 1000px"
+                className="object-cover"
               />
             </div>
             <p className="text-lg text-neutral-700 mb-10 leading-relaxed">
@@ -384,19 +386,21 @@ export default function HomePage() {
             <h3 className="text-2xl font-serif font-bold mb-4 text-charcoal-900">World-Class Amenities & Clubhouse</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/pool-full.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Resort-style pool in MacDonald Highlands estate"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="relative h-64 overflow-hidden shadow-lg">
-                <img
-                  src="/photos/community/clubhouse-full.jpg"
+                <OptimizedImage
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club clubhouse"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>

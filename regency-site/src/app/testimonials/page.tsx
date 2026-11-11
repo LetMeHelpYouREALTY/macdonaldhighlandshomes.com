@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'Client testimonials for Dr. Jan Duffy, MacDonald Highlands luxury real estate expert in Henderson, Nevada',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: "Read what clients say about working with Dr. Jan Duffy for MacDonald Highlands real estate. Trusted by 500+ families for luxury home buying and selling.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         alt: 'Client testimonials for Dr. Jan Duffy, MacDonald Highlands luxury real estate expert in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -171,7 +171,7 @@ export default function TestimonialsPage() {
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/photos/community/pool-full.jpg"
+                  src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Resort-style amenities in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         width: 1200,
         height: 630,
         alt: `Contact ${siteConfig.agent.name} for MacDonald Highlands luxury real estate services in Henderson, Nevada`,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: `Contact ${siteConfig.agent.name} for MacDonald Highlands real estate services. Call ${siteConfig.contact.phoneFormatted} or fill out the contact form.`,
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         alt: `Contact ${siteConfig.agent.name} for MacDonald Highlands luxury real estate services in Henderson, Nevada`,
         width: 1200,
         height: 630,
@@ -95,7 +95,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands luxury real estate"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -104,7 +104,7 @@ export default function ContactPage() {
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/photos/community/clubhouse-full.jpg"
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club amenities"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -113,7 +113,7 @@ export default function ContactPage() {
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/photos/community/golf-lifestyle-full.jpg"
+                  src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="MacDonald Highlands golf lifestyle"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -122,7 +122,7 @@ export default function ContactPage() {
               </div>
               <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
                 <img
-                  src="/photos/community/pool-full.jpg"
+                  src="/photos/community/optimized/pool-full-1280.webp"
                   alt="Resort-style living in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"

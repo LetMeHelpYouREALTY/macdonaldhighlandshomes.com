@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.webp',
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -140,7 +140,7 @@ export default function ValuationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="Panoramic Las Vegas Strip views add significant value to MacDonald Highlands properties"
                   className="w-full h-full object-cover"
                   loading="lazy"

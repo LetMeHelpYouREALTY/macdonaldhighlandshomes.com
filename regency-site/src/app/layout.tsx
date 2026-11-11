@@ -9,6 +9,7 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import WebsiteSchema from "@/components/schema/WebsiteSchema";
 import PreconnectResources from "@/components/performance/PreconnectResources";
+import CalendlyAssets from "@/components/performance/CalendlyAssets";
 
 // Luxury typography: Inter for body, Playfair Display for headings
 const inter = Inter({ 
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.jpg",
         width: 1200,
         height: 630,
         alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg",
+        url: "https://www.macdonaldhighlandshomes.com/photos/community/optimized/view-lifestyle-00024-full-1280.jpg",
         alt: "MacDonald Highlands luxury homes with panoramic Las Vegas Strip and mountain views in Henderson, Nevada",
         width: 1200,
         height: 630,
@@ -97,33 +98,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <head>
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-      </head>
       <body className={`${inter.className} antialiased`}>
-        {/* Preconnect resources for faster loading (320ms LCP savings) */}
+        {/* Preconnect resources for faster loading */}
         <PreconnectResources />
         {/* Entity graph: RealEstateAgent + Person + WebSite for SEO/GEO/AEO */}
         <LocalBusinessSchema />
         <WebsiteSchema />
         <GoogleAnalytics />
+        <CalendlyAssets />
         <Navbar />
         <main className="min-h-screen">{children}</main>
-        {/* RealScout once globally — widget components render without reloading script */}
+        {/* RealScout / ads deferred until after load — below-fold widgets */}
         <Script
           src={siteConfig.realscout.widgetScript}
           type="module"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         {/* Calendly once globally — popup CTA + inline embeds */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="lazyOnload"
         />
-        <Script src="/ads-conversions.js" strategy="afterInteractive" />
+        <Script src="/ads-conversions.js" strategy="lazyOnload" />
         <Footer />
       </body>
     </html>

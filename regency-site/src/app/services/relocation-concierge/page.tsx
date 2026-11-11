@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/clubhouse-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: "Executive relocation support for moving to MacDonald Highlands. Virtual tours, area orientation, temporary housing, and timeline management for corporate moves.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/clubhouse-full-1280.webp',
         alt: 'Executive relocation services to MacDonald Highlands luxury community in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -111,7 +111,7 @@ export default function RelocationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="MacDonald Highlands luxury community perfect for relocating executives"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -120,7 +120,7 @@ export default function RelocationPage() {
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/clubhouse-full.jpg"
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club clubhouse and amenities in MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"

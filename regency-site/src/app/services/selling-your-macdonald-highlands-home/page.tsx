@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/pool-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/pool-full-1280.webp',
         width: 1200,
         height: 630,
         alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "Listing specialist pre-listing strategy, staging, architectural photography, and luxury buyer outreach for $1M–$15M+ MacDonald Highlands estate homes.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/pool-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/pool-full-1280.webp',
         alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
         width: 1200,
         height: 630,
@@ -129,7 +129,7 @@ export default function SellingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-2.jpg"
+                  src="/photos/community/optimized/view-lifestyle-2-800.webp"
                   alt="Panoramic Las Vegas Strip views from MacDonald Highlands"
                   className="w-full h-full object-cover"
                   loading="lazy"

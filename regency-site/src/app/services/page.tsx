@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/foothills-village.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/foothills-village-1280.webp',
         width: 1200,
         height: 630,
         alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Listing specialist services in MacDonald Highlands: selling, buying, valuations, relocation, investment advisory, and off-market opportunities.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/foothills-village.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/photos/community/optimized/foothills-village-1280.webp',
         alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
         width: 1200,
         height: 630,
@@ -125,14 +125,14 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/view-lifestyle-00024-full.jpg"
+                  src="/photos/community/optimized/view-lifestyle-00024-full-1280.webp"
                   alt="Luxury estate home with panoramic Las Vegas Strip views"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/clubhouse-full.jpg"
+                  src="/photos/community/optimized/clubhouse-full-1280.webp"
                   alt="DragonRidge Country Club clubhouse in MacDonald Highlands"
                   className="w-full h-full object-cover"
                 />
@@ -155,14 +155,14 @@ export default function ServicesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/golf-lifestyle-full.jpg"
+                  src="/photos/community/optimized/golf-lifestyle-full-1280.webp"
                   alt="DragonRidge Country Club championship golf course"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/photos/community/guard-gate-full.jpg"
+                  src="/photos/community/optimized/guard-gate-full-1280.webp"
                   alt="MacDonald Highlands 24-hour guard-gated entrance"
                   className="w-full h-full object-cover"
                 />
