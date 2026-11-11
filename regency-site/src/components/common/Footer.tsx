@@ -37,10 +37,10 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="mt-2 text-neutral-300 text-sm">
-                REALTOR®
+                Listing Specialist, REALTOR®
               </p>
               <p className="mt-4 text-neutral-300 text-sm leading-relaxed">
-                MacDonald Highlands Real Estate Expert. {siteConfig.agent.experience}. In real estate since 1983.
+                MacDonald Highlands Listing Specialist. {siteConfig.agent.experience}. In real estate since 1983.
               </p>
             </div>
 

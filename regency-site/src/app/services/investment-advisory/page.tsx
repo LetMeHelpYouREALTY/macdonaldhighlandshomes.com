@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/investment-advisory.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: "Investment advisory for MacDonald Highlands real estate. Rental income potential, appreciation trends, tax advantages, and 1031 exchange coordination.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/investment-advisory.jpg',
         alt: 'MacDonald Highlands luxury real estate investment properties in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -63,6 +63,7 @@ export default function InvestmentPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl={pageUrl}
+        image={siteConfig.images.investment}
       />
       <script
         type="application/ld+json"
@@ -70,8 +71,20 @@ export default function InvestmentPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={siteConfig.images.investment}
+            alt="MacDonald Highlands hillside villa reflecting investment potential at dusk"
+            className="w-full h-full object-cover opacity-35"
+            style={{ position: "absolute", inset: 0 }}
+            fetchPriority="high"
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Investment Advisory
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             MacDonald Highlands Investment Properties
           </h1>

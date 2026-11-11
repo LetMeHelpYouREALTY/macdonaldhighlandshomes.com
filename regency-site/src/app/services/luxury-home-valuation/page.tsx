@@ -5,7 +5,10 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import Link from "next/link";
+import FaqSchema from "@/components/schema/FaqSchema";
+import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
+import { valuationFaqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
   title: "MacDonald Highlands Home Valuation: Beyond the Algorithm | Dr. Jan Duffy",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/luxury-home-valuation.jpg',
         width: 1200,
         height: 630,
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     description: "Get a true market value assessment for your MacDonald Highlands home. Expert comp analysis from actual closed sales, not algorithm estimates.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/luxury-home-valuation.jpg',
         alt: 'MacDonald Highlands luxury home valuation services in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -63,15 +66,29 @@ export default function ValuationPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl={pageUrl}
+        image={siteConfig.images.valuation}
       />
+      <FaqSchema faqs={valuationFaqs} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={siteConfig.images.valuation}
+            alt="Luxury home valuation analysis materials for MacDonald Highlands"
+            className="w-full h-full object-cover opacity-35"
+            style={{ position: "absolute", inset: 0 }}
+            fetchPriority="high"
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Listing Specialist Valuation
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             MacDonald Highlands Home Valuation: Beyond the Algorithm
           </h1>
@@ -302,6 +319,8 @@ export default function ValuationPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection title="Frequently Asked Questions" faqs={valuationFaqs} />
 
       {/* CTA Section */}
       <section className="section-padding bg-white">

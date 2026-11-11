@@ -1,12 +1,12 @@
 // Site-wide configuration for Dr. Jan Duffy - MacDonald Highlands Luxury Real Estate
 export const siteConfig = {
   name: "MacDonald Highlands Homes and Real Estate",
-  tagline: "MacDonald Highlands Real Estate Expert",
-  description: "Premier luxury real estate services in MacDonald Highlands, Henderson's ultra-luxury guard-gated golf community. Expert guidance for buying, selling, and investing in $1M-$15M+ estate homes with panoramic Strip views.",
+  tagline: "MacDonald Highlands Listing Specialist",
+  description: "Dr. Jan Duffy, MacDonald Highlands Listing Specialist, delivers luxury listing strategy, buyer representation, and valuations for $1M–$15M+ guard-gated estate homes in Henderson, NV—with DragonRidge golf access and Strip-view expertise.",
   location: "Henderson, NV 89012",
   agent: {
     name: "Dr. Jan Duffy",
-    title: "REALTOR®",
+    title: "Listing Specialist, REALTOR®",
     phone: "702-500-1955",
     email: "DrDuffy@MacDonaldHighlandsHomes.com",
     license: "S.0197614.LLC",
@@ -14,8 +14,9 @@ export const siteConfig = {
     credentials: "Ph.D. in Research",
     experience: "500+ families served, $127M+ in sales",
     specialties: [
+      "MacDonald Highlands Listing Specialist",
       "Luxury Home Sales & Acquisitions",
-      "MacDonald Highlands Community Expert",
+      "Pre-Listing Strategy & Staging",
       "DragonRidge Country Club Properties",
       "Off-Market & Pocket Listings",
       "Relocation Concierge Services",
@@ -35,6 +36,7 @@ export const siteConfig = {
   contact: {
     phone: "702-500-1955",
     phoneFormatted: "(702) 500-1955",
+    phoneE164: "+17025001955",
     email: "DrDuffy@MacDonaldHighlandsHomes.com",
     emailSells: "DrDuffySells@MacDonaldHighlandsHomes.com",
     address: {
@@ -60,10 +62,22 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/drjanduffy",
   },
   seo: {
-    title: "MacDonald Highlands REALTOR® | Dr. Jan Duffy | Luxury Real Estate Expert",
-    description: "MacDonald Highlands real estate expert Dr. Jan Duffy helps buyers and sellers navigate Henderson's premier guard-gated community. Specializing in luxury homes from $1M-$15M+ with DragonRidge golf access.",
-    keywords: "MacDonald Highlands REALTOR, MacDonald Highlands homes for sale, DragonRidge Country Club real estate, Henderson luxury homes, MacDonald Highlands home values, luxury real estate Henderson NV, Dr. Jan Duffy",
+    title: "MacDonald Highlands Listing Specialist | Dr. Jan Duffy, REALTOR®",
+    description: "Hire Dr. Jan Duffy, MacDonald Highlands Listing Specialist, for luxury home sales, valuations, and buyer representation in Henderson's guard-gated community—$1M–$15M+ estates with DragonRidge golf access.",
+    keywords: "MacDonald Highlands Listing Specialist, MacDonald Highlands REALTOR, sell MacDonald Highlands home, MacDonald Highlands homes for sale, DragonRidge Country Club real estate, Henderson luxury homes, Dr. Jan Duffy",
   },
+  images: {
+    listingSpecialistHero: "/images/sections/listing-specialist-hero.jpg",
+    whyListingSpecialist: "/images/sections/why-listing-specialist.jpg",
+    servicesOverview: "/images/services/services-portfolio-overview.jpg",
+    selling: "/images/services/selling-prelisting-staging.jpg",
+    buying: "/images/services/buying-private-access.jpg",
+    valuation: "/images/services/luxury-home-valuation.jpg",
+    relocation: "/images/services/relocation-concierge.jpg",
+    investment: "/images/services/investment-advisory.jpg",
+    offMarket: "/images/services/off-market-opportunities.jpg",
+  },
+
   realscout: {
     agentId: "QWdlbnQtMjI1MDUw",
     widgetScript: "https://em.realscout.com/widgets/realscout-web-components.umd.js"

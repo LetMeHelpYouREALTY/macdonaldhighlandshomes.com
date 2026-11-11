@@ -7,6 +7,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
+import WebsiteSchema from "@/components/schema/WebsiteSchema";
 import PreconnectResources from "@/components/performance/PreconnectResources";
 
 // Luxury typography: Inter for body, Playfair Display for headings
@@ -99,8 +100,9 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         {/* Preconnect resources for faster loading (320ms LCP savings) */}
         <PreconnectResources />
-        {/* LocalBusiness Schema for Google Business Profile */}
+        {/* Entity graph: RealEstateAgent + Person + WebSite for SEO/GEO/AEO */}
         <LocalBusinessSchema />
+        <WebsiteSchema />
         <GoogleAnalytics />
         <Navbar />
         <main className="min-h-screen">{children}</main>

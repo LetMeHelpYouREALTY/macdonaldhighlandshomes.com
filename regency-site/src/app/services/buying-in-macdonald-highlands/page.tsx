@@ -5,7 +5,10 @@ import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import FaqSchema from "@/components/schema/FaqSchema";
+import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
+import { buyingFaqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
   title: "Buying in MacDonald Highlands: Your Insider Advantage | Dr. Jan Duffy",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/buying-private-access.jpg',
         width: 1200,
         height: 630,
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     description: "Private community access, DragonRidge membership guidance, new construction consultation, and lot selection for buying your dream MacDonald Highlands home.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/golf-lifestyle-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/buying-private-access.jpg',
         alt: 'Buying MacDonald Highlands luxury homes with DragonRidge Country Club access in Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -63,15 +66,29 @@ export default function BuyingPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl={pageUrl}
+        image={siteConfig.images.buying}
       />
+      <FaqSchema faqs={buyingFaqs} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={siteConfig.images.buying}
+            alt="Private tour foyer of a MacDonald Highlands luxury estate"
+            className="w-full h-full object-cover opacity-35"
+            style={{ position: "absolute", inset: 0 }}
+            fetchPriority="high"
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Buyer Representation
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             Buying in MacDonald Highlands: Your Insider Advantage
           </h1>
@@ -309,6 +326,8 @@ export default function BuyingPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection title="Frequently Asked Questions" faqs={buyingFaqs} />
 
       {/* CTA Section */}
       <section className="section-padding bg-white">

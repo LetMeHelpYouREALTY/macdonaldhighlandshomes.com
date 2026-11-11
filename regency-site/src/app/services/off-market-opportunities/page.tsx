@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/off-market-opportunities.jpg',
         width: 1200,
         height: 630,
         alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: "Access to pocket listings and off-market properties in MacDonald Highlands before they hit MLS. Privacy-focused selling and buyer waiting list registration.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/off-market-opportunities.jpg',
         alt: 'Exclusive off-market and pocket listings in MacDonald Highlands luxury community, Henderson, Nevada',
         width: 1200,
         height: 630,
@@ -63,6 +63,7 @@ export default function OffMarketPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl={pageUrl}
+        image={siteConfig.images.offMarket}
       />
       <script
         type="application/ld+json"
@@ -70,8 +71,20 @@ export default function OffMarketPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={siteConfig.images.offMarket}
+            alt="Private courtyard entrance for discreet off-market MacDonald Highlands listings"
+            className="w-full h-full object-cover opacity-35"
+            style={{ position: "absolute", inset: 0 }}
+            fetchPriority="high"
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Off-Market Listings
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             Off-Market & Coming Soon: MacDonald Highlands Exclusives
           </h1>

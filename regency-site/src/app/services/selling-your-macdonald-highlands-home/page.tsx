@@ -3,42 +3,45 @@ import Link from "next/link";
 import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import ServiceSchema from "@/components/schema/ServiceSchema";
+import FaqSchema from "@/components/schema/FaqSchema";
 import ContactForm from "@/components/forms/ContactForm";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
+import FaqSection from "@/components/sections/FaqSection";
 import { breadcrumbListJsonLd } from "@/lib/breadcrumbSchema";
+import { sellingFaqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
-  title: "Selling Your MacDonald Highlands Luxury Home | Dr. Jan Duffy",
-  description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
-  keywords: "selling MacDonald Highlands home, luxury home staging, architectural photography, off-market real estate, 1031 exchange",
+  title: "Sell Your MacDonald Highlands Home | Listing Specialist Dr. Jan Duffy",
+  description: "Listing specialist pre-listing strategy, staging, architectural photography, and luxury buyer outreach for $1M–$15M+ MacDonald Highlands estate homes in Henderson, NV.",
+  keywords: "sell MacDonald Highlands home, MacDonald Highlands listing specialist, luxury home staging, architectural photography, off-market real estate, 1031 exchange",
   alternates: {
     canonical: 'https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
   },
   openGraph: {
-    title: "Selling Your MacDonald Highlands Luxury Home | Dr. Jan Duffy",
-    description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
+    title: "Sell Your MacDonald Highlands Home | Listing Specialist Dr. Jan Duffy",
+    description: "Listing specialist pre-listing strategy, staging, architectural photography, and luxury buyer outreach for $1M–$15M+ MacDonald Highlands estate homes in Henderson, NV.",
     url: 'https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/selling-prelisting-staging.jpg',
         width: 1200,
         height: 630,
-        alt: 'Selling MacDonald Highlands luxury estate homes with panoramic Las Vegas Strip views in Henderson, Nevada',
+        alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Selling Your MacDonald Highlands Luxury Home | Dr. Jan Duffy",
-    description: "Expert pre-listing strategy, professional staging, architectural photography, and global luxury buyer network for selling your $1M-$15M+ MacDonald Highlands estate home.",
+    title: "Sell Your MacDonald Highlands Home | Listing Specialist Dr. Jan Duffy",
+    description: "Listing specialist pre-listing strategy, staging, architectural photography, and luxury buyer outreach for $1M–$15M+ MacDonald Highlands estate homes.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/view-lifestyle-00024-full.jpg',
-        alt: 'Selling MacDonald Highlands luxury estate homes with panoramic Las Vegas Strip views in Henderson, Nevada',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/selling-prelisting-staging.jpg',
+        alt: 'Staged MacDonald Highlands estate interior prepared for listing photography',
         width: 1200,
         height: 630,
       },
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
 };
 
 const serviceName = "Selling Your MacDonald Highlands Luxury Home";
-const serviceDescription = "Comprehensive luxury home selling services including pre-listing strategy, professional staging consultation, architectural photography, private showing coordination, and access to global luxury buyer networks.";
+const serviceDescription = "Listing specialist services for MacDonald Highlands sellers: pre-listing strategy, professional staging consultation, architectural photography, private showing coordination, and global luxury buyer networks.";
 const pageUrl = "https://www.macdonaldhighlandshomes.com/services/selling-your-macdonald-highlands-home";
 const breadcrumbJson = breadcrumbListJsonLd([
   { name: "Home", url: "https://www.macdonaldhighlandshomes.com/" },
@@ -63,20 +66,34 @@ export default function SellingPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl={pageUrl}
+        image={siteConfig.images.selling}
       />
+      <FaqSchema faqs={sellingFaqs} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumbJson }}
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
-        <div className="container-luxury">
+      <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={siteConfig.images.selling}
+            alt="Staged luxury living room prepared for a MacDonald Highlands listing"
+            className="w-full h-full object-cover opacity-35"
+            style={{ position: "absolute", inset: 0 }}
+            fetchPriority="high"
+          />
+        </div>
+        <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Listing Specialist Services
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
             Selling Your MacDonald Highlands Luxury Home
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Expert guidance for selling your $1M-$15M+ estate property with maximum return and minimal disruption
+            Listing-specialist guidance for $1M–$15M+ estates—pricing, marketing, and negotiation that protect value
           </p>
         </div>
       </section>
@@ -91,6 +108,15 @@ export default function SellingPage() {
             </p>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Professional Staging Consultation</h3>
+            <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={siteConfig.images.selling}
+                alt="Professionally staged MacDonald Highlands living room ready for listing photography"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               First impressions are everything in luxury real estate. We work with premier staging professionals who understand how to showcase your home&apos;s architectural features, maximize natural light, and create an aspirational lifestyle presentation that resonates with high-net-worth buyers. Staging recommendations are tailored to your property&apos;s unique characteristics, ensuring that every room tells a story of luxury living. This professional presentation helps buyers envision themselves in your home, creating emotional connections that drive purchase decisions.
             </p>
@@ -259,6 +285,8 @@ export default function SellingPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection title="Selling FAQs — MacDonald Highlands" faqs={sellingFaqs} />
 
       {/* CTA Section */}
       <section className="section-padding bg-white">

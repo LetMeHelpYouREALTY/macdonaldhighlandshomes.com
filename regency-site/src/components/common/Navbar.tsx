@@ -36,9 +36,14 @@ export default function Navbar() {
           {/* Brand Logo */}
           <Link
             href="/"
-            className="text-xl md:text-2xl lg:text-3xl font-serif font-bold text-primary-900 cursor-pointer hover:text-primary-700 transition-colors duration-300"
+            className="cursor-pointer hover:opacity-90 transition-opacity duration-300"
           >
-            {siteConfig.name}
+            <span className="block text-xl md:text-2xl lg:text-3xl font-serif font-bold text-primary-900 leading-tight">
+              Dr. Jan Duffy
+            </span>
+            <span className="block text-[10px] md:text-xs uppercase tracking-[0.18em] text-neutral-500 font-semibold">
+              MacDonald Highlands Listing Specialist
+            </span>
           </Link>
 
           {/* Mobile Menu Button */}

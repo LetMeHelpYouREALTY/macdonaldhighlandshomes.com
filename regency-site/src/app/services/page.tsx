@@ -4,39 +4,42 @@ import { siteConfig } from "@/config/siteConfig";
 import RealEstateAgentSchema from "@/components/schema/RealEstateAgentSchema";
 import RealScoutWidgetWrapper from "@/components/listings/RealScoutWidgetWrapper";
 import ServiceSchema from "@/components/schema/ServiceSchema";
+import FaqSchema from "@/components/schema/FaqSchema";
+import FaqSection from "@/components/sections/FaqSection";
+import { servicesFaqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
-  title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
-  description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities in $1M-$15M+ estate homes.",
-  keywords: "MacDonald Highlands real estate services, luxury home services Henderson, real estate agent MacDonald Highlands, home selling services, home buying services, luxury home valuation",
+  title: "MacDonald Highlands Listing Specialist Services | Dr. Jan Duffy",
+  description: "Listing specialist services in MacDonald Highlands: selling, buying, valuations, relocation, investment advisory, and off-market opportunities for $1M–$15M+ estate homes.",
+  keywords: "MacDonald Highlands listing specialist, MacDonald Highlands real estate services, luxury home selling Henderson, home buying MacDonald Highlands, luxury home valuation",
   alternates: {
     canonical: 'https://www.macdonaldhighlandshomes.com/services',
   },
   openGraph: {
-    title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
-    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
+    title: "MacDonald Highlands Listing Specialist Services | Dr. Jan Duffy",
+    description: "Listing specialist services in MacDonald Highlands: selling, buying, valuations, relocation, investment advisory, and off-market opportunities for $1M–$15M+ estate homes.",
     url: 'https://www.macdonaldhighlandshomes.com/services',
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/services-portfolio-overview.jpg',
         width: 1200,
         height: 630,
-        alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
+        alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Luxury Real Estate Services in MacDonald Highlands | Dr. Jan Duffy",
-    description: "Comprehensive luxury real estate services in MacDonald Highlands, Henderson. Expert guidance for buying, selling, home valuation, relocation, investment advisory, and off-market opportunities.",
+    title: "MacDonald Highlands Listing Specialist Services | Dr. Jan Duffy",
+    description: "Listing specialist services in MacDonald Highlands: selling, buying, valuations, relocation, investment advisory, and off-market opportunities.",
     images: [
       {
-        url: 'https://www.macdonaldhighlandshomes.com/photos/community/clubhouse-full.jpg',
-        alt: 'MacDonald Highlands luxury community clubhouse and real estate services in Henderson, Nevada',
+        url: 'https://www.macdonaldhighlandshomes.com/images/services/services-portfolio-overview.jpg',
+        alt: 'Aerial overview of MacDonald Highlands luxury homes and golf course at sunset',
         width: 1200,
         height: 630,
       },
@@ -44,8 +47,8 @@ export const metadata: Metadata = {
   },
 };
 
-const serviceName = "MacDonald Highlands Luxury Real Estate Services";
-const serviceDescription = "Comprehensive luxury real estate services in MacDonald Highlands including buying, selling, home valuation, relocation concierge, investment advisory, and off-market opportunities for $1M-$15M+ estate homes.";
+const serviceName = "MacDonald Highlands Listing Specialist Services";
+const serviceDescription = "Listing specialist services in MacDonald Highlands including selling, buying, home valuation, relocation concierge, investment advisory, and off-market opportunities for $1M–$15M+ estate homes.";
 
 export default function ServicesPage() {
   return (
@@ -55,26 +58,31 @@ export default function ServicesPage() {
         serviceName={serviceName}
         serviceDescription={serviceDescription}
         serviceUrl="https://www.macdonaldhighlandshomes.com/services"
+        image={siteConfig.images.servicesOverview}
       />
+      <FaqSchema faqs={servicesFaqs} />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white py-24">
         <div className="absolute inset-0 z-0">
           <img
-            src="/photos/community/clubhouse-full.jpg"
-            alt="MacDonald Highlands luxury community clubhouse"
-            className="w-full h-full object-cover opacity-30"
+            src={siteConfig.images.servicesOverview}
+            alt="Aerial view of MacDonald Highlands luxury community at sunset"
+            className="w-full h-full object-cover opacity-35"
             style={{ position: 'absolute', inset: 0 }}
             loading="eager"
             decoding="async"
           />
         </div>
         <div className="relative z-10 container-luxury">
+          <p className="text-sm uppercase tracking-[0.2em] text-gold-DEFAULT mb-3 font-semibold">
+            Dr. Jan Duffy · Listing Specialist
+          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-balance">
-            Comprehensive Luxury Real Estate Services in MacDonald Highlands
+            MacDonald Highlands Listing Specialist Services
           </h1>
           <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl">
-            Expert guidance for every aspect of luxury real estate in Henderson&apos;s premier guard-gated community
+            Hyperfocused selling expertise—plus buying, valuation, relocation, investment, and off-market access
           </p>
         </div>
       </section>
@@ -170,6 +178,24 @@ export default function ServicesPage() {
             </Link>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Luxury Home Valuation Services</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src={siteConfig.images.valuation}
+                  alt="Luxury home valuation workspace with floor plans and comps"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src={siteConfig.images.whyListingSpecialist}
+                  alt="Listing specialist presentation materials for MacDonald Highlands homes"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Accurate property valuation in MacDonald Highlands requires deep market knowledge and sophisticated analysis. Our luxury home valuation services provide comprehensive market analysis using comparable sales data, view premium calculations, lot positioning factors, and current market trends. We evaluate architectural features, custom finishes, and unique property characteristics that impact value in the luxury market.
             </p>
@@ -184,8 +210,16 @@ export default function ServicesPage() {
             </Link>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Relocation Concierge Services</h3>
+            <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={siteConfig.images.relocation}
+                alt="Executive relocation welcome scene in a MacDonald Highlands estate foyer"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
-              Corporate relocations and executive moves require white-glove service that goes beyond property search. Our relocation concierge services handle every detail of your move to MacDonald Highlands, from initial virtual tours to area orientation, school recommendations, temporary housing coordination, and timeline management. We understand that relocating to a new city while managing a career requires seamless support.
+              Corporate relocations and executive moves require white-glove service that goes beyond property search. Our relocation concierge services handle every detail of your move to MacDonald Highlands, from initial virtual tours to area orientation, temporary housing coordination, and timeline management. We understand that relocating to a new city while managing a career requires seamless support.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
               Our relocation services are designed to minimize stress and maximize efficiency. We coordinate with employers, handle logistics, provide comprehensive area orientation, and ensure your transition to MacDonald Highlands living is smooth and successful. Whether you&apos;re relocating from across the country or internationally, we provide the support you need to make Henderson your new home.
@@ -198,6 +232,14 @@ export default function ServicesPage() {
             </Link>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Investment Advisory Services</h3>
+            <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={siteConfig.images.investment}
+                alt="MacDonald Highlands hillside villa with infinity pool at dusk"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               MacDonald Highlands properties represent significant investment opportunities, but understanding rental income potential, appreciation trends, and tax advantages requires specialized knowledge. Our investment advisory services provide comprehensive analysis of investment potential, including rental income projections, market appreciation trends, tax advantages, and 1031 exchange coordination for investors looking to optimize their real estate portfolios.
             </p>
@@ -212,6 +254,14 @@ export default function ServicesPage() {
             </Link>
 
             <h3 className="text-2xl font-serif font-bold mt-12 mb-4">Off-Market Opportunities</h3>
+            <div className="my-6 relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={siteConfig.images.offMarket}
+                alt="Private courtyard entrance representing discreet off-market listings"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <p className="text-lg text-neutral-700 mb-6">
               Access to off-market and pocket listings gives buyers exclusive opportunities before properties hit the MLS. Our off-market opportunity services connect qualified buyers with sellers who prefer privacy-focused marketing approaches. This exclusive access means you can view and purchase properties that never appear in public listings, giving you a competitive advantage in the MacDonald Highlands market.
             </p>
@@ -358,6 +408,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection title="Services FAQs" faqs={servicesFaqs} />
 
       {/* CTA Section */}
       <section className="section-padding bg-neutral-50">
